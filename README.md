@@ -7,6 +7,7 @@ Es dokumentiert die Vorlesungsinhalte strukturiert und übersichtlich, mit dem Z
 
 ## 🔧 Projektstruktur
 
+```mermaid
 graph TD
     A[main.tex] --> B[pages/]
     B --> B1[chapter/]
@@ -27,7 +28,7 @@ graph TD
     A --> D[img/]
     D --> D1[beispiel.png]
     D --> D2[graph-1.pdf]
-
+```
 
 ### Konventionen
 
