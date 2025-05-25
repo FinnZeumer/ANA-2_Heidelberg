@@ -6,17 +6,28 @@ Es dokumentiert die Vorlesungsinhalte strukturiert und übersichtlich, mit dem Z
 ---
 
 ## 🔧 Projektstruktur
-├── main.tex # Hauptdokument
-├── pages/
-│ └── chapter/
-│ └── Kapitel_{Zahl}-{Name}/
-│ ├── Thema_1.tex # entspricht einer \subsection
-│ └── ...
-├── styling/ # Eigene .sty-Dateien (Design, Befehle)
-│ ├── info-boxen.sty
-│ └── ...
-├── img/ # Abbildungen & Diagramme
-└── README.md
+
+graph TD
+    A[main.tex] --> B[pages/]
+    B --> B1[chapter/]
+    B1 --> B1a[Kapitel_1-Kurven/]
+    B1a --> B1a1[Regularitaet_und_Tangentialvektor.tex]
+    B1a --> B1a2[Rektifizierbarkeit_und_Bogenlaenge.tex]
+    B1 --> B1b[Kapitel_2-Stetigkeit/]
+    B1b --> B1b1[Stetigkeit.tex]
+    B1b --> B1b2[Kompaktheit.tex]
+    B1b --> B1b3[Zusammenhang.tex]
+
+    A --> C[styling/]
+    C --> C1[info-boxen.sty]
+    C --> C2[settings.sty]
+    C --> C3[prefabs/]
+    C3 --> C3a[default-expressions.sty]
+
+    A --> D[img/]
+    D --> D1[beispiel.png]
+    D --> D2[graph-1.pdf]
+
 
 ### Konventionen
 
@@ -47,12 +58,6 @@ Es dokumentiert die Vorlesungsinhalte strukturiert und übersichtlich, mit dem Z
 - [ ] Automatische Anki-Exportlogik
 - [ ] Glossar & Index
 - [ ] Mathematische Visualisierungen
-
----
-
-## 📜 Lizenz
-
-*(Optional einfügen, z. B. MIT, CC BY-SA 4.0 etc.)*
 
 ---
 
