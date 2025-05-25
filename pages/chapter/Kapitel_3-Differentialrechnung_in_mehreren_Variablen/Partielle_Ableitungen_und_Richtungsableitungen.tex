@@ -1,0 +1,160 @@
+\subsection{Partielle Ableitungen und Richtungsableitungen}
+
+Sei \( D \subset \mathbb{R}^n \) eine offene Menge und \( f: D \to \mathbb{R} \) eine Funktion. Wir betrachten Ableitungen von \( f \) in einzelnen Richtungen und definieren damit auch die partiellen Ableitungen, indem wir zunächst die Richtungsableitungen einführen.
+
+\begin{definition}{}
+1) Ist \( f \) in einem Punkt \( a \in D \) (im Sinne einer eindimensionalen Differenzierbarkeit in der Richtung) differenzierbar, so heißt die Richtungsableitung von \( f \) in \( a \) in Richtung \( v \in \mathbb{R}^n \)
+
+
+\[
+D_v f(a) = \lim_{t\to 0} \frac{f(a+tv)-f(a)}{t},
+\]
+
+
+vorausgesetzt, dieser Grenzwert existiert. (Hinweis: Auch für den Fall \( v=0 \) ist diese Definition formell sinnvoll – es ergibt sich dabei trivialerweise \( D_{0}f(a)=0 \).)
+
+
+2) \( f \) heißt an der Stelle \( a \) \emph{partiell differenzierbar}, wenn für alle Richtungen der Standardbasis, also insbesondere für die Richtungsableitungen in den Richtungen \( e_1,\dots,e_n \), der jeweilige Grenzwert existiert. Wir setzen dann
+
+
+\[
+\frac{\partial f}{\partial x_i}(a) = D_{e_i} f(a), \quad i=1,\dots,n.
+\]
+
+
+3) \( f \) heißt auf \( D \) (stetig) partiell differenzierbar, wenn sie in jedem Punkt \( a \in D \) partiell differenzierbar ist.
+\end{definition}
+
+\begin{bemerkungbox}
+    Die partiellen Ableitungen \(\frac{\partial f}{\partial x_i}(a)\) messen die Änderungsrate von \( f \) in den Richtungen der Koordinatenachsen \( e_i \). Sie liefern also die "Ableitung“ der Funktion entlang der einzelnen Koordinaten.
+\end{bemerkungbox}
+
+\begin{beispielbox}
+\begin{enumerate}
+  \item \textbf{Funktion in einer Variablen:} Sei \( f(x)=x^2 \) für \( x\in \mathbb{R} \). Dann existiert die (gewöhnliche) Ableitung
+  
+
+\[
+  \frac{d}{dx} f(x)= 2x.
+  \]
+
+
+  
+  \item \textbf{Funktion in zwei Variablen:} Betrachte \( f:\mathbb{R}^2 \to \mathbb{R} \) definiert durch
+  
+
+\[
+  f(x,y)= x^2+y^2.
+  \]
+
+
+  Dann sind die partiellen Ableitungen
+  
+
+\[
+  \frac{\partial f}{\partial x}(x,y)=2x,\quad \frac{\partial f}{\partial y}(x,y)=2y.
+  \]
+
+
+  Insbesondere gilt beispielsweise für \( y=0 \) natürlich
+  
+
+\[
+  \frac{\partial f}{\partial y}(x,0)=0.
+  \]
+
+
+  
+  \item \textbf{Hinweis zu Randfällen:} In manchen Fällen können sich Richtungsableitungen in anderen Richtungen (\( v\notin\{e_1,\dots,e_n\} \)) anders verhalten – oftmals geht es im Detail um die Frage, ob alle Richtungsableitungen existieren und ob diese in konzisen Situationen übereinstimmen.
+\end{enumerate}
+\end{beispielbox}
+
+\begin{bemerkungbox}
+Kurzer Einschub: Ist \( D_v f(a) = \lim_{t\to 0} \frac{f(a+tv)-f(a)}{t} \) für eine beliebige Richtung \( v \) definiert, so gibt diese Richtungsableitung die Steigung der Tangente an den Funktionsgraphen in Richtung \( v \) an. Im speziellen Fall \( n=1 \) entspricht dies der gewöhnlichen Ableitung. Allgemein wird so die geometrische Interpretation der partiellen Ableitungen verallgemeinert.
+\end{bemerkungbox}
+
+
+\subsection*{Gradient und Divergenz}
+
+\begin{definition}{}
+(a) Es sei \( f : D \to \mathbb{R} \) ($D \subset \mathbb{R}^n$) partiell differenzierbar an einem Punkt \( a \in D \). Dann heißt der Vektor
+
+
+\[
+    \nabla f(a) \equiv \operatorname{grad} f(a) := \Bigl( \frac{\partial f}{\partial x_1}(a), \frac{\partial f}{\partial x_2}(a), \dots, \frac{\partial f}{\partial x_n}(a) \Bigr) \in \mathbb{R}^n \qquad [\nabla \ = \ 'Nabla']
+\]
+
+der \emph{Gradient} von \( f \) in \( a \).
+\newline
+
+(b) Ein \emph{Vektorfeld} auf einer offenen Menge \( D \subset \mathbb{R}^n \) ist eine Abbildung
+
+
+\[
+v: D \to \mathbb{R}^n,\quad x \mapsto v(x).
+\]
+
+
+
+(c) Das Vektorfeld \( v \) heißt \emph{(stetig) partiell differenzierbar}, falls alle Komponentenfunktionen \( v_i: D \to \mathbb{R} \) (für \( i=1,\dots,n \)) (stetig) partiell differenzierbar sind. In diesem Fall definieren wir die \emph{Divergenz} von \( v \) durch
+
+
+\[
+\operatorname{div} v : D \rightarrow \mathbb{R}, \quad
+\operatorname{div} v(x) := \sum_{i=1}^n \frac{\partial v_i}{\partial x_i}(x).
+\]
+
+
+\end{definition}
+
+\begin{bemerkungbox}
+Üblicherweise schreibt man den Gradienten als \(\nabla f\) und notiert dabei
+
+
+\[
+\langle \nabla f(a), e_i \rangle = \frac{\partial f}{\partial x_i}(a),
+\]
+
+
+wobei \((e_1, \dots, e_n)\) die Standardbasis von \(\mathbb{R}^n\) ist.
+\end{bemerkungbox}
+
+\begin{beispielbox}
+\begin{enumerate}
+  \item \textbf{Notation als Differenzialoperator:} Man schreibt
+  
+
+\[
+  \operatorname{grad} f = \nabla f.
+  \]
+
+
+  
+  \item \textbf{Radiale Koordinate:} Sei \( r : \mathbb{R}^n \to \mathbb{R} \) definiert durch
+  
+
+\[
+  r(x) = \|x\|,
+  \]
+
+
+  sodass \( r \) partiell differenzierbar ist (für \( x\neq 0 \)). Dann gilt
+  
+
+\[
+  \frac{\partial r}{\partial x_i}(x)= \frac{x_i}{\|x\|} \quad\text{und}\quad \operatorname{grad} r(x)= \frac{x}{\|x\|}.
+  \]
+
+
+  
+  \item \textbf{Divergenz eines Vektorfeldes:} Sei \( v(x) = r(x)\, x \), wobei \( r(x) \) eine skalare Funktion ist. Dann folgt mit der Produktregel
+  
+
+\[
+  \operatorname{div}\bigl( v(x) \bigr)= \langle \nabla r(x), x \rangle + r(x) \cdot \operatorname{div}(x),
+  \]
+
+
+  wobei \( \operatorname{div}(x)=n \) für \( x\in \mathbb{R}^n \) verwendet wird.
+\end{enumerate}
+\end{beispielbox}

@@ -1,0 +1,68 @@
+\subsection{Höhere Ableitungen}
+
+Wir definieren zunächst die Funktionalklassen, die angeben, wie oft eine Funktion partiell differenzierbar ist und ob ihre Ableitungen stetig sind:
+
+
+\[
+    C^0(D) \equiv C^0(D,  \mathbb{R}) := \{\,f: D\to\mathbb{R}\mid f \text{ ist stetig}\},
+\]
+
+
+
+
+\[
+C^1(D)=\{\,f: D\to\mathbb{R}\mid f \text{ ist partiell differenzierbar und alle partiellen Ableitungen sind stetig}\},
+\]
+
+
+
+
+\[
+C^k(D)=\Bigl\{\,f: D\to\mathbb{R}\;\Big|\; f \text{ ist } k\text{-mal partiell differenzierbar und alle Ableitungen bis zur Ordnung } k \text{ sind stetig}\Bigr\}.
+\]
+
+
+Insbesondere bezeichnet \(C^\infty(D)\) die Menge der unendlich oft differenzierbaren Funktionen:
+\[
+    C^\infty(D) \equiv C^\infty(C,\mathbb{R}) := \bigcap_{k=1}^\infty C^k(D)
+\]
+
+\begin{bemerkungbox}
+Wir verwenden häufig die Notation \(D^k f\) oder \(\partial^{(k)} f\) für die \(k\)-fachen partiellen Ableitungen.
+\end{bemerkungbox}
+
+\begin{satz}{}
+\textbf{(Schwarzsche Ableitungsregel)}\\
+Sei \(f\in C^2(D)\) für eine offene Menge \(D\subset \mathbb{R}^n\). Dann gilt für alle Punkte \(x\in D\) und für alle Indizes \(i,j\in\{1,\dots,n\}\) 
+
+
+\[
+\frac{\partial^2 f}{\partial x_i\partial x_j}(x)=\frac{\partial^2 f}{\partial x_j\partial x_i}(x).
+\]
+
+
+\end{satz}
+
+\begin{beweisbox}
+Der Beweis erfolgt zunächst im Fall \(n=2\) durch Anwendung des Mittelwertsatzes auf die Differenzquotienten und lässt sich anschließend induktiv auf höhere Dimensionen verallgemeinern. (Details entnehmen Sie bitte der weiterführenden Literatur.)
+\end{beweisbox}
+
+\begin{bemerkungbox}
+Ist \(f\) lediglich zweifach partiell differenzierbar, so kann es vorkommen, dass die gemischten Ableitungen ohne zusätzliche Stetigkeitsannahmen nicht übereinstimmen. Die Stetigkeit der zweiten Ableitungen – also \(f\in C^2(D)\) – ist daher wesentlich für die Gültigkeit der Schwarzschen Regel.
+\end{bemerkungbox}
+
+\begin{korollar}
+Sei \(f\in C^2(D)\). Dann ist die Hessesche Matrix
+
+
+\[
+H_f(x)=\Bigl( \frac{\partial^2 f}{\partial x_i \partial x_j}(x)\Bigr)_{i,j=1}^n
+\]
+
+
+für alle \(x\in D\) symmetrisch.
+\end{korollar}
+
+\begin{bemerkungbox}
+Die Konzepte der totalen Ableitung und der Hesseschen Matrix lassen sich auch auf Funktionen zwischen Banachräumen verallgemeinern. In diesem Rahmen erhält man analoge Resultate bezüglich der Stetigkeit der Ableitungen.
+\end{bemerkungbox}

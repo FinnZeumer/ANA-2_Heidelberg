@@ -1,0 +1,28 @@
+\subsection{Zusammenhang}
+
+Zusammenhang bedeutet, dass ein Raum \textbf{nicht} in zwei voneinander \textbf{getrennte Teile zerfällt} — \textbf{jeder Punkt} kann durch einen \textbf{stetigen }Pfad mit jedem anderen \textbf{verbunden} werden.
+
+In der Physik spielt Zusammenhang z.B. bei \textbf{Phasenübergängen} und \textbf{topologischen Defekten} eine Rolle, wo nicht-zusammenhängende Räume unterschiedliche physikalische Phasen oder Zustände beschreiben können.
+
+
+\begin{definition}{}
+  Ein metrischer Raum $(M,d)$ heißt \emph{zusammenhängend}, wenn gilt:
+  
+
+\[
+  \text{Sind } U,V \subset M \text{ offen mit } M = U \cup V \text{ und } U \cap V = \emptyset,
+  \]
+
+
+  dann folgt, dass entweder $U = \emptyset$ oder $V = \emptyset$ sein muss.
+  
+  Alternativ: Eine Teilmenge $A \subset M$ heißt zusammenhängend, wenn es nicht möglich ist, $A$ in zwei nicht-leere, disjunkte offene Teilmengen zu zerlegen.
+\end{definition}
+
+\begin{satz}{}
+  Sei $f: (M,d) \to (M_2,d_2)$ eine stetige Funktion und sei $M$ zusammenhängend. Dann ist auch das Bild $f(M)$ zusammenhängend.
+\end{satz}
+
+\begin{korollar}
+  Sei $f\colon (M,d) \to \mathbb{R}$ eine stetige Funktion und sei $M$ zusammenhängend. Dann nimmt $f$ für beliebige Punkte $a,b \in M$ alle Werte zwischen $f(a)$ und $f(b)$ an.
+\end{korollar}

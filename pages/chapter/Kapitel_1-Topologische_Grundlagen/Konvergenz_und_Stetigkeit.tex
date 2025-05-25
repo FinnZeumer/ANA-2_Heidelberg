@@ -1,0 +1,31 @@
+\subsection{Konvergenz und Stetigkeit}
+
+Stetigkeit bedeutet, dass kleine Änderungen am Eingang einer Funktion nur kleine Änderungen am Ausgang verursachen — es gibt \textbf{keine Sprünge}. \\
+
+Konvergenz beschreibt, dass eine Folge von Punkten sich \textbf{einem bestimmten Punkt} immer weiter \textbf{annähert}.
+
+Beide Konzepte sind grundlegend, um Grenzwerte, Ableitungen und Integrale sinnvoll zu definieren.
+
+\begin{definition}{Konvergent, Cauchy-Folge, Häufungspunkt}
+Eine Folge $(x_n)$ in einem metrischen Raum $(M, d)$, d.h. $(x_n)_{n \in \mathbb{N}} : \mathbb{N} \rightarrow M, u \rightarrow x_n$, heißt:
+\begin{enumerate}
+    \item \emph{konvergent} gegen $a \in M$, wenn:
+    \[
+        \forall \varepsilon > 0 \quad \exists N \in \mathbb{N} \quad \forall n \geq N: \quad d(x_n, a) < \varepsilon
+    \]
+    Notation: $x_n \to a$, $\lim x_n = a$
+    
+    \item \emph{Cauchy-Folge}, wenn:
+    \[
+        \forall \varepsilon > 0 \quad \exists N \in \mathbb{N} \quad \forall n, m \geq N: \quad d(x_n, x_m) < \varepsilon
+    \]
+
+    \item \emph{Häufungspunkt}, wenn:
+\end{enumerate}
+\end{definition}
+
+\begin{definition}{}
+Ein metrischer Raum $(M, d)$ heißt \emph{vollständig}, wenn jede Cauchy-Folge in $M$ konvergiert.
+
+Ein normierter Raum $(V, \|\cdot\|)$ heißt \emph{Banachraum}, wenn $(V, d)$ mit $d(x, y) = \|x - y\|$ vollständig ist.
+\end{definition}

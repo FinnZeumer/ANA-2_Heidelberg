@@ -1,0 +1,101 @@
+\subsection{Vertauschen von Differentiation und Integration}
+
+% --- Beginn des Abschnitts 3.4 ---
+
+\begin{lemma}
+Sei \(I\subset \mathbb{R}\) ein Intervall und sei \(h\in C([a,b])\) (bzw. \(h(x,t)\) eine Funktion, wobei \(t\) im Integral als Parameter auftaucht). Dann ist die Funktion
+
+
+\[
+H(x)=\int_a^b h(x,t)\,dt
+\]
+
+
+stetig in \(x\). 
+% Hinweis: In der Quelle stand "t wird ansintegriert" und dies wurde als Parameter betrachtet.
+\end{lemma}
+
+\begin{beweisbox}
+Der Beweis basiert darauf, dass \(h(x,t)\) für jedes \(t\in [a,b]\) aufgrund der Stetigkeit gleichmäßig in \(x\) ist. Insbesondere gilt
+
+
+\[
+|H(x)-H(x_0)|\le \int_a^b |h(x,t)-h(x_0,t)|\,dt,
+\]
+
+
+und da \(h\) gleichmäßig stetig ist (auf \( [a,b]\) beziehungsweise einem kompakten Intervall in \(t\)), folgt \(H(x)\to H(x_0)\) für \(x\to x_0\). 
+% % Einige Abschätzungen oder detaillierte Beweisschritte konnten nicht vollständig rekonstruiert werden.
+\end{beweisbox}
+
+\begin{satz}{}
+Sei \(f\in C\bigl(I\times [a,b]\bigr)\), wobei \(I\subset\mathbb{R}\) ein Intervall ist, und sei für jedes \(x\in I\) die Ableitung \(\frac{\partial}{\partial x}f(x,t)\) existierend und so, dass
+
+
+\[
+(x,t)\mapsto \frac{\partial}{\partial x}f(x,t)
+\]
+
+
+stetig ist auf \(I\times [a,b]\). Dann definiere
+
+
+\[
+F(x)=\int_a^b f(x,t)\,dt.
+\]
+
+
+Die Funktion \(F\) ist differenzierbar in \(x\) mit
+
+
+\[
+F'(x)=\int_a^b \frac{\partial}{\partial x}f(x,t)\,dt.
+\]
+
+
+\end{satz}
+
+%  Entfernt
+
+\begin{beispielbox}
+\textbf{Beispiel:} Sei
+
+
+\[
+F(x)=\int_0^a \sin(xt)\,dt.
+\]
+
+
+Dann ist \(F\) differenzierbar und es gilt
+
+
+\[
+F'(x)=\int_0^a t\cos(xt)\,dt.
+\]
+
+
+% Anmerkung: Die direkte Berechnung bestätigt in konkreten Fällen, dass der Ableitungsabschluss unter dem Integral zulässig ist.
+\end{beispielbox}
+
+\begin{satz}{}
+Sei \(f\in C\bigl([a,b]\times[c,d]\bigr)\). Dann gilt
+
+
+\[
+\int_a^b\left(\int_c^d f(x,y)\,dy\right)dx = \int_c^d\left(\int_a^b f(x,y)\,dx\right)dy.
+\]
+
+
+\end{satz}
+
+\begin{bemerkungbox}
+Die Klammern in den obigen Integralen dienen allein der Verdeutlichung der Reihenfolge der Integration. Details zum vollständigen Satz von Fubini entnehmen Sie weiterführender Literatur.
+% Einige Ausdrucksformen (z. B. Abschätzungen mit Operatornormen) konnten nicht eindeutig rekonstruiert werden.
+\end{bemerkungbox}
+
+% --- Hinweise zu weiteren, nicht eindeutig extrahierbaren Teilen ---
+% Es gibt in der Quelle noch Textstellen zu Ableitungsregeln, Differenzierbarkeitsregeln (Produkt-, Ketten- und Quotientenregel) in Banachräumen sowie zu Verallgemeinerungen des Hauptsatzes.
+% Diese Abschnitte enthielten auch Abschätzungen und Notationen (z. B. zur Operatornorm) und wurden hier aufgrund der unleserlichen Handschrift nur teilweise extrahiert.
+% Ebenso wurden manche Details zu "Vertauschen von Limiten" und "unter dem Integral ableiten" nur in zusammengefasster Form übernommen.
+
+% --- Ende des Abschnitts 3.4 ---

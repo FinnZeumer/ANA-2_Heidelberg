@@ -1,0 +1,29 @@
+% Vector and its components
+\newcommand{\veccom}[2]{%
+  \def\temp{} % Initialize an empty string for components
+  \count0=#2 % Set the counter to the second input
+  \advance\count0 by 1 % Increment the counter by 1
+  \vec{#1} = \begin{pmatrix} 
+    \count1=1 % Start the inner counter at 1
+    \loop
+      \ifnum\count1<\count0 % Loop until the counter reaches the incremented value
+        \edef\temp{\temp #1_{\the\count1} \\ } % Add each component
+        \advance\count1 by 1 % Increment the inner counter
+    \repeat
+    \temp % Output all components
+  \end{pmatrix}
+}
+
+%Vector norm
+\newcommand{\vecnorm}[2]{
+    \norm{\vec{#1}} = \sqrt{
+        \foreach \n in {1,...,#2} {
+            #1_\n^2 \ifnum\n<#2 + 
+            \else \fi 
+            \ifnum\n<#2 
+            \else \fi 
+        } 
+    }
+}
+
+

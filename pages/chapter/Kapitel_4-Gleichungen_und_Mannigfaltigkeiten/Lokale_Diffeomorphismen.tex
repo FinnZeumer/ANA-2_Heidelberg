@@ -1,0 +1,76 @@
+\subsection{Lokale Diffeomorphismen}
+
+\begin{definition}{}
+Seien \( U, V \subset \mathbb{R}^n \) offene Mengen. Eine Abbildung \( \varphi: U \to V \) heißt \emph{Diffeomorphismus}, falls \( \varphi \) bijektiv, stetig differenzierbar ist und die Umkehrfunktion \( \varphi^{-1}: V \to U \) ebenfalls stetig differenzierbar ist.
+\end{definition}
+
+\begin{bemerkungbox}
+Falls \( \varphi \) ein Diffeomorphismus ist, gilt für die Jacobi-Matrix
+
+
+\[
+J(\varphi^{-1}(x)) = (J\varphi(x))^{-1}.
+\]
+
+
+Insbesondere folgt daraus, dass die Inverse einer \( C^1 \)-Funktion ebenfalls \( C^1 \) ist.
+\end{bemerkungbox}
+
+\begin{definition}{}
+Eine Funktion \( \varphi: D \to \mathbb{R}^n \), wobei \( D \subset \mathbb{R}^n \) offen ist, heißt \emph{lokaler Diffeomorphismus}, falls jeder Punkt \( x \in D \) eine Umgebung \( U \subset D \) besitzt, sodass \( \varphi \) eingeschränkt auf \( U \) ein Diffeomorphismus ist.
+\end{definition}
+
+\begin{satz}{}
+Sei \( D \subset \mathbb{R}^n \) offen und sei \( \varphi: D \to \mathbb{R}^n \) eine \( C^1 \)-Funktion. Falls die Jacobi-Matrix \( J\varphi(a) \) in einem Punkt \( a \in D \) invertierbar ist, das heißt
+
+
+\[
+\det J\varphi(a) \neq 0,
+\]
+
+
+so existiert eine Umgebung \( U \subset D \) von \( a \), sodass \( \varphi \) eingeschränkt auf \( U \) ein Diffeomorphismus ist.
+\end{satz}
+
+\begin{beweisbox}
+Die Idee des Beweises beruht darauf, dass eine lokal invertierbare Funktion eine lokal definierte Umkehrfunktion besitzt. Mithilfe der Stetigkeit von \( J\varphi(x) \) kann gezeigt werden, dass \( \varphi \) in der Umgebung von \( a \) eine eindeutige Umkehrfunktion besitzt.
+\end{beweisbox}
+
+
+% Spätere Vorlesung
+
+\begin{satz}{}
+Es sei \( D \subset \mathbb{R}^n \) offen und \( f: D \to \mathbb{R}^n \) eine \( C^1 \)-Funktion. Falls die Jacobi-Matrix \( Jf(a) \) in einem Punkt \( a \in D \) invertierbar ist, das heißt
+
+
+\[
+\det Jf(a) \neq 0,
+\]
+
+
+so existiert eine Umgebung \( U \subset D \) von \( a \), sodass \( f \) eingeschränkt auf \( U \) ein Diffeomorphismus ist.
+\end{satz}
+
+\begin{beweisbox}
+Die Beweisidee basiert auf dem Fixpunktsatz von Banach. Es wird gezeigt, dass eine lokal invertierbare Funktion eine lokal definierte Umkehrfunktion besitzt. Durch die Stetigkeit von \( Jf(x) \) kann die Existenz einer eindeutigen Lösung gesichert werden.
+\end{beweisbox}
+
+\begin{motivationbox}
+Die Taylor-Entwicklung ermöglicht die lokale Approximation von Funktionen. Falls \( Jf(a) \) invertierbar ist, kann die Funktion um \( a \) gut linear approximiert werden, was die Voraussetzung für die Anwendung des Fixpunktsatzes erfüllt.
+\end{motivationbox}
+
+\begin{satz}{}
+Sei \( \varphi \) ein kontrahierender Operator auf einem vollständigen metrischen Raum. Dann besitzt \( \varphi \) einen eindeutigen Fixpunkt \( x^* \) mit \( \varphi(x^*) = x^* \).
+\end{satz}
+
+\begin{beweisbox}
+Der Beweis verwendet eine iterative Konstruktion. Für eine Startfolge \( x_n \) zeigt man, dass diese eine Cauchy-Folge bildet und ihr Grenzwert die Fixpunktbedingung erfüllt.
+\end{beweisbox}
+
+\begin{satz}{}
+Sei \( f \) eine differenzierbare Funktion mit einer invertierbaren Jacobi-Matrix. Dann ist \( f \) lokal umkehrbar und die Umkehrfunktion ist ebenfalls differenzierbar.
+\end{satz}
+
+\begin{beweisbox}
+Die Beweisidee nutzt die Abschätzung der Ableitungen von \( f \) und deren Invertierbarkeit, um die Existenz einer lokalen Umkehrfunktion nachzuweisen. Die Ableitungsabschätzungen zeigen zudem die Differenzierbarkeit der Umkehrfunktion.
+\end{beweisbox}

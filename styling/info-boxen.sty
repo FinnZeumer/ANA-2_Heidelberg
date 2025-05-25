@@ -1,0 +1,120 @@
+% info-boxen.sty
+\ProvidesPackage{info-boxen}
+
+\RequirePackage{tcolorbox}
+\tcbuselibrary{listings, breakable, skins}
+\tcbuselibrary{theorems}
+
+% Grundlegendes Box-Design
+\tcbset{
+  colback=white,
+  colframe=black,
+  boxrule=0.8pt,
+  arc=2mm,
+  left=2mm,
+  right=2mm,
+  top=1mm,
+  bottom=1mm,
+  enhanced,
+  breakable
+}
+
+% Farben
+\definecolor{lightblue}{RGB}{230,240,255}
+\definecolor{midblue}{RGB}{100,150,250}
+\definecolor{lightgray}{RGB}{245,245,245}
+\definecolor{midgray}{RGB}{120,120,120}
+\definecolor{steelblue}{RGB}{210,225,245} % leicht blaugrau
+\definecolor{midsteel}{RGB}{90,130,180}   % stahlblau
+
+% Define a custom counter for definitions and theorems
+\newcounter{DefCounter}[section]  % This counter resets with each section
+
+% Example Box
+\newtcolorbox{beispielbox}[1][]{
+  colback=white,
+  colframe=white,
+  title={\textbf{Beispiel}},
+  fonttitle=\bfseries,
+  coltitle=midsteel,
+  #1
+}
+
+% Proof Box
+\newtcolorbox{beweisbox}[1][]{
+  colback=white,
+  colframe=white,
+  title={\textbf{Beweis}},
+  fonttitle=\bfseries,
+  coltitle=steelblue,
+  #1
+}
+
+% Remark Box
+\newtcolorbox{bemerkungbox}[1][]{
+  colback=white,
+  colframe=white,
+  title={\textbf{Bemerkung}},
+  fonttitle=\bfseries,
+  coltitle=black,
+  #1
+}
+
+% Motivation Box
+\newtcolorbox{motivationbox}[1][]{
+  colback=steelblue!10!white,
+  colframe=midsteel,
+  title={\textbf{Motivation}},
+  fonttitle=\bfseries,
+  coltitle=white,
+  #1
+}
+
+
+% Define theorem-like environments using the custom counter
+\newtcolorbox[use counter=DefCounter]{definition}[2][]{%
+    colback=lightblue,
+    colframe=white,
+    coltitle=black,
+    fonttitle=\bfseries,
+    title={\textbf{\thesection.\theDefCounter}\quad Definition: #2},
+    #1
+}
+
+\newtcolorbox[use counter=DefCounter]{satz}[2][]{%
+    colback=lightgray,
+    colframe=white,
+    coltitle=black, 
+    fonttitle=\bfseries,
+    title={\textbf{\thesection.\theDefCounter}\quad Satz: #2},
+    #1
+}
+
+\newtcolorbox[use counter=DefCounter]{theorem}[1][]{%
+    colback=lightgray,
+    colframe=white,
+    coltitle=black,
+    fonttitle=\bfseries,
+    title={\textbf{Theorem \theDefCounter}},
+    #1
+}
+
+\newtcolorbox[use counter=DefCounter]{lemma}[1][]{%
+    colback=lightgray,
+    colframe=white,
+    coltitle=black, 
+    fonttitle=\bfseries,
+    title={\textbf{Lemma \theDefCounter}},
+    #1
+}
+
+\newtcolorbox[use counter=DefCounter]{korollar}[1][]{%
+    colback=lightgray,
+    colframe=white,
+    coltitle=black,
+    fonttitle=\bfseries,
+    title={\textbf{Korollar \theDefCounter}},
+    #1
+}
+
+\endinput

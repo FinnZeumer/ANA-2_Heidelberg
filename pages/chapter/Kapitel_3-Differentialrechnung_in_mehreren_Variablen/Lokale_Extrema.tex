@@ -1,0 +1,130 @@
+\subsection{Lokale Extrema}
+
+% --- Taylor-Formel in höheren Dimensionen ---
+\begin{satz}{}
+(Taylor-Formel)  
+Es sei \(D \subset \mathbb{R}^n\) offen und \( f \in C^m(D) \). Sei \( x_0 \in D \) mit \( [x_0, x] \subset D \). Dann existiert \( \xi \in [x_0, x] \) mit
+
+
+\[
+f(x) = f(x_0) + \sum_{i=1}^{n} \frac{\partial f}{\partial x_i}(x_0) (x_i - x_{0,i}) + \frac{1}{2} \sum_{i,j=1}^{n} \frac{\partial^2 f}{\partial x_i \partial x_j} (\xi) (x_i - x_{0,i}) (x_j - x_{0,j}).
+\]
+
+
+\end{satz}
+
+\begin{beweisbox}
+Die Aussage folgt durch mehrdimensionale Taylorentwicklung mit Restglied. Der Beweis orientiert sich an der Einhüllenden der Funktion und nutzt die Darstellungen mittels Differentialoperatoren.  
+% Details zur vollständigen Herleitung sind nicht vollständig erkennbar.
+\end{beweisbox}
+
+\begin{definition}{}
+Eine Funktion \( f: D \to \mathbb{R} \), wobei \( D \subset \mathbb{R}^n \) offen ist, hat in \( x_0 \in D \) ein **lokales Maximum**, falls eine offene Umgebung \( U \) von \( x_0 \) existiert, sodass
+
+
+\[
+\forall x \in U: \quad f(x) \leq f(x_0).
+\]
+
+
+Ein **lokales Minimum** wird analog definiert.
+\end{definition}
+
+\begin{lemma}
+Ist \( f: D \to \mathbb{R} \) partiell differenzierbar und hat in \( x_0 \) ein lokales Extremum (Minimum oder Maximum), so gilt:
+
+
+\[
+\operatorname{grad} f(x_0) = 0.
+\]
+
+
+Das bedeutet:
+
+
+\[
+\frac{\partial f}{\partial x_i} (x_0) = 0 \quad \forall i=1,\dots,n.
+\]
+
+
+\end{lemma}
+
+\begin{beweisbox}
+Falls \( x_0 \) ein lokales Extremum ist, existiert eine Umgebung, sodass \( f(x) \) dort entweder nie größer oder nie kleiner als \( f(x_0) \) ist. Dies führt durch das Richtungsableitungsprinzip zur Notwendigkeit, dass alle ersten Ableitungen verschwinden.
+\end{beweisbox}
+
+% --- Satz von Schwarz ---
+\begin{satz}{}
+(Satz von Schwarz)  
+Sei \( f \in C^2(D) \), dann ist die Hesse-Matrix
+
+
+\[
+H_f(x) = \Bigg( \frac{\partial^2 f}{\partial x_i \partial x_j}(x) \Bigg)_{i,j}
+\]
+
+
+symmetrisch, d.h. es gilt für alle \( i,j \)
+
+
+\[
+\frac{\partial^2 f}{\partial x_i \partial x_j} = \frac{\partial^2 f}{\partial x_j \partial x_i}.
+\]
+
+
+\end{satz}
+
+\begin{definition}{}
+Eine quadratische Form \( Q(x) = x^T A x \) ist:
+- **positiv definit**, falls \( Q(x) > 0 \) für alle \( x \neq 0 \).
+- **negativ definit**, falls \( Q(x) < 0 \) für alle \( x \neq 0 \).
+- **indefinit**, falls es \( x \neq 0 \) gibt mit \( Q(x) > 0 \) und \( Q(y) < 0 \) für manche \( y \neq 0 \).
+\end{definition}
+
+\begin{satz}{}
+Sei \( f \in C^2(D) \) mit \( \operatorname{grad} f(x_0) = 0 \). Dann gilt:
+\begin{enumerate}
+    \item Falls die Hesse-Matrix \( H_f(x_0) \) **positiv definit** ist, besitzt \( f \) in \( x_0 \) ein lokales Minimum.
+    \item Falls \( H_f(x_0) \) **negativ definit** ist, besitzt \( f \) in \( x_0 \) ein lokales Maximum.
+    \item Falls \( H_f(x_0) \) **indefinit** ist, existiert kein lokales Extremum.
+\end{enumerate}
+\end{satz}
+
+\begin{beweisbox}
+Die Aussage folgt durch Taylor-Entwicklung und die Analyse der quadratischen Form, welche durch die Hesse-Matrix definiert wird.  
+% Einige Abschätzungen im Originaltext konnten nicht vollständig rekonstruiert werden.
+\end{beweisbox}
+
+\begin{beispielbox}
+\begin{enumerate}
+    \item Sei \( f(x,y) = x^2 + y^2 \). Dann ist
+    
+
+\[
+    H_f(x,y) = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}.
+    \]
+
+
+    Da die Hesse-Matrix positiv definit ist, besitzt \( f \) in \( (0,0) \) ein lokales Minimum.
+    
+    \item Sei \( f(x,y) = -x^2 - y^2 \). Dann ist
+    
+
+\[
+    H_f(x,y) = \begin{pmatrix} -2 & 0 \\ 0 & -2 \end{pmatrix}.
+    \]
+
+
+    Da die Hesse-Matrix negativ definit ist, besitzt \( f \) in \( (0,0) \) ein lokales Maximum.
+    
+    \item Sei \( f(x,y) = x^2 - y^2 \). Dann ist
+    
+
+\[
+    H_f(x,y) = \begin{pmatrix} 2 & 0 \\ 0 & -2 \end{pmatrix}.
+    \]
+
+
+    Da die Hesse-Matrix indefinit ist, existiert in \( (0,0) \) kein lokales Extremum.
+\end{enumerate}
+\end{beispielbox}

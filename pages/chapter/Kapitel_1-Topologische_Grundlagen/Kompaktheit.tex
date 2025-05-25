@@ -1,0 +1,62 @@
+\subsection{Kompaktheit}
+
+Kompaktheit ist die Eigenschaft eines Raumes, dass sich \textbf{jede Folge von Punkten} immer so wählen lässt, dass sie (zumindest teilweise) \textbf{konvergiert} — der Raum ist in gewissem Sinne "endlich ausgedehnt“ und "abgeschlossen“.
+
+In der Physik ist Kompaktheit z.B. wichtig in der Quantenfeldtheorie, wo kompakte Räume (wie der Kreis $S^1$) zu Quantisierung von Zuständen oder topologischen Solitonen führen.
+
+
+\begin{definition}{}
+Ein metrischer Raum $(M,d)$ heißt \emph{(folgen-)kompakt}, wenn jede Folge in $M$ eine konvergente Teilfolge besitzt.
+\end{definition}
+
+\begin{definition}{}
+Eine Teilmenge $K \subset M$ heißt kompakt, wenn im eingeschränkten metrischen Raum $(K, d|_K)$ jede Folge in $K$ eine konvergente Teilfolge besitzt, deren Grenzwert in $K$ liegt.
+\end{definition}
+
+\begin{beispielbox}
+\begin{itemize}
+  \item Nach dem Heine-Borel-Kriterium ist eine Teilmenge von $\mathbb{R}^n$ genau dann kompakt, wenn sie abgeschlossen und beschränkt ist.
+  \item Im Gegensatz dazu ist ein offener Ball in $\mathbb{R}^n$ nicht kompakt, da er nicht abgeschlossen ist.
+\end{itemize}
+\end{beispielbox}
+
+\begin{satz}{}
+    Sei $f: (M_1,d_1) \to (M_2,d_2)$ eine stetige Funktion und $K \subset M_1$ kompakt. Dann ist $f(K)$ kompakt in $(M_2,d_2)$.
+\end{satz}
+
+
+\begin{satz}{}
+    Sei $K \subset (M,d)$ kompakt. Dann ist $K$ abgeschlossen und beschränkt.
+\end{satz}
+
+\begin{beweisbox}
+Sei $a \in M$ und betrachte die Funktion $f: M \to \mathbb{R}$ definiert durch
+
+
+\[
+f(x) = d(x,a).
+\]
+
+
+Da $f$ stetig ist, ist $f(K)$ ein kompakter Teil von $\mathbb{R}$ und somit beschränkt. Es existiert also ein $R > 0$, sodass
+
+
+\[
+f(K) \subset [-R, R].
+\]
+
+
+Da $B(a, R)$, die Menge aller Punkte mit Abstand kleiner als $R$ von $a$, gilt
+
+
+\[
+K \subset B(a,R),
+\]
+
+
+ist $K$ beschränkt. Außerdem liegt aufgrund der Kompaktheit jeder Häufungspunkt von $K$ in $K$, weshalb $K$ abgeschlossen ist.
+\end{beweisbox}
+
+\begin{bemerkungbox}
+In normierten Räumen ist ein abgeschlossener Ball genau dann kompakt, wenn der zugrunde liegende Raum endlichdimensional ist (Heine-Borel-Satz).
+\end{bemerkungbox}

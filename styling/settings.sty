@@ -1,0 +1,27 @@
+% settings.sty - Layout- und Design-Einstellungen
+
+\RequirePackage{xcolor}
+\RequirePackage{tcolorbox}
+
+% Farben
+\definecolor{color1}{RGB}{61, 96, 149}    % Dunkelblau (3d6095ff)
+\definecolor{color2}{RGB}{90, 44, 160}    % Violett (5a2ca0ff)
+\definecolor{color3}{RGB}{244, 91, 70}    % Rot (f45b46ff)
+\definecolor{color4}{RGB}{250, 183, 39}   % Gelb (fab727ff)
+\definecolor{color5}{RGB}{66, 104, 34}    % Dunkelgrün (426822ff)
+\definecolor{color6}{RGB}{83, 108, 93}    % Graugrün (536c5dff)
+
+\definecolor{gray1}{gray}{0.2}  % Dunkelgrau
+\definecolor{gray2}{gray}{0.5}  % Mittelgrau
+\definecolor{gray3}{gray}{0.8}  % Hellgrau
+
+% Schriften und Titelstile
+\usepackage{titlesec}
+\titleformat{\section}{\color{color1}\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\color{color1}\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+% Tabellen-Stil
+\usepackage{booktabs}
+\setlength{\arrayrulewidth}{0.5mm} % Dicke der Tabellenlinien
+\setlength{\tabcolsep}{10pt}       % Abstand zwischen den Zellen
+\renewcommand{\arraystretch}{1.5}  % Zeilenhöhe anpassen
