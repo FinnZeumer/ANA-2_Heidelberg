@@ -1,0 +1,1035 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.16)  5 MAY 2026 02:54
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Folders/Uni-Heidelberg/Computerphysik/Homework/ANA-2_Heidelberg/main.tex
+(c:/Folders/Uni-Heidelberg/Computerphysik/Homework/ANA-2_Heidelberg/main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks18
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen149
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen150
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count198
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count199
+\leftroot@=\count266
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count267
+\DOTSCASE@=\count268
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen151
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count269
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count270
+\dotsspace@=\muskip16
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks20
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks21
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks22
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks29
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/commath\commath.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count276
+\mult@box=\box53
+\multicol@leftmargin=\dimen160
+\c@unbalance=\count277
+\c@collectmore=\count278
+\doublecol@number=\count279
+\multicoltolerance=\count280
+\multicolpretolerance=\count281
+\full@width=\dimen161
+\page@free=\dimen162
+\premulticols=\dimen163
+\postmulticols=\dimen164
+\multicolsep=\skip56
+\multicolbaselineskip=\skip57
+\partial@page=\box54
+\last@line=\box55
+\mc@boxedresult=\box56
+\maxbalancingoverflow=\dimen165
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@firstbox=\box59
+\mult@gfirstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count282
+\c@columnbadness=\count283
+\c@finalcolumnbadness=\count284
+\last@try=\dimen166
+\multicolovershoot=\dimen167
+\multicolundershoot=\dimen168
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count285
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen169
+\pgfutil@tempdimb=\dimen170
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box99
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen171
+\pgf@y=\dimen172
+\pgf@xa=\dimen173
+\pgf@ya=\dimen174
+\pgf@xb=\dimen175
+\pgf@yb=\dimen176
+\pgf@xc=\dimen177
+\pgf@yc=\dimen178
+\pgf@xd=\dimen179
+\pgf@yd=\dimen180
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count290
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen181
+\pgfmath@count=\count293
+\pgfmath@box=\box100
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count294
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen182
+\pgf@picmaxx=\dimen183
+\pgf@picminy=\dimen184
+\pgf@picmaxy=\dimen185
+\pgf@pathminx=\dimen186
+\pgf@pathmaxx=\dimen187
+\pgf@pathminy=\dimen188
+\pgf@pathmaxy=\dimen189
+\pgf@xx=\dimen190
+\pgf@xy=\dimen191
+\pgf@yx=\dimen192
+\pgf@yy=\dimen193
+\pgf@zx=\dimen194
+\pgf@zy=\dimen195
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen196
+\pgf@path@lasty=\dimen197
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen198
+\pgf@shorten@start@additional=\dimen199
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box101
+\pgf@hbox=\box102
+\pgf@layerbox@main=\box103
+\pgf@picture@serial@count=\count295
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen256
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen257
+\pgf@pt@y=\dimen258
+\pgf@pt@temp=\dimen259
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen260
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen261
+\pgf@sys@shading@range@num=\count296
+\pgf@shadingcount=\count297
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box104
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box105
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen262
+\pgf@nodesepend=\dimen263
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks40
+\verbatim@line=\toks41
+\verbatim@in@stream=\read3
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+\tcb@titlebox=\box106
+\tcb@upperbox=\box107
+\tcb@lowerbox=\box108
+\tcb@phantombox=\box109
+\c@tcbbreakpart=\count299
+\c@tcblayer=\count300
+\c@tcolorbox@number=\count301
+\l__tcobox_tmpa_box=\box110
+\l__tcobox_tmpa_dim=\dimen264
+\tcb@temp=\box111
+\tcb@temp=\box112
+\tcb@temp=\box113
+\tcb@temp=\box114
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count302
+)
+\@linkdim=\dimen265
+\Hy@linkcounter=\count303
+\Hy@pagecounter=\count304
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count305
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing OFF on input line 4201.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4448.
+\c@Hy@tempcnt=\count306
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4786.
+\XeTeXLinkMargin=\dimen266
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count307
+\Field@Width=\dimen267
+\Fld@charsize=\dimen268
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing OFF on input line 6080.
+Package hyperref Info: Link coloring OFF on input line 6085.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode OFF on input line 6095.
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count308
+\c@Item=\count309
+\c@Hfootnote=\count310
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count311
+\c@bookmark@seq@number=\count312
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip58
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip59
+\f@nch@O@elh=\skip60
+\f@nch@O@erh=\skip61
+\f@nch@O@olh=\skip62
+\f@nch@O@orh=\skip63
+\f@nch@O@elf=\skip64
+\f@nch@O@erf=\skip65
+\f@nch@O@olf=\skip66
+\f@nch@O@orf=\skip67
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossaries.sty
+Package: glossaries 2024/04/03 v4.54 (NLCT)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks42
+\XKV@tempa@toks=\toks43
+)
+\XKV@depth=\count313
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
+Package: mfirstuc 2022/10/14 v2.08 (NLCT)
+\@glsmfirst=\toks44
+\@glsmrest=\toks45
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count314
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count315
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count316
+\FP@xia=\count317
+\FP@xib=\count318
+\FP@xfa=\count319
+\FP@xfb=\count320
+\FP@rega=\count321
+\FP@regb=\count322
+\FP@regs=\count323
+\FP@times=\count324
+)
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
+Package: fp-addons 1995/03/15
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
+Package: fp-snap 1995/04/05
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
+Package: fp-exp 1995/04/03
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
+Package: fp-pas 1994/08/29
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count325
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
+Package: fp-upn 1996/10/21
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks46
+\@dtl@tmpcount=\count326
+\dtl@tmplength=\skip68
+\dtl@sortresult=\count327
+\@dtl@numgrpsepcount=\count328
+\@dtl@datatype=\count329
+\dtl@codeA=\count330
+\dtl@codeB=\count331
+\@dtl@foreach@level=\count332
+)
+\gls@level=\count333
+\@gls@tmpb=\toks47
+\gls@tmplen=\skip69
+\glskeylisttok=\toks48
+\glslabeltok=\toks49
+\glsshorttok=\toks50
+\glslongtok=\toks51
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
+Package: glossary-hypernav 2024/04/03 v4.54 (NLCT)
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
+Package: glossary-list 2024/04/03 v4.54 (NLCT)
+\glslistdottedwidth=\skip70
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
+Package: glossary-long 2024/04/03 v4.54 (NLCT)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip71
+\LTright=\skip72
+\LTpre=\skip73
+\LTpost=\skip74
+\LTchunksize=\count334
+\LTcapwidth=\dimen269
+\LT@head=\box115
+\LT@firsthead=\box116
+\LT@foot=\box117
+\LT@lastfoot=\box118
+\LT@gbox=\box119
+\LT@cols=\count335
+\LT@rows=\count336
+\c@LT@tables=\count337
+\c@LT@chunks=\count338
+\LT@p@ftn=\toks52
+)
+\glsdescwidth=\skip75
+\glspagelistwidth=\skip76
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
+Package: glossary-super 2024/04/03 v4.54 (NLCT)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabular.sty
+Package: supertabular 2024/07/20 v4.2c the supertabular environment
+\c@tracingst=\count339
+\ST@wd=\dimen270
+\ST@rightskip=\skip77
+\ST@leftskip=\skip78
+\ST@parfillskip=\skip79
+\ST@pageleft=\dimen271
+\ST@headht=\dimen272
+\ST@tailht=\dimen273
+\ST@pagesofar=\dimen274
+\ST@pboxht=\dimen275
+\ST@rowht=\dimen276
+\ST@prevht=\dimen277
+\ST@toadd=\dimen278
+\ST@dimen=\dimen279
+\ST@pbox=\box120
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
+Package: glossary-tree 2024/04/03 v4.54 (NLCT)
+\glstreeindent=\skip80
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen280
+\lightrulewidth=\dimen281
+\cmidrulewidth=\dimen282
+\belowrulesep=\dimen283
+\belowbottomsep=\dimen284
+\aboverulesep=\dimen285
+\abovetopsep=\dimen286
+\cmidrulesep=\dimen287
+\cmidrulekern=\dimen288
+\defaultaddspace=\dimen289
+\@cmidla=\count340
+\@cmidlb=\count341
+\@aboverulesep=\dimen290
+\@belowrulesep=\dimen291
+\@thisruleclass=\count342
+\@lastruleclass=\count343
+\@thisrulewidth=\dimen292
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen293
+\ar@mcellbox=\box121
+\extrarowheight=\dimen294
+\NC@list=\toks53
+\extratabsurround=\skip81
+\backup@length=\skip82
+\ar@cellbox=\box122
+)
+\everycr=\toks54
+\minrowclearance=\skip83
+\rownum=\count344
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen295
+\pgffor@skip=\dimen296
+\pgffor@stack=\toks55
+\pgffor@toks=\toks56
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
+) (styling/settings.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box123
+\beforetitleunit=\skip84
+\aftertitleunit=\skip85
+\ttl@plus=\dimen297
+\ttl@minus=\dimen298
+\ttl@toksa=\toks57
+\titlewidth=\dimen299
+\titlewidthlast=\dimen300
+\titlewidthfirst=\dimen301
+)) (styling/info-boxen.sty
+
+LaTeX Warning: You have requested package `styling/info-boxen',
+               but the package provides `info-boxen'.
+
+Package: info-boxen 
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count345
+\lst@gtempboxa=\box124
+\lst@token=\toks58
+\lst@length=\count346
+\lst@currlwidth=\dimen302
+\lst@column=\count347
+\lst@pos=\count348
+\lst@lostspace=\dimen303
+\lst@width=\dimen304
+\lst@newlines=\count349
+\lst@lineno=\count350
+\lst@maxwidth=\dimen305
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count351
+\lst@skipnumbers=\count352
+\lst@framebox=\box125
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
+)
+\c@tcblisting=\count353
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box126
+\tcb@totalupperbox=\box127
+\tcb@totallowerbox=\box128
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count354
+\pgfplotmarksize=\dimen306
+)
+\tikz@lastx=\dimen307
+\tikz@lasty=\dimen308
+\tikz@lastxsaved=\dimen309
+\tikz@lastysaved=\dimen310
+\tikz@lastmovetox=\dimen311
+\tikz@lastmovetoy=\dimen312
+\tikzleveldistance=\dimen313
+\tikzsiblingdistance=\dimen314
+\tikz@figbox=\box129
+\tikz@figbox@bg=\box130
+\tikz@tempbox=\box131
+\tikz@tempbox@bg=\box132
+\tikztreelevel=\count355
+\tikznumberofchildren=\count356
+\tikznumberofcurrentchild=\count357
+\tikz@fig@count=\count358
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count359
+\pgfmatrixcurrentcolumn=\count360
+\pgf@matrix@numberofcolumns=\count361
+)
+\tikz@expandcount=\count362
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box133
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+))
+\c@DefCounter=\count363
+) (styling/prefabs/default-expressions.sty) (styling/prefabs/short_commands.sty) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count364
+\l__pdf_internal_box=\box134
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=13.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count365
+\scratchdimen=\dimen315
+\scratchbox=\box135
+\nofMPsegments=\count366
+\nofMParguments=\count367
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count368
+\MPscratchDim=\dimen316
+\MPnumerator=\count369
+\makeMPintoPDFobject=\count370
+\everyMPtoPDFconversion=\toks60
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 36.
+ (main.out) (main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+\c@lstlisting=\count371
+ (pages/title.tex [1
+
+{C:/Users/finnz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (pages/Vorwort.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 \newpage
+              [1] (main.toc)
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [2] (pages/chapter/Kapitel_1-Topologische_Grundlagen/Einleitung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]|\OT1/cmr/m/n/10 Topologische Iso-la-toren, Quanten-Hall-Effekt, topol-o-gis-che
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 40--41
+[]|\OT1/cmr/m/n/10 Topologische De-fekte im fr^^?uhen Uni-ver-sum (z.B. kos-mis-che
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+[]|\OT1/cmr/m/n/10 Phasen^^?uberg^^?ange ohne Sym-me-triebruch (z.B. Kosterlitz-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+[]|\OT1/cmr/m/n/10 Topologie von Calabi-Yau-Mannigfaltigkeiten bee-in-flusst
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 48--49
+[]|\OT1/cmr/m/n/10 Topologische Quan-ten-com-puter | Quan-ten-in-for-ma-tion wird
+ []
+
+
+Overfull \hbox (21.32114pt too wide) in paragraph at lines 32--51
+ [][] 
+ []
+
+) (pages/chapter/Kapitel_1-Topologische_Grundlagen/Metrische_Raeume.tex [3]
+Overfull \hbox (24.22643pt too wide) in paragraph at lines 6--7
+[]\OT1/cmr/m/n/10 Eine Metrik beschreibt \OT1/cmr/bx/n/10 in der Physik Abst^^?ande, Winkel und Ge-ome-trie von R^^?aumen \OT1/cmr/m/n/10 (oder \OT1/cmr/bx/n/10 Raumzeiten\OT1/cmr/m/n/10 ).
+ []
+
+<pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png, id=126, 983.58754pt x 222.82057pt>
+File: pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png Graphic file (type png)
+<use pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png>
+Package pdftex.def Info: pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png  used on input line 51.
+(pdftex.def)             Requested size: 483.69687pt x 109.57742pt.
+[4 <./pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png>]
+<pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png, id=140, 416.30185pt x 265.10101pt>
+File: pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png Graphic file (type png)
+<use pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png>
+Package pdftex.def Info: pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png  used on input line 98.
+(pdftex.def)             Requested size: 290.22107pt x 184.82109pt.
+<pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png, id=141, 146.54352pt x 146.54352pt>
+File: pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png Graphic file (type png)
+<use pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png>
+Package pdftex.def Info: pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png  used on input line 105.
+(pdftex.def)             Requested size: 145.11053pt x 145.12099pt.
+
+Underfull \hbox (badness 4001) in paragraph at lines 106--106
+\OT1/cmr/m/n/10 lung\ von Ein-heitsb^^?allen ver-
+ []
+
+[5 <./pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png> <./pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+<pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png, id=154, 126.7945pt x 128.5118pt>
+File: pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png Graphic file (type png)
+<use pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png>
+Package pdftex.def Info: pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png  used on input line 174.
+(pdftex.def)             Requested size: 68.80171pt x 69.73456pt.
+
+LaTeX Warning: Reference `fig:hausdorff-raum-visualisierung' on page 6 undefined on input line 176.
+
+[6 <./pages/chapter/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png>]) (pages/chapter/Kapitel_1-Topologische_Grundlagen/Konvergenz_und_Stetigkeit.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Overfull \hbox (8.79016pt too wide) in paragraph at lines 5--6
+[]\OT1/cmr/m/n/10 Konvergenz beschreibt, dass eine Folge von Punk-ten sich \OT1/cmr/bx/n/10 einem bes-timmten Punkt \OT1/cmr/m/n/10 im-mer weiter \OT1/cmr/bx/n/10 ann^^?ahert\OT1/cmr/m/n/10 . 
+ []
+
+) (pages/chapter/Kapitel_1-Topologische_Grundlagen/Kompaktheit.tex [7]) (pages/chapter/Kapitel_1-Topologische_Grundlagen/Zusammenhang.tex [8]) [9]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 78.
+
+(pages/chapter/Kapitel_2-Kurven/Einleitung.tex) (pages/chapter/Kapitel_2-Kurven/Regularitaet_und_Tangentialvektor.tex [10]) (pages/chapter/Kapitel_2-Kurven/Rektifizierbarkeit_und_Bogenlaenge.tex [11] [12]
+Underfull \hbox (badness 1210) in paragraph at lines 148--149
+[]\OT1/cmr/m/n/10 Insbesondere k^^?onnen regul^^?are Kur-ven so reparametrisiert wer-den, dass sie nach Bo-genl^^?ange
+ []
+
+) [13] (pages/chapter/Kapitel_3-Differentialrechnung_in_mehreren_Variablen/Partielle_Ableitungen_und_Richtungsableitungen.tex
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+
+ []
+
+[14]) (pages/chapter/Kapitel_3-Differentialrechnung_in_mehreren_Variablen/Differenzierbarkeit.tex [15] [16] [17]) (pages/chapter/Kapitel_3-Differentialrechnung_in_mehreren_Variablen/Hoehere_Ableitungen.tex
+Overfull \hbox (6.51938pt too wide) detected at line 22
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 f [] D \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R [] \OML/cmm/m/it/10 f[]k[]k[][]:
+ []
+
+) (pages/chapter/Kapitel_3-Differentialrechnung_in_mehreren_Variablen/Vertauschen_von_Differentiation_und_Integration.tex [18]) (pages/chapter/Kapitel_3-Differentialrechnung_in_mehreren_Variablen/Lokale_Extrema.tex [19] [20]) [21] (pages/chapter/Kapitel_4-Gleichungen_und_Mannigfaltigkeiten/Einleitung_K4.tex) (pages/chapter/Kapitel_4-Gleichungen_und_Mannigfaltigkeiten/Der_Banachsche_Fixpunktsatz.tex [22]) (pages/chapter/Kapitel_4-Gleichungen_und_Mannigfaltigkeiten/Lokale_Diffeomorphismen.tex [23]) (pages/chapter/Kapitel_4-Gleichungen_und_Mannigfaltigkeiten/Implizite_Funktionen_und_Untermannigfaltigkeiten.tex [24]) [25] (main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 2EF4C832864CC6CEC089423F4BE06D75;3468.
+ ) 
+Here is how much of TeX's memory you used:
+ 31509 strings out of 474485
+ 620972 string characters out of 5743733
+ 1956542 words of memory out of 5000000
+ 53036 multiletter control sequences out of 15000+600000
+ 564427 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 94i,13n,93p,2390b,1119s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\finnz\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (26 pages, 1039964 bytes).
+PDF statistics:
+ 457 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+
