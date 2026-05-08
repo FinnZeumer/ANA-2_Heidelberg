@@ -1,0 +1,114 @@
+\documentclass[fontsize=10pt]{scrreprt}
+% \usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+% \usepackage{import}          
+% \usepackage{amsmath, amssymb, amsthm}
+% \usepackage{commath}
+% \usepackage{graphicx}
+% \usepackage{multicol}        
+% \usepackage{tcolorbox}       
+% \usepackage{hyperref}        
+% \usepackage{fancyhdr}
+% \usepackage[acronym]{glossaries}
+
+% \usepackage{booktabs}
+% \usepackage{colortbl}     
+
+% \usepackage{fancyhdr}
+
+% \usepackage{pgffor}
+
+% \usepackage{amsthm}
+
+% \tcbuselibrary{theorems}
+
+% Eigene Stylings
+\usepackage{styling/settings}
+\usepackage{styling/style}
+\usepackage{styling/info-boxen}
+\usepackage{styling/prefabs/default-expressions}
+\usepackage{styling/prefabs/short_commands}
+
+\title{Ana II Transkiption}
+\author{Finn Zeumer }
+\date{Mai 2025}
+
+\begin{document}
+
+    \include{pages/title.tex} 
+
+    % Römische Zahlen für Content bis zum Inhaltsverzeichnis
+    \pagenumbering{roman}
+    \include{pages/Vorwort.tex}
+
+    \renewcommand{\contentsname}{Inhaltsverzeichnis}
+    \tableofcontents
+
+    \newpage
+
+    % Seitenzahl auf 1 Setzen für textlichen Inhalt
+    \pagenumbering{arabic}
+
+    % -------------------
+    % Kapitel 1: Topologische Grundlagen
+    % -------------------
+    \section{Topologische Grundlagen}
+
+    \foreach \file in {
+        Einleitung,
+        Metrische_Raeume,
+        Konvergenz_und_Stetigkeit,
+        Kompaktheit,
+        Zusammenhang
+    }{
+        \input{pages/chapter/Kapitel_1-Topologische_Grundlagen/\file}
+    }
+
+    \newpage
+
+    % -------------------
+    % Kapitel 2: Kurven
+    % -------------------
+    \section{Kurven in $\mathbb{R}^n$}
+
+    \foreach \file in {
+        Einleitung,
+        Regularitaet_und_Tangentialvektor,
+        Rektifizierbarkeit_und_Bogenlaenge
+    }{
+        \input{pages/chapter/Kapitel_2-Kurven/\file}
+    }
+
+    \newpage
+
+    % -------------------
+    % Kapitel 3: Differentialrechnung in mehreren Variablen
+    % -------------------
+    \section{Differentialrechnung in mehreren Variablen}
+
+    \foreach \file in {
+        Partielle_Ableitungen_und_Richtungsableitungen,
+        Differenzierbarkeit,
+        Hoehere_Ableitungen,
+        Vertauschen_von_Differentiation_und_Integration,
+        Lokale_Extrema
+    }{
+        \input{pages/chapter/Kapitel_3-Differentialrechnung_in_mehreren_Variablen/\file}
+    }
+
+    \newpage
+
+    % -------------------
+    % Kapitel 4: Gleichungen und Mannigfaltigkeiten 
+    % -------------------
+    \section{Gleichungen und Mannigfaltigkeiten}
+
+    \foreach \file in {
+        Einleitung_K4,
+        Der_Banachsche_Fixpunktsatz,
+        Lokale_Diffeomorphismen,
+        Implizite_Funktionen_und_Untermannigfaltigkeiten
+    }{
+        \input{pages/chapter/Kapitel_4-Gleichungen_und_Mannigfaltigkeiten/\file}
+    }
+\end{document}

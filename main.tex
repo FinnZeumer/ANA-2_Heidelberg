@@ -1,120 +1,44 @@
-\documentclass{article}
-\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
-
-\usepackage{import}          
-\usepackage{amsmath, amssymb, amsthm}
-\usepackage{commath}
-\usepackage{graphicx}
-\usepackage{multicol}        
-\usepackage{tcolorbox}       
-\usepackage{hyperref}        
-\usepackage{fancyhdr}
-\setlength{\headheight}{13pt}
-\usepackage[acronym]{glossaries}
-
-\usepackage{booktabs}
-\usepackage{colortbl}     
-
-\usepackage{fancyhdr}
-
-\usepackage{pgffor}
-
-\usepackage{amsthm}
-
-\tcbuselibrary{theorems}
+\documentclass[fontsize=10pt]{scrreprt}
 
 % Eigene Stylings
-\usepackage{styling/settings}        
-\usepackage{styling/info-boxen}
-\usepackage{styling/prefabs/default-expressions}
-\usepackage{styling/prefabs/short_commands}
+\usepackage{styling/settings}
+\usepackage{styling/style}
+% \usepackage{styling/info-boxen}
+% \usepackage{styling/prefabs/default-expressions}
+% \usepackage{styling/prefabs/short_commands}
 
-\title{Ana II Transkiption}
-\author{Finn Zeumer }
-\date{Mai 2025}
+% \title{Ana II Transkiption}
+% \author{Finn Zeumer }
+% \date{Mai 2025}
 
 \begin{document}
 
-\input{pages/title.tex}
+    \include{pages/title.tex} 
 
-\section*{Vorwort}
-    \input{pages/Vorwort}
-\newpage
+    % Römische Zahlen für Content bis zum Inhaltsverzeichnis
+    \pagenumbering{roman}
+    \include{pages/Vorwort.tex}
 
-\newpage
-\renewcommand{\contentsname}{Inhaltsverzeichnis}
-\tableofcontents
-\newpage
+    \renewcommand{\contentsname}{Inhaltsverzeichnis}
+    \tableofcontents
 
-\pagestyle{fancy}
-\fancyhf{}  % Clear existing header and footer
-\fancyhead[L]{\leftmark}  % Display section name on the left
-\fancyhead[R]{Ana II – SoSe 2025}
-\fancyfoot[C]{\thepage}
+    \newpage
 
-\setlength{\headheight}{14pt} 
-\setlength{\headsep}{10pt}
+    % Seitenzahl auf 1 Setzen für textlichen Inhalt
+    \pagenumbering{arabic}
 
-% -------------------
-% Kapitel 1: Topologische Grundlagen
-% -------------------
-\section{Topologische Grundlagen}
+    % ---------------------------------------------------------
+    % Kapitel 1: Fourierreihen
+    % ---------------------------------------------------------
+    \chapter{Fourierreihen}
+    \label{ch:1}
 
-\foreach \file in {
-    Einleitung,
-    Metrische_Raeume,
-    Konvergenz_und_Stetigkeit,
-    Kompaktheit,
-    Zusammenhang
-}{
-    \input{pages/chapter/Kapitel_1-Topologische_Grundlagen/\file}
-}
+    \foreach \file in {
+        Einleitung
+    }{
+        \input{pages/chapter/K1/\file}
+    }
 
-\newpage
+    \newpage
 
-% -------------------
-% Kapitel 2: Kurven
-% -------------------
-\section{Kurven in $\mathbb{R}^n$}
-
-\foreach \file in {
-    Einleitung,
-    Regularitaet_und_Tangentialvektor,
-    Rektifizierbarkeit_und_Bogenlaenge
-}{
-    \input{pages/chapter/Kapitel_2-Kurven/\file}
-}
-
-\newpage
-
-% -------------------
-% Kapitel 3: Differentialrechnung in mehreren Variablen
-% -------------------
-\section{Differentialrechnung in mehreren Variablen}
-
-\foreach \file in {
-    Partielle_Ableitungen_und_Richtungsableitungen,
-    Differenzierbarkeit,
-    Hoehere_Ableitungen,
-    Vertauschen_von_Differentiation_und_Integration,
-    Lokale_Extrema
-}{
-    \input{pages/chapter/Kapitel_3-Differentialrechnung_in_mehreren_Variablen/\file}
-}
-
-\newpage
-
-% -------------------
-% Kapitel 4: Gleichungen und Mannigfaltigkeiten 
-% -------------------
-\section{Gleichungen und Mannigfaltigkeiten}
-
-\foreach \file in {
-    Einleitung_K4,
-    Der_Banachsche_Fixpunktsatz,
-    Lokale_Diffeomorphismen,
-    Implizite_Funktionen_und_Untermannigfaltigkeiten
-}{
-    \input{pages/chapter/Kapitel_4-Gleichungen_und_Mannigfaltigkeiten/\file}
-}
 \end{document}

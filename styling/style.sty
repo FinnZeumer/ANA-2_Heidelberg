@@ -1,0 +1,192 @@
+\usepackage{amsmath}
+\usepackage{tcolorbox}   
+\usepackage{ifthen}
+\usepackage{graphicx}    
+\usepackage{caption}    
+\usepackage{bm}
+
+\usepackage{pdfpages} % notwendig zum Einbinden von PDF-Seiten
+\usepackage{hyperref} 
+\usepackage{pdflscape}
+
+% Wichtig für Pandas zum Importieren von pandas Latex Tables
+\usepackage{booktabs} 
+\usepackage{amstext} % for \text macro
+\usepackage{array}   % for \newcolumntype macro
+
+\usepackage{orcidlink}
+
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
+\newcolumntype{R}{>{$}r<{$}}
+\newcolumntype{C}{>{$}c<{$}} 
+
+% Kodierung und Sprache
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[ngerman]{babel}
+
+\RequirePackage{pdfpages}
+
+\RequirePackage{url}
+
+\RequirePackage{xcolor}
+
+%Heidelberg predefinded
+\definecolor{SiegelHintergrund}{RGB}{198,24,38}
+\definecolor{SiegelOutline}{RGB}{89,13,8}
+\definecolor{Sand}{RGB}{244,241,234}
+
+% Colors for PAP1
+\definecolor{BluePrime}{RGB}{51, 102, 204}
+\definecolor{BlueSec}{RGB}{102, 153, 255}
+\definecolor{BlueTri}{RGB}{0, 51, 153}
+
+% Colors for PAP2
+\definecolor{GreenPrime}{RGB}{27, 169, 127} % Title
+\definecolor{GreenSec}{RGB}{27, 114, 47} % Dark
+\definecolor{GreenTri}{RGB}{103, 218, 184} % Light
+
+% Font
+\RequirePackage{lmodern}
+
+\RequirePackage[
+  a4paper, % Papierformat
+  top=2cm,
+  bottom=2cm,
+  left= 2.5cm,
+  right= 2.5cm,
+  includehead, % Kopfzeile in Randberechnung
+  includefoot, % Fußzeile in Randberechnung
+  headheight=13.75pt % Höhe der Kopfzeile
+]{geometry}
+
+
+% Mathe und Einheiten
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{siunitx}
+
+% Grafiken
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+
+% Überschriften
+% \renewcommand\thechapter{\Roman{chapter}}
+\renewcommand{\thechapter}{\arabic{chapter}.}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\addtokomafont{chapter}{\color{GreenPrime}}
+\addtokomafont{section}{\color{GreenPrime}}
+
+\addtokomafont{chapter}{\rmfamily}
+\addtokomafont{section}{\rmfamily}
+
+
+
+% Grafiken
+\renewcommand{\thefigure}{\thechapter.\Roman{figure}}
+
+\usepackage[
+  labelfont=bf,                
+  textfont=it,                 
+  labelsep=colon,              
+  justification=raggedright,   
+  singlelinecheck=false        
+]{caption}
+
+
+
+% Formeln
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+
+% KOMA-Paket für Kopf-/Fußzeilen
+\RequirePackage[automark,headsepline,footsepline]{scrlayer-scrpage}
+
+\clearpairofpagestyles
+
+% Automatische Kapitelmarken aktivieren
+\automark[chapter]{chapter}
+
+
+% Kopfzeile
+\ihead{\raisebox{0.1cm}[0pt][0pt]{Finn Zeumer (hz334)}}
+\chead{\raisebox{0.1cm}[0pt][0pt]{Ana II}
+\ohead{\raisebox{0.1cm}[0pt][0pt]{\headmark}}
+
+\usepackage{lastpage}
+
+% Fußzeile
+\cfoot{\raisebox{-0.25cm}[0pt][0pt]{Seite \pagemark}}
+
+\newpairofpagestyles{headerOnly}{
+    \ihead{\raisebox{0.1cm}[0pt][0pt]{Finn Zeumer (hz334)}}
+    \chead{\raisebox{0.1cm}[0pt][0pt]{Ana II}
+    \ohead{\raisebox{0.1cm}[0pt][0pt]{\headmark}}
+    \cfoot{}
+}
+
+% Auf allen Seiten anwenden
+\pagestyle{scrheadings}
+
+% Kapitelanfang auch mit gleichen Kopfzeilen (keine Plain-Seiten mehr)
+\renewcommand*{\chapterpagestyle}{scrheadings}
+
+
+% Links und Referenzen
+\RequirePackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=GreenPrime,
+    citecolor=GreenPrime,
+    urlcolor=GreenPrime
+}
+
+\setlength{\columnsep}{1em}     % Abstand zwischen den Spalten
+\setlength{\columnseprule}{0pt} % Stärke der Trennlinie (0pt = keine Linie)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tabellen und Abbildungen %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{booktabs}
+\RequirePackage{siunitx}
+\RequirePackage{longtable}
+\RequirePackage[table]{xcolor}
+\RequirePackage{wrapfig}
+
+\DeclareCaptionFormat{custom}
+{
+    #1#2 \\ #3
+}
+
+\captionsetup
+{
+    format=custom,
+}
+
+
+% -------------------------------------------
+% Abbildungen design
+% -------------------------------------------
+\renewcommand{\thefigure}{\thechapter\Roman{figure}}
+
+% -------------------------------------------
+% Diagramm design
+% -------------------------------------------
+
+
+% -------------------------------------------
+% Tabellen design
+% -------------------------------------------
+
+\renewcommand{\thetable}{\thechapter\Roman{table}}
+\usepackage[justification=centering]{caption}
+
+% Manipulation der Table Caption
+\usepackage[labelfont=bf]{caption}
+\usepackage[textfont=none]{caption} 
+
+
+\sisetup{
+  detect-all,
+  table-number-alignment = center,
+  separate-uncertainty = true
+}
+
