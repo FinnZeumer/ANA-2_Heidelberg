@@ -1,8 +1,220 @@
 \section{Der Funktionen-Raum}
 \label{sec:1.1}
 
-Hier steht etwas zum Funktionen-Raum
+\begin{definition}{Riemann-Integrierbarkeit}
+    Eine Funktion \(f : [a,b] \to \mathbb{C}\) heißt \emph{Riemann-integrierbar} auf \([a,b]\),
+    falls \(\Re(f)\) und \(\Im(f)\) Riemann-integrierbar sind.
 
-\begin{definition}{Hallo}
-    Test
+    Man definiert das Integral komplexwertiger Funktionen durch
+    \[
+    \int_a^b f(x)\,dx
+    := \int_a^b \Re f(x)\,dx \;+\; i \int_a^b \Im f(x)\,dx.
+    \]
+\end{definition}
+
+\begin{bemerkungbox}
+    \begin{enumerate}
+        \item Uneigentliche Riemann-Integrale lassen sich analog für komplexwertige Funktionen definieren.
+        \item Die Rechenregeln des reellen Riemann-Integrals übertragen sich auf komplexwertige Integrale.
+    \end{enumerate}
+\end{bemerkungbox}
+
+\begin{definition}{Stückweise-Stetigkeit}
+    Eine Funktion \(f : [a,b] \to K\) (mit \(K = \mathbb{R}\) oder \(\mathbb{C}\)) heißt
+    \emph{stückweise stetig}, falls:
+
+    \begin{enumerate}
+        \item \(f\) auf \([a,b]\) beschränkt ist und nur endlich viele Unstetigkeitsstellen besitzt,
+        \item an jeder Unstetigkeitsstelle \(\xi\) die Grenzwerte
+        \[
+            f(\xi^\pm) := \lim_{h\to 0^\pm} f(\xi + h)
+        \]
+        existieren.
+    \end{enumerate}
+
+    Für \(\xi \in (a,b)\) setzt man zusätzlich die Konvention
+
+    \[
+    f(\xi) := \frac{f(\xi^-) + f(\xi^+)}{2}.
+    \]
+\end{definition}
+
+\begin{bemerkungbox}
+\begin{itemize}
+    \item Stückweise stetige Funktionen sind Riemann-integrierbar.
+    \item Die Menge aller stückweise stetigen Funktionen bildet den Vektorraum \(R[a,b]\).
+\end{itemize}
+\end{bemerkungbox}
+
+\begin{definition}{Sesquilinearform}
+    Für \(f,g \in R[a,b]\) definiert man
+    \[
+        (f,g) := \int_a^b f(x)\,\overline{g(x)}\,dx.
+    \]
+    Diese Abbildung ist wohldefiniert, da \(f,g \in R[a,b]\) und somit auch
+    \(f\cdot g \in R[a,b]\).
+\end{definition}
+
+\begin{bemerkungbox}
+    Für alle \(f,f_1,f_2,g,g_1,g_2 \in R[a,b]\) und Skalare \(\alpha,\beta\) gilt:
+    \begin{enumerate}
+        \item Linearität im ersten Argument:
+        \[
+        (\alpha f_1 + \beta f_2, g)
+        = \alpha (f_1,g) + \beta (f_2,g).
+        \]
+        \item Linearität im zweiten Argument:
+        \[
+        (f, \alpha g_1 + \beta g_2)
+        = \alpha (f,g_1) + \beta (f,g_2).
+        \]
+        \item Symmetrieeigenschaft:
+        \[
+        (f,g) = \overline{(g,f)}.
+        \]
+        \item Semidefinitheit:
+        \[
+        (f,f) = \int_a^b |f(x)|^2\,dx \ge 0.
+        \]
+    \end{enumerate}
+\end{bemerkungbox}
+
+\begin{definition}{Skalarprodukt}
+    Sei \(V\) ein Vektorraum über \(K\) (mit \(K = \mathbb{R}\) oder \(\mathbb{C}\)).
+    Eine Abbildung \((\cdot,\cdot): V \times V \to K\) heißt \emph{Skalarprodukt}, wenn:
+    \begin{enumerate}
+        \item Symmetrie:
+        \[
+            (v,u) = \overline{(u,v)}.
+        \]
+        \item Linearität:
+        \[
+            (\alpha v, u) = \alpha (v,u), \qquad (v, u+w) = (v,u) + (v,w).
+        \]
+        \item Positivdefinitheit:
+        \[
+            (v,v) \ge 0, \quad (v,v)=0 \iff v=0.
+        \]
+    \end{enumerate}
+\end{definition}
+
+\begin{lemma}
+    Für alle \(f,g \in R[a,b]\) gilt die Cauchy–Schwarz-Ungleichung:
+    \[
+        |(f,g)|^2 \le (f,f)\,(g,g).
+    \]
+\end{lemma}
+
+\begin{definition}{L\textsuperscript{2}-Norm}
+    Die durch das Skalarprodukt induzierte Norm auf \(R[a,b]\) ist definiert durch
+    \[
+        \|f\|_2 := \left( \int_a^b |f(x)|^2\,dx \right)^{1/2}.
+    \]
+\end{definition}
+
+\begin{bemerkungbox}
+    Die L\textsuperscript{2}-Norm erfüllt:
+    \begin{enumerate}
+        \item Definitheit: \(\|f\|_2 = 0 \iff f = 0\).
+        \item Homogenität: \(\|\alpha f\|_2 = |\alpha|\,\|f\|_2\).
+        \item Dreiecksungleichung:
+        \[
+            \|f+g\|_2 \le \|f\|_2 + \|g\|_2.
+        \]
+    \end{enumerate}
+\end{bemerkungbox}
+
+
+\begin{definition}{L\textsuperscript{2}-Konvergenz}
+    Eine Folge \((f_n)\subset R[a,b]\) konvergiert \emph{im quadratischen Mittel}
+    gegen \(f\in R[a,b]\), wenn
+    \[
+        \|f_n - f\|_2 \;\longrightarrow\; 0.
+    \]
+
+    Äquivalent:
+    \[
+        \int_a^b |f_n(x) - f(x)|^2\,dx \;\to\; 0.
+    \]
+\end{definition}
+
+\begin{bemerkungbox}
+    Für jede Folge \(f_n\) gilt:
+    \[
+        \|f_n - f\|_\infty^2 \le (b-a)\,\|f_n - f\|_2^2.
+    \]
+
+    Daraus folgt:
+    \[
+        \|f_n - f\|_\infty \to 0 \;\Rightarrow\; \|f_n - f\|_2 \to 0,
+    \]
+    aber die Umkehrung gilt im Allgemeinen nicht.
+\end{bemerkungbox}
+
+\begin{beispielbox}
+    Betrachte \(f_n(x) = x^n\) auf \([-1,1]\). Dann gilt:
+    \[
+        \|f_n\|_2^2 = 2 \int_0^1 x^{2n}\,dx = \frac{2}{2n+1} \longrightarrow 0,
+    \]
+    also \(f_n \to 0\) in L\(^2\).
+
+    Punktweise gilt jedoch:
+    \[
+        f_n(1) = 1 \quad\text{für alle } n,
+    \]
+    also keine punktweise Konvergenz auf ganz \([-1,1]\).
+\end{beispielbox}
+
+\begin{definition}{L\textsuperscript{p}-Norm}
+    Für \(p \in [1,\infty)\) und \(f : [a,b] \to \mathbb{R}\) definiert man:
+    \[
+        \|f\|_p := \left( \int_a^b |f(x)|^p\,dx \right)^{1/p}.
+    \]
+    Für \(p=2\) erhält man die L\(^2\)-Norm.
+\end{definition}
+
+\begin{bemerkungbox}
+    Der Raum \(R[a,b]\) ist bezüglich der L\(^2\)-Norm nicht vollständig.
+    Es existieren Cauchy-Folgen in \(R[a,b]\), die keinen Grenzwert in
+    \(R[a,b]\) besitzen. Die Vervollständigung führt zum Raum \(L^2[a,b]\).
+\end{bemerkungbox}
+
+\begin{definition}{Orthogonalität}
+    Für \(f,g \in R[a,b]\) heißt \(f\) orthogonal zu \(g\), wenn
+    \[
+        (f,g) = 0.
+    \]
+    Eine Menge \(S \subset R[a,b]\) heißt \emph{orthogonal}, wenn für alle
+    \(f_i,f_j \in S\):
+    \[
+        (f_i,f_j) =
+        \begin{cases}
+            0, & i \ne j,\\
+            \|f_i\|_2^2, & i = j.
+        \end{cases}
+    \]
+\end{definition}
+
+
+\begin{satz}{Orthogonalität trigonometrischer Funktionen}
+    Die Funktionen
+    \[
+        c_0(x)=1,\quad c_k(x)=\cos(kx),\quad s_k(x)=\sin(kx),\quad k\in\mathbb{N},
+    \]
+    bilden auf \(R[0,2\pi]\) ein Orthogonalsystem bezüglich des L\(^2\)-Skalarprodukts.
+    Es gilt:
+    \[
+        \int_0^{2\pi} c_k(x)c_l(x)\,dx = \pi\,\delta_{kl},\qquad
+        \int_0^{2\pi} s_k(x)s_l(x)\,dx = \pi\,\delta_{kl},
+    \]
+    \[
+        \int_0^{2\pi} c_k(x)s_l(x)\,dx = 0.
+    \]
+\end{satz}
+
+\begin{definition}{Periodische Funktion}
+    Eine Funktion \(f:\mathbb{R}\to K\) heißt \(L\)-periodisch, wenn
+    \[
+        f(x+L)=f(x)\quad\forall x\in\mathbb{R}.
+    \]
 \end{definition}

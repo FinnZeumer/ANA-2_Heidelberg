@@ -78,10 +78,6 @@
     coltitle=black,
     fonttitle=\bfseries,
     title={\textbf{\thesection.\theDefCounter}\quad Definition: #2},
-    % --- Eintrag ins Definitionsverzeichnis ---
-    after upper={%
-        \addcontentsline{def}{definition}{\protect\numberline{\thesection.\theDefCounter} -- #2}%    
-        },
     #1
 }
 

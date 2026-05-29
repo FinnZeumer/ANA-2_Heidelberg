@@ -3,10 +3,9 @@
 % Eigene Stylings
 \usepackage{styling/settings}
 \usepackage{styling/style}
+\usepackage{styling/prefabs/short_commands}
 \usepackage{styling/info-boxen}
 % \usepackage{styling/prefabs/default-expressions}
-% \usepackage{styling/prefabs/short_commands}
-
 
 \begin{document}
 
@@ -15,6 +14,7 @@
     % Römische Zahlen für Content bis zum Inhaltsverzeichnis
     \pagenumbering{roman}
     \include{pages/Vorwort.tex}
+    \include{pages/Vorlesungsverzeichnis.tex}
 
     \renewcommand{\contentsname}{Inhaltsverzeichnis}
     \tableofcontents
@@ -39,5 +39,9 @@
     }
 
     \newpage
+
+    % \clearpage
+    \listofdefinitions
+
 
 \end{document}
