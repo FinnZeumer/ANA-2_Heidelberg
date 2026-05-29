@@ -36,15 +36,11 @@
 \definecolor{SiegelOutline}{RGB}{89,13,8}
 \definecolor{Sand}{RGB}{244,241,234}
 
-% Colors for PAP1
+% Blue colors
 \definecolor{BluePrime}{RGB}{51, 102, 204}
 \definecolor{BlueSec}{RGB}{102, 153, 255}
 \definecolor{BlueTri}{RGB}{0, 51, 153}
 
-% Colors for PAP2
-\definecolor{GreenPrime}{RGB}{27, 169, 127} % Title
-\definecolor{GreenSec}{RGB}{27, 114, 47} % Dark
-\definecolor{GreenTri}{RGB}{103, 218, 184} % Light
 
 % Font
 \RequirePackage{lmodern}
@@ -73,8 +69,8 @@
 % \renewcommand\thechapter{\Roman{chapter}}
 \renewcommand{\thechapter}{\arabic{chapter}.}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
-\addtokomafont{chapter}{\color{GreenPrime}}
-\addtokomafont{section}{\color{GreenPrime}}
+\addtokomafont{chapter}{\color{BluePrime}}
+\addtokomafont{section}{\color{BluePrime}}
 
 \addtokomafont{chapter}{\rmfamily}
 \addtokomafont{section}{\rmfamily}
@@ -93,7 +89,6 @@
 ]{caption}
 
 
-
 % Formeln
 \renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 
@@ -108,7 +103,7 @@
 
 % Kopfzeile
 \ihead{\raisebox{0.1cm}[0pt][0pt]{Finn Zeumer (hz334)}}
-\chead{\raisebox{0.1cm}[0pt][0pt]{Ana II}
+\chead{\raisebox{0.1cm}[0pt][0pt]{Analysis II}}
 \ohead{\raisebox{0.1cm}[0pt][0pt]{\headmark}}
 
 \usepackage{lastpage}
@@ -118,7 +113,7 @@
 
 \newpairofpagestyles{headerOnly}{
     \ihead{\raisebox{0.1cm}[0pt][0pt]{Finn Zeumer (hz334)}}
-    \chead{\raisebox{0.1cm}[0pt][0pt]{Ana II}
+    \chead{\raisebox{0.1cm}[0pt][0pt]{Analysis II}}
     \ohead{\raisebox{0.1cm}[0pt][0pt]{\headmark}}
     \cfoot{}
 }
@@ -134,9 +129,9 @@
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=GreenPrime,
-    citecolor=GreenPrime,
-    urlcolor=GreenPrime
+    linkcolor=BluePrime,
+    citecolor=BluePrime,
+    urlcolor=BluePrime
 }
 
 \setlength{\columnsep}{1em}     % Abstand zwischen den Spalten

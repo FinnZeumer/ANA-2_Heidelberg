@@ -3,13 +3,10 @@
 % Eigene Stylings
 \usepackage{styling/settings}
 \usepackage{styling/style}
-% \usepackage{styling/info-boxen}
+\usepackage{styling/info-boxen}
 % \usepackage{styling/prefabs/default-expressions}
 % \usepackage{styling/prefabs/short_commands}
 
-% \title{Ana II Transkiption}
-% \author{Finn Zeumer }
-% \date{Mai 2025}
 
 \begin{document}
 
@@ -34,7 +31,9 @@
     \label{ch:1}
 
     \foreach \file in {
-        Einleitung
+        Einleitung,
+        1.1,
+        1.2
     }{
         \input{pages/chapter/K1/\file}
     }

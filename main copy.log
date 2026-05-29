@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.24)  8 MAY 2026 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.24)  8 MAY 2026 12:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -915,7 +915,8 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count355
 \l__pdf_internal_box=\box94
-) (./main copy.aux)
+)
+No file "main copy".aux.
 \openout1 = `"main copy.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -936,7 +937,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count356
 \scratchdimen=\dimen322
@@ -1101,10 +1102,10 @@ l.65     }
 
  
 Here is how much of TeX's memory you used:
- 38845 strings out of 474222
- 840304 string characters out of 5748733
+ 38842 strings out of 474222
+ 840250 string characters out of 5748733
  1935975 words of memory out of 5000000
- 60523 multiletter control sequences out of 15000+600000
+ 60522 multiletter control sequences out of 15000+600000
  609169 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,20n,121p,10956b,932s stack positions out of 10000i,1000n,20000p,200000b,200000s

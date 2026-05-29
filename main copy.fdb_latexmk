@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1778235945.40565 "/home/anonymous/Documents/GitHub/ANA-2_Heidelberg/main copy.tex" "main copy.pdf" "main copy" 1778235947.4588 2
+["pdflatex"] 1778236574.602 "/home/anonymous/Documents/GitHub/ANA-2_Heidelberg/main copy.tex" "main copy.pdf" "main copy" 1778236576.59239 2
   "/etc/texmf/web2c/texmf.cnf" 1755987364.75982 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anonymous/Documents/GitHub/ANA-2_Heidelberg/main copy.tex" 1778235943.12022 2801 ed00b1afb7014e9a2d7b0be06cb58fe0 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -227,12 +227,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1755987391.31193 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1755987550 8214798 6c11317a4d2d7a529bedc60a376e93de ""
-  "main copy.aux" 1778235947.34398 671 88ace5e3d291b46a53d981e86f56c45e "pdflatex"
+  "main copy.aux" 1778236576.50669 671 88ace5e3d291b46a53d981e86f56c45e "pdflatex"
   "main copy.tex" 1778235943.12022 2801 ed00b1afb7014e9a2d7b0be06cb58fe0 ""
-  "main copy.toc" 1778235947.33798 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "pages/Vorwort.tex" 1778235179.86877 2584 c16d31f714eb559f5eb813db749bc6c1 ""
+  "main copy.toc" 1778236576.497 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "pages/Vorwort.tex" 1778236572.24227 2584 c8ccf0dc06abf1ff9b5f823f875b8a07 ""
   "pages/chapter/Kapitel_1-Topologische_Grundlagen/Einleitung.tex" 0 -1 0 ""
-  "pages/title.tex" 1778235421.2467 519 57297b89deb824b301dafb5b5a22b843 ""
+  "pages/title.tex" 1778236164.62084 510 b23343eed25e4e41f7413eea53f473a3 ""
   "styling/info-boxen.sty" 1778235179.87876 2500 c02abd79ff4bd85d53757fa6467ef5e7 ""
   "styling/prefabs/default-expressions.sty" 1778235179.87904 806 5bae6f9f852cd6806f08bebddf07e547 ""
   "styling/prefabs/short_commands.sty" 1778235179.87918 70 1a3442b63e34b6412c2a996a75170601 ""
