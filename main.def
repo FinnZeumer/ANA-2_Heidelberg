@@ -7,4 +7,23 @@
 \contentsline {definition}{\numberline {1.1.8} -- L\textsuperscript {p}-Norm}{4}{DefCounter.1.1.8}%
 \contentsline {definition}{\numberline {1.1.9} -- Orthogonalität}{4}{DefCounter.1.1.9}%
 \contentsline {definition}{\numberline {1.1.11} -- Periodische Funktion}{5}{DefCounter.1.1.11}%
-\contentsline {definition}{\numberline {1.2.1} -- Fourier-Reihe}{5}{DefCounter.1.2.1}%
+\contentsline {definition}{\numberline {1.2.1} -- Fourier-Reihe}{6}{DefCounter.1.2.1}%
+\contentsline {definition}{\numberline {2.1.1} -- Metrik, metrischer Raum}{9}{DefCounter.2.1.1}%
+\contentsline {definition}{\numberline {2.1.2} -- Norm, normierter Raum}{9}{DefCounter.2.1.2}%
+\contentsline {definition}{\numberline {2.1.5} -- Offene und abgeschlossene Kugeln}{9}{DefCounter.2.1.5}%
+\contentsline {definition}{\numberline {2.1.6} -- Beschränkte Menge}{9}{DefCounter.2.1.6}%
+\contentsline {definition}{\numberline {2.1.7} -- Konvergenz von Folgen}{9}{DefCounter.2.1.7}%
+\contentsline {definition}{\numberline {2.1.8} -- Häufungspunkt}{10}{DefCounter.2.1.8}%
+\contentsline {definition}{\numberline {2.1.9} -- Konvergenz in \(\mathbb {R}^n\)}{10}{DefCounter.2.1.9}%
+\contentsline {definition}{\numberline {2.1.12} -- Cauchy-Folge}{10}{DefCounter.2.1.12}%
+\contentsline {definition}{\numberline {2.1.14} -- Vollständiger metrischer Raum}{10}{DefCounter.2.1.14}%
+\contentsline {definition}{\numberline {2.2.1} -- Offene und abgeschlossene Mengen}{12}{DefCounter.2.2.1}%
+\contentsline {definition}{\numberline {2.2.5} -- Rand einer Menge}{12}{DefCounter.2.2.5}%
+\contentsline {definition}{\numberline {2.2.6} -- Offene Kugel}{12}{DefCounter.2.2.6}%
+\contentsline {definition}{\numberline {2.2.7} -- Offene und abgeschlossene Mengen}{12}{DefCounter.2.2.7}%
+\contentsline {definition}{\numberline {2.2.11} -- Rand einer Menge}{13}{DefCounter.2.2.11}%
+\contentsline {definition}{\numberline {2.2.12} -- Inneres und Abschluss}{13}{DefCounter.2.2.12}%
+\contentsline {definition}{\numberline {2.2.13} -- Topologie}{13}{Item.17}%
+\contentsline {definition}{\numberline {2.3.1} -- Kompaktheit}{14}{DefCounter.2.3.1}%
+\contentsline {definition}{\numberline {2.4.1} -- Skalarprodukt}{15}{DefCounter.2.4.1}%
+\contentsline {definition}{\numberline {2.4.3} -- Orthogonalität und Orthonormalsystem}{15}{DefCounter.2.4.3}%

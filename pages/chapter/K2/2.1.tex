@@ -1,3 +1,113 @@
-\section{Normierte und metrische Räume}
-\label{sec:2.1}
+\section{Topologie metrischer Räume}
+\label{sec:2.2}
 
+\begin{definition}{Metrik, metrischer Raum}
+    Sei \(X\) eine Menge. Eine Abbildung \(d : X \times X \to \mathbb{R}\) heißt Metrik, wenn für alle \(x,y,z \in X\) gilt:
+    \[
+        \text{(M1)}\; d(x,y)=0 \Rightarrow x=y,\qquad \text{(M2)}\; d(x,y)=d(y,x),\qquad \text{(M3)}\; d(x,z) \le d(x,y) + d(y,z).
+    \]
+    Ein metrischer Raum ist ein Paar \((X,d)\), bestehend aus einer Menge \(X\) und einer Metrik \(d\).
+\end{definition}
+
+\begin{definition}{Norm, normierter Raum}
+    Sei \(V\) ein Vektorraum über \(\mathbb{R}\) oder \(\mathbb{C}\). Eine Abbildung \(\|\cdot\| : V \to \mathbb{R}\) heißt Norm, wenn für alle \(x,y \in V\) und \(\alpha\) gilt:
+    \[
+        \text{(N1)}\; \|x\| = 0 \Leftrightarrow x=0,\qquad \text{(N2)}\; \|\alpha x\| = |\alpha|\,\|x\|,\qquad \text{(N3)}\; \|x+y\| \le \|x\| + \|y\|.
+    \]
+    Das Paar \((V,\|\cdot\|)\) heißt normierter Raum.
+\end{definition}
+
+\begin{lemma}
+    Sei \((V,\|\cdot\|)\) ein normierter Raum. Dann definiert
+    \[
+        d(x,y) := \|x-y\|
+    \]
+    eine Metrik auf \(V\).
+\end{lemma}
+
+\begin{lemma}
+    Sei \((X,d)\) ein metrischer Raum und \(x,y,z \in X\). Dann gilt:
+    \[
+        |d(x,z) - d(y,z)| \le d(x,y).
+    \]
+\end{lemma}
+
+\begin{definition}{Offene und abgeschlossene Kugeln}
+    Sei \((X,d)\) ein metrischer Raum. Für \(x \in X\) und \(R>0\) definiert man:
+    \[
+        B_R(x) := \{y \in X : d(x,y) < R\},\qquad \overline{B}_R(x) := \{y \in X : d(x,y) \le R\}.
+    \]
+\end{definition}
+
+\begin{definition}{Beschränkte Menge}
+    Sei \((X,d)\) ein metrischer Raum. Eine Menge \(E \subset X\) heißt beschränkt, wenn es ein \(x \in X\) und \(R>0\) gibt mit
+    \[
+        E \subset B_R(x).
+    \]
+\end{definition}
+
+\begin{definition}{Konvergenz von Folgen}
+    Sei \((X,d)\) ein metrischer Raum und \((x_k)\) eine Folge in \(X\). Die Folge konvergiert gegen \(a \in X\), wenn gilt:
+    \[
+        \forall \varepsilon>0\;\exists k_0:\; d(x_k,a) < \varepsilon \text{ für alle } k \ge k_0.
+    \]
+    Man schreibt \(x_k \to a\).
+\end{definition}
+
+\begin{definition}{Häufungspunkt}
+    Sei \((X,d)\) ein metrischer Raum und \((x_k)\) eine Folge in \(X\). Ein Punkt \(a \in X\) heißt Häufungspunkt der Folge, wenn eine Teilfolge \((x_{k_j})\) existiert mit
+    \[
+        x_{k_j} \to a.
+    \]
+\end{definition}
+
+\begin{definition}{Konvergenz in \(\mathbb{R}^n\)}
+    Sei \(x_k = (x_{k,1},\dots,x_{k,n}) \in \mathbb{R}^n\) und \(a = (a_1,\dots,a_n)\). Dann gilt:
+    \[
+        x_k \to a \Leftrightarrow \|x_k - a\|_\infty \to 0,\qquad \|x\|_\infty = \max_i |x_i|.
+    \]
+
+    Dies ist äquivalent zu:
+    \[
+        x_{k,i} \to a_i \text{ für alle } i.
+    \]
+\end{definition}
+
+\begin{satz}{Bolzano-Weierstraß}
+    Jede beschränkte Folge in \(\mathbb{R}^n\) besitzt eine konvergente Teilfolge.
+\end{satz}
+
+\begin{satz}{Äquivalenz der Normen}
+    In \(\mathbb{R}^n\) sind alle Normen äquivalent. Zu jeder Norm \(\|\cdot\|\) existieren Konstanten \(m,M>0\) mit
+    \[
+        m\|x\|_\infty \le \|x\| \le M\|x\|_\infty \quad \text{für alle } x \in \mathbb{R}^n.
+    \]
+\end{satz}
+
+\begin{definition}{Cauchy-Folge}
+    Sei \((X,d)\) ein metrischer Raum. Eine Folge \((x_k)\) in \(X\) heißt Cauchy-Folge, falls für alle \(\varepsilon>0\) ein \(k^*\in\mathbb{N}\) existiert, sodass
+    \[
+        d(x_k,x_m) < \varepsilon \quad \text{für alle } k,m \ge k^*.
+    \]
+\end{definition}
+
+\begin{satz}{Eigenschaften von Cauchy-Folgen}
+    In einem metrischen Raum gilt:
+    \begin{itemize}
+        \item[(i)] Jede konvergente Folge ist eine Cauchy-Folge.
+        \item[(ii)] Jede Cauchy-Folge ist beschränkt.
+        \item[(iii)] Eine Cauchy-Folge hat höchstens einen Häufungspunkt. Sie konvergiert genau dann, wenn sie einen Häufungspunkt besitzt.
+    \end{itemize}
+\end{satz}
+
+\begin{definition}{Vollständiger metrischer Raum}
+    Ein metrischer Raum heißt vollständig, wenn jede Cauchy-Folge in ihm konvergiert.
+\end{definition}
+
+\begin{korollar}
+    In einem vollständigen metrischen Raum ist eine Folge genau dann eine Cauchy-Folge, wenn sie konvergiert.
+\end{korollar}
+
+\begin{satz}{Vollständigkeit von \(\mathbb{R}^n\)}
+    Der Raum \(\mathbb{R}^n\) ist vollständig. Als normierter Raum ist er daher ein Banachraum.
+\end{satz}

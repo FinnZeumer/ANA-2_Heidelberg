@@ -1,0 +1,42 @@
+\newpage
+\section{Geometrie in $\mathbf{\mathbb{K}^n}$}
+\label{2.4}
+
+\begin{definition}{Skalarprodukt}
+    Sei $V$ ein Vektorraum über $K\in\{\mathbb{R},\mathbb{C}\}$. Eine Abbildung $(\cdot,\cdot):V\times V\to K$ heißt Skalarprodukt, wenn gilt:
+    \[
+        (x,x)\ge 0,\ (x,x)=0\Rightarrow x=0,\qquad
+        (x,y)=(y,x),\qquad
+        (ax_1+bx_2,y)=a(x_1,y)+b(x_2,y).
+    \]
+\end{definition}
+
+\begin{korollar}
+    Sei $(X,d)$ ein metrischer Raum und $K\subset X$ kompakt. Ist $A\subset K$ abgeschlossen, so ist $A$ kompakt.
+\end{korollar}
+
+
+\begin{definition}{Orthogonalität und Orthonormalsystem}
+    Vektoren $x,y\in K^n$ heißen orthogonal, falls $(x,y)=0$. Ein System $\{a(1),\dots,a(m)\}$ heißt Orthogonalsystem, wenn $(a(k),a(\ell))=0$ für $k\ne\ell$. Ist zusätzlich $(a(k),a(k))=1$, so heißt es Orthonormalsystem.
+\end{definition}
+
+\begin{lemma}
+    Sei $\{a(k)\}_{k=1}^n$ eine Orthonormalbasis von $K^n$. Dann besitzt jeder Vektor $x\in K^n$ die Darstellung
+    \[
+        x=\sum_{k=1}^n (x,a(k))\,a(k),
+    \]
+    und es gilt die Parseval-Gleichung
+    \[
+        \|x\|^2=\sum_{k=1}^n |(x,a(k))|^2.
+    \]
+\end{lemma}
+
+\begin{satz}{Gram--Schmidt}
+    Sei $\{a(1),\dots,a(n)\}$ eine Basis von $K^n$. Dann entsteht durch
+    \[
+        b(1)=\frac{a(1)}{\|a(1)\|},\qquad
+        \tilde{b}(k)=a(k)-\sum_{j=1}^{k-1}(a(k),b(j))\,b(j),\qquad
+        b(k)=\frac{\tilde{b}(k)}{\|\tilde{b}(k)\|}
+    \]
+    eine Orthonormalbasis $\{b(1),\dots,b(n)\}$.
+\end{satz}
