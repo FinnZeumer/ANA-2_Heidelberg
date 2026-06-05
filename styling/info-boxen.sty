@@ -5,6 +5,10 @@
 \tcbuselibrary{listings, breakable, skins}
 \tcbuselibrary{theorems}
 
+\RequirePackage{xparse}
+\RequirePackage{nameref}
+\RequirePackage{hyperref}
+
 % Grundlegendes Box-Design
 \tcbset{
   colback=white,
@@ -18,6 +22,7 @@
   enhanced,
   breakable
 }
+
 
 % Farben
 \definecolor{lightblue}{RGB}{230,240,255}
@@ -71,19 +76,47 @@
 }
 
 
+\newcommand{\Counter}{\thesection.\arabic{DefCounter}}
+
+\makeatletter
+% Storage for the label key
+\def\definitionlabel{}
+
+\tcbset{
+  deflabel/.store in=\definitionlabel,
+  deflabel={}
+}
+
 % Define theorem-like environments using the custom counter
-\newtcolorbox[use counter=DefCounter]{definition}[2][]{%
+\NewTColorBox[use counter=DefCounter]{definition}{O{} m}{
     colback=lightblue,
     colframe=white,
     coltitle=black,
     fonttitle=\bfseries,
-    title={\textbf{\thesection.\theDefCounter}\quad Definition: #2},
+    title={\textbf{\Counter}\quad Definition: #2},
+    % --- Vergabe des Labes ---
+    before upper={
+      \ifx\definitionlabel\@empty
+      \else
+          \phantomsection
+          \def\@currentlabelname{#2}%
+          \edef\@currentlabel{\Counter}%
+          \label{def:\definitionlabel}%
+      \fi
+    },
     % --- Eintrag ins Definitionsverzeichnis ---
     after upper={%
         \addcontentsline{def}{definition}{\protect\numberline{\thesection.\theDefCounter} -- #2}%    
         },
     #1
 }
+\makeatother
+
+% \AtBeginEnvironment{definition}{%
+%   \edef\temp{\noexpand\label{def:\thesection.\theDefCounter}}%
+%   \temp
+% }
+
 
 \newtcolorbox[use counter=DefCounter]{satz}[2][]{%
     colback=lightgray,

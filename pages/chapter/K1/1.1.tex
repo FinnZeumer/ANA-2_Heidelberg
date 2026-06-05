@@ -2,13 +2,13 @@
 \label{sec:1.1}
 
 \begin{definition}{Riemann-Integrierbarkeit}
-    Eine Funktion \(f : [a,b] \to \mathbb{C}\) heißt \emph{Riemann-integrierbar} auf \([a,b]\),
+    Eine Funktion \(f : [a,b] \to \mathbb{C}\) heißt \emph{Riemann-integrierbar} auf \([a,b] \subset \R\),
     falls \(\Re(f)\) und \(\Im(f)\) Riemann-integrierbar sind.
 
     Man definiert das Integral komplexwertiger Funktionen durch
     \[
-    \int_a^b f(x)\,dx
-    := \int_a^b \Re f(x)\,dx \;+\; i \int_a^b \Im f(x)\,dx.
+    \int_a^b f(x)dx
+    := \int_a^b \Re f(x)dx + \i \int_a^b \Im f(x)dx.
     \]
 \end{definition}
 
@@ -16,99 +16,151 @@
     \begin{enumerate}
         \item Uneigentliche Riemann-Integrale lassen sich analog für komplexwertige Funktionen definieren.
         \item Die Rechenregeln des reellen Riemann-Integrals übertragen sich auf komplexwertige Integrale.
+        Insbesondere gilt:
+        $$
+        \begin{aligned}
+        \int_{a}^{b} \overline{f(x)}dx &= \int_{a}^{b} \left(\Re f(x) - \i\Im f(x)\right) dx \\
+            &= \underbrace{\int_{a}^{b} \Re f(x) dx}_{\Re\left(\int_{a}^{b}f(x)dx\right)}  -  \i  \underbrace{\int_{a}^{b} \Im f(x) dx}_{\Im\left(\int_{a}^{b}f(x)dx\right)}  \\
+            &= \overline{\int_{a}^{b}f(x)dx}
+        \end{aligned}
+        $$
     \end{enumerate}
 \end{bemerkungbox}
 
 \begin{definition}{Stückweise-Stetigkeit}
-    Eine Funktion \(f : [a,b] \to K\) (mit \(K = \mathbb{R}\) oder \(\mathbb{C}\)) heißt
+    Eine Funktion \(f : [a,b] \to \K\) (mit \(\K = \mathbb{R}\) oder \(\mathbb{C}\)) heißt
     \emph{stückweise stetig}, falls:
 
     \begin{enumerate}
         \item \(f\) auf \([a,b]\) beschränkt ist und nur endlich viele Unstetigkeitsstellen besitzt,
-        \item an jeder Unstetigkeitsstelle \(\xi\) die Grenzwerte
+        \item an jeder Unstetigkeitsstelle \(\xi \in [a,b]\) die links- bzw. rechtswertigen Grenzwerte
         \[
-            f(\xi^\pm) := \lim_{h\to 0^\pm} f(\xi + h)
+            f(\xi^\pm) := \lim_{h\downarrow 0} f(\xi \pm h)
         \]
         existieren.
     \end{enumerate}
 
     Für \(\xi \in (a,b)\) setzt man zusätzlich die Konvention
-
     \[
-    f(\xi) := \frac{f(\xi^-) + f(\xi^+)}{2}.
+        f(\xi) := \frac{f(\xi^-) + f(\xi^+)}{2}.
     \]
 \end{definition}
 
 \begin{bemerkungbox}
-\begin{itemize}
-    \item Stückweise stetige Funktionen sind Riemann-integrierbar.
-    \item Die Menge aller stückweise stetigen Funktionen bildet den Vektorraum \(R[a,b]\).
-\end{itemize}
+    \begin{itemize}
+        \item Stückweise stetige Funktionen sind Riemann-integrierbar.
+        \item Die Menge aller stückweise stetigen Funktionen bildet den Vektorraum \(\mathcal{R}[a,b]\).
+    \end{itemize}
 \end{bemerkungbox}
 
-\begin{definition}{Sesquilinearform}
-    Für \(f,g \in R[a,b]\) definiert man
+\begin{satz}{Lebesgue (Ana 1)}
+    Sei \(f:[a,b]\to\mathbb{R}\). Dann ist \(f\) Riemann-integrierbar \(\Longleftrightarrow\)
+    \(f\) auf \([a,b]\) beschränkt und fast überall stetig.
+
+    Hierbei bedeutet "fast überall": bis auf eine Nullmenge von Unstetigkeitsstellen.
+
+    Nullmenge: Eine Menge \(N\subset\mathbb{R}\) heißt \emph{Nullmenge}, wenn sie durch endlich viele oder abzählbar unendlich viele Intervalle \((I_k)_{k\in\mathbb{N}}\) überdeckt werden kann derart, dass für jedes \(\varepsilon>0\) eine Überdeckung mit
+        \[
+            N\subset\bigcup_{k=1}^{\infty} I_k
+            \qquad\text{und}\qquad
+            \sum_{k=1}^{\infty} |I_k| < \varepsilon
+        \]
+    existiert. Anschaulich bedeutet das, dass die Gesamtlänge der überdeckenden Intervalle beliebig klein gewählt werden kann.
+\end{satz}
+
+\begin{definition}[deflabel=Sesquilinearform]{Sesquilinearform}
+    Für \(f,g \in \cR[a,b]\) definiert man
     \[
-        (f,g) := \int_a^b f(x)\,\overline{g(x)}\,dx.
+        (f,g) := \int_a^b f(x)\overline{g(x)}dx.
     \]
-    Diese Abbildung ist wohldefiniert, da \(f,g \in R[a,b]\) und somit auch
-    \(f\cdot g \in R[a,b]\).
+    Diese Abbildung ist wohldefiniert, da \(f,g \in \cR[a,b]\) und somit auch
+    \(f\cdot g \in \cR[a,b]\).
 \end{definition}
 
 \begin{bemerkungbox}
-    Für alle \(f,f_1,f_2,g,g_1,g_2 \in R[a,b]\) und Skalare \(\alpha,\beta\) gilt:
+    Für alle \(f,f_1,f_2,g,g_1,g_2 \in \cR[a,b]\) und Skalare \(\alpha,\beta \in \C\) gilt:
     \begin{enumerate}
         \item Linearität im ersten Argument:
         \[
-        (\alpha f_1 + \beta f_2, g)
-        = \alpha (f_1,g) + \beta (f_2,g).
+            (\alpha f_1 + \beta f_2, g)
+            = \alpha (f_1,g) + \beta (f_2,g).
         \]
         \item Linearität im zweiten Argument:
         \[
-        (f, \alpha g_1 + \beta g_2)
-        = \alpha (f,g_1) + \beta (f,g_2).
+            (f, \alpha g_1 + \beta g_2)
+            = \alpha (f,g_1) + \beta (f,g_2).
         \]
-        \item Symmetrieeigenschaft:
+        \item Symmetrieeigenschaft (symmetrisch hermitisch):
         \[
-        (f,g) = \overline{(g,f)}.
+            (f,g) = \overline{(g,f)}.
         \]
         \item Semidefinitheit:
         \[
-        (f,f) = \int_a^b |f(x)|^2\,dx \ge 0.
+            (f,f) = \int_a^b |f(x)|^2dx \ge 0.
+        \]
+        \item Aus 4. und \cdef{Sesquilinearform} folgt:
+        \[
+            (f,f) = 0 \Ra f=0 \text{ auf } [a,b]
         \]
     \end{enumerate}
 \end{bemerkungbox}
 
 \begin{definition}{Skalarprodukt}
-    Sei \(V\) ein Vektorraum über \(K\) (mit \(K = \mathbb{R}\) oder \(\mathbb{C}\)).
-    Eine Abbildung \((\cdot,\cdot): V \times V \to K\) heißt \emph{Skalarprodukt}, wenn:
+    Sei \(V\) ein Vektorraum über \(\K\) (mit \(\K = \mathbb{R}\) oder \(\mathbb{C}\)).
+    Eine Abbildung \(\skalP{\cdot}{\cdot}: V \times V \to \K\) heißt \emph{Skalarprodukt}, wenn:
     \begin{enumerate}
         \item Symmetrie:
         \[
-            (v,u) = \overline{(u,v)}.
+            \skalP{v}{u} = \overline{\skalP{u}{v}}.
         \]
         \item Linearität:
         \[
-            (\alpha v, u) = \alpha (v,u), \qquad (v, u+w) = (v,u) + (v,w).
+            \skalP{\alpha v}{u} = \alpha \skalP{v}{u}, \qquad \skalP{v}{u+w} = \skalP{v}{u} + \skalP{v}{w}.
         \]
         \item Positivdefinitheit:
         \[
-            (v,v) \ge 0, \quad (v,v)=0 \iff v=0.
+            \skalP{v}{v} \ge 0, \quad \skalP{v}{v}=0 \iff v=0.
         \]
     \end{enumerate}
 \end{definition}
 
+\begin{bemerkungbox}
+    Positivdefinite symmetrische bilinearform $\K = \R$ \\
+    Positivdefinite hermitische sesquilinerform $\K = \C$ \\
+    Auf dem Raum $\cR[a,b]$ wird $\skalP{.}{.}$ das $L^2$-Skalarprodukt genannt.
+\end{bemerkungbox}
+
 \begin{lemma}
-    Für alle \(f,g \in R[a,b]\) gilt die Cauchy–Schwarz-Ungleichung:
+    Für alle \(f,g \in \cR[a,b]\) gilt die Cauchy--Schwarz-Ungleichung:
     \[
-        |(f,g)|^2 \le (f,f)\,(g,g).
+        |(f,g)|^2 \le (f,f)(g,g).
     \]
 \end{lemma}
 
+\begin{beweisbox}
+    $$
+    \begin{aligned}
+        &1) \\
+         &\text{Für } g \equiv 0 \quad \text{gilt} \quad \text{trivialerweise} \\
+            &\lvert (f,g) \rvert^{2} = 0 = (f,f) \cdot \underbrace{(g,g)}_{=0}\\[0.5em]
+        &2) \\
+         &g \not\equiv 0, \quad \alpha \in \mathbb{K}  \text{bel.}\\
+            &0 \le (f + \alpha g , f + \alpha g) = (f,f) + \alpha (g,f) + \overline{\alpha} (f,g) + \frac{\alpha \cdot \overline{\alpha}}{\lvert g \rvert^{2}} (g,g)\\[0.5em]
+            &\text{Setze} \quad \alpha := - \frac{(f,g)}{(g,g)} = - \frac{\overline{(g,f)}}{(g,g)} \\[0.5em]
+            &\overline{\alpha} = - \frac{(g,f)}{(g,g)} \\[0.5em]
+            &0 \le (f,f) - \frac{(f,g)(g,f)}{(g,g)} = (f,f) - \frac{(g,f) \cdot (f,g)}{(g,g)} + \frac{(f,g) \cdot (g,f)}{(g,g)^{2}}\\
+            &= (f,f) - \frac{(g,f) \cdot (f,g)}{(g,g)} = (f,f) - \frac{\lvert (f,g) \rvert^{2}}{(g,g)} \\
+            &[(g,f)(f,g) = \overline{(f,g)} \cdot (f,g) = \lvert (f,g) \rvert^{2}]\\[0.5em]
+            &\Rightarrow \quad 0 \le (f,f) \cdot (g,g) - \lvert (f,g) \rvert^{2} \quad \text{q.e.d.}\\
+    \end{aligned}
+    $$
+\end{beweisbox}
+
+
 \begin{definition}{L\textsuperscript{2}-Norm}
-    Die durch das Skalarprodukt induzierte Norm auf \(R[a,b]\) ist definiert durch
+    Die durch das Skalarprodukt $\skalP{.}{.}$ induzierte L\textsuperscript{2}-Norm auf \(\cR[a,b]\) ist definiert durch
     \[
-        \|f\|_2 := \left( \int_a^b |f(x)|^2\,dx \right)^{1/2}.
+        \|f\|_{L^2} := \left( \int_a^b |f(x)|^2dx \right)^{1/2}.
     \]
 \end{definition}
 
@@ -116,37 +168,54 @@
     Die L\textsuperscript{2}-Norm erfüllt:
     \begin{enumerate}
         \item Definitheit: \(\|f\|_2 = 0 \iff f = 0\).
-        \item Homogenität: \(\|\alpha f\|_2 = |\alpha|\,\|f\|_2\).
-        \item Dreiecksungleichung:
         \[
-            \|f+g\|_2 \le \|f\|_2 + \|g\|_2.
+            \lVert f \rVert = 0 \iff (f,f) = 0 \implies f \equiv 0 \quad \text{a.e } [a,b]\\ 
+            (\text{weil } f \in R[a,b])
         \]
-    \end{enumerate}
+
+        \item Homogenität: \(\|\alpha f\|_2 = |\alpha|\|f\|_2\).
+        \[
+            \lVert \alpha f \rVert = \sqrt{(\alpha f, \alpha f)}\\
+            = \sqrt{\lvert \alpha \rvert^2 (f,f)} = \lvert \alpha \rvert \sqrt{(f,f)} = \lvert \alpha \rvert \cdot \lVert f \rVert\\[0.5em]
+        \]
+
+        \item Dreiecksungleichung $\|f+g\|_2 \le \|f\|_2 + \|g\|_2$.:
+        \[
+            \begin{aligned}
+                \lVert f + g \rVert &= (f+g, f+g)^{\frac{1}{2}}\\
+                & = (\lVert f \rVert^2 + (f,g) + (g,f) + \lVert g \rVert^2)^{\frac{1}{2}} \\[0.5em]
+                & \quad \text{C.S.-Ungl.}\\
+                &\leq   (\lVert f \rVert^2 + 2 \lVert f \rVert \lVert g \rVert + \lVert g \rVert^2)^{\frac{1}{2}}\\
+                & = \sqrt{(\lVert f \rVert + \lVert g \rVert)^2} = \lVert f \rVert + \lVert g \rVert\\
+            \end{aligned}
+        \]
+        \end{enumerate}
 \end{bemerkungbox}
 
 
 \begin{definition}{L\textsuperscript{2}-Konvergenz}
-    Eine Folge \((f_n)\subset R[a,b]\) konvergiert \emph{im quadratischen Mittel}
-    gegen \(f\in R[a,b]\), wenn
+    Seien $f_n \in \cR[a,b]m n \in \N, f\in \cR[a,b]$.
+    Eine Folge \((f_n)\) konvergiert gegen f im \emph{quadratischen Mittel}
+    \(f_n \underset{{L^2}}{\to} f\), wenn
     \[
-        \|f_n - f\|_2 \;\longrightarrow\; 0.
+        \|f_n - f\|_{L^2} \longrightarrow 0 \quad n \to \infty.
     \]
 
     Äquivalent:
     \[
-        \int_a^b |f_n(x) - f(x)|^2\,dx \;\to\; 0.
+        \|f_n - f\|_{L^2}^2 = \int_a^b |f_n(x) - f(x)|^2dx \to 0  \Lra \|f_n - f\|_{L^2} \to 0.
     \]
 \end{definition}
 
 \begin{bemerkungbox}
     Für jede Folge \(f_n\) gilt:
     \[
-        \|f_n - f\|_\infty^2 \le (b-a)\,\|f_n - f\|_2^2.
+        \|f_n - f\|_\infty^2 \le (b-a)\|f_n - f\|_2^2.
     \]
 
     Daraus folgt:
     \[
-        \|f_n - f\|_\infty \to 0 \;\Rightarrow\; \|f_n - f\|_2 \to 0,
+        \|f_n - f\|_\infty \to 0 \Rightarrow \|f_n - f\|_2 \to 0,
     \]
     aber die Umkehrung gilt im Allgemeinen nicht.
 \end{bemerkungbox}
@@ -154,7 +223,7 @@
 \begin{beispielbox}
     Betrachte \(f_n(x) = x^n\) auf \([-1,1]\). Dann gilt:
     \[
-        \|f_n\|_2^2 = 2 \int_0^1 x^{2n}\,dx = \frac{2}{2n+1} \longrightarrow 0,
+        \|f_n\|_2^2 = 2 \int_0^1 x^{2n}dx = \frac{2}{2n+1} \longrightarrow 0,
     \]
     also \(f_n \to 0\) in L\(^2\).
 
@@ -168,7 +237,7 @@
 \begin{definition}{L\textsuperscript{p}-Norm}
     Für \(p \in [1,\infty)\) und \(f : [a,b] \to \mathbb{R}\) definiert man:
     \[
-        \|f\|_p := \left( \int_a^b |f(x)|^p\,dx \right)^{1/p}.
+        \|f\|_p := \left( \int_a^b |f(x)|^pdx \right)^{1/p}.
     \]
     Für \(p=2\) erhält man die L\(^2\)-Norm.
 \end{definition}
@@ -204,11 +273,11 @@
     bilden auf \(R[0,2\pi]\) ein Orthogonalsystem bezüglich des L\(^2\)-Skalarprodukts.
     Es gilt:
     \[
-        \int_0^{2\pi} c_k(x)c_l(x)\,dx = \pi\,\delta_{kl},\qquad
-        \int_0^{2\pi} s_k(x)s_l(x)\,dx = \pi\,\delta_{kl},
+        \int_0^{2\pi} c_k(x)c_l(x)dx = \pi\delta_{kl},\qquad
+        \int_0^{2\pi} s_k(x)s_l(x)dx = \pi\delta_{kl},
     \]
     \[
-        \int_0^{2\pi} c_k(x)s_l(x)\,dx = 0.
+        \int_0^{2\pi} c_k(x)s_l(x)dx = 0.
     \]
 \end{satz}
 

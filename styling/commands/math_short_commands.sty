@@ -1,0 +1,50 @@
+% ----------------------------------------------------------------
+%   Shortent Symbols
+% ----------------------------------------------------------------
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\lra}{\leftrightarrow}
+
+\newcommand{\Ra}{\Rightarrow}
+
+
+% Zahlenräume
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\cR}{\mathcal{R}}
+
+% Verschönterte Symboliken
+\renewcommand{\i}{\textcolor{color1}{i}} %Herausheben von der imaginären Zahl
+\renewcommand{\d}[1]{\text{d} #1}
+
+% ----------------------------------------------------------------
+%   Shortent Enviroments
+% ----------------------------------------------------------------
+\newcommand{\eq}[2]{
+   \begin{equation}
+    \label{eq:#1}
+    #2
+  \end{equation}
+}
+
+% \newcommand{\cdef}[1]{Definition \ref{def:#1} (\nameref{def:#1})}
+% \newcommand{\cdef}[1]{\hyperref[def:#1]{Definition \ref*{def:#1} \nameref*{def:#1}}} % Definition zitieren
+\newcommand{\cdef}[1]{\hyperref[def:#1]{Definition \ref*{def:#1}}} % Definition zitieren
+
+
+% ----------------------------------------------------------------
+%   Anhang Listen
+% ----------------------------------------------------------------
+\makeatletter
+\newcommand{\ext@def}{def} % sagt LaTeX: die Endung für dieses Verzeichnis ist .def
+\newcommand{\listofdefinitions}{%
+  \chapter*{Definitionsverzeichnis}%
+  \addcontentsline{toc}{chapter}{Definitionsverzeichnis}%
+  \@starttoc{def}% liest def.def ein
+}
+% optional: Layout der Einträge im Verzeichnis
+\newcommand*\l@definition{\@dottedtocline{1}{1.5em}{2.3em}}
+\makeatother

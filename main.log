@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.16)  1 JUN 2026 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.16)  4 JUN 2026 08:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -891,7 +891,7 @@ Package siunitx Info: Option "separate-uncertainty" has been deprecated in
 (siunitx)             
 (siunitx)             Use "uncertainty-mode = separate" as a replacement.
 
-) (styling/prefabs/short_commands.sty) (styling/info-boxen.sty
+) (styling/commands/math_short_commands.sty) (styling/commands/general_short_commands.sty) (styling/commands/default-expressions.sty) (styling/info-boxen.sty
 
 LaTeX Warning: You have requested package `styling/info-boxen',
                but the package provides `info-boxen'.
@@ -949,37 +949,41 @@ File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
 )) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.code.tex
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count361
+\l__pdf_internal_box=\box100
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
 )
-\c@DefCounter=\count361
+\c@DefCounter=\count362
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 10.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count362
-\l__pdf_internal_box=\box100
 ) (main.aux (pages/title.aux) (pages/Vorwort.aux) (pages/Vorlesungsverzeichnis.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count363
@@ -1008,7 +1012,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 10.
+Package hyperref Info: Link coloring ON on input line 11.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1020,7 +1024,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 10.
+(scrreprt)           before \begin{document} on input line 11.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
@@ -1064,7 +1068,7 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 10.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 11.
 \c@lstlisting=\count370
 \openout2 = `pages/title.aux'.
 
@@ -1098,33 +1102,33 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1.
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 16.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 17.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 16.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 17.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 16.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 17.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 16.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 17.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 16.
+(Font)              <10> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 16.
+(Font)              <7> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 16.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+(Font)              <5> on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -1205,22 +1209,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 13.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 44.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 51.
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [2{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [3] [4]) (pages/chapter/K1/1.2.tex [5] [6]) [7]
+) [2{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [3] [4] [5]) (pages/chapter/K1/1.2.tex [6] [7]) [8]
 chapter 2..
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
+(hyperref)                removing `math shift' on input line 47.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 46.
+(hyperref)                removing `superscript' on input line 47.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
+(hyperref)                removing `math shift' on input line 47.
 
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1234,10 +1238,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 46.
+(Font)              <20.74> on input line 47.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 46.
-(pages/chapter/K2/Einleitung.tex [8
+(Font)              <12> on input line 47.
+(pages/chapter/K2/Einleitung.tex [9
 
 ]) (pages/chapter/K2/2.1.tex
 
@@ -1252,12 +1256,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[9] [10]) (pages/chapter/K2/2.2.tex [11] [12]
+[10] [11]) (pages/chapter/K2/2.2.tex [12] [13]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-) (pages/chapter/K2/2.3.tex [13]) (pages/chapter/K2/2.4.tex [14]
+) (pages/chapter/K2/2.3.tex [14]) (pages/chapter/K2/2.4.tex [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
@@ -1270,7 +1274,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
 
-) [15]
+) [16]
 chapter 3..
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1283,21 +1287,21 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K3/Einleitung.tex [16
+(pages/chapter/K3/Einleitung.tex [17
 
-]) (pages/chapter/K3/3.1.tex) (pages/chapter/K3/3.2.tex [17]) (pages/chapter/K3/3.3.tex [18]) (pages/chapter/K3/3.4.tex [19]) (pages/chapter/K3/3.5.tex [20]) [21]
+]) (pages/chapter/K3/3.1.tex) (pages/chapter/K3/3.2.tex [18]) (pages/chapter/K3/3.3.tex [19]) (pages/chapter/K3/3.4.tex [20]) (pages/chapter/K3/3.5.tex [21]) [22]
 chapter 4..
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 82.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 81.
+(hyperref)                removing `superscript' on input line 82.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 82.
 
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1310,9 +1314,9 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K4/Einleitung.tex [22
+(pages/chapter/K4/Einleitung.tex [23
 
-]) (pages/chapter/K4/4.1.tex) (pages/chapter/K4/4.2.tex [23]) (pages/chapter/K4/4.3.tex [24]) (pages/chapter/K4/4.4.tex [25]) [26]
+]) (pages/chapter/K4/4.1.tex) (pages/chapter/K4/4.2.tex [24]) (pages/chapter/K4/4.3.tex [25]) (pages/chapter/K4/4.4.tex [26]) [27]
 chapter 5..
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1325,7 +1329,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K5/Einleitung.tex [27
+(pages/chapter/K5/Einleitung.tex [28
 
 ])
 chapter 6..
@@ -1340,7 +1344,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K6/Einleitung.tex [28
+(pages/chapter/K6/Einleitung.tex [29
 
 ])
 chapter 7..
@@ -1355,7 +1359,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K7/Einleitung.tex [29
+(pages/chapter/K7/Einleitung.tex [30
 
 ])
 
@@ -1370,8 +1374,13 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 (main.def
+Overfull \hbox (2.55548pt too wide) detected at line 8
+\T1/lmr/m/n/10 1.1.10 
+ []
+
+
 Overfull \hbox (2.55548pt too wide) detected at line 9
-\T1/lmr/m/n/10 1.1.11 
+\T1/lmr/m/n/10 1.1.12 
  []
 
 
@@ -1405,7 +1414,7 @@ Overfull \hbox (2.55548pt too wide) detected at line 26
 
  
 AED: lastpage setting LastPage
-[30
+[31
 
 ] (main.aux (pages/title.aux) (pages/Vorwort.aux) (pages/Vorlesungsverzeichnis.aux))
  ***********
@@ -1416,17 +1425,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 40904 strings out of 474485
- 907406 string characters out of 5743733
+ 41071 strings out of 474485
+ 912190 string characters out of 5743733
  1956542 words of memory out of 5000000
- 62317 multiletter control sequences out of 15000+600000
+ 62467 multiletter control sequences out of 15000+600000
  661229 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,23n,121p,10966b,1498s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (34 pages, 524477 bytes).
+ 124i,23n,121p,10966b,1496s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (35 pages, 533623 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 138 named destinations out of 1000 (max. 500000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
  218 words of extra memory for PDF output out of 10000 (max. 10000000)
 
