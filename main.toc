@@ -1,5 +1,7 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {chapter}{A. Vorwort}{i}{chapter*.1}%
+\contentsline {section}{A.1 Generelles}{i}{chapter*.1}%
+\contentsline {section}{A.2 Notation}{i}{chapter*.1}%
 \contentsline {chapter}{B. Vorlesungsverzeichnis}{ii}{chapter*.2}%
 \contentsline {chapter}{\numberline {1.}Fourierreihen}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Der Funktionen-Raum $\mathcal {R}[a,b]$}{2}{section.1.1}%
