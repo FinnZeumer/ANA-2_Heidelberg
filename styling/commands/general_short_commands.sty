@@ -1,6 +1,66 @@
+\usepackage{subcaption}    % Required for subfigures
+\usepackage{float}
+\usepackage{xparse} 
+\usepackage{graphicx}
+
 \newcommand{\afz}[1]{
   \glqq #1\grqq
 }
 
 % Schreiben von Kommentaren
 \newcommand{\com}[1]{\textcolor{red}{\textbf{Kommentar: #1}}}
+
+% ----------------------------------------------------------------
+%   Comands spezifisch für ein schöneres und schnelleres citen von, 
+%   z.B. Literatur oder Abbildungen
+% ----------------------------------------------------------------
+
+% Die Eingabe ist das vergebene Label, z.B. \cabb{label} für eine Abbildung, \ctab{label} für eine Tabelle, \cdig{label} für ein Diagramm und \ceq{label} für eine Gleichung
+\newcommand{\cabb}[1]{\hyperref[fig:#1]{Abbildung \ref{fig:#1}}} % Abbildung zitieren
+\newcommand{\ctab}[1]{\hyperref[tab:#1]{Tabelle \ref{tab:#1}}} % Tabelle zitieren
+\newcommand{\cdig}[1]{\hyperref[dia:#1]{Diagramm \ref{dia:#1}}} % Diagramm zitieren
+\newcommand{\ceq}[1]{\hyperref[eq:#1]{Gleichung \ref{eq:#1}}} % Gleichung zitieren
+\newcommand{\cch}[1]{\hyperref[ch:#1]{Kapitel \ref{ch:#1}}} % Kaapitel zitieren
+\newcommand{\csec}[1]{\hyperref[sec:#1]{Sektion \ref{sec:#1}}} % Sektion zitieren
+\newcommand{\cssec}[1]{\hyperref[ssec:#1]{Sektion \ref{ssec:#1}}} % Subektion zitieren
+
+% ----------------------------------------------------------------
+%   Angepasste commands, um schneller Grafiken zu importieren
+%   Alle Grafiken sollten im Dateinamen keine Leerzeichen haben, 
+%   damit die Label vernünftig funktionieren.
+% ----------------------------------------------------------------
+
+% \img[Width]{Path}{Caption}
+\newcommand{\img}[3][0.85]{
+  \begin{center}
+    \includegraphics[width=#1\textwidth]{img/#2}
+    \captionof{figure}{#3}
+    \label{fig:#2}
+  \end{center}
+}
+
+% \iimg[Width left img]{Path left}{Path right}{Main Caption}
+\newcommand{\iimg}[4][0.6]{%
+  \begin{figure}[h!]
+      \centering
+      % --- Left Image ---
+      \begin{subfigure}[c]{\dimexpr #1\textwidth - 0.1\textwidth\relax}
+          \centering
+          \includegraphics[width=\textwidth]{img/#2}
+          \caption{}
+          \label{fig:#2_a}
+      \end{subfigure}
+      \hfill 
+      % --- Right Image ---
+      % Calculate remaining width: 0.99\textwidth - (Left Width)
+      \begin{subfigure}[c]{\dimexpr 0.99\textwidth - (\dimexpr #1\textwidth - 0.1\textwidth\relax)\relax}
+          \centering
+          \includegraphics[width=\textwidth]{img/#3}
+          \caption{}
+          \label{fig:#2_b}
+      \end{subfigure}
+      
+      \caption{#4}
+      \label{fig:#2}
+  \end{figure}
+}

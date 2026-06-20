@@ -1,20 +1,20 @@
 \newpage
 \section{Topologie metrischer Räume}
 \begin{definition}{Offene und abgeschlossene Mengen}
-    Sei \((X,d)\) ein metrischer Raum.
+    Sei $(X,d)$ ein metrischer Raum.
     \begin{itemize}
-        \item[(i)] Eine Menge \(U\subset X\) heißt Umgebung von \(x\in X\), wenn ein \(\varepsilon>0\) existiert mit \(B_\varepsilon(x)\subset U\).
-        \item[(ii)] Eine Menge \(U\subset X\) heißt offen, wenn sie Umgebung jedes ihrer Punkte ist.
-        \item[(iii)] Eine Menge \(A\subset X\) heißt abgeschlossen, wenn ihr Komplement \(X\setminus A\) offen ist.
+        \item[(i)] Eine Menge $U\subset X$ heißt Umgebung von $x\in X$, wenn ein $\varepsilon>0$ existiert mit $B_\varepsilon(x)\subset U$.
+        \item[(ii)] Eine Menge $U\subset X$ heißt offen, wenn sie Umgebung jedes ihrer Punkte ist.
+        \item[(iii)] Eine Menge $A\subset X$ heißt abgeschlossen, wenn ihr Komplement $X\setminus A$ offen ist.
     \end{itemize}
 \end{definition}
 
 \begin{satz}{Hausdorff'sches Trennungsaxiom}
-    In jedem metrischen Raum existieren zu zwei verschiedenen Punkten \(x\neq y\) offene Umgebungen \(U\) von \(x\) und \(V\) von \(y\), sodass \(U\cap V=\emptyset\).
+    In jedem metrischen Raum existieren zu zwei verschiedenen Punkten $x\neq y$ offene Umgebungen $U$ von $x$ und $V$ von $y$, sodass $U\cap V=\emptyset$.
 \end{satz}
 
 \begin{satz}{Eigenschaften offener Mengen}
-    Sei \((X,d)\) ein metrischer Raum.
+    Sei $(X,d)$ ein metrischer Raum.
     \begin{itemize}
         \item[(1)] Der Durchschnitt zweier offener Mengen ist offen.
         \item[(2)] Die Vereinigung beliebig vieler offener Mengen ist offen.
@@ -22,7 +22,7 @@
 \end{satz}
 
 \begin{satz}{Eigenschaften abgeschlossener Mengen}
-    Sei \((X,d)\) ein metrischer Raum.
+    Sei $(X,d)$ ein metrischer Raum.
     \begin{itemize}
         \item[(1)] Die Vereinigung zweier abgeschlossener Mengen ist abgeschlossen.
         \item[(2)] Der Durchschnitt beliebig vieler abgeschlossener Mengen ist abgeschlossen.
@@ -30,28 +30,28 @@
 \end{satz}
 
 \begin{definition}{Rand einer Menge}
-    Sei \((X,d)\) ein metrischer Raum und \(Y\subset X\). Ein Punkt \(x\in X\) heißt Randpunkt von \(Y\), wenn jede Umgebung von \(x\) sowohl Punkte aus \(Y\) als auch aus \(X\setminus Y\) enthält. Die Menge aller Randpunkte heißt der Rand \(\partial Y\).
+    Sei $(X,d)$ ein metrischer Raum und $Y\subset X$. Ein Punkt $x\in X$ heißt Randpunkt von $Y$, wenn jede Umgebung von $x$ sowohl Punkte aus $Y$ als auch aus $X\setminus Y$ enthält. Die Menge aller Randpunkte heißt der Rand $\partial Y$.
 \end{definition}
 
 
 \begin{definition}{Offene Kugel}
     Sei $(X,d)$ ein metrischer Raum. Für $x\in X$ und $R > 0$ ist die offene Kugel definiert durch
-    \[
+    $$
         B_R(x) := \{y\in X : d(x,y) < R\}.
-    \]
+    $$
 \end{definition}
 
 \begin{definition}{Offene und abgeschlossene Mengen}
     Sei (X,d) ein metrischer Raum.
     \begin{itemize}
-        \item[(i)] $U\subset X$ heißt Umgebung von $x\in X$, wenn ein \(\varepsilon>0\) existiert mit \(B_\varepsilon(x)\subset U\).
+        \item[(i)] $U\subset X$ heißt Umgebung von $x\in X$, wenn ein $\varepsilon>0$ existiert mit $B_\varepsilon(x)\subset U$.
         \item[(ii)] $U$ heißt offen, wenn sie Umgebung jedes ihrer Punkte ist.
-        \item[(iii)] $A\subset X$ heißt abgeschlossen, wenn das Komplement \(X\setminus A\) offen ist.
+        \item[(iii)] $A\subset X$ heißt abgeschlossen, wenn das Komplement $X\setminus A$ offen ist.
     \end{itemize}
 \end{definition}
 
 \begin{satz}{Hausdorff'sches Trennungsaxiom}
-    In jedem metrischen Raum existieren zu zwei verschiedenen Punkten \(x\neq y\) offene Umgebungen U von x und V von y, sodass \(U\cap V=\emptyset\).
+    In jedem metrischen Raum existieren zu zwei verschiedenen Punkten $x\neq y$ offene Umgebungen U von x und V von y, sodass $U\cap V=\emptyset$.
 \end{satz}
 
 \begin{satz}{Eigenschaften offener Mengen}
@@ -71,14 +71,14 @@
 \end{satz}
 
 \begin{definition}{Rand einer Menge}
-    Sei $(X,d)$ ein metrischer Raum und $Y\subset X$. Ein Punkt $x\in X$ heißt Randpunkt von $Y$, wenn jede Umgebung von $x$ sowohl Punkte aus $Y$ als auch aus \(X\setminus Y\) enthält. Die Menge aller Randpunkte heißt der Rand \(\partial Y\).
+    Sei $(X,d)$ ein metrischer Raum und $Y\subset X$. Ein Punkt $x\in X$ heißt Randpunkt von $Y$, wenn jede Umgebung von $x$ sowohl Punkte aus $Y$ als auch aus $X\setminus Y$ enthält. Die Menge aller Randpunkte heißt der Rand $\partial Y$.
 \end{definition}
 
 \begin{definition}{Inneres und Abschluss}
     Sei (X,d) ein metrischer Raum und $Y\subset X$.
     \begin{itemize}
-        \item[(i)] Das Innere von Y ist die Menge aller Punkte $x\in Y$, für die eine Umgebung \(B_\varepsilon(x)\subset Y\) existiert. Notation: \(\operatorname{int}(Y)\).
-        \item[(ii)] Der Abschluss von Y ist die Menge aller Punkte $x\in X$, für die jede Umgebung von $x Y$ schneidet. Notation: \(\overline{Y}\).
+        \item[(i)] Das Innere von Y ist die Menge aller Punkte $x\in Y$, für die eine Umgebung $B_\varepsilon(x)\subset Y$ existiert. Notation: $\operatorname{int}(Y)$.
+        \item[(ii)] Der Abschluss von Y ist die Menge aller Punkte $x\in X$, für die jede Umgebung von $x Y$ schneidet. Notation: $\overline{Y}$.
     \end{itemize}
 \end{definition}
 
@@ -86,15 +86,15 @@
     Ein \emph{topologischer Raum} ist ein Paar $(X, \mathcal{O})$, wobei $\mathcal{O} \subseteq \mathcal{P}(X)$ eine Familie von Teilmengen ist (offene Mengen), sodass gilt:
     \begin{enumerate}
         \item Die Leere Menge und die Menge $X$ sind in $\mathcal{O}$: \\
-        \[\emptyset, X \in \mathcal{O}\]
+        $$\emptyset, X \in \mathcal{O}$$
         \item Beliebige Vereinigungen offener Mengen sind offen:
-        \[
+        $$
             \{ U_i \}_{i \in I} \subseteq \mathcal{O} \quad \Rightarrow \quad \bigcup_{i \in I} U_i \in \mathcal{O}
-        \]
+        $$
         \item Endliche Schnitte offener Mengen sind offen:
-        \[
+        $$
             U_1, \dots, U_k \in \mathcal{O},\ k \in \mathbb{N} \quad \Rightarrow \quad \bigcap_{i=1}^k U_i \in \mathcal{O}
-        \]
+        $$
     \end{enumerate}
     
     $\mathcal{O}$ heißt dann auch \emph{Topologie auf $X$}

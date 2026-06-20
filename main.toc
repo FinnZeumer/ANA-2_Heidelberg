@@ -5,14 +5,14 @@
 \contentsline {chapter}{B. Vorlesungsverzeichnis}{ii}{chapter*.2}%
 \contentsline {chapter}{\numberline {1.}Fourierreihen}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Der Funktionen-Raum $\mathcal {R}[a,b]$}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Fourierentwicklung}{7}{section.1.2}%
-\contentsline {chapter}{\numberline {2.}Topologische und metrische Grundbegriffe, der Raum $\mathbf {\mathbb {R}^n}$}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Normierte und metrische Räume, der Raum $\mathbb {R}^n$}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Topologie metrischer Räume}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Kompaktheit}{15}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Geometrie in $\mathbf {\mathbb {R}^n}$}{16}{section.2.4}%
-\contentsline {chapter}{\numberline {3.}Stetigkeit in metrischen Räumen}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Stetigkeit: Definitionen}{19}{section.3.1}%
+\contentsline {section}{\numberline {1.2}Fourierentwicklung}{8}{section.1.2}%
+\contentsline {chapter}{\numberline {2.}Topologische und metrische Grundbegriffe, der Raum $\mathbf {\mathbb {R}^n}$}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Normierte und metrische Räume, der Raum $\mathbb {R}^n$}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Topologie metrischer Räume}{16}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Kompaktheit}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Geometrie in $\mathbf {\mathbb {R}^n}$}{19}{section.2.4}%
+\contentsline {chapter}{\numberline {3.}Stetigkeit in metrischen Räumen}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Stetigkeit: Definitionen}{21}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Lineare Abbildungen}{22}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Stetige Funktionen auf kompakten Mengen; andere Eigenschaften}{23}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Konvergenz von Funktionenfolgen}{24}{section.3.4}%
@@ -25,5 +25,5 @@
 \contentsline {chapter}{\numberline {5.}Implizite Funktionen und Mannigfaltigkeiten}{31}{chapter.5}%
 \contentsline {chapter}{\numberline {6.}Systeme gewöhnlicher Differentialgleichungen}{32}{chapter.6}%
 \contentsline {chapter}{\numberline {7.}Kurvenintegrale}{33}{chapter.7}%
-\contentsline {chapter}{Definitionsverzeichnis}{34}{chapter*.8}%
+\contentsline {chapter}{Definitionsverzeichnis}{34}{chapter*.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

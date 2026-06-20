@@ -5,17 +5,17 @@ Ziel dieses Abschnitts ist es, die Länge einer Kurve $\gamma: [a,b] \to \mathbb
 Sei 
 
 
-\[
+$$
 Z = \{t_0, t_1, \dots, t_n\} \quad \text{mit} \quad a = t_0 < t_1 < \cdots < t_n = b
-\]
+$$
 
 
 eine Zerlegung von $[a,b]$. Für diese Zerlegung definieren wir die approximative Bogenlänge durch
 
 
-\[
+$$
 L(Z,\gamma) = \sum_{i=1}^n \|\gamma(t_i)-\gamma(t_{i-1})\|.
-\]
+$$
 
 
 
@@ -23,17 +23,17 @@ L(Z,\gamma) = \sum_{i=1}^n \|\gamma(t_i)-\gamma(t_{i-1})\|.
 Eine Kurve $\gamma: [a,b] \to \mathbb{R}^n$ heißt \emph{rektifizierbar} (bzw. relativizierbar) mit Bogenlänge $L(\gamma)$, falls es eine Zahl $L(\gamma)\in [0,+\infty)$ gibt, so dass für alle $\epsilon>0$ ein $\delta>0$ existiert, sodass für jede Zerlegung $Z$ von $[a,b]$ mit 
 
 
-\[
+$$
 \|Z\| := \max_{1\le i\le n}(t_i-t_{i-1}) < \delta
-\]
+$$
 
 
 folgt
 
 
-\[
+$$
 \bigl|L(Z,\gamma)-L(\gamma)\bigr|<\epsilon.
-\]
+$$
 
 
 \end{definition}
@@ -42,9 +42,9 @@ folgt
 Wesentlich ist, dass sich $L(Z,\gamma)$ durch Verfeinern einer Zerlegung (also durch Hinzufügen weiterer Zwischenwerte) nicht verringert – es gilt:
 
 
-\[
+$$
 L(\gamma)=\sup\{\,L(Z,\gamma):Z \text{ ist eine Zerlegung von } [a,b]\,\}.
-\]
+$$
 
 
 Dies entspricht den Prinzipien von Ober- und Untersummen beim Riemann-Integral.
@@ -54,9 +54,9 @@ Dies entspricht den Prinzipien von Ober- und Untersummen beim Riemann-Integral.
 Sei $\gamma: [a,b] \to \mathbb{R}^n$ stetig differenzierbar. Dann ist $\gamma$ rektifizierbar und es gilt
 
 
-\[
+$$
 L(\gamma)=\int_a^b \|\gamma'(t)\|\,dt.
-\]
+$$
 
 
 \end{satz}
@@ -65,29 +65,29 @@ L(\gamma)=\int_a^b \|\gamma'(t)\|\,dt.
 Die Idee des Beweises ist, die Summe
 
 
-\[
+$$
 \sum_{i=1}^n \|\gamma(t_i)-\gamma(t_{i-1})\|
-\]
+$$
 
 
 über eine Zerlegung zu bestimmen und zu zeigen, dass im Limes (beim Verfeinern der Zerlegung) diese Summe gegen
 
 
-\[
+$$
 \int_a^b \|\gamma'(t)\|\,dt
-\]
+$$
 
 
 konvergiert. Zur Herleitung werden folgende Lemmata verwendet.
 \end{beweisbox}
 
-\begin{lemma}
+\begin{lemma}{}
 Sei $\gamma: [a,b] \to \mathbb{R}^n$ stetig differenzierbar und seien $t_0,t\in[a,b]$ mit $t_0<t$. Dann existiert ein $c\in (t_0,t)$, so dass
 
 
-\[
+$$
 \|\gamma(t)-\gamma(t_0)\|=\|\gamma'(c)\|(t-t_0).
-\]
+$$
 
 
 \end{lemma}
@@ -96,13 +96,13 @@ Sei $\gamma: [a,b] \to \mathbb{R}^n$ stetig differenzierbar und seien $t_0,t\in[
 Der Beweis erfolgt, indem man für jede Komponentenfunktion den Mittelwertsatz anwendet und anschließend die Norm betrachtet. (Details entnehmen Sie bitte der entsprechenden Literatur.)
 \end{beweisbox}
 
-\begin{lemma}
+\begin{lemma}{}
 Sei $f: [a,b] \to \mathbb{R}$ stetig. Dann existiert ein $c\in [a,b]$, so dass
 
 
-\[
+$$
 \int_a^b f(x)\,dx = f(c)(b-a).
-\]
+$$
 
 
 \end{lemma}
@@ -116,25 +116,25 @@ Der Beweis dieses klassischen Satzes folgt direkt aus den Eigenschaften der Riem
   \item \textbf{Helix:} Betrachte die Helix
   
 
-\[
+$$
   \gamma(t)=\bigl( r\cos t,\, r\sin t,\, c\,t \bigr),\quad t\in[0,2\pi],
-  \]
+  $$
 
 
   mit $r>0$ und $c\neq0$. Dann ist
   
 
-\[
+$$
   \gamma'(t)=\bigl( -r\sin t,\, r\cos t,\, c \bigr)
-  \]
+  $$
 
 
   und die Bogenlänge berechnet sich zu
   
 
-\[
+$$
   L(\gamma)=\int_0^{2\pi}\sqrt{r^2+c^2}\,dt=2\pi\sqrt{r^2+c^2}.
-  \]
+  $$
 
 
   

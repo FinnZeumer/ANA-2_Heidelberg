@@ -127,30 +127,30 @@
     #1
 }
 
-\newtcolorbox[use counter=DefCounter]{theorem}[1][]{%
+\newtcolorbox[use counter=DefCounter]{theorem}[2][]{%
     colback=lightgray,
     colframe=white,
     coltitle=black,
     fonttitle=\bfseries,
-    title={\textbf{Theorem \theDefCounter}},
+    title={\textbf{Theorem \theDefCounter} #2},
     #1
 }
 
-\newtcolorbox[use counter=DefCounter]{lemma}[1][]{%
+\newtcolorbox[use counter=DefCounter]{lemma}[2][]{%
     colback=lightgray,
     colframe=white,
     coltitle=black, 
     fonttitle=\bfseries,
-    title={\textbf{Lemma \theDefCounter}},
+    title={\textbf{Lemma \theDefCounter} #2},
     #1
 }
 
-\newtcolorbox[use counter=DefCounter]{korollar}[1][]{%
+\newtcolorbox[use counter=DefCounter]{korollar}[2][]{%
     colback=lightgray,
     colframe=white,
     coltitle=black,
     fonttitle=\bfseries,
-    title={\textbf{Korollar \theDefCounter}},
+    title={\textbf{Korollar \theDefCounter} #2},
     #1
 }
 

@@ -4,11 +4,11 @@
 
 \begin{definition}{Skalarprodukt}
     Sei $V$ ein Vektorraum über $K\in\{\mathbb{R},\mathbb{C}\}$. Eine Abbildung $(\cdot,\cdot):V\times V\to K$ heißt Skalarprodukt, wenn gilt:
-    \[
+    $$
         (x,x)\ge 0,\ (x,x)=0\Rightarrow x=0,\qquad
         (x,y)=(y,x),\qquad
         (ax_1+bx_2,y)=a(x_1,y)+b(x_2,y).
-    \]
+    $$
 \end{definition}
 
 \begin{korollar}
@@ -16,57 +16,27 @@
 \end{korollar}
 
 
-\begin{definition}[deflabel=ortgoOrtho]{Orthogonalität und Orthonormalsystem}
-    Die Vektoren $x,y\in \K^n$ heißen \emph{orthogonal}, falls $(x,y)_2=0$. Eine Menge von Vektoren 
-    $$
-        \{a(1),\dots,a(m)\}, a^{(i)} \not= 0,a^{(i)} \in \K, i=1,\dots,m
-    $$ 
-    heißt \emph{Orthogonalsystem}, wenn 
-    $$
-        \underbrace{(a^{(k)},a^{(l)})=0}_{\text{paarweise orthogonal}} \quad \text{für } k\not= l \, .
-    $$
-    Ist zusätzlich $(a(k),a(k))_2=1$, so heißt es \emph{Orthonormalsystem}.
-
-    Ist $m=n$, so handelt es sich um eine \emph{Orthogonalbasis}, bzw. wenn $(a(k),a(k))_2=1$ um eine \emph{Orthononalbasis}.
+\begin{definition}{Orthogonalität und Orthonormalsystem}
+    Vektoren $x,y\in K^n$ heißen orthogonal, falls $(x,y)=0$. Ein System $\{a(1),\dots,a(m)\}$ heißt Orthogonalsystem, wenn $(a(k),a(\ell))=0$ für $k\ne\ell$. Ist zusätzlich $(a(k),a(k))=1$, so heißt es Orthonormalsystem.
 \end{definition}
 
-\begin{bemerkungbox}
-    Die orthogonalen Vektoren nach \cdef{ortgoOrtho} sind linear unabhänig:
-    $$
-    % \begin{aligned}
-    %     \sum_{k=1}^{m} c_k\,a^{(k)} = 0 &\xLeftrightarrow[\text{mit a^{(l)}}]{\text{Skal.Prod.}} \sum_{k=1}^{m} c_k\left(a^{(k), a^{(l)}}\right) 
-    %     \xlongequal{a^{(i)} \text{ paarweise orthog.}} = c_l \underbrace{(a^{(l)}, a^{(l)})}_{\not=0, \text{ für } a^{(l)} \not=0} = 0 \\
-    %         &\Longleftrightarrow c_l = 0, \quad l = 1,\cdots,m
-    % \end{aligned}
-    \begin{aligned}
-        \sum_{k=1}^{m} c_k\,a^{(k)} = 0
-        &\xLeftrightarrow[\text{mit } a^{(l)}]{\text{Skal.Prod.}}
-        \sum_{k=1}^{m} c_k\,(a^{(k)}, a^{(l)}) \\
-        &\xlongequal[\text{orthogonal}]{a^{(i)} \text{ paarweise}}
-        c_l \underbrace{(a^{(l)}, a^{(l)})}_{\neq 0,\; a^{(l)}\neq 0}
-        = 0 \\
-        &\Longleftrightarrow c_l = 0,\quad l=1,\dots,m.
-    \end{aligned}
-    $$
-\end{bemerkungbox}
-
 \begin{lemma}{}
-    Sei $\{a(k)\}_{k=1}^n$ eine Orthonormalbasis von $\K^n$. Dann besitzt jeder Vektor $x\in \K^n$ die Darstellung
-    \[
+    Sei $\{a(k)\}_{k=1}^n$ eine Orthonormalbasis von $K^n$. Dann besitzt jeder Vektor $x\in K^n$ die Darstellung
+    $$
         x=\sum_{k=1}^n (x,a(k))\,a(k),
-    \]
+    $$
     und es gilt die Parseval-Gleichung
-    \[
+    $$
         \|x\|^2=\sum_{k=1}^n |(x,a(k))|^2.
-    \]
+    $$
 \end{lemma}
 
 \begin{satz}{Gram--Schmidt}
-    Sei $\{a(1),\dots,a(n)\}$ eine Basis von $\K^n$. Dann entsteht durch
-    \[
+    Sei $\{a(1),\dots,a(n)\}$ eine Basis von $K^n$. Dann entsteht durch
+    $$
         b(1)=\frac{a(1)}{\|a(1)\|},\qquad
         \tilde{b}(k)=a(k)-\sum_{j=1}^{k-1}(a(k),b(j))\,b(j),\qquad
         b(k)=\frac{\tilde{b}(k)}{\|\tilde{b}(k)\|}
-    \]
+    $$
     eine Orthonormalbasis $\{b(1),\dots,b(n)\}$.
 \end{satz}
