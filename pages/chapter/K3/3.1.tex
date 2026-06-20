@@ -1,2 +1,131 @@
 \section{Stetigkeit: Definitionen}
-\label{3.1}
+\label{sec:3.1}
+
+Es wird das Ziel verfolgt, die Idee bzw. den Begriff der Stetigkeit zu erweitern. Bis dato wurde die Stetigkeit für Funktionen innerhalb eines metrischen Raumes $f:\R \to \R$ definiert.
+Dies soll nun auf Abbiildungen der Art $f:X\to Y$ erweitert werden, wobei dies eine allgemeine Abbildung zwischen zwei metrischen Räumen $(X,d_X)$ und $(Y,d_Y)$.
+
+\begin{definition}{Stetige Funktionen}
+    Seien $(X,d_X), (Y,d_Y)$ metrische Räume und sei $E\subset X$ der Definitionsberecih von $f$. So heißt
+    \begin{enumerate}
+        \item eine Funktion $f:E\to Y$ \emph{stetig in} $a\in E$, falls für jede Folge $(x_k)_{k\in \N}$ in $E$, mit $x_k \underset{k\to\infty}{\longrightarrow} a$ gilt $f(x_k) \underset{k\to\infty}{\longrightarrow} f(a)$.
+        \item die Funktion \emph{stetig in} $F\subset E$, falls sie stetig in jedem punkt $a\in F$ ist.
+        
+        eine Funktion \emph{stetig}, falls sie stetig im gesmaten Definitionsbereich $E$ ist.
+    \end{enumerate}
+
+    Die Menge aller stetigen Funktionen $f:E \to Y$ wird mit $C^0(E,Y)$ bezeichnet.
+\end{definition}
+
+\begin{lemma}{Komposition stetiger Funktionen}
+    Seien $(X,d_X), (Y,d_Y), (Z,d_Z)$ metrische Räume, $E \subset X$. 
+
+    Seien $f:E \to Y$, $g:f(E)\to Z$ Funktionen.
+
+    Falls $f$ stetig in $a\in E$ ist und $g$ stetig in $y:=f(a)\in Y$ ist, dann ist $h:= g\odot f$ stetig in $a$.
+\end{lemma}
+
+\begin{beweisbox}
+COMMING SOON    
+\end{beweisbox}
+
+\begin{lemma}{stetige Funktionen nach $\mathbb{R}^{n}$}
+    Sei $(X,d_X)$ ein metrsicher Raum, $E\subset X$.
+
+    Eine Funktion $f:E\to \R^n$ ist genau dann in $a \in E$ stetig, falls jede Komponente $f_1,\dots,f_n$ in $a$ stetig ist.
+\end{lemma}
+
+\begin{beweisbox}
+    COMMING SOON
+\end{beweisbox}
+
+\begin{lemma}{}
+    Folgende Funktionen sind stetig in allen Punkten:
+    \begin{enumerate}
+        \item Addition:
+        $$
+            \R \times \R \to \R, \quad (x,y) \to x + y
+        $$
+        
+        \item Multiplikation:
+        $$
+            \R \times \R \to \R, \quad (x,y) \to x \cdot y
+        $$
+
+        \item Quotient
+        $$
+            \R \times \R \to \R \setminus \{0\}, \quad (x,y) \to \dfrac{x}{y}
+        $$
+    \end{enumerate}
+\end{lemma}
+
+\begin{beweisbox}
+    COMMING SOON
+\end{beweisbox}
+
+\begin{lemma}{Rechenregeln}
+    Sei $(X,d)$ ein metrischer Raum, $E \subset X$.
+
+    Falls $f,g : E \to \R$ in $a$ stetig sind, sind auch die Funktionen $f+g, fg, -f$ stetig in $a$
+
+    Falls außerdem $g(a) \not= 0$, dann ist auch $f/g$ stetig in $a$.
+
+    Insbesondere ist der Raum $C^0(E,\R)$ ein Vektorraum.
+\end{lemma}
+
+\begin{bemerkungbox}
+    COMMING SOON
+\end{bemerkungbox}
+
+\begin{beweisbox}
+    COMMIGN SOON
+\end{beweisbox}
+
+\begin{lemma}{Folgerung; Rechenregeln für stetige Funktionen nach $\R^n$}
+    Sei $(x,d)$ ein metrischer Raum, $E \subset X$. Dann gilt:
+    \begin{enumerate}
+        \item Falls $f,g:E \to \R^n$ in $a \in E$ stetig sind, dnan sinf auch $f+g$ und $-f$ stetig in $a$.
+        \item Falls $f:E \to \R^n, \lambda:E \to \R$ in $a\in E$ stetig sind, dann ist auch $\lambda f$ stetig in $a$.
+    \end{enumerate}
+
+    Insbesondere ist der Raum$C^0(E,\R^n)$ ein Vektorraum.
+\end{lemma}
+
+\begin{bemerkungbox}
+    COMMING SOON
+\end{bemerkungbox}
+
+\begin{satz}{$\epsilon$-$\delta$-Kriterim der Stetigkeit}
+    Sein $(X,d_X), (Y,d_Y)$ metrische Räume, $E \subset X$, $a\in E$ und $f:E \to Y$.
+
+    $f$ ist genau dann stetig in $a$, wenn für jedes $\epsilon >0$ ein $\delta = \delta (a,\epsilon) >0$ existiert, sodass für alle $x \in E$ gilt
+    $$
+        d_X(x,a) > \delta \Rightarrow d_Y(f(x),f(a))<\epsilon
+    $$
+\end{satz}
+
+\begin{bemerkungbox}
+    COMMING SOON
+\end{bemerkungbox}
+
+\begin{beweisbox}
+    COMMING SOON
+\end{beweisbox}
+
+\begin{satz}{Topologisches Kriterium der Stetigkeit}
+    Seien $(X,d_X), (Y,d_Y)$ metrrische Räume, $a\in X$ und $f:X \to Y$. So gilt:
+    \begin{enumerate}
+        \item $f$ ist genau dann stetig in $a$, wenn für jede offene Umgebung $V$ von $y:=f(a)$ eine offene Umgebung $U$ von $a$ existiert, mit
+        $$
+            f(U) \subset V, \qquad \text{falls } f:E \to Y, f(U\cap E) \subset V
+        $$
+
+        \item $f$ ist genau dann stetig in $X$, wenn für alle offnen Mengen $V \subset Y$ das Urbild $f^{-1}(V)$ offen in $X$.
+
+        \item $f$ ist genau dann stetig in $X$, wenn für alle abgeschlossenen Mengen $A\subset Y$ das Urbild $f^{-1}(A)$ abgeschlossen in $X$ ist. 
+    \end{enumerate}
+\end{satz}
+
+\begin{beweisbox}
+    COMMING SOON
+\end{beweisbox}
+
