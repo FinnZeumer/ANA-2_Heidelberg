@@ -1,39 +1,39 @@
 \subsection{Implizite Funktionen und Untermannigfaltigkeiten}
 
 \begin{satz}{}
-Es seien \( U \subset \mathbb{R}^n \), \( V \subset \mathbb{R}^m \) offene Mengen und \( f: U \times V \to \mathbb{R}^m \) eine \( C^1 \)-Abbildung. Falls für ein Punkt \( (x_0, y_0) \in U \times V \) gilt:
+Es seien $ U \subset \mathbb{R}^n $, $ V \subset \mathbb{R}^m $ offene Mengen und $ f: U \times V \to \mathbb{R}^m $ eine $ C^1 $-Abbildung. Falls für ein Punkt $ (x_0, y_0) \in U \times V $ gilt:
 \begin{enumerate}
-    \item \( f(x_0, y_0) = 0 \),
-    \item Die Jacobi-Matrix \( D_y f(x_0, y_0) \) ist invertierbar,
+    \item $ f(x_0, y_0) = 0 $,
+    \item Die Jacobi-Matrix $ D_y f(x_0, y_0) $ ist invertierbar,
 \end{enumerate}
-dann existieren offene Mengen \( U' \subset U \) und \( V' \subset V \) mit \( (x_0, y_0) \in U' \times V' \) sowie eine differenzierbare Funktion \( g: U' \to V' \) mit
+dann existieren offene Mengen $ U' \subset U $ und $ V' \subset V $ mit $ (x_0, y_0) \in U' \times V' $ sowie eine differenzierbare Funktion $ g: U' \to V' $ mit
 
 
-\[
+$$
 \{(x,y) \in U' \times V' \mid f(x,y) = 0 \} = \{(x, g(x)) \mid x \in U' \}.
-\]
+$$
 
 
 \end{satz}
 
 \begin{bemerkungbox}
-Die Existenz von \( g \) basiert darauf, dass die Gleichung \( f(x,y) = 0 \) lokal eindeutig nach \( y \) aufgelöst werden kann, sofern die Ableitung \( D_y f(x,y) \) regulär ist.
+Die Existenz von $ g $ basiert darauf, dass die Gleichung $ f(x,y) = 0 $ lokal eindeutig nach $ y $ aufgelöst werden kann, sofern die Ableitung $ D_y f(x,y) $ regulär ist.
 \end{bemerkungbox}
 
 \begin{korollar}
-Falls \( f(x,y) \) eine \( C^r \)-Funktion ist, dann ist auch \( g(x) \) eine \( C^r \)-Funktion.
+Falls $ f(x,y) $ eine $ C^r $-Funktion ist, dann ist auch $ g(x) $ eine $ C^r $-Funktion.
 \end{korollar}
 
 \begin{beweisbox}
-Die Glattheit von \( g \) folgt aus der Anwendung der Kettenregel auf \( f(x,g(x)) = 0 \). Differenzieren nach \( x \) liefert
+Die Glattheit von $ g $ folgt aus der Anwendung der Kettenregel auf $ f(x,g(x)) = 0 $. Differenzieren nach $ x $ liefert
 
 
-\[
+$$
 D_x f(x, g(x)) + D_y f(x, g(x)) D_x g(x) = 0.
-\]
+$$
 
 
-Da \( D_y f(x, g(x)) \) invertierbar ist, kann nach \( D_x g(x) \) aufgelöst werden.
+Da $ D_y f(x, g(x)) $ invertierbar ist, kann nach $ D_x g(x) $ aufgelöst werden.
 \end{beweisbox}
 
 \begin{beispielbox}
@@ -41,25 +41,25 @@ Da \( D_y f(x, g(x)) \) invertierbar ist, kann nach \( D_x g(x) \) aufgelöst we
 Betrachten wir die Gleichung
 
 
-\[
+$$
 x^2 + y^2 - 1 = 0.
-\]
+$$
 
 
-Hier ist \( f(x,y) = x^2 + y^2 - 1 \). Da die partielle Ableitung
+Hier ist $ f(x,y) = x^2 + y^2 - 1 $. Da die partielle Ableitung
 
 
-\[
+$$
 D_y f(x,y) = 2y
-\]
+$$
 
 
-für \( y \neq 0 \) invertierbar ist, folgt, dass \( y \) lokal als Funktion von \( x \) geschrieben werden kann: 
+für $ y \neq 0 $ invertierbar ist, folgt, dass $ y $ lokal als Funktion von $ x $ geschrieben werden kann: 
 
 
-\[
+$$
 y = \pm \sqrt{1 - x^2}.
-\]
+$$
 
 
 \end{beispielbox}

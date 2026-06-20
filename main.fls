@@ -260,6 +260,10 @@ INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibrarysvg.path.code.tex
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibrarysvg.path.code.tex
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\pgf\modules\pgfmoduleparser.code.tex
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
@@ -288,10 +292,6 @@ INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\siunitx\siunitx.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\siunitx\siunitx.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\translations\translations.sty
@@ -315,8 +315,6 @@ INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT .\styling\commands\math_short_commands.sty
 INPUT styling\commands\math_short_commands.sty
-INPUT .\styling\commands\general_short_commands.sty
-INPUT styling\commands\general_short_commands.sty
 INPUT .\styling\commands\default-expressions.sty
 INPUT styling\commands\default-expressions.sty
 INPUT .\styling\info-boxen.sty
@@ -350,6 +348,12 @@ INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\styling\commands\general_short_commands.sty
+INPUT styling\commands\general_short_commands.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
@@ -563,6 +567,11 @@ INPUT pages\chapter\K2\Einleitung.tex
 INPUT .\pages\chapter\K2\2.1.tex
 INPUT .\pages\chapter\K2\2.1.tex
 INPUT pages\chapter\K2\2.1.tex
+INPUT .\img\K2\Bekannte_Metrische_Raeume_Sammlung.pdf
+INPUT .\img\K2\Bekannte_Metrische_Raeume_Sammlung.pdf
+INPUT .\img\K2\Bekannte_Metrische_Raeume_Sammlung.pdf
+INPUT .\img\K2\Bekannte_Metrische_Raeume_Sammlung.pdf
+INPUT .\img\K2\Bekannte_Metrische_Raeume_Sammlung.pdf
 INPUT .\pages\chapter\K2\2.2.tex
 INPUT .\pages\chapter\K2\2.2.tex
 INPUT pages\chapter\K2\2.2.tex

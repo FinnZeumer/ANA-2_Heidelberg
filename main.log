@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.16)  14 JUN 2026 09:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.16)  18 JUN 2026 09:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -683,7 +683,16 @@ File: pgfmoduleparser.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@lib@svg@max@num=\count325
 ))
 \@curXheight=\skip76
-) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks43
 \inpenc@posthook=\toks44
@@ -762,16 +771,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen311
 \Gm@layoutvoffset=\dimen312
 \Gm@dimlist=\toks45
- (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup7
-\symAMSb=\mathgroup8
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count331
 \l__siunitx_number_exponent_fixed_int=\count332
@@ -862,7 +862,7 @@ Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \c@LT@chunks=\count349
 \LT@p@ftn=\toks46
 )
-Class scrreprt Info: longtable captions redefined on input line 146.
+Class scrreprt Info: longtable captions redefined on input line 145.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \everycr=\toks47
@@ -891,7 +891,7 @@ Package siunitx Info: Option "separate-uncertainty" has been deprecated in
 (siunitx)             
 (siunitx)             Use "uncertainty-mode = separate" as a replacement.
 
-) (styling/commands/math_short_commands.sty) (styling/commands/general_short_commands.sty) (styling/commands/default-expressions.sty) (styling/info-boxen.sty
+) (styling/commands/math_short_commands.sty) (styling/commands/default-expressions.sty) (styling/info-boxen.sty
 
 LaTeX Warning: You have requested package `styling/info-boxen',
                but the package provides `info-boxen'.
@@ -959,7 +959,20 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 Package: xparse 2023-10-10 L3 Experimental document command parser
 )
 \c@DefCounter=\count362
-)
+) (styling/commands/general_short_commands.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count363
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count364
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count365
+\float@exts=\toks50
+\float@box=\box101
+\@float@everytoks=\toks51
+\@floatcapt=\box102
+))
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -986,17 +999,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
+\scratchcounter=\count366
 \scratchdimen=\dimen325
-\scratchbox=\box101
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count366
+\scratchbox=\box103
+\nofMPsegments=\count367
+\nofMParguments=\count368
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count369
 \MPscratchDim=\dimen326
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks51
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
+\everyMPtoPDFconversion=\toks53
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1004,6 +1017,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1029,7 +1043,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count369
+\BKM@id=\count372
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1069,7 +1083,7 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 11.
-\c@lstlisting=\count370
+\c@lstlisting=\count373
 \openout2 = `pages/title.aux'.
 
  (pages/title.tex
@@ -1213,10 +1227,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 16.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 54.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 56.
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [2{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [3] [4] [5]) (pages/chapter/K1/1.2.tex [6] [7]) [8]
+) [2{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+Overfull \hbox (5.06773pt too wide) detected at line 126
+\OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i\OML/lmm/m/it/10 ;  \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u \OT1/lmr/m/n/10 + \OML/lmm/m/it/10 w\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 = \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 + \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; w\OMS/lmsy/m/n/10 i\OML/lmm/m/it/10 :[] \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 = []\OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i\OML/lmm/m/it/10 ;  \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v \OT1/lmr/m/n/10 + \OML/lmm/m/it/10 u; w\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 = \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; w\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 + \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 u; w\OMS/lmsy/m/n/10 i\OML/lmm/m/it/10 :
+ []
+
+[3{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [4] [5] [6]) (pages/chapter/K1/1.2.tex [7] [8]) [9]
 chapter 2..
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1245,7 +1264,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <20.74> on input line 47.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 47.
-(pages/chapter/K2/Einleitung.tex [9
+(pages/chapter/K2/Einleitung.tex [10
 
 ]) (pages/chapter/K2/2.1.tex
 
@@ -1260,12 +1279,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[10] [11]) (pages/chapter/K2/2.2.tex [12] [13]
+[11]
+<img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf, id=236, 983.675pt x 222.8325pt>
+File: img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf Graphic file (type pdf)
+<use img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf>
+Package pdftex.def Info: img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf  used on input line 65.
+(pdftex.def)             Requested size: 436.57251pt x 98.89664pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 65.
+See the caption package documentation for explanation.
+
+[12 <./img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf>] [13] [14]) (pages/chapter/K2/2.2.tex [15] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-) (pages/chapter/K2/2.3.tex [14]) (pages/chapter/K2/2.4.tex [15]
+) (pages/chapter/K2/2.3.tex [17]) (pages/chapter/K2/2.4.tex [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
@@ -1278,7 +1309,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
 
-) [16]
+) [19]
 chapter 3..
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1291,9 +1322,9 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K3/Einleitung.tex [17
+(pages/chapter/K3/Einleitung.tex [20
 
-]) (pages/chapter/K3/3.1.tex) (pages/chapter/K3/3.2.tex [18]) (pages/chapter/K3/3.3.tex [19]) (pages/chapter/K3/3.4.tex [20]) (pages/chapter/K3/3.5.tex [21]) [22]
+]) (pages/chapter/K3/3.1.tex) (pages/chapter/K3/3.2.tex [21]) (pages/chapter/K3/3.3.tex [22]) (pages/chapter/K3/3.4.tex [23]) (pages/chapter/K3/3.5.tex [24]) [25]
 chapter 4..
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1318,9 +1349,9 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K4/Einleitung.tex [23
+(pages/chapter/K4/Einleitung.tex [26
 
-]) (pages/chapter/K4/4.1.tex) (pages/chapter/K4/4.2.tex [24]) (pages/chapter/K4/4.3.tex [25]) (pages/chapter/K4/4.4.tex [26]) [27]
+]) (pages/chapter/K4/4.1.tex) (pages/chapter/K4/4.2.tex [27]) (pages/chapter/K4/4.3.tex [28]) (pages/chapter/K4/4.4.tex [29]) [30]
 chapter 5..
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1333,7 +1364,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K5/Einleitung.tex [28
+(pages/chapter/K5/Einleitung.tex [31
 
 ])
 chapter 6..
@@ -1348,7 +1379,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K6/Einleitung.tex [29
+(pages/chapter/K6/Einleitung.tex [32
 
 ])
 chapter 7..
@@ -1363,7 +1394,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-(pages/chapter/K7/Einleitung.tex [30
+(pages/chapter/K7/Einleitung.tex [33
 
 ])
 
@@ -1384,7 +1415,7 @@ Overfull \hbox (2.55548pt too wide) detected at line 8
 
 
 Overfull \hbox (2.55548pt too wide) detected at line 9
-\T1/lmr/m/n/10 1.1.12 
+\T1/lmr/m/n/10 1.1.13 
  []
 
 
@@ -1418,7 +1449,7 @@ Overfull \hbox (2.55548pt too wide) detected at line 26
 
  
 AED: lastpage setting LastPage
-[31
+[34
 
 ] (main.aux (pages/title.aux) (pages/Vorwort.aux) (pages/Vorlesungsverzeichnis.aux))
  ***********
@@ -1429,17 +1460,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 41122 strings out of 474485
- 912835 string characters out of 5743733
- 1956542 words of memory out of 5000000
- 62501 multiletter control sequences out of 15000+600000
+ 41324 strings out of 474485
+ 916692 string characters out of 5743733
+ 1961542 words of memory out of 5000000
+ 62688 multiletter control sequences out of 15000+600000
  685957 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,23n,121p,10966b,1544s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,23n,121p,10966b,1545s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (35 pages, 586527 bytes).
+Output written on main.pdf (38 pages, 636848 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 668 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

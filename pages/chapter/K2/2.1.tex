@@ -1,94 +1,245 @@
 \section{Normierte und metrische Räume, der Raum $\mathbb{R}^n$}
 \label{sec:2.2}
 
+Kurze Bemerkung zu beginn:
+Der Raum $\R^n$, $n \in \N$, besteht aus allen $n$-Tupeln (oder \emph{Vektoren}):
+
+$$
+\mathbb{R}^n = \left\{ x = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} : x_i \in \mathbb{R} \text{ für alle } i = 1, \dots, n \right\} \, .
+$$
+
+Für $x = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}, \quad y = \begin{pmatrix} y_1 \\ \vdots \\ y_n \end{pmatrix} \in \mathbb{R}^n$ und \emph{Skalare} $\alpha \in \R$ defineiren wir auf $\R^n$ \emph{Vektoraddition} und \emph{skalare Multiplikation} durch
+
+$$
+x + y := \begin{pmatrix} x_1 + y_1 \\ : \\ \vdots \\ x_n + y_n \end{pmatrix}, \quad \alpha \cdot x := \begin{pmatrix} \alpha x_1 \\ : \\ \vdots \\ \alpha x_n \end{pmatrix} \, .
+$$
+
 \begin{definition}{Metrik, metrischer Raum}
-    Sei \(X\) eine Menge. Eine Abbildung \(d : X \times X \to \mathbb{R}\) heißt Metrik, wenn für alle \(x,y,z \in X\) gilt:
-    \[
-        \text{(M1)}\; d(x,y)=0 \Rightarrow x=y,\qquad \text{(M2)}\; d(x,y)=d(y,x),\qquad \text{(M3)}\; d(x,z) \le d(x,y) + d(y,z).
-    \]
-    Ein metrischer Raum ist ein Paar \((X,d)\), bestehend aus einer Menge \(X\) und einer Metrik \(d\).
+    Sei $X$ eine Menge. Eine Abbildung 
+    $$
+    d : X \times X \to \mathbb{R}
+    $$
+    heißt \emph{Metrik}, wenn für alle $x,y,z \in X$ gilt:
+
+    \begin{enumerate}
+        \item[(M1)] Definitheit: $d(x,y)=0 \Rightarrow x=y$,
+        \item[(M2)] Symmetrie: $d(x,y)=d(y,x)$,
+        \item[(M3)] Dreiecksungleichung: $d(x,z) \le d(x,y) + d(y,z)$.
+    \end{enumerate}
+
+    Ein metrischer Raum ist ein Paar $(X,d)$, bestehend aus einer Menge $X$ und einer Metrik $d$.
+    Man nennt $d(x, y)$ auch den Abstand oder die Distanz von $x$ und $y$.
 \end{definition}
+
+\begin{beispielbox}
+COMMING SOON
+\end{beispielbox}
 
 \begin{definition}{Norm, normierter Raum}
-    Sei \(V\) ein Vektorraum über \(\mathbb{R}\) oder \(\mathbb{C}\). Eine Abbildung \(\|\cdot\| : V \to \mathbb{R}\) heißt Norm, wenn für alle \(x,y \in V\) und \(\alpha\) gilt:
-    \[
-        \text{(N1)}\; \|x\| = 0 \Leftrightarrow x=0,\qquad \text{(N2)}\; \|\alpha x\| = |\alpha|\,\|x\|,\qquad \text{(N3)}\; \|x+y\| \le \|x\| + \|y\|.
-    \]
-    Das Paar \((V,\|\cdot\|)\) heißt normierter Raum.
+    Sei $V$ ein Vektorraum über $\K \, (\mathbb{R}$ oder $\mathbb{C}$). Eine Abbildung 
+    $$
+    \|\cdot\| : V \to \mathbb{R}$$
+    heißt \emph{Norm} auf $V$, wenn für alle $x,y \in V$ und $\alpha \in \K$ gilt:
+
+    \begin{enumerate}
+        \item[(N1)] Definitheit: $\|x\| = 0 \Leftrightarrow x=0$,
+        \item[(N2)] Homogenität: $\|\alpha x\| = |\alpha|\,\|x\|$,
+        \item[(N3)] Dreiecksungleichung: $\|x+y\| \le \|x\| + \|y\|$.
+    \end{enumerate}
+
+    Das Paar $(V,\|\cdot\|)$ heißt normierter Raum.
+
 \end{definition}
 
-\begin{lemma}
-    Sei \((V,\|\cdot\|)\) ein normierter Raum. Dann definiert
-    \[
-        d(x,y) := \|x-y\|
-    \]
-    eine Metrik auf \(V\).
+\begin{bemerkungbox}
+COMMING SOON
+\end{bemerkungbox}
+
+\begin{beispielbox}
+    \begin{align*}
+        \|x\|_1 &= \sum_{i=1}^n |x_i| && \text{(Summennorm / Manhattan-Norm)} \\
+        \|x\|_2 &= \sqrt{\sum_{i=1}^n x_i^2} && \text{(Euklidische Norm)} \\
+        \|x\|_\infty &= \max_{i=1,\dots,n} |x_i| && \text{(Maximumsnorm / Schachbrett-Norm)}
+    \end{align*}
+
+    \img[1]{K2/Bekannte_Metrische_Raeume_Sammlung}{Visualisierung bekannter metrischer Räume. Hellblau gestrichtelt ist immer der bekannte euklidische Abstand eingezeichnet.}
+
+    % \begin{figure}[htbp]
+    %     \centering
+    %     \includegraphics[width=1\textwidth]{img/K2/Bekannte_Metrische_Raeume_Sammlung}
+    %     \caption{}
+    %     \label{fig:metrische-raeume}
+    % \end{figure}
+
+    \textbf{Weitere Beispiele:}
+    \begin{enumerate}
+        \item \textbf{Triviale Metrik:} Für eine beliebige Menge $M$ sei
+        $$
+        d(x, y) := \begin{cases}
+            0 & \text{wenn } x = y \\
+            1 & \text{wenn } x \neq y
+        \end{cases}
+        $$
+
+        \item \textbf{Induzierte Metrik:} Sei $(M,d)$ ein metrischer Raum und $N \subset M$. Dann ist die auf $N$ \emph{induzierte Metrik} gegeben durch:
+        $$
+            d_N(x, y) := d(x, y), \quad \forall x, y \in N
+        $$
+
+        \item \textbf{Supremumsnorm:} Sei
+        $$
+        \mathcal{B}(X) := \{ f : X \to \mathbb{R} \mid f \text{ beschränkt} \}
+        $$
+        Dann ist $\|\cdot\|_\infty := \sup_{x \in X} |f(x)|$ eine Norm auf $\mathcal{B}(X)$ mit:
+        \begin{enumerate}
+            \item[(N1)] $\|f\|_\infty = 0 \Lra f(x) = 0 \quad \forall x \in X \quad \color{steelblue}\surd$
+            \item[(N2)] $\| \lambda f \|_\infty = |\lambda| \cdot \|f\|_\infty \quad \color{steelblue}\surd$
+            \item[(N3)] 
+                \begin{align*}
+                    \|f+g\|_\infty &= \sup_{x \in X} |f(x) + g(x)| \\
+                    &\le \sup_{x \in X} \big(|f(x)| + |g(x)|\big) \\
+                    &\le \|f\|_\infty + \|g\|_\infty \quad \color{steelblue}\surd
+                \end{align*}
+        \end{enumerate}
+    \end{enumerate}
+\end{beispielbox}
+
+
+\begin{lemma}{Metrisierung normierter Räume}
+    Sei $(V,\|\cdot\|)$ ein normierter Raum. Dann in $V$, versehen mit der Metrik $d : V \times V \rightarrow \mathbb{R}$ definiert durch
+    $$
+        d(x,y) := \|x-y\| \,
+    $$
+    eine \emph{metrischer Raum}.
 \end{lemma}
 
-\begin{lemma}
-    Sei \((X,d)\) ein metrischer Raum und \(x,y,z \in X\). Dann gilt:
-    \[
+\begin{beweisbox}
+COMMING SOON
+\end{beweisbox}
+
+\begin{lemma}{Umgekehrte Dreiecksungleichung}
+    Sei $(X,d)$ ein metrischer Raum und $x,y,z \in X$. Dann gilt:
+    $$
         |d(x,z) - d(y,z)| \le d(x,y).
-    \]
+    $$
 \end{lemma}
+
+\begin{beweisbox}
+COMMING SOON
+\end{beweisbox}
 
 \begin{definition}{Offene und abgeschlossene Kugeln}
-    Sei \((X,d)\) ein metrischer Raum. Für \(x \in X\) und \(R>0\) definiert man:
-    \[
-        B_R(x) := \{y \in X : d(x,y) < R\},\qquad \overline{B}_R(x) := \{y \in X : d(x,y) \le R\}.
-    \]
+    Sei $(X,d)$ ein metrischer Raum. Für $x \in X$ und $R>0$ definiert man:
+    Die \emph{offene Kugel} $B_R(x)$ um $x$ und Raidus $R$
+    $$
+        B_R(x) := \{y \in X : d(x,y) < R\} \, .
+    $$
+
+    Die \emph{abgeschlossene Kugel} $\overline{B}_R(x)$ um $x$ und Raidus $R$
+    $$
+    \overline{B}_R(x) := \{y \in X : d(x,y) \le R\}.
+    $$
 \end{definition}
 
 \begin{definition}{Beschränkte Menge}
-    Sei \((X,d)\) ein metrischer Raum. Eine Menge \(E \subset X\) heißt beschränkt, wenn es ein \(x \in X\) und \(R>0\) gibt mit
-    \[
+    Sei $(X,d)$ ein metrischer Raum. Eine Menge $E \subset X$ heißt beschränkt, wenn es ein $x \in X$ und $R>0$ gibt mit
+    $$
         E \subset B_R(x).
-    \]
+    $$
 \end{definition}
+
+Nun wo die wichtigsten Definitonen geklärt sind, soll nun die \emph{ Konvergenz in metrischen Räumen} betrachtet werden.
 
 \begin{definition}{Konvergenz von Folgen}
-    Sei \((X,d)\) ein metrischer Raum und \((x_k)\) eine Folge in \(X\). Die Folge konvergiert gegen \(a \in X\), wenn gilt:
-    \[
-        \forall \varepsilon>0\;\exists k_0:\; d(x_k,a) < \varepsilon \text{ für alle } k \ge k_0.
-    \]
-    Man schreibt \(x_k \to a\).
+    Sei $(X,d)$ ein metrischer Raum und $(x_k)_{k\in\N}$ eine Folge in $X$. Die Folge \emph{konvergiert} gegen $a \in X$, wenn gilt:
+    $$
+        \forall \varepsilon>0, \quad \exists k_0:\; d(x_k,a) < \varepsilon \quad \forall k \ge k_0.
+    $$
+
+    In diesem Fall heißt $a$ \emph{Limes} oder \emph{Grenzwert} der Folge und wir schreiben
+    Man schreibt 
+    $$
+        \alpha = \lim\limits_{k \to \infty} x_k \quad \text{oder} \quad x_k \to a \text{ für } k \to \infty
+    $$
+
+    Eine Folge, welche konvergiert, heißt \emph{konvergent}. Eine Folge, die nicht konvergiert, heißt \emph{divergent}.
 \end{definition}
+
+\begin{bemerkungbox}
+COMMING SOON
+\end{bemerkungbox}
 
 \begin{definition}{Häufungspunkt}
-    Sei \((X,d)\) ein metrischer Raum und \((x_k)\) eine Folge in \(X\). Ein Punkt \(a \in X\) heißt Häufungspunkt der Folge, wenn eine Teilfolge \((x_{k_j})\) existiert mit
-    \[
-        x_{k_j} \to a.
-    \]
+    Sei $(X,d)$ ein metrischer Raum und $(x_k)_{k\in\N}$ eine Folge in $X$. 
+    Ein Punkt $a \in X$ heißt \emph{Häufungspunkt} der Folge, wenn eine Teilfolge $(x_{k_j})_{k\in\N}$ existiert, welche gegen $a$ konvergiert.
 \end{definition}
 
-\begin{definition}{Konvergenz in \(\mathbb{R}^n\)}
-    Sei \(x_k = (x_{k,1},\dots,x_{k,n}) \in \mathbb{R}^n\) und \(a = (a_1,\dots,a_n)\). Dann gilt:
-    \[
-        x_k \to a \Leftrightarrow \|x_k - a\|_\infty \to 0,\qquad \|x\|_\infty = \max_i |x_i|.
-    \]
+\begin{beispielbox}
+COMMING SOON
+\end{beispielbox}
 
-    Dies ist äquivalent zu:
-    \[
-        x_{k,i} \to a_i \text{ für alle } i.
-    \]
+\begin{bemerkungbox}
+COMMING SOON
+\end{bemerkungbox}
+
+\begin{definition}{Konvergenz in $\mathbb{R}^n$}
+    Sei $(x_k)_{k\in\N}$ eine Folge in $\R$,
+     $$
+     x_k =
+        \begin{pmatrix}
+        x_{k,1}\
+        \vdots\
+        x_{k,n}
+        \end{pmatrix} \, ,
+    \quad
+    a =
+        \begin{pmatrix}
+        a_1\
+        \vdots\
+        a_n
+        \end{pmatrix}
+        \in \mathbb{R}^n \, .
+    $$ 
+
+    Dann heißt die folge \emph{konvergent} gegen ein $a \in \R^n$, wenn
+    $$
+        \|x_k - a\|_\infty \to 0,\qquad k \to \infty \, .
+    $$
 \end{definition}
+
+\begin{bemerkungbox}
+COMMING SOON
+\end{bemerkungbox}
 
 \begin{satz}{Bolzano-Weierstraß}
-    Jede beschränkte Folge in \(\mathbb{R}^n\) besitzt eine konvergente Teilfolge.
+    Jede beschränkte Folge in $\mathbb{R}^n$ besitzt eine konvergente Teilfolge.
 \end{satz}
+
+\begin{beweisbox}
+COMMING SOON
+\end{beweisbox}
 
 \begin{satz}{Äquivalenz der Normen}
-    In \(\mathbb{R}^n\) sind alle Normen äquivalent. Zu jeder Norm \(\|\cdot\|\) existieren Konstanten \(m,M>0\) mit
-    \[
+    In einem endlichdimensionalen Vektorraum. $\mathbb{R}^n$ sind alle Normen äquivalent zur Maximumnorm $(l_\infty)$.D.h. zu jeder Norm $\|\cdot\|$ existieren Konstanten $m,M>0$, sodass
+    $$
         m\|x\|_\infty \le \|x\| \le M\|x\|_\infty \quad \text{für alle } x \in \mathbb{R}^n.
-    \]
+    $$
 \end{satz}
 
+\begin{bemerkungbox}
+    Folgerung
+COMMING SOON
+\end{bemerkungbox}
+
+\begin{beweisbox}
+COMMING SOON
+\end{beweisbox}
+
 \begin{definition}{Cauchy-Folge}
-    Sei \((X,d)\) ein metrischer Raum. Eine Folge \((x_k)\) in \(X\) heißt Cauchy-Folge, falls für alle \(\varepsilon>0\) ein \(k^*\in\mathbb{N}\) existiert, sodass
-    \[
+    Sei $(X,d)$ ein metrischer Raum. Eine Folge $(x_k)$ in $X$ heißt Cauchy-Folge, falls für alle $\varepsilon>0$ ein $k^*\in\mathbb{N}$ existiert, sodass
+    $$
         d(x_k,x_m) < \varepsilon \quad \text{für alle } k,m \ge k^*.
-    \]
+    $$
 \end{definition}
 
 \begin{satz}{Eigenschaften von Cauchy-Folgen}
@@ -108,6 +259,6 @@
     In einem vollständigen metrischen Raum ist eine Folge genau dann eine Cauchy-Folge, wenn sie konvergiert.
 \end{korollar}
 
-\begin{satz}{Vollständigkeit von \(\mathbb{R}^n\)}
-    Der Raum \(\mathbb{R}^n\) ist vollständig. Als normierter Raum ist er daher ein Banachraum.
+\begin{satz}{Vollständigkeit von $\mathbb{R}^n$}
+    Der Raum $\mathbb{R}^n$ ist vollständig. Als normierter Raum ist er daher ein Banachraum.
 \end{satz}

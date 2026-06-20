@@ -1,63 +1,63 @@
 \subsection{Banachscher Fixpunktsatz}
 
 \begin{definition}{}
-Sei \( (M, d) \) ein metrischer Raum. Eine Abbildung \( \varphi: M \to M \) heißt \emph{kontrahierend}, falls es ein \( \lambda \in [0,1) \) gibt mit
+Sei $ (M, d) $ ein metrischer Raum. Eine Abbildung $ \varphi: M \to M $ heißt \emph{kontrahierend}, falls es ein $ \lambda \in [0,1) $ gibt mit
 
 
-\[
+$$
 d(\varphi(x), \varphi(y)) \leq \lambda d(x,y) \quad \forall x,y \in M.
-\]
+$$
 
 
 \end{definition}
 
 \begin{bemerkungbox}
-Eine kontrahierende Abbildung ist immer Lipschitz-stetig mit Lipschitz-Konstante \( \lambda < 1 \).
+Eine kontrahierende Abbildung ist immer Lipschitz-stetig mit Lipschitz-Konstante $ \lambda < 1 $.
 \end{bemerkungbox}
 
 \begin{satz}{}
-Sei \( (M, d) \) ein vollständiger metrischer Raum und sei \( \varphi: M \to M \) kontrahierend. Dann besitzt \( \varphi \) genau einen Fixpunkt \( z \), d.h.
+Sei $ (M, d) $ ein vollständiger metrischer Raum und sei $ \varphi: M \to M $ kontrahierend. Dann besitzt $ \varphi $ genau einen Fixpunkt $ z $, d.h.
 
 
-\[
+$$
 \varphi(z) = z.
-\]
+$$
 
 
-Außerdem konvergiert für jedes \( x_0 \in M \) die Folge
+Außerdem konvergiert für jedes $ x_0 \in M $ die Folge
 
 
-\[
+$$
 x_{n+1} = \varphi(x_n)
-\]
+$$
 
 
-gegen \( z \).
+gegen $ z $.
 \end{satz}
 
 \begin{beweisbox}
-Die Existenz des Fixpunkts folgt aus der Konstruktion einer Cauchy-Folge \( (x_n) \), die durch wiederholtes Anwenden von \( \varphi \) definiert ist. Da \( M \) vollständig ist, konvergiert diese Folge zu einem Grenzwert \( z \), der sich als Fixpunkt zeigt:
+Die Existenz des Fixpunkts folgt aus der Konstruktion einer Cauchy-Folge $ (x_n) $, die durch wiederholtes Anwenden von $ \varphi $ definiert ist. Da $ M $ vollständig ist, konvergiert diese Folge zu einem Grenzwert $ z $, der sich als Fixpunkt zeigt:
 
 
-\[
+$$
 \varphi(z) = \lim_{n \to \infty} \varphi(x_n) = z.
-\]
+$$
 
 
-Für die Eindeutigkeit sei \( z, w \) Fixpunkte mit \( \varphi(z) = z \) und \( \varphi(w) = w \). Dann folgt
+Für die Eindeutigkeit sei $ z, w $ Fixpunkte mit $ \varphi(z) = z $ und $ \varphi(w) = w $. Dann folgt
 
 
-\[
+$$
 d(z, w) = d(\varphi(z), \varphi(w)) \leq \lambda d(z,w),
-\]
+$$
 
 
-was nur für \( d(z,w) = 0 \) möglich ist, also \( z = w \).
+was nur für $ d(z,w) = 0 $ möglich ist, also $ z = w $.
 \end{beweisbox}
 
 \begin{beispielbox}
 \begin{enumerate}
-    \item Sei \( \varphi(x) = \frac{x}{2} \) auf \( \mathbb{R} \). Diese Funktion ist kontrahierend mit \( \lambda = \frac{1}{2} \) und besitzt genau einen Fixpunkt \( z = 0 \).
-    \item Newtons Verfahren zur Nullstellenbestimmung kann als Anwendung des Fixpunktsatzes interpretiert werden. Die Fixpunkte einer Iterationsfunktion sind die Lösungen der Gleichung \( f(x) = 0 \).
+    \item Sei $ \varphi(x) = \frac{x}{2} $ auf $ \mathbb{R} $. Diese Funktion ist kontrahierend mit $ \lambda = \frac{1}{2} $ und besitzt genau einen Fixpunkt $ z = 0 $.
+    \item Newtons Verfahren zur Nullstellenbestimmung kann als Anwendung des Fixpunktsatzes interpretiert werden. Die Fixpunkte einer Iterationsfunktion sind die Lösungen der Gleichung $ f(x) = 0 $.
 \end{enumerate}
 \end{beispielbox}

@@ -2,15 +2,15 @@
 
 % Definition 3.3
 \begin{definition}{}{}
-(a) Sei \( D \subset \mathbb{R}^n \) eine offene Menge und \( f: D \to \mathbb{R}^m \) eine Abbildung. Dann heißt \( f \) in einem Punkt \( a \in D \) \emph{differenzierbar}, falls es eine lineare Abbildung 
+(a) Sei $ D \subset \mathbb{R}^n $ eine offene Menge und $ f: D \to \mathbb{R}^m $ eine Abbildung. Dann heißt $ f $ in einem Punkt $ a \in D $ \emph{differenzierbar}, falls es eine lineare Abbildung 
 
 
-\[
+$$
     Df(a): \mathbb{R}^n \to \mathbb{R}^m
-\]  
+$$  
 
 
-sowie eine Abbildung \(\varphi: B_f(0) \subset \mathbb{R}^n \to \mathbb{R}^m\) gibt, mit
+sowie eine Abbildung $\varphi: B_f(0) \subset \mathbb{R}^n \to \mathbb{R}^m$ gibt, mit
 
 
 \begin{align*}
@@ -18,65 +18,65 @@ sowie eine Abbildung \(\varphi: B_f(0) \subset \mathbb{R}^n \to \mathbb{R}^m\) g
     & ii)\quad \varphi(0) = 0  \text{ und } \lim_{h \to 0} \frac{\varphi(h)}{\|h\|} = 0
 \end{align*}
 
-(b) \( f \) heißt einfach \emph{differenzierbar}, wenn \( f \) in jedem Punkt \( a\in D \) differenzierbar ist.
+(b) $ f $ heißt einfach \emph{differenzierbar}, wenn $ f $ in jedem Punkt $ a\in D $ differenzierbar ist.
 \end{definition}
 
 \begin{bemerkungbox}
-In Definition 3.3 ist die lineare Abbildung \( Df(a) \) (die totale Ableitung) eindeutig bestimmt. Denn seien \( L \) und \( K \) zwei lineare Abbildungen, die beide die Eigenschaft erfüllen, dass
+In Definition 3.3 ist die lineare Abbildung $ Df(a) $ (die totale Ableitung) eindeutig bestimmt. Denn seien $ L $ und $ K $ zwei lineare Abbildungen, die beide die Eigenschaft erfüllen, dass
 
 
-\[
+$$
 f(a+h) = f(a) + Lh + \varphi_L(h) = f(a) + Kh + \varphi_K(h),
-\]
+$$
 
 
 wobei
 
 
-\[
+$$
 \lim_{h\to 0}\frac{\|\varphi_L(h)\|}{\|h\|} = 0 \quad\text{und}\quad \lim_{h\to 0}\frac{\|\varphi_K(h)\|}{\|h\|} = 0.
-\]
+$$
 
 
 Dann gilt
 
 
-\[
+$$
 (L-K)h = \varphi_K(h) - \varphi_L(h)
-\]
+$$
 
 
-und nach Division durch \(\|h\|\) und Grenzübergang folgt \( L = K \).
+und nach Division durch $\|h\|$ und Grenzübergang folgt $ L = K $.
 \end{bemerkungbox}
 
 % Satz 3.4: Differenzierbarkeit impliziert Stetigkeit
 \begin{satz}{}
-Sei \( f: D \to \mathbb{R}^m \) (mit \( D \subset \mathbb{R}^n \) offen) in \( a \in D\) differenzierbar. Dann ist \( f \) stetig in \( a\).
+Sei $ f: D \to \mathbb{R}^m $ (mit $ D \subset \mathbb{R}^n $ offen) in $ a \in D$ differenzierbar. Dann ist $ f $ stetig in $ a$.
 \end{satz}
 
 \begin{beweisbox}
-Da \( f \) in \( a \) differenzierbar ist, gilt
+Da $ f $ in $ a $ differenzierbar ist, gilt
 
 
-\[
+$$
 f(a+h)= f(a) + Df(a)\,h + \varphi(h)
-\]
+$$
 
 
 mit
 
 
-\[
+$$
 \lim_{h\to 0}\frac{\|\varphi(h)\|}{\|h\|}=0.
-\]
+$$
 
 
-Da die lineare Abbildung \( Df(a) \) stetig ist und \(\varphi(h)=o(\|h\|)\) verschwindet, folgt unmittelbar
+Da die lineare Abbildung $ Df(a) $ stetig ist und $\varphi(h)=o(\|h\|)$ verschwindet, folgt unmittelbar
 
 
-\[
+$$
 \lim_{h\to 0} f(a+h) = f(a).
-\]
+$$
 
 
 \end{beweisbox}
@@ -84,120 +84,120 @@ Da die lineare Abbildung \( Df(a) \) stetig ist und \(\varphi(h)=o(\|h\|)\) vers
 % Beispiel zu quadratischer Form
 \begin{beispielbox}
 \textbf{Quadratische Form:}  
-Sei \( A \) eine \( n\times n \)-Matrix und definiere \( f: \mathbb{R}^n \to \mathbb{R} \) durch
+Sei $ A $ eine $ n\times n $-Matrix und definiere $ f: \mathbb{R}^n \to \mathbb{R} $ durch
 
 
-\[
+$$
 f(x) = x^T A x.
-\]
+$$
 
 
-Dann ist \( f \) differenzierbar und es gilt für alle \( v\in \mathbb{R}^n \):
+Dann ist $ f $ differenzierbar und es gilt für alle $ v\in \mathbb{R}^n $:
 
 
-\[
+$$
 Df(x)v = x^T A v + v^T A x.
-\]
+$$
 
 
 \end{beispielbox}
 
 % Satz 3.5: Richtungsableitungen
 \begin{satz}{}
-Ist \( f: D \to \mathbb{R} \) (mit \( D \subset \mathbb{R}^n \) offen) in \( a \) differenzierbar, so existieren für alle Richtungsvektoren \( v \) die Richtungsableitungen, und es gilt
+Ist $ f: D \to \mathbb{R} $ (mit $ D \subset \mathbb{R}^n $ offen) in $ a $ differenzierbar, so existieren für alle Richtungsvektoren $ v $ die Richtungsableitungen, und es gilt
 
 
-\[
+$$
 D_v f(a)= Df(a)v= \langle \operatorname{grad} f(a), v \rangle.
-\]
+$$
 
 
-Insbesondere zeigt der Gradient \( \operatorname{grad} f(a) \) in die Richtung des stärksten Anstiegs.
+Insbesondere zeigt der Gradient $ \operatorname{grad} f(a) $ in die Richtung des stärksten Anstiegs.
 \end{satz}
 
 \begin{beweisbox}
-Für \( v=0 \) ist die Behauptung trivial. Für \( v\neq 0 \) folgt mit der Linearisierung
+Für $ v=0 $ ist die Behauptung trivial. Für $ v\neq 0 $ folgt mit der Linearisierung
 
 
-\[
+$$
 f(a+tv)= f(a)+ Df(a)(tv) + \varphi(tv)
-\]
+$$
 
 
-und Division durch \( t \) für \( t\to 0 \), dass
+und Division durch $ t $ für $ t\to 0 $, dass
 
 
-\[
+$$
 D_v f(a)= Df(a)v.
-\]
+$$
 
 
-Da der letzte Term auch als Skalarprodukt \( \langle \operatorname{grad} f(a), v \rangle \) geschrieben werden kann, ist die Aussage bewiesen.
+Da der letzte Term auch als Skalarprodukt $ \langle \operatorname{grad} f(a), v \rangle $ geschrieben werden kann, ist die Aussage bewiesen.
 \end{beweisbox}
 
 % Satz 3.6: Jakobi-Matrix
 \begin{satz}{}
-Sei \( f: D \to \mathbb{R}^m \) mit \( D \subset \mathbb{R}^n \) offen differenzierbar in \( a \). Dann existiert die totale Ableitung \( Df(a) \), welche bezüglich der Standardbasen durch die \emph{Jakobi-Matrix}
+Sei $ f: D \to \mathbb{R}^m $ mit $ D \subset \mathbb{R}^n $ offen differenzierbar in $ a $. Dann existiert die totale Ableitung $ Df(a) $, welche bezüglich der Standardbasen durch die \emph{Jakobi-Matrix}
 
 
-\[
+$$
 Jf(a)= \Biggl( \frac{\partial f_i}{\partial x_j}(a) \Biggr)_{i=1,\dots,m,\; j=1,\dots,n}
-\]
+$$
 
 
 dargestellt wird.
 \end{satz}
 
 \begin{beweisbox}
-Da \( f \) differenzierbar ist, kann \( f \) komponentenweise geschrieben werden als
+Da $ f $ differenzierbar ist, kann $ f $ komponentenweise geschrieben werden als
 
 
-\[
+$$
 f_i(a+h)= f_i(a) + \sum_{j=1}^n \frac{\partial f_i}{\partial x_j}(a)\, h_j + \varphi_i(h),
-\]
+$$
 
 
-wobei \( \lim_{h\to 0}\frac{|\varphi_i(h)|}{\|h\|}=0 \) für alle \( i \). Das Zusammenfassen dieser Ausdrücke führt zur Darstellung der totalen Ableitung durch die Jakobi-Matrix \( Jf(a) \).
+wobei $ \lim_{h\to 0}\frac{|\varphi_i(h)|}{\|h\|}=0 $ für alle $ i $. Das Zusammenfassen dieser Ausdrücke führt zur Darstellung der totalen Ableitung durch die Jakobi-Matrix $ Jf(a) $.
 \end{beweisbox}
 
 % Satz 3.7: Stetige partielle Differenzierbarkeit impliziert totale Differenzierbarkeit
 \begin{satz}{}
-Sei \( f: D \to \mathbb{R}^m \) mit \( D \subset \mathbb{R}^n \) offen und sei \( f \) stetig partiell differenzierbar, d.h. alle partiellen Ableitungen existieren und sind auf \( D \) stetig. Dann ist \( f \) in \( D \) differenzierbar.
+Sei $ f: D \to \mathbb{R}^m $ mit $ D \subset \mathbb{R}^n $ offen und sei $ f $ stetig partiell differenzierbar, d.h. alle partiellen Ableitungen existieren und sind auf $ D $ stetig. Dann ist $ f $ in $ D $ differenzierbar.
 \end{satz}
 
 \begin{beweisbox}
-Der Beweis erfolgt zunächst im Fall \( m=1 \) und nutzt, dass die Stetigkeit der partiellen Ableitungen zusammen mit dem Differenzenquotientenverfahren die Existenz einer linearen Approximation garantiert. Da für den allgemeinen Vektorwertfall jede Komponente separat behandelt werden kann, folgt die Aussage auch für \( m>1 \).
+Der Beweis erfolgt zunächst im Fall $ m=1 $ und nutzt, dass die Stetigkeit der partiellen Ableitungen zusammen mit dem Differenzenquotientenverfahren die Existenz einer linearen Approximation garantiert. Da für den allgemeinen Vektorwertfall jede Komponente separat behandelt werden kann, folgt die Aussage auch für $ m>1 $.
 \end{beweisbox}
 
 % Definition: stetige Differenzierbarkeit (oft als Definition 3.8 bezeichnet)
 \begin{definition}{}{}
-Eine Funktion \( f: D \to \mathbb{R}^m \) heißt \emph{stetig differenzierbar}, wenn \( f \) differenzierbar ist und die totale Ableitung
+Eine Funktion $ f: D \to \mathbb{R}^m $ heißt \emph{stetig differenzierbar}, wenn $ f $ differenzierbar ist und die totale Ableitung
 
 
-\[
+$$
 Df: D \to \operatorname{Mat}(m\times n, \mathbb{R})
-\]
+$$
 
 
 stetig ist.
 \end{definition}
 
 \begin{korollar}
-Ist \( f: D \to \mathbb{R}^m \) stetig partiell differenzierbar, so ist \( f \) stetig differenzierbar; d.h. \( Df \) ist eine stetige Abbildung von \( D \) nach \( \operatorname{Mat}(m\times n, \mathbb{R}) \).
+Ist $ f: D \to \mathbb{R}^m $ stetig partiell differenzierbar, so ist $ f $ stetig differenzierbar; d.h. $ Df $ ist eine stetige Abbildung von $ D $ nach $ \operatorname{Mat}(m\times n, \mathbb{R}) $.
 \end{korollar}
 
 \begin{bemerkungbox}
 Zusammenfassend gilt:
 \begin{itemize}
-    \item Differenzierbarkeit in einem Punkt \( a \) bedeutet, dass \( f \) lokal linear approximiert werden kann, nämlich
+    \item Differenzierbarkeit in einem Punkt $ a $ bedeutet, dass $ f $ lokal linear approximiert werden kann, nämlich
     
 
-\[
+$$
     f(a+h)= f(a) + Df(a)h + o(\|h\|).
-    \]
+    $$
 
 
-    \item Die totale Ableitung \( Df(a) \) wird bei Wahl der Standardbasen durch die Jakobi-Matrix \( Jf(a) \) dargestellt.
-    \item Stetige partielle Differenzierbarkeit (d.h. alle \( \frac{\partial f_i}{\partial x_j} \) existieren und sind stetig) impliziert die Differenzierbarkeit von \( f \).
+    \item Die totale Ableitung $ Df(a) $ wird bei Wahl der Standardbasen durch die Jakobi-Matrix $ Jf(a) $ dargestellt.
+    \item Stetige partielle Differenzierbarkeit (d.h. alle $ \frac{\partial f_i}{\partial x_j} $ existieren und sind stetig) impliziert die Differenzierbarkeit von $ f $.
 \end{itemize}
 \end{bemerkungbox}
