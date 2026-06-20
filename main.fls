@@ -260,6 +260,10 @@ INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibrarysvg.path.code.tex
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibrarysvg.path.code.tex
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\generic\pgf\modules\pgfmoduleparser.code.tex
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
@@ -532,11 +536,11 @@ INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
+INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr10.tfm
-INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\finnz\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT .\pages\chapter\K1\1.2.tex
 INPUT .\pages\chapter\K1\1.2.tex

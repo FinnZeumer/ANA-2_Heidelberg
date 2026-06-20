@@ -3,9 +3,9 @@
 \contentsline {definition}{\numberline {1.1.4} -- Sesquilinearform}{3}{section*.5}%
 \contentsline {definition}{\numberline {1.1.5} -- Skalarprodukt}{4}{Item.12}%
 \contentsline {definition}{\numberline {1.1.7} -- L\textsuperscript {2}-Norm}{5}{DefCounter.1.1.7}%
-\contentsline {definition}{\numberline {1.1.8} -- L\textsuperscript {2}-Konvergenz}{5}{DefCounter.1.1.8}%
+\contentsline {definition}{\numberline {1.1.8} -- L\textsuperscript {2}-Konvergenz}{6}{DefCounter.1.1.8}%
 \contentsline {definition}{\numberline {1.1.9} -- L\textsuperscript {p}-Norm}{6}{DefCounter.1.1.9}%
-\contentsline {definition}{\numberline {1.1.10} -- Orthogonalität}{6}{DefCounter.1.1.10}%
+\contentsline {definition}{\numberline {1.1.10} -- Orthogonalität}{7}{DefCounter.1.1.10}%
 \contentsline {definition}{\numberline {1.1.13} -- Periodische Funktion}{7}{DefCounter.1.1.13}%
 \contentsline {definition}{\numberline {1.2.1} -- Fourier-Reihe}{8}{DefCounter.1.2.1}%
 \contentsline {definition}{\numberline {2.1.1} -- Metrik, metrischer Raum}{11}{DefCounter.2.1.1}%
@@ -27,3 +27,4 @@
 \contentsline {definition}{\numberline {2.3.1} -- Kompaktheit}{18}{section*.6}%
 \contentsline {definition}{\numberline {2.4.1} -- Skalarprodukt}{19}{DefCounter.2.4.1}%
 \contentsline {definition}{\numberline {2.4.3} -- Orthogonalität und Orthonormalsystem}{19}{DefCounter.2.4.3}%
+\contentsline {definition}{\numberline {3.1.1} -- Stetige Funktionen}{21}{Item.23}%

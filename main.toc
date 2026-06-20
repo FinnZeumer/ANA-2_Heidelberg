@@ -13,17 +13,17 @@
 \contentsline {section}{\numberline {2.4}Geometrie in $\mathbf {\mathbb {R}^n}$}{19}{section.2.4}%
 \contentsline {chapter}{\numberline {3.}Stetigkeit in metrischen Räumen}{20}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Stetigkeit: Definitionen}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Lineare Abbildungen}{22}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Stetige Funktionen auf kompakten Mengen; andere Eigenschaften}{23}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Konvergenz von Funktionenfolgen}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Banachsche Fixpunktsatz}{25}{section.3.5}%
-\contentsline {chapter}{\numberline {4.}Differentialrechnung für Funktionen in $\mathbf {\mathbb {R}^n}$}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Partielle Ableitungen}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Totale Ableitungen}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Mittelwertsatz}{29}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Taylor-Entwicklung}{30}{section.4.4}%
-\contentsline {chapter}{\numberline {5.}Implizite Funktionen und Mannigfaltigkeiten}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6.}Systeme gewöhnlicher Differentialgleichungen}{32}{chapter.6}%
-\contentsline {chapter}{\numberline {7.}Kurvenintegrale}{33}{chapter.7}%
-\contentsline {chapter}{Definitionsverzeichnis}{34}{chapter*.7}%
+\contentsline {section}{\numberline {3.2}Lineare Abbildungen}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Stetige Funktionen auf kompakten Mengen; andere Eigenschaften}{25}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Konvergenz von Funktionenfolgen}{26}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Banachsche Fixpunktsatz}{27}{section.3.5}%
+\contentsline {chapter}{\numberline {4.}Differentialrechnung für Funktionen in $\mathbf {\mathbb {R}^n}$}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Partielle Ableitungen}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Totale Ableitungen}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Mittelwertsatz}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Taylor-Entwicklung}{32}{section.4.4}%
+\contentsline {chapter}{\numberline {5.}Implizite Funktionen und Mannigfaltigkeiten}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {6.}Systeme gewöhnlicher Differentialgleichungen}{34}{chapter.6}%
+\contentsline {chapter}{\numberline {7.}Kurvenintegrale}{35}{chapter.7}%
+\contentsline {chapter}{Definitionsverzeichnis}{36}{chapter*.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
