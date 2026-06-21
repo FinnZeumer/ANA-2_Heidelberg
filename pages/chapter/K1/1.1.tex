@@ -167,12 +167,27 @@ Das komplexe Standardskalarprodukt ist etwas komplizierter, denn das eine der be
     Auf dem Raum $\cR[a,b]$ wird $\skalP{\cdot}{\cdot}$ das $L^2$-Skalarprodukt genannt.
 \end{bemerkungbox}
 
-\begin{lemma}{}
+\begin{lemma}{Cauchy--Schwarz-Ungleichung}
     Für alle $f,g \in \cR[a,b]$ gilt die Cauchy--Schwarz-Ungleichung:
     $$
         |\skalP{f}{g}|^2 \le \skalP{f}{f}\skalP{g}{g}.
     $$
+
+    Mit \cdef{L2Norm} kann dies auch als 
+    $$
+        \left|\langle f, g\rangle\right|^{2} \leq \|f\|^{2} \cdot \|g\|^{2}
+    $$
+    beschrieben werden.
 \end{lemma}
+Die Aussage dieses Stazes lässt sich wie folgt verstehen:
+$x,y$ sind Elemente eines (also desselben) Vektorraumes ($\K = \R \text{ oder } \C$). Da sheißt die Fläche der Projektion ins Quadrat von $f$ auf $g$ ist kleiner als die multiplizierte Fläche von $f^2$ und $g^2$.
+Gleichheit gilt genau dann, wenn $x$ und $y$ linear abhängig sind.
+Dies ist sich grob wie die Dreiecksungleichung vorzustellen. 
+
+\begin{beispielbox}
+    Im zweidimensonalen reellen Ruam $x,y \in \R^2$ lässt sich dies wie folgt visualisieren:
+    \com{Bild hier einfügen}
+\end{beispielbox}
 
 \begin{beweisbox}
     $$
@@ -195,12 +210,17 @@ Das komplexe Standardskalarprodukt ist etwas komplizierter, denn das eine der be
 \end{beweisbox}
 
 
-\begin{definition}{L\textsuperscript{2}-Norm}
+\begin{definition}[deflabel=L2Norm]{L\textsuperscript{2}-Norm}
     Die durch das Skalarprodukt $\skalP{\cdot}{\cdot}$ induzierte L\textsuperscript{2}-Norm auf $\cR[a,b]$ ist definiert durch
     $$
         \|f\|_{L^2} := \sqrt{\skalP{f}{f}} = \left( \int_a^b |f(x)|^2dx \right)^{1/2}.
     $$
 \end{definition}
+Die $L^2$ norm ist eine besondere $L^p$-Norm (nach \cdef{LpNorm}), denn dies ist die einzige jener Normen, die sich mit dem Skalarprodukt versehen lassen. Der $L^2$ wird auch\afz{Hilbertraum} genannt.
+Als Rantnotiz: Der $L^2$ ist selbst-dual.
+Anschaulich beschreibt dies die Länge eines Vektors, bzw. den Betrag dessen.
+
+
 
 \begin{bemerkungbox}
     Die L\textsuperscript{2}-Norm erfüllt:
@@ -239,7 +259,7 @@ Das komplexe Standardskalarprodukt ist etwas komplizierter, denn das eine der be
 
 
 \begin{definition}{L\textsuperscript{2}-Konvergenz}
-    Seien $f_n \in \cR[a,b], n \in \N, f\in \cR[a,b]$.
+    Seien $f_n \in \cR[a,b], n \in \N \text{ und } f\in \cR[a,b]$ gegeben.
     Eine Folge $(f_n)_{n\in\N}$ konvergiert gegen $f$ im \emph{quadratischen Mittel}
     $f_n \underset{{L^2}}{\to} f$, wenn
     $$
@@ -255,37 +275,69 @@ Das komplexe Standardskalarprodukt ist etwas komplizierter, denn das eine der be
 \begin{bemerkungbox}
     Für jede Folge $f_n$ gilt:
     $$
-        \|f_n - f\|_\infty^2 \le (b-a)\|f_n - f\|_2^2.
+        \|f_n - f\|_2^2 \le (b-a)\|f_n - f\|_\infty^2 \, ,
+    $$
+
+    denn es gilt:
+    $$
+        \left|f_n(x) - f(x)\right|^2 \leq \left(\max_{x \in [a,b]} \left|f_n(x) - f(x)\right|\right)^2 = \left\|f_n - f\right\|_\infty^2
     $$
 
     Daraus folgt:
     $$
-        \|f_n - f\|_\infty \to 0 \Rightarrow \|f_n - f\|_2 \to 0,
+        \|f_n - f\|_\infty^2 \to 0 \Rightarrow \|f_n - f\|_2^2 \to 0, \qquad n \to \infty
     $$
     aber die Umkehrung gilt im Allgemeinen nicht.
 \end{bemerkungbox}
 
 \begin{beispielbox}
-    Betrachte $f_n(x) = x^n$ auf $[-1,1]$. Dann gilt:
+    Betrachte $f_n(x) := x^n$ auf $[-1,1]$. Dann gilt:
     $$
-        \|f_n\|_2^2 = 2 \int_0^1 x^{2n}dx = \frac{2}{2n+1} \longrightarrow 0,
+    \begin{aligned}
+        \|f_n\|_{L^2}^2 
+        &= \int_{-1}^{1} x^{2n} \, dx 
+        = 2 \int_0^1 x^{2n} \, dx \\ 
+        &= 2 \frac{x^{2n+1}}{2n+1} \Bigg|_0^1 
+        = \frac{2}{2n+1} \longrightarrow 0, \quad n \to \infty \\ 
+        &\Rightarrow f_n \underset{L^2}\to f \equiv 0, \quad n \to \infty
+    \end{aligned}
     $$
     also $f_n \to 0$ in L$^2$.
 
-    Punktweise gilt jedoch:
+    Für $x=1$ gilt:
     $$
-        f_n(1) = 1 \quad\text{für alle } n,
+        f_n(1) = 1 \quad \forall n \in \N,
     $$
-    also keine punktweise Konvergenz auf ganz $[-1,1]$.
+
+    $
+        \Rightarrow \text{keine punktweise Konvergenz} \quad f_n(x) \not\to 0 \quad \forall x\in [-1,1], \quad n \to \infty
+    $
+
+    $
+        \Rightarrow \text{keine gleichmäßige Konvergenz} \quad \left\| f_n - f \right\|_\infty \not \to  0, \quad f\equiv 0
+    $
+
+    Für $x=-1$ gilt:
+    $$
+        f_n(-1) = (-1)^n \quad \forall n \in \N,
+    $$
+
+    $
+        \Rightarrow f_n(-1) \text{ divergiert.}
+    $
+
+    \img{K1/Beispiel_L2_Konvergenz}{Visualisierung des Beispiels für $n \in \{1,2,3\}$.}
 \end{beispielbox}
 
-\begin{definition}{L\textsuperscript{p}-Norm}
+\begin{definition}[deflabel=LpNorm]{L\textsuperscript{p}-Norm}
     Für $p \in [1,\infty)$ und $f : [a,b] \to \mathbb{R}$ definiert man:
     $$
         \|f\|_p := \left( \int_a^b |f(x)|^pdx \right)^{1/p}.
     $$
     Für $p=2$ erhält man die L$^2$-Norm.
 \end{definition}
+Dies ist die allgemeine Definition der $L^p$ oder häufig auch $\ell^p$-Normen, wobei die $L^2$-Norm (\cdef{L2Norm}) lediglich eine Spezialform darstellt.
+Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
 
 \begin{bemerkungbox}
     Der Raum $R[a,b]$ ist bezüglich der L$^2$-Norm nicht vollständig.
@@ -311,27 +363,34 @@ Das komplexe Standardskalarprodukt ist etwas komplizierter, denn das eine der be
 
 
 \begin{satz}{Orthogonalität trigonometrischer Funktionen}
-    Die Funktionen
+    Die trigometrische Funktionen
     $$
-        c_0(x)=1,\quad c_k(x)=\cos(kx),\quad s_k(x)=\sin(kx),\quad k\in\mathbb{N},
+        c_0(x)=1,\quad c_k(x)=\cos(kx),\quad s_l(x)=\sin(lx),\quad k,l\in\mathbb{N},
     $$
-    bilden auf $R[0,2\pi]$ ein Orthogonalsystem bezüglich des L$^2$-Skalarprodukts.
+    bilden auf $\cR[0,2\pi]$ ein Orthogonalsystem bezüglich des $L^2$-Skalarprodukts.
     Es gilt:
     $$
-        \int_0^{2\pi} c_k(x)c_l(x)dx = \pi\delta_{kl},\qquad
-        \int_0^{2\pi} s_k(x)s_l(x)dx = \pi\delta_{kl},
+        \int_{0}^{2\pi} c_k(x) \, dx = \int_{0}^{2\pi} s_l(x) \, dx = \int_{0}^{2\pi} c_k(x) s_l(x) \, dx = 0
     $$
     $$
-        \int_0^{2\pi} c_k(x)s_l(x)dx = 0.
+        \int_{0}^{2\pi} c_k(x)c_l(x) \, dx = \pi \delta_{kl}\, , \qquad
+        \int_{0}^{2\pi} s_k(x)s_l(x) \, dx = \pi \delta_{kl}    
     $$
+
+    Dabei beschreibt
+    $$
+        \delta_{kl} = \begin{cases}1,& l=k\\0,& l\neq k\end{cases}
+    $$
+    Das Kronecker-Symbol (Kronecker-Delta).
 \end{satz}
 
-\begin{satz}{}
+\begin{beweisbox}
     COMMING SOON
-\end{satz}
+\end{beweisbox}
+
 
 \begin{definition}{Periodische Funktion}
-    Eine Funktion $f:\mathbb{R}\to \K$ heißt $L$-periodisch, wenn
+    Eine Funktion $f:\mathbb{R}\to \K$ heißt $L$-periodisch ($L>0$), wenn
     $$
         f(x+L)=f(x)\quad\forall x\in\mathbb{R}.
     $$
@@ -340,7 +399,3 @@ Das komplexe Standardskalarprodukt ist etwas komplizierter, denn das eine der be
 \begin{beispielbox}
     COMMING SOON
 \end{beispielbox}
-
-\begin{lemma}{}{Hilfslemma}
-    
-\end{lemma}

@@ -3,10 +3,10 @@
 \label{sec:1.2}
 
 \begin{definition}{Fourier-Reihe}
-    Sei $f\in R[0,2\pi]$ eine $2\pi$-periodische Funktion. Die Fourier-Koeffizienten
+    Sei $f\in \cR[0,2\pi]$ eine $2\pi$-periodische Funktion. Die Fourier-Koeffizienten
     sind definiert durch:
     $$
-        c_{k} := c_{k}(f) := \frac{1}{2\pi} \int_{0}^{2\pi} f(x)e^{-ikx} \, \mathrm{d}x = \frac{1}{2\pi} \left( f, e^{ikx} \right)
+        c_{k} := c_{k}(f) := \frac{1}{2\pi} \int_{0}^{2\pi} f(x)e^{-ikx} \, \mathrm{d}x = \frac{1}{2\pi} \skalP{f}{e^{ikx}} \, .
     $$
     Die Fourier-Reihe von $f$ ist die formale Reihe
     $$
@@ -14,12 +14,12 @@
     $$
     Die $n$-te Partialsumme ist
     $$
-        S_n(f)(x) = \sum_{k=-n}^{n} c_k e^{ikx}.
+        s_n(f)(x) = \sum_{k=-n}^{n} c_k e^{ikx}.
     $$
 
     Alternative Darstellung:
     $$
-        S_n(x) = \frac{a_0}{2} + \sum_{k=1}^{n} \left(a_k \cos(kx) + b_k \sin(kx)\right),
+        s_n(x) = \frac{a_0}{2} + \sum_{k=1}^{n} \left(a_k \cos(kx) + b_k \sin(kx)\right), \qquad \text{Für } n = \infty \text{ ist es die Fourier-Reihe.}
     $$
     wobei
     $$
@@ -28,10 +28,14 @@
     $$
 \end{definition}
 
+\begin{bemerkungbox}
+    $2\pi$-periodisch bedeztet, dass $f:\R\to\K$ auf $[0,2\pi]$ Rieman-integrierbar ist.
+\end{bemerkungbox}
+
 \begin{lemma}{}
-    Sei $f\in R [0,2\pi]$ eine $2\pi$-periodische Funktion. Dann gilt:
+    Sei $f\in \cR[0,2\pi]$ eine $2\pi$-periodische Funktion. Dann gilt:
     $$
-        \|f - S_n(f)\|_{L^2}^2
+        \|f - s_n(f)\|_{L^2}^2
          = \|f\|_{L^2}^2 - 2\pi \sum_{k=-n}^{n} |c_k|^2 \, , \quad n \in \mathbb{N}.
     $$
 \end{lemma}
@@ -41,7 +45,7 @@ COMMING SOON
 \end{beweisbox}
 
 \begin{satz}{Besselsche Ungleichung}
-    Für $f \in R[0,2\pi]$ mit Fourier-Koeffizienten $c_k$ gilt:
+    Für $f \in \cR[0,2\pi]$ mit Fourier-Koeffizienten $c_k$ gilt:
     $$
         \sum_{k=-\infty}^{\infty} |c_k|^2 \le \frac{1}{2\pi}\|f\|_2^2.
     $$
@@ -60,12 +64,12 @@ COMMING SOON
     Sei $V$ ein Skalarproduktraum und $\{e_k\}_{k\in\mathbb{Z}}$ ein Orthonormalsystem.
     Für $f \in V$ seien $c_k = (f,e_k)$ und
     $$
-        S_n = \sum_{k=-n}^{n} c_k e_k.
+        s_n = \sum_{k=-n}^{n} c_k e_k.
     $$
 
     Dann gilt:
     $$
-        \|f - S_n\|^2 = \|f\|^2 - \sum_{k=-n}^{n} |c_k|^2.
+        \|f - s_n\|^2 = \|f\|^2 - \sum_{k=-n}^{n} |c_k|^2.
     $$
 
     Daraus folgt die Besselsche Ungleichung:
@@ -108,7 +112,7 @@ COMMING SOON
 \begin{bemerkungbox}
     Ist $f$ stückweise stetig differenzierbar und $x_0$ eine Unstetigkeitsstelle, so gilt:
     $$
-        S_n(f)(x_0) \longrightarrow \frac{f(x_0^-) + f(x_0^+)}{2}.
+        s_n(f)(x_0) \longrightarrow \frac{f(x_0^-) + f(x_0^+)}{2}.
     $$
     Dies beschreibt das Gibbs-Phänomen.
 \end{bemerkungbox}

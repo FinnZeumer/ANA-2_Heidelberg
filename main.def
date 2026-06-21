@@ -2,29 +2,29 @@
 \contentsline {definition}{\numberline {1.1.2} -- Stückweise-Stetigkeit}{2}{Item.4}%
 \contentsline {definition}{\numberline {1.1.4} -- Sesquilinearform}{3}{section*.5}%
 \contentsline {definition}{\numberline {1.1.5} -- Skalarprodukt}{4}{Item.12}%
-\contentsline {definition}{\numberline {1.1.7} -- L\textsuperscript {2}-Norm}{5}{DefCounter.1.1.7}%
+\contentsline {definition}{\numberline {1.1.7} -- L\textsuperscript {2}-Norm}{6}{section*.6}%
 \contentsline {definition}{\numberline {1.1.8} -- L\textsuperscript {2}-Konvergenz}{6}{DefCounter.1.1.8}%
-\contentsline {definition}{\numberline {1.1.9} -- L\textsuperscript {p}-Norm}{6}{DefCounter.1.1.9}%
-\contentsline {definition}{\numberline {1.1.10} -- Orthogonalität}{7}{DefCounter.1.1.10}%
-\contentsline {definition}{\numberline {1.1.13} -- Periodische Funktion}{7}{DefCounter.1.1.13}%
-\contentsline {definition}{\numberline {1.2.1} -- Fourier-Reihe}{8}{DefCounter.1.2.1}%
-\contentsline {definition}{\numberline {2.1.1} -- Metrik, metrischer Raum}{11}{DefCounter.2.1.1}%
-\contentsline {definition}{\numberline {2.1.2} -- Norm, normierter Raum}{11}{DefCounter.2.1.2}%
-\contentsline {definition}{\numberline {2.1.5} -- Offene und abgeschlossene Kugeln}{13}{DefCounter.2.1.5}%
-\contentsline {definition}{\numberline {2.1.6} -- Beschränkte Menge}{13}{DefCounter.2.1.6}%
-\contentsline {definition}{\numberline {2.1.7} -- Konvergenz von Folgen}{13}{DefCounter.2.1.7}%
-\contentsline {definition}{\numberline {2.1.8} -- Häufungspunkt}{14}{DefCounter.2.1.8}%
-\contentsline {definition}{\numberline {2.1.9} -- Konvergenz in $\mathbb {R}^n$}{14}{DefCounter.2.1.9}%
-\contentsline {definition}{\numberline {2.1.12} -- Cauchy-Folge}{14}{DefCounter.2.1.12}%
-\contentsline {definition}{\numberline {2.1.14} -- Vollständiger metrischer Raum}{15}{DefCounter.2.1.14}%
-\contentsline {definition}{\numberline {2.2.1} -- Offene und abgeschlossene Mengen}{16}{DefCounter.2.2.1}%
-\contentsline {definition}{\numberline {2.2.5} -- Rand einer Menge}{16}{DefCounter.2.2.5}%
-\contentsline {definition}{\numberline {2.2.6} -- Offene Kugel}{16}{DefCounter.2.2.6}%
-\contentsline {definition}{\numberline {2.2.7} -- Offene und abgeschlossene Mengen}{16}{DefCounter.2.2.7}%
-\contentsline {definition}{\numberline {2.2.11} -- Rand einer Menge}{17}{DefCounter.2.2.11}%
-\contentsline {definition}{\numberline {2.2.12} -- Inneres und Abschluss}{17}{DefCounter.2.2.12}%
-\contentsline {definition}{\numberline {2.2.13} -- Topologie}{17}{Item.21}%
-\contentsline {definition}{\numberline {2.3.1} -- Kompaktheit}{18}{section*.6}%
-\contentsline {definition}{\numberline {2.4.1} -- Skalarprodukt}{19}{DefCounter.2.4.1}%
-\contentsline {definition}{\numberline {2.4.3} -- Orthogonalität und Orthonormalsystem}{19}{DefCounter.2.4.3}%
-\contentsline {definition}{\numberline {3.1.1} -- Stetige Funktionen}{21}{Item.23}%
+\contentsline {definition}{\numberline {1.1.9} -- L\textsuperscript {p}-Norm}{8}{section*.7}%
+\contentsline {definition}{\numberline {1.1.10} -- Orthogonalität}{8}{DefCounter.1.1.10}%
+\contentsline {definition}{\numberline {1.1.12} -- Periodische Funktion}{9}{DefCounter.1.1.12}%
+\contentsline {definition}{\numberline {1.2.1} -- Fourier-Reihe}{10}{DefCounter.1.2.1}%
+\contentsline {definition}{\numberline {2.1.1} -- Metrik, metrischer Raum}{13}{DefCounter.2.1.1}%
+\contentsline {definition}{\numberline {2.1.2} -- Norm, normierter Raum}{13}{section*.8}%
+\contentsline {definition}{\numberline {2.1.5} -- Offene und abgeschlossene Kugeln}{15}{DefCounter.2.1.5}%
+\contentsline {definition}{\numberline {2.1.6} -- Beschränkte Menge}{15}{DefCounter.2.1.6}%
+\contentsline {definition}{\numberline {2.1.7} -- Konvergenz von Folgen}{15}{DefCounter.2.1.7}%
+\contentsline {definition}{\numberline {2.1.8} -- Häufungspunkt}{16}{DefCounter.2.1.8}%
+\contentsline {definition}{\numberline {2.1.9} -- Konvergenz in $\mathbb {R}^n$}{16}{DefCounter.2.1.9}%
+\contentsline {definition}{\numberline {2.1.12} -- Cauchy-Folge}{16}{DefCounter.2.1.12}%
+\contentsline {definition}{\numberline {2.1.14} -- Vollständiger metrischer Raum}{17}{DefCounter.2.1.14}%
+\contentsline {definition}{\numberline {2.2.1} -- Offene und abgeschlossene Mengen}{18}{DefCounter.2.2.1}%
+\contentsline {definition}{\numberline {2.2.5} -- Rand einer Menge}{18}{DefCounter.2.2.5}%
+\contentsline {definition}{\numberline {2.2.6} -- Offene Kugel}{18}{DefCounter.2.2.6}%
+\contentsline {definition}{\numberline {2.2.7} -- Offene und abgeschlossene Mengen}{18}{DefCounter.2.2.7}%
+\contentsline {definition}{\numberline {2.2.11} -- Rand einer Menge}{19}{DefCounter.2.2.11}%
+\contentsline {definition}{\numberline {2.2.12} -- Inneres und Abschluss}{19}{DefCounter.2.2.12}%
+\contentsline {definition}{\numberline {2.2.13} -- Topologie}{19}{Item.21}%
+\contentsline {definition}{\numberline {2.3.1} -- Kompaktheit}{20}{section*.9}%
+\contentsline {definition}{\numberline {2.4.1} -- Skalarprodukt}{21}{DefCounter.2.4.1}%
+\contentsline {definition}{\numberline {2.4.3} -- Orthogonalität und Orthonormalsystem}{21}{DefCounter.2.4.3}%
+\contentsline {definition}{\numberline {3.1.1} -- Stetige Funktionen}{23}{Item.23}%
