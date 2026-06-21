@@ -41,13 +41,12 @@
 
 % \iimg[Width left img]{Path left}{Path right}{Main Caption}
 \newcommand{\iimg}[4][0.6]{%
-  \begin{figure}[h!]
-      \centering
+  \begin{center}[h!]
       % --- Left Image ---
       \begin{subfigure}[c]{\dimexpr #1\textwidth - 0.1\textwidth\relax}
           \centering
           \includegraphics[width=\textwidth]{img/#2}
-          \caption{}
+          \captionof{figure}{}
           \label{fig:#2_a}
       \end{subfigure}
       \hfill 
@@ -56,11 +55,11 @@
       \begin{subfigure}[c]{\dimexpr 0.99\textwidth - (\dimexpr #1\textwidth - 0.1\textwidth\relax)\relax}
           \centering
           \includegraphics[width=\textwidth]{img/#3}
-          \caption{}
+          \captionof{figure}{}
           \label{fig:#2_b}
       \end{subfigure}
       
-      \caption{#4}
+      \captionof{figure}{#4}
       \label{fig:#2}
-  \end{figure}
+  \end{center}
 }

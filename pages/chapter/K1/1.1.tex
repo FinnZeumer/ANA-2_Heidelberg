@@ -52,6 +52,9 @@ Es ist bekannt, dass die Summe zweier reellwertiger Riemanintegrale immer noch R
 \end{definition}
 Diese Definition sagt also aus, dass an einer Stelle $\xi$ die Funktion\afz{unterbrochen} sein kann. Es gibt so mit eigentlich zwei verschiedene Werte an dieser Stelle, einmal denn unteren $\xi^-$, und den oberen $\xi^+$. Diese werden über den Limes bestimmt. Da zwei Funktionswerte für dasselbe Argument hier nicht gewollt sind, wird lediglich das arimetische Mittel der beiden Werte gebildet. 
 
+\begin{beispielbox}
+    \img[.6]{K1/ANA2__StuckweiseStetig__K1}{Visualisierung von stückweiser-Stetigkeit.}
+\end{beispielbox}
 
 \begin{bemerkungbox}
     \begin{itemize}
@@ -83,7 +86,7 @@ Diese Definition sagt also aus, dass an einer Stelle $\xi$ die Funktion\afz{unte
     Diese Abbildung ist wohldefiniert, da $f,g \in \cR[a,b]$ und somit auch
     $f\cdot g \in \cR[a,b]$.
 \end{definition}
-Diese Definition ist als Skalarprodukt zweier Funktionen zu verstehen. Jedoch gibt es hier wichtige Unterschiede. Denn\afz{sesqu} bedeutet zu deutsch\afz{anderthab}, diese Abbildung ist also nicht vollständig linear. 
+Diese Definition ist als Skalarprodukt zweier Funktionen zu verstehen. Jedoch gibt es hier wichtige Unterschiede. Denn\afz{sesqui} bedeutet zu deutsch\afz{anderthab}, diese Abbildung ist also nicht vollständig linear. 
 Das bedeutet, das die Abbildung im einen Argument linear sein muss, im anderen (zweiten) Argument semilinear. 
 
 Um das Verständnis noch etwas zu vertiefen, ist die Sesquilinearform als Abbildung zwischen zwei Vekotrräumen zu verstehen. Jedes Argument kann aus einem anderen Vektorraum entstammen, müssen jedoch demsselben Skalarkörper $\K$ entstammen. 
@@ -93,6 +96,9 @@ Für reellwertige Vekotrräume entspricht die Definiton gerade der Bilinearform.
     $$
         f : \C^n \times \C^n \to \C
     $$
+
+    \com{HIER MUSS DIE ABBILDUNG GGF: VERBESSERT WERDEN:}
+    \img{K1/ANA2__StrengDefinit__K1}{COMMING SOON}
 \end{beispielbox}
 
 \begin{bemerkungbox}
@@ -186,7 +192,7 @@ Dies ist sich grob wie die Dreiecksungleichung vorzustellen.
 
 \begin{beispielbox}
     Im zweidimensonalen reellen Ruam $x,y \in \R^2$ lässt sich dies wie folgt visualisieren:
-    \com{Bild hier einfügen}
+    \img{K1/ANA2__Cauchy_schwarz_ungleichung__K1}{Visualisierung der Idee der Cauchy-Schwaz-Ungleichung}
 \end{beispielbox}
 
 \begin{beweisbox}
@@ -219,8 +225,6 @@ Dies ist sich grob wie die Dreiecksungleichung vorzustellen.
 Die $L^2$ norm ist eine besondere $L^p$-Norm (nach \cdef{LpNorm}), denn dies ist die einzige jener Normen, die sich mit dem Skalarprodukt versehen lassen. Der $L^2$ wird auch\afz{Hilbertraum} genannt.
 Als Rantnotiz: Der $L^2$ ist selbst-dual.
 Anschaulich beschreibt dies die Länge eines Vektors, bzw. den Betrag dessen.
-
-
 
 \begin{bemerkungbox}
     Die L\textsuperscript{2}-Norm erfüllt:
@@ -271,6 +275,8 @@ Anschaulich beschreibt dies die Länge eines Vektors, bzw. den Betrag dessen.
         \|f_n - f\|_{L^2}^2 = \int_a^b |f_n(x) - f(x)|^2dx \to 0  \Lra \|f_n - f\|_{L^2} \to 0.
     $$
 \end{definition}
+
+\img[.7]{K1/ANA2__l2Stetigkeit__K1}{Idee der L\textsuperscript{2}-Konvergenz.}
 
 \begin{bemerkungbox}
     Für jede Folge $f_n$ gilt:
@@ -327,6 +333,9 @@ Anschaulich beschreibt dies die Länge eines Vektors, bzw. den Betrag dessen.
     $
 
     \img{K1/Beispiel_L2_Konvergenz}{Visualisierung des Beispiels für $n \in \{1,2,3\}$.}
+
+    \com{HIER FHELT NOCH EINE SEKTION IM BEISPEIL:}
+    \img{K1/ANA2__StrengDefinit__K1}{COMMIGN SOON}
 \end{beispielbox}
 
 \begin{definition}[deflabel=LpNorm]{L\textsuperscript{p}-Norm}
@@ -397,5 +406,6 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
 \end{definition}
 
 \begin{beispielbox}
+    \img{K1/ANA2__Linear_Func_periodisch__K1}{COMMING SOON}
     COMMING SOON
 \end{beispielbox}
