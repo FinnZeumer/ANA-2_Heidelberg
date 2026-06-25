@@ -17,12 +17,12 @@ $$
 \begin{definition}{Metrik, metrischer Raum}
     Sei $X$ eine Menge. Eine Abbildung 
     $$
-    d : X \times X \to \mathbb{R}
+    d : X \times X \to \mathbb{R}, \qquad (x,y) \to d(x,y)
     $$
     heißt \emph{Metrik}, wenn für alle $x,y,z \in X$ gilt:
 
     \begin{enumerate}
-        \item[(M1)] Definitheit: $d(x,y)=0 \Rightarrow x=y$,
+        \item[(M1)] Definitheit: $d(x,y)=0 \Leftrightarrow x=y$,
         \item[(M2)] Symmetrie: $d(x,y)=d(y,x)$,
         \item[(M3)] Dreiecksungleichung: $d(x,z) \le d(x,y) + d(y,z)$.
     \end{enumerate}
@@ -36,14 +36,14 @@ COMMING SOON
 \end{beispielbox}
 
 \begin{definition}[deflabel=NormRaum]{Norm, normierter Raum}
-    Sei $V$ ein Vektorraum über $\K \, (\mathbb{R}$ oder $\mathbb{C}$). Eine Abbildung 
+    Sei $V$ ein Vektorraum über einen $\K \, (\mathbb{R}$ oder $\mathbb{C}$). Eine Abbildung 
     $$
     \|\cdot\| : V \to \mathbb{R}$$
     heißt \emph{Norm} auf $V$, wenn für alle $x,y \in V$ und $\alpha \in \K$ gilt:
 
     \begin{enumerate}
         \item[(N1)] Definitheit: $\|x\| = 0 \Leftrightarrow x=0$,
-        \item[(N2)] Homogenität: $\|\alpha x\| = |\alpha|\,\|x\|$,
+        \item[(N2)] Homogenität: $\|\alpha x\| = |\alpha|\cdot\|x\|$,
         \item[(N3)] Dreiecksungleichung: $\|x+y\| \le \|x\| + \|y\|$.
     \end{enumerate}
 
@@ -52,7 +52,10 @@ COMMING SOON
 \end{definition}
 
 \begin{bemerkungbox}
-COMMING SOON
+    Aus den Eigenschaften N1 bis N3 folgt:
+    $$
+        \left\|x\right\| \geq 0, \quad \forall x \in V
+    $$
 \end{bemerkungbox}
 
 \begin{beispielbox}
@@ -129,20 +132,22 @@ COMMING SOON
 \end{beweisbox}
 
 \begin{definition}{Offene und abgeschlossene Kugeln}
-    Sei $(X,d)$ ein metrischer Raum. Für $x \in X$ und $R>0$ definiert man:
-    Die \emph{offene Kugel} $B_R(x)$ um $x$ und Raidus $R$
-    $$
-        B_R(x) := \{y \in X : d(x,y) < R\} \, .
-    $$
+    Sei $(X,d)$ ein metrischer Raum. Für $x \in X$ und $R>0$ definiert man
+    \begin{enumerate}
+        \item die \emph{offene Kugel} $B_R(x)$ um $x$ und Raidus $R$
+        $$
+            B_R(x) := \{y \in X : d(x,y) < R\} \, .
+        $$
 
-    Die \emph{abgeschlossene Kugel} $\overline{B}_R(x)$ um $x$ und Raidus $R$
-    $$
-    \overline{B}_R(x) := \{y \in X : d(x,y) \le R\}.
-    $$
+        \item die \emph{abgeschlossene Kugel} $\overline{B}_R(x)$ um $x$ und Raidus $R$
+        $$
+        \overline{B}_R(x) := \{y \in X : d(x,y) \le R\}.
+        $$
+    \end{enumerate}
 \end{definition}
 
 \begin{definition}{Beschränkte Menge}
-    Sei $(X,d)$ ein metrischer Raum. Eine Menge $E \subset X$ heißt beschränkt, wenn es ein $x \in X$ und $R>0$ gibt mit
+    Sei $(X,d)$ ein metrischer Raum. Eine Menge $E \subset X$ heißt \emph{beschränkt}, wenn es ein $x \in X$ und $R>0$ gibt mit
     $$
         E \subset B_R(x).
     $$
@@ -153,11 +158,10 @@ Nun wo die wichtigsten Definitonen geklärt sind, soll nun die \emph{ Konvergenz
 \begin{definition}{Konvergenz von Folgen}
     Sei $(X,d)$ ein metrischer Raum und $(x_k)_{k\in\N}$ eine Folge in $X$. Die Folge \emph{konvergiert} gegen $a \in X$, wenn gilt:
     $$
-        \forall \varepsilon>0, \quad \exists k_0:\; d(x_k,a) < \varepsilon \quad \forall k \ge k_0.
+        \forall \varepsilon>0, \quad \exists k_0 \in \N:\; d(x_k,a) < \varepsilon \quad \forall k \ge k_0.
     $$
 
-    In diesem Fall heißt $a$ \emph{Limes} oder \emph{Grenzwert} der Folge und wir schreiben
-    Man schreibt 
+    In diesem Fall heißt $a$ \emph{Limes} oder \emph{Grenzwert} der Folge und man schreibt 
     $$
         \alpha = \lim\limits_{k \to \infty} x_k \quad \text{oder} \quad x_k \to a \text{ für } k \to \infty
     $$
@@ -171,11 +175,14 @@ COMMING SOON
 
 \begin{definition}{Häufungspunkt}
     Sei $(X,d)$ ein metrischer Raum und $(x_k)_{k\in\N}$ eine Folge in $X$. 
-    Ein Punkt $a \in X$ heißt \emph{Häufungspunkt} der Folge, wenn eine Teilfolge $(x_{k_j})_{k\in\N}$ existiert, welche gegen $a$ konvergiert.
+
+    Ein Punkt $a \in X$ heißt \emph{Häufungspunkt} der Folge, wenn eine Teilfolge $(x_{k_j})_{k,j\in\N}$ existiert, welche gegen $a$ konvergiert.
 \end{definition}
 
 \begin{beispielbox}
-COMMING SOON
+    $$
+        \text{im } \R \quad x_k = (-1) = \{-1,1,-1,1,\dots\}
+    $$
 \end{beispielbox}
 
 \begin{bemerkungbox}
@@ -183,19 +190,19 @@ COMMING SOON
 \end{bemerkungbox}
 
 \begin{definition}{Konvergenz in $\mathbb{R}^n$}
-    Sei $(x_k)_{k\in\N}$ eine Folge in $\R$,
+    Sei $(x_k)_{k\in\N}$ eine Folge in $\R^n$,
      $$
      x_k =
         \begin{pmatrix}
-        x_{k,1}\
-        \vdots\
+        x_{k,1}\\
+        \vdots \\
         x_{k,n}
         \end{pmatrix} \, ,
     \quad
     a =
         \begin{pmatrix}
-        a_1\
-        \vdots\
+        a_1 \\
+        \vdots \\
         a_n
         \end{pmatrix}
         \in \mathbb{R}^n \, .
@@ -236,11 +243,23 @@ COMMING SOON
 \end{beweisbox}
 
 \begin{definition}{Cauchy-Folge}
-    Sei $(X,d)$ ein metrischer Raum. Eine Folge $(x_k)$ in $X$ heißt Cauchy-Folge, falls für alle $\varepsilon>0$ ein $k^*\in\mathbb{N}$ existiert, sodass
+    Sei $(X,d)$ ein metrischer Raum. Eine Folge $(x_k)_{k\in\N}$ in $X$ heißt \emph{Cauchy-Folge}, falls für alle $\varepsilon>0$ ein $k^*\in\mathbb{N}$ existiert, sodass
     $$
-        d(x_k,x_m) < \varepsilon \quad \text{für alle } k,m \ge k^*.
+        d(x_k,x_m) < \varepsilon \quad \forall k,m \ge k^*.
     $$
 \end{definition}
+
+\begin{bemerkungbox}
+    $$
+        \R \qquad (x_k)_{k\in\N} \subset \R \text{ ist eine C.F., falls}
+    $$
+    $$
+        \forall \epsilon > 0 \exists K^* \text{, sodass } |x_k - x_m| < \epsilon
+    $$
+    $$
+        \forall k,m \geq k^*
+    $$
+\end{bemerkungbox}
 
 \begin{satz}{Eigenschaften von Cauchy-Folgen}
     In einem metrischen Raum gilt:
@@ -252,10 +271,10 @@ COMMING SOON
 \end{satz}
 
 \begin{definition}{Vollständiger metrischer Raum}
-    Ein metrischer Raum heißt vollständig, wenn jede Cauchy-Folge in ihm konvergiert.
+    Ein metrischer Raum heißt \emph{vollständig}, wenn jede Cauchy-Folge in ihm konvergiert.
 \end{definition}
 
-\begin{korollar}
+\begin{korollar}{Vollständigkeit und Cauchy-Folgen}
     In einem vollständigen metrischen Raum ist eine Folge genau dann eine Cauchy-Folge, wenn sie konvergiert.
 \end{korollar}
 

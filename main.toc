@@ -9,21 +9,21 @@
 \contentsline {chapter}{\numberline {2.}Topologische und metrische Grundbegriffe, der Raum $\mathbf {\mathbb {R}^n}$}{14}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Normierte und metrische Räume, der Raum $\mathbb {R}^n$}{15}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Topologie metrischer Räume}{20}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Kompaktheit}{22}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Geometrie in $\mathbf {\mathbb {R}^n}$}{23}{section.2.4}%
-\contentsline {chapter}{\numberline {3.}Stetigkeit in metrischen Räumen}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Stetigkeit: Definitionen}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Lineare Abbildungen}{28}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Stetige Funktionen auf kompakten Mengen; andere Eigenschaften}{29}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Konvergenz von Funktionenfolgen}{30}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Banachsche Fixpunktsatz}{31}{section.3.5}%
-\contentsline {chapter}{\numberline {4.}Differentialrechnung für Funktionen in $\mathbf {\mathbb {R}^n}$}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Partielle Ableitungen}{33}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Totale Ableitungen}{34}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Mittelwertsatz}{35}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Taylor-Entwicklung}{36}{section.4.4}%
-\contentsline {chapter}{\numberline {5.}Implizite Funktionen und Mannigfaltigkeiten}{37}{chapter.5}%
-\contentsline {chapter}{\numberline {6.}Systeme gewöhnlicher Differentialgleichungen}{38}{chapter.6}%
-\contentsline {chapter}{\numberline {7.}Kurvenintegrale}{39}{chapter.7}%
-\contentsline {chapter}{Definitionsverzeichnis}{40}{chapter*.10}%
+\contentsline {section}{\numberline {2.3}Kompaktheit}{23}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Geometrie in $\mathbf {\mathbb {K}^n}$}{24}{section.2.4}%
+\contentsline {chapter}{\numberline {3.}Stetigkeit in metrischen Räumen}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Stetigkeit: Definitionen}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Lineare Abbildungen}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Stetige Funktionen auf kompakten Mengen; andere Eigenschaften}{31}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Konvergenz von Funktionenfolgen}{32}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Banachsche Fixpunktsatz}{33}{section.3.5}%
+\contentsline {chapter}{\numberline {4.}Differentialrechnung für Funktionen in $\mathbf {\mathbb {R}^n}$}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Partielle Ableitungen}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Totale Ableitungen}{36}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Mittelwertsatz}{37}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Taylor-Entwicklung}{38}{section.4.4}%
+\contentsline {chapter}{\numberline {5.}Implizite Funktionen und Mannigfaltigkeiten}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {6.}Systeme gewöhnlicher Differentialgleichungen}{40}{chapter.6}%
+\contentsline {chapter}{\numberline {7.}Kurvenintegrale}{41}{chapter.7}%
+\contentsline {chapter}{Definitionsverzeichnis}{42}{chapter*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

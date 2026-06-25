@@ -1,23 +1,58 @@
 \newpage
-\section{Geometrie in $\mathbf{\mathbb{R}^n}$}
+\section{Geometrie in $\mathbf{\mathbb{K}^n}$}
 \label{2.4}
 
 \begin{definition}{Skalarprodukt}
-    Sei $V$ ein Vektorraum über $K\in\{\mathbb{R},\mathbb{C}\}$. Eine Abbildung $(\cdot,\cdot):V\times V\to K$ heißt Skalarprodukt, wenn gilt:
-    $$
-        (x,x)\ge 0,\ (x,x)=0\Rightarrow x=0,\qquad
-        (x,y)=(y,x),\qquad
-        (ax_1+bx_2,y)=a(x_1,y)+b(x_2,y).
-    $$
+    Sei $V$ ein Vektorraum über $\K\in\{\mathbb{R},\mathbb{C}\}$. Eine Abbildung $\skalP{\cdot}{\cdot}:V\times V\to \K$ heißt \emph{Skalarprodukt}, wenn gilt:
+    \begin{enumerate}
+        \item[S1] Definitheit:
+        $$
+            \skalP{x}{x} \in \R \text{ und } \skalP{x}{x}\ge 0,\ \skalP{x}{x}=0 \Leftrightarrow x=0\, .
+        $$
+        \item[S2] Symmetrie
+        $$
+            \skalP{x}{y} = \overline{\skalP{x}{y}} \, .
+        $$
+        \item[S3] Liniarität im ersten Argument
+        $$
+            \skalP{\alpha x_1+ \beta x_2}{y}=\alpha \skalP{x_1}{y} + \beta \skalP{x_2}{y}, \quad \forall x_1, x_2,y \in V, \; \forall \alpha, \beta \in \K \, .
+        $$
+    \end{enumerate}
 \end{definition}
 
-\begin{korollar}
+\begin{bemerkungbox}
+    COMMING SOON
+\end{bemerkungbox}
+
+\begin{lemma}{Cauchy--SChwarz--Ungleichung}
+    COMMING SOON
+\end{lemma}
+
+\begin{korollar}{Hilbert--Raum}
     Sei $(X,d)$ ein metrischer Raum und $K\subset X$ kompakt. Ist $A\subset K$ abgeschlossen, so ist $A$ kompakt.
 \end{korollar}
 
+\begin{lemma}{Ungleichung von Young}
+    COMMING SOON
+\end{lemma}
+
+\begin{lemma}{Ungleichung von Hölder}
+    COMMING SOON
+\end{lemma}
+
+\begin{lemma}{Ungleichung von Minkowski}
+    COMMING SOON
+\end{lemma}
 
 \begin{definition}{Orthogonalität und Orthonormalsystem}
-    Vektoren $x,y\in K^n$ heißen orthogonal, falls $(x,y)=0$. Ein System $\{a(1),\dots,a(m)\}$ heißt Orthogonalsystem, wenn $(a(k),a(\ell))=0$ für $k\ne\ell$. Ist zusätzlich $(a(k),a(k))=1$, so heißt es Orthonormalsystem.
+    \begin{enumerate}
+        \item Die Vektoren $x,y\in K^n$ heißen \emph{orthogonal}, falls $\skalP{x}{y}_2 = 0$.
+        \item Ein Satz von Vektoren $\{a^{(1)},\dots,a^{(m)}\}, a^{(i)} \not= 0$ und $a^{(i)} \in \K, i = 1,\dots,m$ heißt \emph{Orthogonalsystem}, wenn 
+        $$
+        \underbrace{\skalP{a^{(k)}}{a^{(\ell)}}_2 = 0}_{\text{paarweise orthogonal}} \text{ für } k\ne\ell
+        $$.
+        \item Ist zusätzlich $\skalP{a^{(k)}}{a^{(k)}}_2 = 1$, so heißt es \emph{Orthonormalsystem} bzw. \emph{Orthogonalbasis}.
+    \end{enumerate}
 \end{definition}
 
 \begin{lemma}{}
@@ -31,7 +66,7 @@
     $$
 \end{lemma}
 
-\begin{satz}{Gram--Schmidt}
+\begin{satz}{Gram--Schmidt--Verfahren}
     Sei $\{a(1),\dots,a(n)\}$ eine Basis von $K^n$. Dann entsteht durch
     $$
         b(1)=\frac{a(1)}{\|a(1)\|},\qquad
