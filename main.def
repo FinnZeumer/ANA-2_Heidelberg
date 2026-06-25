@@ -7,10 +7,10 @@
 \contentsline {definition}{\numberline {1.1.9} -- L\textsuperscript {p}-Norm}{10}{section*.7}%
 \contentsline {definition}{\numberline {1.1.10} -- Orthogonalität}{10}{DefCounter.1.1.10}%
 \contentsline {definition}{\numberline {1.1.12} -- Periodische Funktion}{11}{DefCounter.1.1.12}%
-\contentsline {definition}{\numberline {1.2.1} -- Fourier-Reihe}{12}{DefCounter.1.2.1}%
+\contentsline {definition}{\numberline {1.2.1} -- Fourier--Reihe}{12}{DefCounter.1.2.1}%
 \contentsline {definition}{\numberline {2.1.1} -- Metrik, metrischer Raum}{15}{DefCounter.2.1.1}%
 \contentsline {definition}{\numberline {2.1.2} -- Norm, normierter Raum}{15}{section*.8}%
-\contentsline {definition}{\numberline {2.1.5} -- Offene und abgeschlossene Kugeln}{17}{Item.20}%
+\contentsline {definition}{\numberline {2.1.5} -- Offene und abgeschlossene Kugeln}{17}{Item.23}%
 \contentsline {definition}{\numberline {2.1.6} -- Beschränkte Menge}{17}{DefCounter.2.1.6}%
 \contentsline {definition}{\numberline {2.1.7} -- Konvergenz von Folgen}{17}{DefCounter.2.1.7}%
 \contentsline {definition}{\numberline {2.1.8} -- Häufungspunkt}{18}{DefCounter.2.1.8}%
@@ -23,9 +23,9 @@
 \contentsline {definition}{\numberline {2.2.7} -- Offene und abgeschlossene Mengen}{21}{DefCounter.2.2.7}%
 \contentsline {definition}{\numberline {2.2.11} -- Rand einer Menge}{21}{DefCounter.2.2.11}%
 \contentsline {definition}{\numberline {2.2.12} -- Inneres und Abschluss}{21}{DefCounter.2.2.12}%
-\contentsline {definition}{\numberline {2.2.16} -- Topologie}{22}{Item.23}%
-\contentsline {definition}{\numberline {2.2.17} -- Topologischer Raum}{22}{Item.26}%
+\contentsline {definition}{\numberline {2.2.16} -- Topologie}{22}{Item.26}%
+\contentsline {definition}{\numberline {2.2.17} -- Topologischer Raum}{22}{Item.29}%
 \contentsline {definition}{\numberline {2.3.1} -- Kompaktheit}{23}{section*.9}%
 \contentsline {definition}{\numberline {2.4.1} -- Skalarprodukt}{24}{DefCounter.2.4.1}%
-\contentsline {definition}{\numberline {2.4.7} -- Orthogonalität und Orthonormalsystem}{24}{Item.29}%
-\contentsline {definition}{\numberline {3.1.1} -- Stetige Funktionen}{27}{Item.31}%
+\contentsline {definition}{\numberline {2.4.7} -- Orthogonalität und Orthonormalsystem}{24}{Item.32}%
+\contentsline {definition}{\numberline {3.1.1} -- Stetige Funktionen}{27}{Item.34}%
