@@ -1,3 +1,17 @@
 \newpage
 \section{Konvergenz von Funktionenfolgen}
 \label{3.4}
+
+\begin{definition}{Konvergenz von Funktionenfolgen}
+    Sei $X$ eine Menge, $E \subset X$ und $(Y, \left\|\cdot\right\|)$ normierter Raum. Sei $(fk){k\in\N}$ eine Folge von Funktionen $fk : E \to Y$ und $f : E \to Y$.
+    \begin{enumerate}
+        \item $(fk){k\in\N}$ \emph{konvergiert punktweise} in $E$ gegen $f$ , falls
+        $$
+            f_k(x) \rightarrow f(x) \quad \text{für } k \rightarrow \infty\quad \text{für alle } x \in E.
+        $$
+        \item $(fk){k\in\N}$ \emph{konvergiert gleichmäßig} in $E$ gegen $f$, falls für alle $\epsilon > 0$ ein $k^* \in  \N$ existiert, sodass
+        $$
+            \|f_k(x) - f(x)\| < \varepsilon \quad \text{für alle } k \ge k^* \text{ und alle } x \in E.
+        $$
+    \end{enumerate}
+\end{definition}

@@ -1,3 +1,68 @@
 
 \section{Partielle Ableitungen}
 \label{4.1}
+
+\begin{definition}{Partielle Ableitungen}
+    Sei $D \subset \R^n$ offen und $f : D \to \R$.
+    \begin{enumerate}
+        \item $f$ heißt im Punkt $x \in D$ \emph{partiell differenzierbar} nach $i$-ter Koordinatenrichtung, falls der Grenwert
+        $$
+            \frac{\partial f(x)}{\partial x} := \lim_{h \to 0} \frac{f\left(x + h \cdot e^{(i)}\right) - f(x)}{h}
+        $$
+        existiert mit $e^{(i)} := i$-te Spalte der $n\times n$ Einheitsmatrix. Schreibweise auch 
+        $$
+            \frac{\partial f}{\partial x_i}(x) \text{ oder } \frac{\partial f(x)}{\partial x_i} \,.
+        $$
+        
+        \item $f$ heißt \emph{partiell differenzierbar} in $x \in D$, falls $\partial_i f(x)$ für alle $1 \leq i \leq n$ existieren.
+        \item Sind $\partial_i f(x) \forall i$ stetig, dann heißt $f$ \emph{stetig partiell differenzierbar}.
+        \item Falls $f : D \subset \R^n \to \R^m$, dann heißt $f$ \emph{(stetig) partiell differenzierbar}, falls alle Komponentenfunktionen $f_j (1 \leq j \leq m)$ (stetig) partiell differenzierbar in $x \in D$ sind, d.h. wenn $\partial_i f_j(x)\forall i = 1, . . . , n, j = 1, . . . , m$ existieren.
+    \end{enumerate}
+\end{definition}
+
+\begin{satz}{}
+    COMMING SOON
+\end{satz}
+
+\begin{definition}{Partielle Ableitungen höherer Ordnung}
+    Sei $f : D \subset \R^n \to \R$ partiell differenzierbar mit $\partial_i f : D \to \R$.
+    \begin{enumerate}
+        \item Falls $\partial_i f$ partiell differenzierbar sind, dann heißt $f$ zweimal partiell differenzierbar mit den partiellen Ableitungen zweiter Ordnung
+        $$
+            \partial_i \partial_j f(x) : = \frac{\partial^2 f(x)}{\partial x_i \partial x_j} : = \frac{\partial}{\partial x_i}\left(\frac{\partial f(x)}{\partial x_j}\right) \, .
+        $$
+        \item $f$ heißt $k$-mal (stetig) partiell differenzierbar, falls alle partiellen Ableitungen $k$-ter Ordnung von $f$
+        $$
+            \partial_{i_1\dots i_k} f(x) : = \frac{\partial^k f(x)}{\partial x_{i_1}\dots\partial x_{i_k}} : = \frac{\partial}{\partial x_{i_1}} \dots \Bigl( \frac{\partial f(x)}{\partial x_{i_k}} \Bigr)
+        $$
+        existieren und (stetig) sind.
+    \end{enumerate}
+\end{definition}
+
+\begin{satz}{Vertauschbarkeit der Differentiationsreihenfolge}
+    
+\end{satz}
+
+\begin{definition}{Gradient}
+    Sei $D \subset \R^n$ offen und $f : D \to \R$ eine partiell differenzierbare Funktion. Der Vektor
+    $$
+        \mathrm{grad} f(x) = \nabla f(x) = \begin{pmatrix} \partial_1 f(x) \\\vdots \\\partial_n f(x) \end{pmatrix} \in \mathbb{R}^n
+    $$
+    heißt der \emph{Gradient} von $f$ in $x \in D$.
+\end{definition}
+
+\begin{definition}{Hesse-Matrix}
+    Sei $D \subset \R^n$ offen und $f : D \to \R$ eine zweimal partiell differenzierbare Funktion. Die Matrix
+    $$
+        H_f(x) : = \nabla^2 f(x) : = (\partial_i\partial_j f(x))_{i,j=1}^n \in \mathbb{R}^{n\times n}
+    $$
+    heißt \emph{Hesse-Matrix} von $f$ im Punkt $x \in D$.
+\end{definition}
+
+\begin{definition}{Jacobi-Matrix}
+    Sei $D \subset \R^n$ offen und $f : D \to \R^m$ eine partiell differenzierbare Vektorfunktion. Die Matrix
+    $$
+        J_f(x) := \left( \begin{array}{c|c} \partial_1 f_1 \, \vdots \, \partial_n f_1 \\ \vdots \\ \partial_1 f_m \, \vdots \, \partial_n f_m \end{array} \right) \in \mathbb{R}^{m \times n}
+    $$
+    heißt \emph{Funktionalmatrix} oder auch \emph{Jacobi-Matrix} von $f$ in $x \in D$.
+\end{definition}

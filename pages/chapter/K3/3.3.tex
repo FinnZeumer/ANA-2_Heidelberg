@@ -1,3 +1,29 @@
 \newpage
-\section{Stetige Funktionen auf kompakten Mengen; andere Eigenschaften}
+\section{Stetige Funktionen auf kompakten Mengen}
 \label{3.3}
+
+\begin{definition}{Zusammenhängende Mengen}
+    Sei $(X, dX)$ ein metrischer Raum, $A \subset X$. A heißt \emph{zusammenhängend}, wenn für alle offenen Teilmengen
+    $U_1, U_2 \subset X$ gilt:
+    $$
+        A \cap U_1 \neq \varnothing, A \subset (U_1 \cup U_2), (A \cap U_1) \cap U_2 = \varnothing \Rightarrow A \cap U_2 = \varnothing
+    $$
+\end{definition}
+
+\begin{definition}{gleichmäßige Stetigkeit}
+    Seien $(X, dX), (Y, dY )$ metrische Räume, $F \subset E \subset X$ und $f : E \to Y$.
+    Dann heißt $f$ \emph{gleichmäßig stetig} in $F$, falls es zu jedem $\epsilon > 0$ ein  $\delta = \delta(\epsilon) > 0$ gibt, sodass für alle $x, y \in F$ gilt
+    $$
+        d_X(x,y) < \delta \quad\Rightarrow\quad d_Y(f(x),f(y)) < \varepsilon.
+    $$
+    Falls diese Bedingung für $F = E$ gilt, heißt $f : E \to Y$ gleichmäßig stetig.
+\end{definition}
+
+\begin{definition}{Lipschitz-Stetigkeit}
+    Seien $(X, dX), (Y, dY )$ metrische Räume, $F \subset E \subset X$ und $f : E \to Y$.
+    Dann heißt $f$ Lipschitzstetig in $F$, falls es eine Konstante $L > 0$ gibt, sodass
+    $$
+        d_{Y}(f(x),f(y)) < Ld_{X}(x,y) \text{ für alle } x,y \in F.
+    $$
+    Man nennt $f$ Lipschitzstetig auf $F$ mit Lipschitzkonstante $L$. Falls diese Bedingung für $F = E$ gilt, heißt $f : E \to Y$ \emph{Lipschitz-stetig}.
+\end{definition}
