@@ -1,3 +1,83 @@
 \newpage
 \section{Taylor-Entwicklung}
 \label{4.4}
+\begin{satz}{Taylor-Formel}
+    Seien $D\subset\mathbb{R}^n$ offen, $x\in D$, $h\in\mathbb{R}^n$ mit $\{x+th\mid t\in[0,1]\}\subset D$ und $f\in C^{r+1}(D,\mathbb{R})$.
+
+    Dann existiert ein $\theta\in[0,1]$, sodass gilt:
+    $$
+    \begin{aligned}
+        f(x+h) & =f(x)
+        +\underbrace{\sum_{k=1}^r\frac{1}{k!}\sum_{i_1,\dots,i_k=1}^n
+        \frac{\partial^k f}{\partial x_{i_k}\dots\partial x_{i_1}}(x)\,
+        h_{i_1}\cdots h_{i_k}}_{\text{Taylor-Polynom}} \\
+        & +\underbrace{\frac{1}{(r+1)!}\sum_{i_1,\dots,i_{r+1}=1}^n
+        \frac{\partial^{r+1}f}{\partial x_{i_{r+1}}\dots\partial x_{i_1}}(x+\theta h)\,
+        h_{i_1}\cdots h_{i_{r+1}}}_{\text{Restglied}}.
+    \end{aligned}
+    $$
+        
+\end{satz}
+
+\begin{korollar}{Restglied--Taylor--Formel}
+    Seien $D\subset\mathbb{R}^n$ offen, $f\in C^{r+1}(D,\mathbb{R})$.
+
+    Dann gilt für alle $x\in D$ und $h\in\mathbb{R}^n$ mit $x+th\in D$ ($\forall t\in[0,1]$):
+    $$
+    f(x+h)=\sum_{|\alpha|\le r+1}\frac{\partial^\alpha f(x)}{\alpha!}\,h^\alpha+\omega_{r+1}(x,h),
+    $$
+    wobei
+    $$
+    \frac{\omega_{r+1}(x,h)}{\|h\|^{r+1}}\longrightarrow 0\quad\text{für }h\to 0,
+    $$
+    das heißt\ $\omega_{r+1}(x,h)=o(\|h\|^{r+1})$.
+\end{korollar}
+
+\begin{korollar}{Taylor--Formel 1. und 2. Ordnung}
+    Seien $D\subset\mathbb{R}^n$ offen, $f\in C^1(D,\mathbb{R})$.
+    Dann gilt für alle $x\in D$ und $h\in\mathbb{R}^n$ mit $x+th\in D$ für alle $t\in[0,1]$:
+    $$
+    f(x+h)=f(x)+(\nabla f(x),h)_2+\omega_1(x,h),
+    \qquad\text{mit}\qquad
+    \frac{\omega_1(x,h)}{\|h\|}\longrightarrow 0\quad (h\to 0).
+    $$
+    D.\,h. das Taylor-Polynom 1. Ordnung ist eine lineare Approximation von $f$.
+
+    Für $f\in C^2(D,\mathbb{R})$ gilt:
+    $$
+    f(x+h)=f(x)+(\nabla f(x),h)_2+\tfrac{1}{2}\big(H_f(x)h,h\big)_2+\omega_2(x,h),
+    \qquad\text{mit}\qquad
+    \frac{\omega_2(x,h)}{\|h\|^2}\longrightarrow 0\quad (h\to 0),
+    $$
+    wobei $H_f(x)$ die Hesse-Matrix von $f$ ist.
+
+    D.\,h. das Taylor-Polynom 2. Ordnung ist eine quadratische Approximation von $f$.
+\end{korollar}
+
+\begin{definition}{Taylor--Reihe}
+    Seien $D\subset\mathbb{R}^n$ offen und $f: D\to\mathbb{R}$ beliebig oft partiell differenzierbar, $x\in D$.
+
+    Dann heißt die Taylor-Reihe von $f$ in $x$:
+    $$
+    T^{f}_{\infty}(x+h)=\sum_{|\alpha|=0}^{\infty}\frac{\partial^{\alpha}f(x)}{\alpha!}\,h^{\alpha}.
+    $$
+\end{definition}
+
+\begin{korollar}{Konvergenz von Taylor--Reihen}
+    Seien $D\subset\mathbb{R}^n$ offen und $f: D\to\mathbb{R}$ eine beliebig oft differenzierbare Funktion.
+
+    Dann gilt
+    $$
+    T_r^f(x+h)=\sum_{|\alpha|=0}^r \frac{\partial^\alpha f(x)}{\alpha!}\,h^\alpha
+    \xrightarrow{r\to\infty} f(x+h),
+    $$
+    wenn
+    $$
+    R_{r+1}^f(x,h)\xrightarrow{r\to\infty}0,\qquad x\in D. (**)
+    $$
+    Eine hinreichende Bedingung für (**) ist
+    $$
+    \sup_{|\alpha|\ge 0}\sup_{x\in D} \bigl|\partial^\alpha f(x)\bigr| \le M_f < \infty,
+    $$
+    das heißt, alle partiellen Ableitungen von $f$ sind gleichmäßig beschränkt.
+\end{korollar}

@@ -1,0 +1,68 @@
+\newpage
+\section{Implizite Funktionen und Umkehrabbildung}
+\label{4.6}
+
+\begin{satz}{Sazu über implizite Funktionen}
+    Sei $X\subset\mathbb{R}^n$ offen, $Y\subset\mathbb{R}^m$ offen, $F\in C^1(X\times Y,\mathbb{R}^m)$ (stetig differenzierbar) und $(\hat{x},\hat{y})\in X\times Y$ mit $F(\hat{x},\hat{y})=0$.
+
+    Die $m\times m$ Matrix
+    $
+    D_yF(x,y)=
+    \begin{pmatrix}
+    \displaystyle\frac{\partial F_1}{\partial y_1} & \dots & \displaystyle\frac{\partial F_1}{\partial y_m}\$6pt]
+    \vdots & \ddots & \vdots\$6pt]
+    \displaystyle\frac{\partial F_m}{\partial y_1} & \dots & \displaystyle\frac{\partial F_m}{\partial y_m}
+    \end{pmatrix}
+    $
+    sei im Punkt $(\hat{x},\hat{y})$ invertierbar. Dann gilt:
+
+    \begin{enumerate}
+        \item Es existieren offene Umgebungen $U(\hat{x})\subset X$, $U(\hat{y})\subset Y$ um $\hat{x}$ und $\hat{y}$ und es existiert eine stetige Funktion $f:U(\hat{x})\to U(\hat{y})$, sodass
+        $
+        F(x,f(x))=0\qquad\forall\,x\in U(\hat{x}).
+        $
+
+        \item $f$ ist eindeutig bestimmt, d.\,h.
+        $
+        F(x,y)=0\quad\text{für }(x,y)\in U(\hat{x})\times U(\hat{y}) \iff y=f(x).
+        $
+
+        \item $f$ ist in $\hat{x}$ stetig differenzierbar und $J_f(\hat{x})=D_x f(\hat{x})\in\mathbb{R}^{m\times n}$ ist
+        $$
+        D_x f(\hat{x}) \;=\; -\bigl(D_yF(\hat{x},\hat{y})\bigr)^{-1} D_xF(\hat{x},\hat{y}).
+        $$
+    \end{enumerate}
+\end{satz}
+
+\begin{definition}{Reguläre Abbildung}
+    Sei $D\subset\mathbb{R}^n$ offen.
+
+    Eine Abbildung $f\colon D\to\mathbb{R}^n$ heißt \emph{regulär} in $\hat{x}\in D$, wenn es eine Kugel $B_\delta(\hat{x})$ mit $B_\delta(\hat{x})\subset D$ gibt, sodass
+    \begin{itemize}
+    \item $f$ in $B_\delta(\hat{x})$ stetig differenzierbar ist, und
+    \item die Jacobimatrix $J_f(\hat{x})$ regulär (d.\,h.\ invertierbar) ist.
+    \end{itemize}
+
+    $f$ heißt regulär in $D$, wenn $f$ in jedem Punkt $\hat{x}\in D$ regulär ist.
+
+\end{definition}
+
+\begin{satz}{Umkehrabbildung}
+    Sei $D \subset \mathbb{R}^n$ offen und $f\colon D \to \mathbb{R}^n$ regulär in $\hat{x}\in D$.
+
+    Dann $\exists$ eine offene Umgebung $V(\hat{x}) \subset D$ von $\hat{x}$ derart, dass
+    \begin{itemize}
+        \item $U(\hat{y}):=f(V(\hat{x}))$ eine offene Umgebung von $\hat{y}=f(\hat{x})$ ist und
+        \item $f\colon V(\hat{x}) \to U(\hat{y})$ bijektiv.
+    \end{itemize}
+
+    Weiter gilt: Die Umkehrabbildung $f^{-1}\colon U(\hat{y}) \to V(\hat{x})$ ist regulär in $\hat{y}$ und
+    $$
+    J_{f^{-1}}(\hat{y}) = \bigl(J_f(\hat{x})\bigr)^{-1}, \qquad
+    \det J_{f^{-1}}(\hat{y}) = \frac{1}{\det J_f(\hat{x})}.
+    $$ 
+\end{satz}
+
+\begin{korollar}{}
+    Sei $D\subset\mathbb{R}^n$, $f\colon D\to\mathbb{R}^n$ regulär und $O\subset D$ offen. Dann ist $f(O)$ offen.
+\end{korollar}

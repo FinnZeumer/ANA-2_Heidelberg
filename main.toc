@@ -21,9 +21,11 @@
 \contentsline {section}{\numberline {4.1}Partielle Ableitungen}{35}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Totale Ableitungen}{37}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Mittelwertsatz}{38}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Taylor-Entwicklung}{39}{section.4.4}%
-\contentsline {chapter}{\numberline {5.}Implizite Funktionen und Mannigfaltigkeiten}{40}{chapter.5}%
-\contentsline {chapter}{\numberline {6.}Systeme gewöhnlicher Differentialgleichungen}{41}{chapter.6}%
-\contentsline {chapter}{\numberline {7.}Kurvenintegrale}{42}{chapter.7}%
-\contentsline {chapter}{Definitionsverzeichnis}{43}{chapter*.10}%
+\contentsline {section}{\numberline {4.4}Taylor-Entwicklung}{40}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Extremwertaufgaben}{42}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Implizite Funktionen und Umkehrabbildung}{43}{section.4.6}%
+\contentsline {chapter}{\numberline {5.}Implizite Funktionen und Mannigfaltigkeiten}{44}{chapter.5}%
+\contentsline {chapter}{\numberline {6.}Systeme gewöhnlicher Differentialgleichungen}{45}{chapter.6}%
+\contentsline {chapter}{\numberline {7.}Kurvenintegrale}{46}{chapter.7}%
+\contentsline {chapter}{Definitionsverzeichnis}{47}{chapter*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

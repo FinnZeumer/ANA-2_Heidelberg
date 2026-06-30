@@ -1,0 +1,45 @@
+\newpage
+\section{Extremwertaufgaben}
+\label{4.5}
+
+\begin{definition}{lokale Extrema}
+    Sei $D\subset\mathbb{R}^n$ offen, $f: D \to \mathbb{R}$.
+
+    \medskip
+
+    Ein Punkt$x\in D$ heißt \emph{lokales Minimum (Maximum)} von $f$, falls eine Umgebung$B_{\delta}(x)\subset\mathbb{R}^n$ existiert mit
+    $$
+    f(x)\le f(y),\quad \forall y\in B_{\delta}(x)\cap D
+    $$
+    bzw.
+    $$
+    f(x)\ge f(y),\quad \forall y\in B_{\delta}(x)\cap D.
+    $$
+
+    \medskip
+
+    Falls
+    $$
+    f(x)< f(y),\quad \forall y\in B_{\delta}(x)\cap D\setminus\{x\}
+    $$
+    (bzw. $f(x)>f(y)$),
+    dann heißt$x$ \emph{striktes lokales Minimum (Maximum)}.
+\end{definition}
+
+\begin{satz}{Notwendige Bedingung für lokales Extremum}
+    Sei $D\subset\mathbb{R}^n$ offen, $f\colon D\to\mathbb{R}$ stetig differenzierbar und $x\in D$ ein lokales Extremum von $f$.
+
+    Dann gilt:
+    $$
+    \nabla f(x)=0.
+    $$
+\end{satz}
+
+\begin{satz}{Hinreichende Bedingung für lokales Extremum}
+    Sei $D\subset\mathbb{R}^n$ offen, $f\in C^2(D,\mathbb{R})$ und $x\in D$ mit $\nabla f(x)=0$. Dann gilt:
+    \begin{enumerate}
+        \item$H_f(x)$ positiv definit$\Longrightarrow$$x$ striktes lokales Minimum von $f$.
+        \item$H_f(x)$ negativ definit$\Longrightarrow$$x$ striktes lokales Maximum von $f$.
+        \item$H_f(x)$ indefinit$\Longrightarrow$$x$ kein lokales Extremum.
+    \end{enumerate}
+\end{satz}
