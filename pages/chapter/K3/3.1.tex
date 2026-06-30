@@ -18,9 +18,9 @@ Dies soll nun auf Abbiildungen der Art $f:X\to Y$ erweitert werden, wobei dies e
 
 \begin{lemma}{Komposition stetiger Funktionen}
     Seien $(X,d_X), (Y,d_Y), (Z,d_Z)$ metrische Räume, $E \subset X$. 
-
+    \vspace{1em}
     Seien $f:E \to Y$, $g:f(E)\to Z$ Funktionen.
-
+    \vspace{1em}
     Falls $f$ stetig in $a\in E$ ist und $g$ stetig in $y:=f(a)\in Y$ ist, dann ist $h:= g\odot f$ stetig in $a$.
 \end{lemma}
 
@@ -30,7 +30,7 @@ COMMING SOON
 
 \begin{lemma}{stetige Funktionen nach $\mathbb{R}^{n}$}
     Sei $(X,d_X)$ ein metrsicher Raum, $E\subset X$.
-
+    \vspace{1em}
     Eine Funktion $f:E\to \R^n$ ist genau dann in $a \in E$ stetig, falls jede Komponente $f_1,\dots,f_n$ in $a$ stetig ist.
 \end{lemma}
 
@@ -64,10 +64,13 @@ COMMING SOON
 
 \begin{lemma}{Rechenregeln}
     Sei $(X,d)$ ein metrischer Raum, $E \subset X$.
+    \vspace{1em}
 
-    Falls $f,g : E \to \R$ in $a$ stetig sind, sind auch die Funktionen $f+g, fg, -f$ stetig in $a$
+    Falls $f,g : E \to \R$ in $a$ stetig sind, sind auch die Funktionen $f+g, fg, -f$ stetig in $a$.
+    \vspace{1em}
 
     Falls außerdem $g(a) \not= 0$, dann ist auch $f/g$ stetig in $a$.
+    \vspace{1em}
 
     Insbesondere ist der Raum $C^0(E,\R)$ ein Vektorraum.
 \end{lemma}
@@ -83,11 +86,11 @@ COMMING SOON
 \begin{lemma}{Folgerung; Rechenregeln für stetige Funktionen nach $\R^n$}
     Sei $(x,d)$ ein metrischer Raum, $E \subset X$. Dann gilt:
     \begin{enumerate}
-        \item Falls $f,g:E \to \R^n$ in $a \in E$ stetig sind, dnan sinf auch $f+g$ und $-f$ stetig in $a$.
+        \item Falls $f,g:E \to \R^n$ in $a \in E$ stetig sind, dann sind auch $f+g$ und $-f$ stetig in $a$.
         \item Falls $f:E \to \R^n, \lambda:E \to \R$ in $a\in E$ stetig sind, dann ist auch $\lambda f$ stetig in $a$.
     \end{enumerate}
 
-    Insbesondere ist der Raum$C^0(E,\R^n)$ ein Vektorraum.
+    Insbesondere ist der Raum $C^0(E,\R^n)$ ein Vektorraum.
 \end{lemma}
 
 \begin{bemerkungbox}
@@ -96,10 +99,11 @@ COMMING SOON
 
 \begin{satz}{$\epsilon$-$\delta$-Kriterim der Stetigkeit}
     Sein $(X,d_X), (Y,d_Y)$ metrische Räume, $E \subset X$, $a\in E$ und $f:E \to Y$.
+    \vspace{1em}
 
     $f$ ist genau dann stetig in $a$, wenn für jedes $\epsilon >0$ ein $\delta = \delta (a,\epsilon) >0$ existiert, sodass für alle $x \in E$ gilt
     $$
-        d_X(x,a) > \delta \Rightarrow d_Y(f(x),f(a))<\epsilon
+        d_X(x,a) < \delta \Rightarrow d_Y(f(x),f(a))<\epsilon
     $$
 \end{satz}
 
@@ -119,7 +123,7 @@ COMMING SOON
             f(U) \subset V, \qquad \text{falls } f:E \to Y, f(U\cap E) \subset V
         $$
 
-        \item $f$ ist genau dann stetig in $X$, wenn für alle offnen Mengen $V \subset Y$ das Urbild $f^{-1}(V)$ offen in $X$.
+        \item $f$ ist genau dann stetig in $X$, wenn für alle offnen Mengen $V \subset Y$ das Urbild $f^{-1}(V)$ offen in $X$ ist.
 
         \item $f$ ist genau dann stetig in $X$, wenn für alle abgeschlossenen Mengen $A\subset Y$ das Urbild $f^{-1}(A)$ abgeschlossen in $X$ ist. 
     \end{enumerate}

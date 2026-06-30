@@ -1,7 +1,7 @@
 \newpage
 \section{Lineare Abbildungen}
 \label{3.2}
-Zu beginn ein paar Kurze Hinweise. Diese Sektion konzentriert sich auf lineare Abbildungen von $\R^n \to R^m$l. Solch eine Abbildung lässt sich bezüglich der Standardbasis (kanonische Basis) als $m \times n$ Matrix darstellen: 
+Zu beginn ein paar Kurze Hinweise. Diese Sektion konzentriert sich auf lineare Abbildungen von $A : \R^n \to \R^m$l. Solch eine Abbildung lässt sich bezüglich der Standardbasis (kanonische Basis) als $m \times n$ Matrix darstellen: 
 $$
     A = \begin{pmatrix} a_{11} \dotso a_{1m} \\ : \\ : \\ a_{m1} \dotso a_{mn} \end{pmatrix}
 $$
@@ -11,40 +11,122 @@ $$
 
 Die lineare Abbildung $A : \R^n \to \R^m$ ist stetig, da alle Komponenten von $A(x)$ Polynome ersten Grades sind.
 
-\begin{definition}{Identische Matrizen}
-$A,A' \in \mathbb{K}^{n\times n}$ sind identisch 
-$$
-    (a_{ij}=a'_{ij}\;\forall i,j) \Leftrightarrow Ax=A'x\;\forall x\in \mathbb{K}^n
-$$
-\end{definition}
+\begin{satz}{Stetigkeit linearer Abbildungen}
+    Seien \((V,\ \lVert\cdot\rVert_V)\), \((W,\ \lVert\cdot\rVert_W)\) normierte Vektorräume und \(A: V \to W\) eine lineare Abbildung.
 
+    \(A\) ist genau dann stetig, wenn es eine Konstante \(C\), \(0 < C < \infty\), gibt, so dass
+    \[
+    \lVert A(x)\rVert_W \le C\,\lVert x\rVert_V \quad \forall\, x \in V
+    \]
+    (d.\,h.\ \(A\) beschränkt).    
+\end{satz}
 
-\begin{definition}{Ähnliche Matrizen}
-    
-\end{definition}
+\begin{satz}{Vektorraum $\mathcal{L}(V,W)$}
+    Seien $(V,\|\cdot\|_V)$, $(W,\|\cdot\|_W)$ normierte Vektorräume.
 
+    Der Vektorraum $\mathcal{L}(V,W)$ der stetigen, beschränkten, linearen Abbildungen von $V$ nach $W$ ist ein normierter Raum durch die Norm:
+    \[
+    \|A\| := \sup_{x\in V\setminus\{0\}} \frac{\|A(x)\|_W}{\|x\|_V}
+        \;=\; \sup_{\substack{x\in V\\ \|x\|_V=1}} \|A(x)\|_W.
+    \]
+\end{satz}
 
-\begin{definition}{Eigenwerte}
-    
-\end{definition}
+\begin{lemma}{Natürliche Matrixnormen}
+    Die natürlichen Matrixnormen zu $\|\cdot\|_\infty$ ($\ell_\infty$ / Maximumnorm) und $\|\cdot\|_1$ ($\ell_1$-Norm) in $\mathbb{R}^n$ sind
+    \[
+    \|A\|_\infty := \max_{1\le i\le m}\sum_{j=1}^{n} |a_{ij}|
+    \qquad\text{(Maximale Zeilen-Summen-Norm)}
+    \]
+    \[
+    \|A\|_1 := \max_{1\le j\le n}\sum_{i=1}^{m} |a_{ij}|
+    \qquad\text{(Maximale Spalten-Summen-Norm)}
+    \]  
+\end{lemma}
 
+\begin{lemma}{Spektralnorm}
+    Sei $A\in\mathbb{R}^{m\times n}$. Dann ist $A^\top A\in\mathbb{R}^{n\times n}$ symmetrisch und positiv semidefinit.\\
+    $\Rightarrow$ Die Eigenwerte von $A^\top A$ sind reell und nichtnegativ.\\[2ex]
 
-\begin{definition}{Spektrum einer Matrix}
-    
-\end{definition}
+    Die Vektornorm $\|\cdot\|_2$ ( $\ell_2$-Norm) im $\mathbb{R}^n$ erzeugt eine natürliche Matrixnorm (Spektralnorm) $\|\cdot\|_2$:\\[1ex]
 
-\begin{definition}{Eigenvektor}
-    
-\end{definition}
+    \[
+    \|A\|_2 \;=\; \sqrt{\lambda_{\max}\!\bigl(A^\top A\bigr)},
+    \]
 
-\begin{definition}{Hermitische Matrix}
-    
-\end{definition}
+    wobei $\lambda_{\max}(A^\top A)$ das Maximum der (reellen, nichtnegativen) Eigenwerte von $A^\top A$ bezeichnet.
+\end{lemma}
 
-\begin{definition}{Positiv definite Matrix}
-    
-\end{definition}
+\begin{bemerkungbox}
+    Matrizen: Einige Begriffe
 
-\begin{definition}{Matrixnorm (Spektralnorm)}
-    
-\end{definition}
+    \begin{enumerate}
+        \item Sei \(A,A'\in\mathbb{K}^{n\times n}\).
+        \begin{itemize}
+            \item \(A,A'\) sind identisch (\(a_{ij}=a'_{ij}\ \forall i,j\)) \(\iff\) \(Ax=A'x\ \forall x\in\mathbb{K}^n\).
+            \item \(A,A'\) heißen ähnlich, wenn \(\exists\,T\in\mathbb{K}^{n\times n}\) regulär (invertierbar) mit
+                \[
+                A' = T^{-1}AT.
+                \]
+                Der Übergang \(A\mapsto A'\) heißt Ähnlichkeitstransformation. Für \(z\in\mathbb{C}\) gilt dann
+                \[
+                \det(A'-zI)=\det\big(T^{-1}AT - zI\big)
+                = \det\big(T^{-1}(A-zI)T\big)
+                = \det(T^{-1})\,\det(A-zI)\,\det(T)
+                = \det(A-zI).
+                \]
+                Das charakteristische Polynom von \(A\),
+                \[
+                p_A(z)=\det(A-zI),
+                \]
+                hat als Nullstellen genau die Eigenwerte von \(A\). Folgerung: Ähnliche Matrizen haben die gleichen Eigenwerte, aber im Allgemeinen unterschiedliche Eigenvektoren.
+        \end{itemize}
+
+        \item Eigenwerte \(\lambda\in\mathbb{K}\) einer Matrix \(A\in\mathbb{K}^{n\times n}\) sind die Nullstellen des charakteristischen Polynoms
+        \[
+            p(\lambda)=\det(A-\lambda I).
+        \]
+
+        \item Das Spektrum einer Matrix \(A\) ist
+        \[
+            \sigma(A)=\{\lambda\mid \lambda\ \text{Eigenwert von }A\}.
+        \]
+
+        \item Zu jedem \(\lambda\in\sigma(A)\) existiert ein Eigenvektor \(w\in\mathbb{K}^n\setminus\{0\}\) mit
+        \[
+            Aw=\lambda w.
+        \]
+        Die Eigenvektoren zu \(\lambda\) bilden einen Vektorraum, den Eigenraum zu \(\lambda\). Die Dimension dieses Eigenraums heißt geometrische Vielfachheit von \(\lambda\).
+
+        \item Abschätzung der Eigenwerte:
+        Sei \(\lambda\in\sigma(A)\) und \(w\) ein zu \(\lambda\) gehöriger Eigenvektor mit \(\|w\|=1\). Dann gilt
+        \[
+            |\lambda| = \|\lambda w\| = \|Aw\| \le \|A\|.
+        \]
+        Also ist jeder Eigenwert durch die gewählte Operatornorm von \(A\) beschränkt: \(|\lambda|\le\|A\|\).
+
+        \item Hermitesche Matrizen:
+        \begin{itemize}
+            \item Eine Matrix \(A\in\mathbb{K}^{n\times n}\) heißt hermitesch, falls
+                \[
+                A = A^*,\qquad A^*=\overline{A}^T,
+                \]
+                also \(a_{ij}=\overline{a_{ji}}\). Reelle hermitesche Matrizen heißen symmetrisch.
+            \item Für das Standardskalarprodukt gilt
+                \[
+                A=A^* \iff \langle Ax,y\rangle_2 = \langle x,Ay\rangle_2\quad\forall x,y\in\mathbb{K}^n.
+                \]
+            \item Hermitesche Matrizen sind diagonalisierbar (ähnlich zu einer Diagonalmatrix). Alle Eigenwerte einer hermiteschen Matrix sind reell und es existiert eine orthonormale Basis aus Eigenvektoren.
+        \end{itemize}
+
+        \item Positive Definitheit:
+        \begin{itemize}
+            \item \(A\in\mathbb{K}^{n\times n}\) heißt positiv definit, wenn \(\langle Ax,x\rangle_2\in\mathbb{R}\) und
+                \[
+                \langle Ax,x\rangle_2 > 0\quad\forall x\in\mathbb{K}^n\setminus\{0\}.
+                \]
+            \item Für eine hermitesche Matrix \(A\) ist \(A\) genau dann positiv definit, wenn alle Eigenwerte von \(A\) positiv sind.
+        \end{itemize}
+
+        \item Die \(\ell_2\)-Norm \(\|\cdot\|_2\) in \(\mathbb{K}^n\) induziert eine natürliche Matrixnorm (die Spektralnorm) auf \(\mathbb{K}^{n\times n}\), ebenfalls bezeichnet mit \(\|\cdot\|_2\).
+    \end{enumerate}
+\end{bemerkungbox}

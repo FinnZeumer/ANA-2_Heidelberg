@@ -24,24 +24,65 @@
     COMMING SOON
 \end{bemerkungbox}
 
-\begin{lemma}{Cauchy--SChwarz--Ungleichung}
-    COMMING SOON
+\begin{lemma}{Cauchy--Schwarz--Ungleichung}
+    Für ein Skalarprodukt $(\cdot,\cdot)$ auf $V$ über $\mathbb{K}$ gilt die Cauchy-Schwarz-Ungleichung
+    $$
+    \lvert (x,y)\rvert^2 \le (x,x)\cdot (y,y),\qquad x,y\in V.
+    $$
 \end{lemma}
 
 \begin{korollar}{Hilbert--Raum}
-    Sei $(X,d)$ ein metrischer Raum und $K\subset X$ kompakt. Ist $A\subset K$ abgeschlossen, so ist $A$ kompakt.
+    \begin{enumerate}
+    \item[(a)] Ein Skalarprodukt $(\cdot,\cdot)$ auf $V$ über $\mathbb{K}$ erzeugt eine Norm durch
+    $$
+    \|x\| := \sqrt{(x,x)},\qquad x\in V.
+    $$
+    Falls ein normierter Raum $(V,(\cdot,\cdot))$ vollständig ist, so heißt das Paar $(V,(\cdot,\cdot))$ \emph{Hilbert-Raum}.
+
+    \item[(b)] Das euklidische Skalarprodukt $(\cdot,\cdot)_2$ auf $\mathbb{K}^n$ ist definiert durch
+    $$
+    (x,y)_2 := \sum_{i=1}^n x_i\,\overline{y_i},\qquad x=(x_1,\dots,x_n)^\top,\; y=(y_1,\dots,y_n)^\top.
+    $$
+    In $\mathbb{R}^n$ gilt entsprechend $(x,y)_2 = x_1 y_1 + \dots + x_n y_n$.
+
+    Dieses Skalarprodukt erzeugt die euklidische Norm (die $\ell_2$-Norm)
+    $$
+    \|x\|_2 := \sqrt{(x,x)_2} \;=\; \sqrt{\sum_{i=1}^n |x_i|^2}.
+    $$
+
+    Somit ist $(\mathbb{K}^n,(\cdot,\cdot)_2)$ ein Hilbert-Raum.
+    \end{enumerate}
 \end{korollar}
+(— Vergleiche Def.\ 1.16 VL1.)
+
 
 \begin{lemma}{Ungleichung von Young}
-    COMMING SOON
+    Seien $p,q\in\mathbb{R}$, $p>1$, $q<\infty$, $\dfrac{1}{p}+\dfrac{1}{q}=1$. Dann gilt
+    $$
+    \lvert x\cdot y\rvert \leq \frac{\lvert x\rvert^{p}}{p} + \frac{\lvert y\rvert^{q}}{q},\qquad x,y\in\mathbb{R}.
+    $$
 \end{lemma}
 
 \begin{lemma}{Ungleichung von Hölder}
-    COMMING SOON
+    Seien $p,q\in\mathbb{R}$, $p>1$, $q<\infty$, $\displaystyle\frac{1}{p}+\frac{1}{q}=1$. Dann gilt
+    $$
+    \left|(x,y)_2\right| \le \|x\|_p\cdot\|y\|_q \qquad \forall\, x,y\in\mathbb{R}^n,
+    $$
+    wobei
+    \begin{itemize}
+        \item $(x,y)_2$ das euklidische Skalarprodukt,
+        \item $\|x\|_p$ die $\ell_p$-Norm von $x$,
+        \item $\|y\|_q$ die $\ell_q$-Norm von $y$.
+    \end{itemize}
 \end{lemma}
 
 \begin{lemma}{Ungleichung von Minkowski}
-    COMMING SOON
+    Sei $p\in\mathbb{R}$, $1\le p<\infty$ oder $p=\infty$. Dann gilt
+    $$
+    \|x+y\|_p \le \|x\|_p + \|y\|_p.
+    $$
+
+    $\rightsquigarrow$ Dreiecksungleichung für die $\ell_p$-Norm.
 \end{lemma}
 
 \begin{definition}{Orthogonalität und Orthonormalsystem}
@@ -56,22 +97,51 @@
 \end{definition}
 
 \begin{lemma}{}
-    Sei $\{a(k)\}_{k=1}^n$ eine Orthonormalbasis von $K^n$. Dann besitzt jeder Vektor $x\in K^n$ die Darstellung
+    Sei $\{a^{(k)},\ k=1,\dots,n\}$ eine Orthonormalbasis des $\mathbb{K}^n$.
+
+    Dann gibt es $\forall x\in\mathbb{K}^n$ eine Darstellung
     $$
-        x=\sum_{k=1}^n (x,a(k))\,a(k),
+    x=\sum_{k=1}^n \langle x,a^{(k)}\rangle_2\, a^{(k)},\qquad x\in\mathbb{K}^n,
     $$
-    und es gilt die Parseval-Gleichung
+
     $$
-        \|x\|^2=\sum_{k=1}^n |(x,a(k))|^2.
+    \left(
+    \begin{array}{c}
+        \text{Fourierentwicklung} \\
+        a^{(k)}\sim e^{ikx} \\
+        x\sim f(x) \\
+        c_k\sim\langle f,e^{ikx}\rangle_{L^2}
+    \end{array}
+    \right)
+    \qquad\text{mit}\qquad
+    f(x)=\sum_{k\in\mathbb{Z}} c_k\,e^{ikx}.
+    $$
+
+    und es gilt die Vollständigkeitsrelation (Gleichung von Parseval)
+    $$
+    \|x\|_2^2=\sum_{k=1}^n \big|\langle x,a^{(k)}\rangle_2\big|^2
+    =\sum_{k=1}^n |c_k|^2,
+    $$
+
+    (bei Funktionen:)
+    $$
+    \|f\|_{L^2}^2=\sum_{k\in\mathbb{Z}} |c_k|^2\cdot 2\pi.
     $$
 \end{lemma}
 
 \begin{satz}{Gram--Schmidt--Verfahren}
-    Sei $\{a(1),\dots,a(n)\}$ eine Basis von $K^n$. Dann entsteht durch
+    Sei $\{a^{(1)},\dots,a^{(n)}\}$ eine Basis des $\mathbb{K}^n$.
+
+    Dann ist $\{b^{(1)},\dots,b^{(n)}\}$, konstruiert durch das \textbf{Orthogonalisierungsverfahren} von Gram und Schmidt, eine \textbf{Orthonormalbasis}:
+
     $$
-        b(1)=\frac{a(1)}{\|a(1)\|},\qquad
-        \tilde{b}(k)=a(k)-\sum_{j=1}^{k-1}(a(k),b(j))\,b(j),\qquad
-        b(k)=\frac{\tilde{b}(k)}{\|\tilde{b}(k)\|}
+    b^{(1)} := \frac{a^{(1)}}{\lVert a^{(1)}\rVert_2}.
     $$
-    eine Orthonormalbasis $\{b(1),\dots,b(n)\}$.
+
+    Für $k=2,\dots,n$ setze man
+    $$
+    \widetilde{b}^{(k)} := a^{(k)} - \sum_{j=1}^{k-1} (a^{(k)},\,b^{(j)})_2 \cdot b^{(j)},
+    \qquad
+    b^{(k)} := \frac{\widetilde{b}^{(k)}}{\lVert \widetilde{b}^{(k)}\rVert_2}.
+    $$
 \end{satz}

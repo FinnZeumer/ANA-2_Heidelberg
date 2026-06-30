@@ -23,35 +23,27 @@
 \contentsline {definition}{\numberline {2.2.7} -- Offene und abgeschlossene Mengen}{21}{DefCounter.2.2.7}%
 \contentsline {definition}{\numberline {2.2.11} -- Rand einer Menge}{21}{DefCounter.2.2.11}%
 \contentsline {definition}{\numberline {2.2.12} -- Inneres und Abschluss}{21}{DefCounter.2.2.12}%
-\contentsline {definition}{\numberline {2.2.16} -- Topologie}{22}{Item.26}%
-\contentsline {definition}{\numberline {2.2.17} -- Topologischer Raum}{22}{Item.29}%
+\contentsline {definition}{\numberline {2.2.16} -- Topologie}{22}{Item.31}%
+\contentsline {definition}{\numberline {2.2.17} -- Topologischer Raum}{22}{Item.34}%
 \contentsline {definition}{\numberline {2.3.1} -- Kompaktheit}{23}{section*.9}%
 \contentsline {definition}{\numberline {2.4.1} -- Skalarprodukt}{24}{DefCounter.2.4.1}%
-\contentsline {definition}{\numberline {2.4.7} -- Orthogonalität und Orthonormalsystem}{24}{Item.32}%
-\contentsline {definition}{\numberline {3.1.1} -- Stetige Funktionen}{27}{Item.34}%
-\contentsline {definition}{\numberline {3.2.1} -- Identische Matrizen}{30}{DefCounter.3.2.1}%
-\contentsline {definition}{\numberline {3.2.2} -- Ähnliche Matrizen}{30}{DefCounter.3.2.2}%
-\contentsline {definition}{\numberline {3.2.3} -- Eigenwerte}{30}{DefCounter.3.2.3}%
-\contentsline {definition}{\numberline {3.2.4} -- Spektrum einer Matrix}{30}{DefCounter.3.2.4}%
-\contentsline {definition}{\numberline {3.2.5} -- Eigenvektor}{30}{DefCounter.3.2.5}%
-\contentsline {definition}{\numberline {3.2.6} -- Hermitische Matrix}{30}{DefCounter.3.2.6}%
-\contentsline {definition}{\numberline {3.2.7} -- Positiv definite Matrix}{30}{DefCounter.3.2.7}%
-\contentsline {definition}{\numberline {3.2.8} -- Matrixnorm (Spektralnorm)}{30}{DefCounter.3.2.8}%
-\contentsline {definition}{\numberline {3.3.1} -- Zusammenhängende Mengen}{31}{DefCounter.3.3.1}%
-\contentsline {definition}{\numberline {3.3.2} -- gleichmäßige Stetigkeit}{31}{DefCounter.3.3.2}%
-\contentsline {definition}{\numberline {3.3.3} -- Lipschitz-Stetigkeit}{31}{DefCounter.3.3.3}%
-\contentsline {definition}{\numberline {3.4.1} -- Konvergenz von Funktionenfolgen}{32}{Item.44}%
-\contentsline {definition}{\numberline {3.5.1} -- Fixpunkt}{33}{DefCounter.3.5.1}%
-\contentsline {definition}{\numberline {3.5.2} -- Kontraktion}{33}{DefCounter.3.5.2}%
-\contentsline {definition}{\numberline {3.5.4} -- Starke Monotonie}{33}{DefCounter.3.5.4}%
-\contentsline {definition}{\numberline {4.1.1} -- Partielle Ableitungen}{35}{Item.48}%
-\contentsline {definition}{\numberline {4.1.3} -- Partielle Ableitungen höherer Ordnung}{35}{Item.50}%
-\contentsline {definition}{\numberline {4.1.5} -- Gradient}{36}{DefCounter.4.1.5}%
-\contentsline {definition}{\numberline {4.1.6} -- Hesse-Matrix}{36}{DefCounter.4.1.6}%
-\contentsline {definition}{\numberline {4.1.7} -- Jacobi-Matrix}{36}{DefCounter.4.1.7}%
-\contentsline {definition}{\numberline {4.2.1} -- Totale Ableitung}{37}{DefCounter.4.2.1}%
-\contentsline {definition}{\numberline {4.2.5} -- Richtungsableitung}{37}{DefCounter.4.2.5}%
-\contentsline {definition}{\numberline {4.3.3} -- Konvexe Mengen}{39}{DefCounter.4.3.3}%
-\contentsline {definition}{\numberline {4.4.4} -- Taylor--Reihe}{40}{DefCounter.4.4.4}%
-\contentsline {definition}{\numberline {4.5.1} -- lokale Extrema}{42}{DefCounter.4.5.1}%
-\contentsline {definition}{\numberline {4.6.2} -- Reguläre Abbildung}{43}{DefCounter.4.6.2}%
+\contentsline {definition}{\numberline {2.4.7} -- Orthogonalität und Orthonormalsystem}{25}{Item.37}%
+\contentsline {definition}{\numberline {3.1.1} -- Stetige Funktionen}{28}{Item.39}%
+\contentsline {definition}{\numberline {3.3.3} -- Zusammenhängende Mengen}{34}{DefCounter.3.3.3}%
+\contentsline {definition}{\numberline {3.3.6} -- gleichmäßige Stetigkeit}{34}{DefCounter.3.3.6}%
+\contentsline {definition}{\numberline {3.3.7} -- Lipschitz-Stetigkeit}{34}{DefCounter.3.3.7}%
+\contentsline {definition}{\numberline {3.4.1} -- Konvergenz von Funktionenfolgen}{36}{Item.59}%
+\contentsline {definition}{\numberline {3.5.1} -- Fixpunkt}{37}{DefCounter.3.5.1}%
+\contentsline {definition}{\numberline {3.5.2} -- Kontraktion}{37}{DefCounter.3.5.2}%
+\contentsline {definition}{\numberline {3.5.4} -- Starke Monotonie}{37}{DefCounter.3.5.4}%
+\contentsline {definition}{\numberline {4.1.1} -- Partielle Ableitungen}{39}{Item.63}%
+\contentsline {definition}{\numberline {4.1.3} -- Partielle Ableitungen höherer Ordnung}{39}{Item.65}%
+\contentsline {definition}{\numberline {4.1.5} -- Gradient}{40}{DefCounter.4.1.5}%
+\contentsline {definition}{\numberline {4.1.6} -- Hesse-Matrix}{40}{DefCounter.4.1.6}%
+\contentsline {definition}{\numberline {4.1.7} -- Jacobi-Matrix}{40}{DefCounter.4.1.7}%
+\contentsline {definition}{\numberline {4.2.1} -- Totale Ableitung}{41}{DefCounter.4.2.1}%
+\contentsline {definition}{\numberline {4.2.5} -- Richtungsableitung}{41}{DefCounter.4.2.5}%
+\contentsline {definition}{\numberline {4.3.3} -- Konvexe Mengen}{43}{DefCounter.4.3.3}%
+\contentsline {definition}{\numberline {4.4.4} -- Taylor--Reihe}{44}{DefCounter.4.4.4}%
+\contentsline {definition}{\numberline {4.5.1} -- lokale Extrema}{46}{DefCounter.4.5.1}%
+\contentsline {definition}{\numberline {4.6.2} -- Reguläre Abbildung}{47}{DefCounter.4.6.2}%

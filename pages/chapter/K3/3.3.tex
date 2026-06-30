@@ -2,6 +2,32 @@
 \section{Stetige Funktionen auf kompakten Mengen}
 \label{3.3}
 
+\begin{satz}{Stetiges Bild kompakter Mengen}
+    Seien $(X,d_X)$ und $(Y,d_Y)$ zwei metrische Räume, $K\subset X$ kompakt und $f:K\to Y$ stetig.
+
+    Dann ist $f(K)\subset Y$ kompakt.    
+\end{satz}
+
+\begin{satz}{Satz vom Extremum}
+    Sei $(X,d)$ ein metrischer Raum, $K\subset X$ kompakt und $f:K\to\mathbb{R}$ stetig.
+
+    \vspace{1ex}
+
+    Dann nimmt $f$ sein Maximum und Minimum an, das heißt es gibt
+
+    \vspace{1ex}
+
+    \[
+    x_{\min},x_{\max}\in K\text{ mit }
+    f(x_{\min})=\min_{x\in K} f(x),\qquad
+    f(x_{\max})=\max_{x\in K} f(x).
+    \]
+
+    \vspace{1ex}
+
+    Im Allgemeinen sind $x_{\min}$ und $x_{\max}$ nicht eindeutig!   
+\end{satz}
+
 \begin{definition}{Zusammenhängende Mengen}
     Sei $(X, dX)$ ein metrischer Raum, $A \subset X$. A heißt \emph{zusammenhängend}, wenn für alle offenen Teilmengen
     $U_1, U_2 \subset X$ gilt:
@@ -9,6 +35,18 @@
         A \cap U_1 \neq \varnothing, A \subset (U_1 \cup U_2), (A \cap U_1) \cap U_2 = \varnothing \Rightarrow A \cap U_2 = \varnothing
     $$
 \end{definition}
+
+\begin{satz}{Stetiges Bild zusammenhängender Mengen}
+    Seien $(X,d_X)$ und $(Y,d_Y)$ zwei metrische Räume, $K\subset X$ zusammenhängend und $f:K\to Y$ stetig.
+
+    Dann ist $f(K)\subset Y$ zusammenhängend.
+\end{satz}
+
+\begin{satz}{Stetigkeit der Umkehrfunktion}
+    Seien $(X,d_X)$ und $(Y,d_Y)$ zwei metrische Räume, $K\subset X$ kompakt und $f\colon K\to B\subset Y$ stetig und injektiv.
+
+    Dann ist die Umkehrfunktion $f^{-1}\colon \underbrace{B}_{f(k)}\to K$ stetig.
+\end{satz}
 
 \begin{definition}{gleichmäßige Stetigkeit}
     Seien $(X, dX), (Y, dY )$ metrische Räume, $F \subset E \subset X$ und $f : E \to Y$.
@@ -27,3 +65,18 @@
     $$
     Man nennt $f$ Lipschitzstetig auf $F$ mit Lipschitzkonstante $L$. Falls diese Bedingung für $F = E$ gilt, heißt $f : E \to Y$ \emph{Lipschitz-stetig}.
 \end{definition}
+
+\begin{satz}{Lipschitz-stetig $\Rightarrow$ gleichmäßig stetig $\Rightarrow$ stetig }
+    \begin{enumerate}%[label=(\roman*)]
+        \item Jede Lipschitzstetige Funktion ist gleichmäßig stetig.
+        \item Jede gleichmäßig stetige Funktion ist stetig.
+    \end{enumerate}  
+\end{satz}
+
+\begin{satz}{Heine: stetige Funktionen auf kompakten Mengen gleichmäßig stetig}
+    Seien \((X,d_X),\ (Y,d_Y)\) metrische Räume. Sei \(K\subset X\) kompakt und sei \(f\colon K\to Y\) stetig.
+
+    \vspace{0.5em}
+
+    Dann ist \(f\) \emph{gleichmäßig stetig}.    
+\end{satz}
