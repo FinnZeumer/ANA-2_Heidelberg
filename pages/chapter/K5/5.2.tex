@@ -1,3 +1,50 @@
 \newpage
 \section{Existenz von AWA-Lösungen}
 \label{5.2}
+
+\begin{satz}{Existenzsatz von Peano}
+    Die Funktion $f(t,x)$ sei stetig auf dem $(n+1)$-dimensionalen Zylinder
+    \[
+    D=\{(t,x)\in\mathbb{R}\times\mathbb{R}^n \mid |t-t_0|\le\alpha,\ \lVert x-y_0\rVert\le\beta\}.
+    \]
+
+    Dann existiert eine Lösung $y(t)$ von AWA auf dem Intervall
+    \[
+    I:= [t_0-T,\; t_0+T]
+    \]
+    mit
+    \[
+    T:=\min\!\left\{\alpha,\frac{\beta}{M}\right\},\qquad 
+    M:=\max_{(t,x)\in D}\lVert f(t,x)\rVert.
+    \]    
+\end{satz}
+
+\begin{satz}{Fortsetzungssatz}
+    Sei \(f(t,x)\) stetig auf \(D\subset\mathbb{R}\times\mathbb{R}^n\), \(D\) abgeschlossen, \((t_0,y_0)\in D\).
+    Sei \(y(t)\) Lösung der AWA auf \([t_0-T,t_0+T]\) ( \(T\) nach Peano ).
+    \vspace{1em}
+    
+    Dann ist \(y\) nach rechts und links auf ein maximales Existenzintervall
+    \[
+    I_{\max}=(t_0-T_*,\;t_0+T^*)
+    \]
+    bis zum Rand von \(D\) (stetig differenzierbar) fortsetzbar.   
+\end{satz}
+
+\begin{korollar}{Globale Existenz}
+    Sei \(f(t,x)\) stetig auf \(\mathbb{R}\times\mathbb{R}^n\). Seien alle lokalen Lösungen \(y(t)\) (definiert durch Satz von Peano) beschränkt durch eine stetige Funktion \(\rho:\mathbb{R}\to\mathbb{R}\):
+    \[
+    \|y(t)\| \le \rho(t),\qquad t\in [t_0-T,\; t_0+T].
+    \]
+    Dann ist \(y\) auf ganz \(\mathbb{R}\) fortsetzbar.  
+\end{korollar}
+
+\begin{satz}{Regularitätssatz}
+    Sei $y$ eine Lösung der AWA
+    \[
+    y' = f(t,y)
+    \]
+    auf $I$ und $f\in C^{m}(D)$, $m\ge 1$.\\
+
+    Dann gilt $y\in C^{m+1}(I)$.    
+\end{satz}

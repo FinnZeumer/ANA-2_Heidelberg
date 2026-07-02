@@ -112,10 +112,6 @@
 }
 \makeatother
 
-% \AtBeginEnvironment{definition}{%
-%   \edef\temp{\noexpand\label{def:\thesection.\theDefCounter}}%
-%   \temp
-% }
 
 
 \newtcolorbox[use counter=DefCounter]{satz}[2][]{%
@@ -124,6 +120,10 @@
     coltitle=black, 
     fonttitle=\bfseries,
     title={\textbf{\thesection.\theDefCounter}\quad Satz: #2},
+        % --- Eintrag ins Definitionsverzeichnis ---
+    after upper={%
+        \addcontentsline{satz}{satz}{\protect\numberline{\thesection.\theDefCounter} -- #2}%    
+        },
     #1
 }
 

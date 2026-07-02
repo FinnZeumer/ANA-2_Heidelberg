@@ -40,13 +40,23 @@
 %   Anhang Listen
 % ----------------------------------------------------------------
 \makeatletter
-\newcommand{\ext@def}{def} % sagt LaTeX: die Endung für dieses Verzeichnis ist .def
+\newcommand{\ext@def}{def} % die Endung für dieses Verzeichnis ist .def
 \newcommand{\listofdefinitions}{%
   \chapter*{Definitionsverzeichnis}%
   \addcontentsline{toc}{chapter}{Definitionsverzeichnis}%
   \@starttoc{def}% liest def.def ein
 }
-% optional: Layout der Einträge im Verzeichnis
+% Layout der Einträge im Verzeichnis
 \newcommand*\l@definition{\@dottedtocline{1}{1.5em}{2.3em}}
 \makeatother
 
+\makeatletter
+\newcommand{\ext@satz}{satz} % die Endung für dieses Verzeichnis ist .satz
+\newcommand{\listoftheorems}{%
+  \chapter*{Satzverzeichnis}%
+  \addcontentsline{toc}{chapter}{Satzverzeichnis}%
+  \@starttoc{satz}% liest def.def ein
+}
+% Layout der Einträge im Verzeichnis
+\newcommand*\l@satz{\@dottedtocline{1}{1.5em}{2.3em}}
+\makeatother

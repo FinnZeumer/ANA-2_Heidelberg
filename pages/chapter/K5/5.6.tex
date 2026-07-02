@@ -1,3 +1,75 @@
 \newpage
 \section{Randwertprobleme}
 \label{5.6}
+
+\begin{bemerkungbox}
+    Wir betrachten sogenannte Randwertaufgaben / Randwertprobleme der Form:
+    \[
+    f: I\times\mathbb{R}^n \to \mathbb{R}^n,\qquad r:\mathbb{R}^n\times\mathbb{R}^n\to\mathbb{R}^n.
+    \]
+
+    \[
+    y'(t)=f(t,y(t)),\qquad t\in I=[a,b],
+    \]
+    \[
+    r\bigl(y(a),y(b)\bigr)=0.
+    \]
+
+    Gesucht ist eine stetig differenzierbare Lösung \(y: I\to\mathbb{R}^n\), die beide Bedingungen erfüllt.
+
+    Die zweite Bedingung lässt sich verallgemeinern zu einer Mehrpunkt-RWA:
+    \[
+    r\bigl(y(t_1),\dots,y(t_k)\bigr)=0.
+    \]    
+\end{bemerkungbox}
+
+\begin{definition}{ Allgemeine inhomogene lineare RWA}
+    Seien $B_a,B_b\in\mathbb{R}^{n\times n}$, $g\in\mathbb{R}^n$ sowie $A\colon I\to\mathbb{R}^{n\times n}$, $f\colon I\to\mathbb{R}^n$ stetig. Dann ist eine allgemeine inhomogene lineare RWA der Form:
+    \[
+    y'(t)=A(t)y(t)+f(t),\qquad t\in I,
+    \]
+    \[
+    B_a\,y(a)+B_b\,y(b)=g.
+    \]   
+\end{definition}
+
+\begin{satz}{Existenzsatz für lineare RWA}
+    Die lineare RWA besitzt eine eindeutige Lösung $y(t)$ für beliebige $f(t)$ und $g$ genau dann, wenn
+    \[
+    B_a + B_b\,\Phi(b)\in\mathbb{R}^{n\times n}
+    \]
+    regulär ist, bzw.\ die assoziierte homogene RWA nur die triviale Lösung $y\equiv 0$ hat.   
+\end{satz}
+
+\begin{satz}{RWA: Lokale Eindeutigkeit}
+    Eine Lösung $y$ von nichtlinearen RWA ist lokal eindeutig genau dann, wenn die lineare RWA
+    \begin{align*}
+    v'(t) &= f_x'(t,y(t))\,v(t), \qquad t\in I,\\
+    r_x'(y(a),y(b))\cdot v(a) + r_y'(y(a),y(b))\cdot v(b) &= 0
+    \end{align*}
+    nur die triviale Lösung $v\equiv 0$ besitzt.    
+\end{satz}
+
+\begin{satz}{Sturm--Liouville-Probleme}
+    Es sei \(p(t)\ge\rho>0\).
+
+    \medskip
+
+    Falls
+    \[
+    \frac{\rho}{(b-a)^2}+\min_{t\in I}\!\Big(r(t)-\tfrac{1}{2}q'(t)\Big)>0,
+    \]
+    dann besitzt das Sturm--Liouville-Problem (SL-RWA) mit Dirichletschen Randbedingungen (D-RB) eine eindeutige Lösung \(y(t)\in C^2(I)\).
+
+    \medskip
+
+    Falls
+    \[
+    \frac{\rho}{(b-a)^2}+\min_{t\in I}\!\Big(r(t)-\tfrac{1}{2}q'(t)\Big)\ge\gamma>0,
+    \]
+    mit einer Konstante \(\gamma\), dann gilt für diese Lösung die a-priori-Abschätzung bzgl. der \(L^2\)-Norm:
+    \[
+    \|y\|_2+\|y'\|_2+\|y''\|_2 \le c\big(\|f\|_2 + |g_a| + |g_b|\big),
+    \]
+    mit einer von \(y\) und \(f\) unabhängigen Konstante \(c>0\).    
+\end{satz}

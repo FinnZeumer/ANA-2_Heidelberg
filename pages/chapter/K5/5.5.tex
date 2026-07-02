@@ -1,3 +1,97 @@
 \newpage
 \section{Lineare DGL-Systeme}
 \label{5.5}
+
+\begin{definition}{Lineare AWA}
+    Lineare AWA. Sei $A(\cdot)\colon I\to\mathbb{R}^{n\times n}$ eine Matrixfunktion, sowie $b(\cdot)\colon I\to\mathbb{R}^n$ eine Vektorfunktion. Dann ist eine lineare AWA der Form:
+    \[
+    y'(t)=A(t)\,y(t)+b(t),\qquad t\ge t_0,
+    \]
+    \[
+    y(t_0)=y_0.
+    \]    
+\end{definition}
+
+\begin{satz}{Lösung einer linearen AWA}
+    Seien $A:[t_0,\infty)\to\mathbb{R}^{n\times n}$, $b:[t_0,\infty)\to\mathbb{R}^n$ stetig.
+
+    Dann gilt:
+    \begin{enumerate}
+    \item Die lineare AWA besitzt eine eindeutige globale Lösung
+    \[
+    y:[t_0,\infty)\to\mathbb{R}^n.
+    \]
+    \item Falls $A(\cdot)$ gleichmäßig negativ definit auf $[t_0,\infty)$ ist und $b(\cdot)$ beschränkt ist, dann ist $y(t)$ beschränkt und exponentiell stabil.
+    \end{enumerate}    
+\end{satz}
+
+\begin{satz}{Homogene lineare Systeme}
+    Ein homogenes lineares System ist der Form
+    \[
+    y'(t)=A(t)y(t).
+    \]
+
+    \begin{enumerate}
+    \item Die Menge der Lösungen bildet einen Vektorraum \(H\).
+    \item Seien die Vektoren \(\{y_0^1,\ldots,y_0^n\}\) eine Basis des \(\mathbb{R}^n\).
+
+    Seien \(\{y^1,\ldots,y^n\}\) die Lösungen von AWA:
+    \[
+    (y^i)'=A(t)y^i,\qquad y^i(t_0)=y_0^i,\qquad i\in\{1,\ldots,n\}.
+    \]
+    Dann ist \(\{y^1,\ldots,y^n\}\) eine Basis von \(H\) und es gilt \(\dim(H)=n\).
+    \item Sei \(\{y^1,\ldots,y^n\}\) eine Basis des Lösungsraums \(H\), dann bilden die Vektoren \(\{y^1(t),\ldots,y^n(t)\}\) für jedes \(t\ge t_0\) eine Basis des \(\mathbb{R}^n\).
+    \end{enumerate}    
+\end{satz}
+
+\begin{definition}{Fundamentalmatrix}
+    Eine Basis \(\{\varphi^1,\dots,\varphi^n\}\) des Lösungsraums \(H\) von
+    \[
+    y'(t)=A(t)y(t)
+    \]
+    zu den Anfangswerten \(\varphi^i(t_0)=e^i\) (\(e^i\) Standardbasisvektor) heißt \emph{Fundamentalsystem} des linearen Systems.
+
+    Die Matrix \(\Phi=[\varphi^1,\dots,\varphi^n]\) der Spaltenvektoren \(\varphi^i\) heißt \emph{Fundamentalmatrix} des linearen Systems.
+    \vspace{1em}
+
+    Diese Matrix ist regulär und löst die AWA (komponentenweise):
+    \[
+    \Phi'(t)=A(t)\Phi(t),\qquad t\ge t_0,\qquad \Phi(t_0)=\mathrm{I}.
+    \]
+
+    \vspace{1ex}
+    AWA:
+    \[
+    \dot y = A(t)y,\qquad y(t_0)=e^i.
+    \]
+    Die Lösungen \(\varphi^i,\; i=1,\dots,n\) sind linear unabhängig und bilden eine Basis von \(H\).
+
+    \[
+    \Phi(t)=(\varphi^1(t)\;\dots\;\varphi^n(t))\in\mathbb{R}^{n\times n}.
+    \]   
+\end{definition}
+
+\begin{satz}{Inhomogene lineare Systeme}
+    Ein inhomogenes lineares System ist der Form
+    \[
+    y'(t)=A(t)y(t)+b(t).
+    \]
+
+    Seien \(A:[t_0,\infty)\to\mathbb{R}^{n\times n},\; b:[t_0,\infty)\to\mathbb{R}^n\) stetig. Dann gilt:
+
+    \begin{enumerate}%[label=\arabic*)]
+    \item Für einen konstanten Vektor \(c\in\mathbb{R}^n\) ist
+    \[
+    y_b(t):=\Phi(t) \left(\int_{t_0}^t\Phi^{-1}(s)\,b(s)\,ds + c\right)
+    \]
+    eine partikuläre Lösung des inhomogenen linearen Systems.
+
+    \item Alle Lösungen der inhomogenen Gleichung haben die Form
+    \[
+    y(t)=y_b(t)+v(t),
+    \]
+    wobei \(v\in H\) (Lösungsraum des assoziierten homogenen Systems).
+
+    \item Gilt \(c=y_0\), dann gilt \(y_b(t_0)=y_0\).
+    \end{enumerate} 
+\end{satz}

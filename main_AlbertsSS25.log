@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.16)  18 JUN 2026 08:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.16)  1 JUL 2026 21:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -683,6 +683,24 @@ File: pgfmoduleparser.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@lib@svg@max@num=\count325
 ))
 \@curXheight=\skip76
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count326
+\l_MT_multwidth_dim=\dimen304
+\origjot=\skip77
+\l_MT_shortvdotswithinadjustabove_dim=\dimen305
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen306
+\l_MT_above_intertext_sep=\dimen307
+\l_MT_below_intertext_sep=\dimen308
+\l_MT_above_shortintertext_sep=\dimen309
+\l_MT_below_shortintertext_sep=\dimen310
+\xmathstrut@box=\box80
+\xmathstrut@dim=\dimen311
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/alphalph\alphalph.sty
+Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
@@ -700,12 +718,12 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
-\babel@savecnt=\count326
-\U@D=\dimen304
+\babel@savecnt=\count327
+\U@D=\dimen312
 \l@unhyphenated=\language79
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read4
-\bbl@dirlevel=\count327
+\bbl@dirlevel=\count328
 
 *************************************
 * Local config file bblopts.cfg used
@@ -759,50 +777,50 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count328
-\Gm@cntv=\count329
-\c@Gm@tempcnt=\count330
-\Gm@bindingoffset=\dimen305
-\Gm@wd@mp=\dimen306
-\Gm@odd@mp=\dimen307
-\Gm@even@mp=\dimen308
-\Gm@layoutwidth=\dimen309
-\Gm@layoutheight=\dimen310
-\Gm@layouthoffset=\dimen311
-\Gm@layoutvoffset=\dimen312
+\Gm@cnth=\count329
+\Gm@cntv=\count330
+\c@Gm@tempcnt=\count331
+\Gm@bindingoffset=\dimen313
+\Gm@wd@mp=\dimen314
+\Gm@odd@mp=\dimen315
+\Gm@even@mp=\dimen316
+\Gm@layoutwidth=\dimen317
+\Gm@layoutheight=\dimen318
+\Gm@layouthoffset=\dimen319
+\Gm@layoutvoffset=\dimen320
 \Gm@dimlist=\toks45
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count331
-\l__siunitx_number_exponent_fixed_int=\count332
-\l__siunitx_number_min_decimal_int=\count333
-\l__siunitx_number_min_integer_int=\count334
-\l__siunitx_number_round_precision_int=\count335
-\l__siunitx_number_lower_threshold_int=\count336
-\l__siunitx_number_upper_threshold_int=\count337
-\l__siunitx_number_group_first_int=\count338
-\l__siunitx_number_group_size_int=\count339
-\l__siunitx_number_group_minimum_int=\count340
-\l__siunitx_angle_tmp_dim=\dimen313
-\l__siunitx_angle_marker_box=\box80
-\l__siunitx_angle_unit_box=\box81
-\l__siunitx_compound_count_int=\count341
+\l__siunitx_number_uncert_offset_int=\count332
+\l__siunitx_number_exponent_fixed_int=\count333
+\l__siunitx_number_min_decimal_int=\count334
+\l__siunitx_number_min_integer_int=\count335
+\l__siunitx_number_round_precision_int=\count336
+\l__siunitx_number_lower_threshold_int=\count337
+\l__siunitx_number_upper_threshold_int=\count338
+\l__siunitx_number_group_first_int=\count339
+\l__siunitx_number_group_size_int=\count340
+\l__siunitx_number_group_minimum_int=\count341
+\l__siunitx_angle_tmp_dim=\dimen321
+\l__siunitx_angle_marker_box=\box81
+\l__siunitx_angle_unit_box=\box82
+\l__siunitx_compound_count_int=\count342
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 )
-\l__siunitx_table_tmp_box=\box82
-\l__siunitx_table_tmp_dim=\dimen314
-\l__siunitx_table_column_width_dim=\dimen315
-\l__siunitx_table_integer_box=\box83
-\l__siunitx_table_decimal_box=\box84
-\l__siunitx_table_uncert_box=\box85
-\l__siunitx_table_before_box=\box86
-\l__siunitx_table_after_box=\box87
-\l__siunitx_table_before_dim=\dimen316
-\l__siunitx_table_carry_dim=\dimen317
-\l__siunitx_unit_tmp_int=\count342
-\l__siunitx_unit_position_int=\count343
-\l__siunitx_unit_total_int=\count344
+\l__siunitx_table_tmp_box=\box83
+\l__siunitx_table_tmp_dim=\dimen322
+\l__siunitx_table_column_width_dim=\dimen323
+\l__siunitx_table_integer_box=\box84
+\l__siunitx_table_decimal_box=\box85
+\l__siunitx_table_uncert_box=\box86
+\l__siunitx_table_before_box=\box87
+\l__siunitx_table_after_box=\box88
+\l__siunitx_table_before_dim=\dimen324
+\l__siunitx_table_carry_dim=\dimen325
+\l__siunitx_unit_tmp_int=\count343
+\l__siunitx_unit_position_int=\count344
+\l__siunitx_unit_total_int=\count345
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2024/10/24 v3.43 KOMA-Script package (end user interface for scrlayer)
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlayer.sty
@@ -842,37 +860,37 @@ Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (HM
 Package: lastpageclassic 2025/08/14 v2.1h Refers to last page's name (HMM; JPG)
 ) 
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 135.
+Package hyperref Info: Option `colorlinks' set `true' on input line 140.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
-\LTleft=\skip77
-\LTright=\skip78
-\LTpre=\skip79
-\LTpost=\skip80
-\LTchunksize=\count345
-\LTcapwidth=\dimen318
-\LT@head=\box88
-\LT@firsthead=\box89
-\LT@foot=\box90
-\LT@lastfoot=\box91
-\LT@gbox=\box92
-\LT@cols=\count346
-\LT@rows=\count347
-\c@LT@tables=\count348
-\c@LT@chunks=\count349
+\LTleft=\skip78
+\LTright=\skip79
+\LTpre=\skip80
+\LTpost=\skip81
+\LTchunksize=\count346
+\LTcapwidth=\dimen326
+\LT@head=\box89
+\LT@firsthead=\box90
+\LT@foot=\box91
+\LT@lastfoot=\box92
+\LT@gbox=\box93
+\LT@cols=\count347
+\LT@rows=\count348
+\c@LT@tables=\count349
+\c@LT@chunks=\count350
 \LT@p@ftn=\toks46
 )
-Class scrreprt Info: longtable captions redefined on input line 145.
+Class scrreprt Info: longtable captions redefined on input line 150.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \everycr=\toks47
-\minrowclearance=\skip81
-\rownum=\count350
+\minrowclearance=\skip82
+\rownum=\count351
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen319
-\WF@size=\dimen320
-\c@WF@wrappedlines=\count351
-\WF@box=\box93
+\wrapoverhang=\dimen327
+\WF@size=\dimen328
+\c@WF@wrappedlines=\count352
+\WF@box=\box94
 \WF@everypar=\toks48
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -891,7 +909,28 @@ Package siunitx Info: Option "separate-uncertainty" has been deprecated in
 (siunitx)             
 (siunitx)             Use "uncertainty-mode = separate" as a replacement.
 
-) (styling/commands/math_short_commands.sty) (styling/commands/general_short_commands.sty) (styling/commands/default-expressions.sty) (styling/info-boxen.sty
+) (styling/commands/math_short_commands.sty) (styling/commands/general_short_commands.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count353
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count354
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count355
+\float@exts=\toks49
+\float@box=\box95
+\@float@everytoks=\toks50
+\@floatcapt=\box96
+) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+ (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count356
+\l__pdf_internal_box=\box97
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)) (styling/commands/default-expressions.sty) (styling/info-boxen.sty
 
 LaTeX Warning: You have requested package `styling/info-boxen',
                but the package provides `info-boxen'.
@@ -900,23 +939,23 @@ Package: info-boxen
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count352
-\lst@gtempboxa=\box94
-\lst@token=\toks49
-\lst@length=\count353
-\lst@currlwidth=\dimen321
-\lst@column=\count354
-\lst@pos=\count355
-\lst@lostspace=\dimen322
-\lst@width=\dimen323
-\lst@newlines=\count356
-\lst@lineno=\count357
-\lst@maxwidth=\dimen324
+\lst@mode=\count357
+\lst@gtempboxa=\box98
+\lst@token=\toks51
+\lst@length=\count358
+\lst@currlwidth=\dimen329
+\lst@column=\count359
+\lst@pos=\count360
+\lst@lostspace=\dimen330
+\lst@width=\dimen331
+\lst@newlines=\count361
+\lst@lineno=\count362
+\lst@maxwidth=\dimen332
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count358
-\lst@skipnumbers=\count359
-\lst@framebox=\box95
+\c@lstnumber=\count363
+\lst@skipnumbers=\count364
+\lst@framebox=\box99
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
@@ -926,16 +965,16 @@ Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing.code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
 )
-\c@tcblisting=\count360
+\c@tcblisting=\count365
 )) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box96
-\tcb@totalupperbox=\box97
-\tcb@totallowerbox=\box98
+\tcb@testbox=\box100
+\tcb@totalupperbox=\box101
+\tcb@totallowerbox=\box102
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
 (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image.sty
@@ -944,21 +983,13 @@ Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box99
+\l__tikzfill_img_box=\box103
 )) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
 )) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.code.tex
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
-) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2024-01-04 L3 programming layer (loader) 
- (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count361
-\l__pdf_internal_box=\box100
-))
-Package: xparse 2023-10-10 L3 Experimental document command parser
 )
-\c@DefCounter=\count362
+\c@DefCounter=\count366
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 37.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
@@ -986,17 +1017,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen325
-\scratchbox=\box101
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen326
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count367
+\scratchdimen=\dimen333
+\scratchbox=\box104
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen334
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks53
 ) (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1004,6 +1035,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1029,7 +1061,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (C:\Users\finnz\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count369
+\BKM@id=\count373
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1069,7 +1101,7 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 37.
-\c@lstlisting=\count370
+\c@lstlisting=\count374
 \openout2 = `pages/title.aux'.
 
  (pages/title.tex
@@ -1087,13 +1119,14 @@ Package pdftex.def Info: Title_Ana2_SoSe26.pdf  used on input line 26.
 \openout2 = `pages/Vorwort.aux'.
 
  (pages/Vorwort.tex
+chapter 1..
 
-Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
 (scrreprt)              \chapter. Currently it internally still provides and
-(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              uses \@makechapterhead, but a completely different
 (scrreprt)              definition compared to the standard classes.
-(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              So redefining or using internal \@makechapterhead
 (scrreprt)              by users or package authors may already break
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
@@ -1136,7 +1169,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
+{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1197,20 +1230,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.1 \newpage
-             [1{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+             [1{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 20.
- [2{C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-<pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png, id=132, 983.58754pt x 222.82057pt>
+ [2]
+<pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png, id=135, 983.58754pt x 222.82057pt>
 File: pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png Graphic file (type png)
 <use pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png>
 Package pdftex.def Info: pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Bekannte_Metrische_Räume-Sammlung.png  used on input line 51.
 (pdftex.def)             Requested size: 455.24411pt x 103.13109pt.
-<pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png, id=134, 416.30185pt x 265.10101pt>
+<pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png, id=137, 416.30185pt x 265.10101pt>
 File: pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png Graphic file (type png)
 <use pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png>
 Package pdftex.def Info: pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheitsbälle_Tabelle.png  used on input line 98.
 (pdftex.def)             Requested size: 273.14923pt x 173.94783pt.
-<pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png, id=135, 146.54352pt x 146.54352pt>
+<pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png, id=138, 146.54352pt x 146.54352pt>
 File: pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png Graphic file (type png)
 <use pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png>
 Package pdftex.def Info: pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Einheits_Bälle_Evolution.png  used on input line 105.
@@ -1220,7 +1253,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-<pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png, id=155, 126.7945pt x 128.5118pt>
+<pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png, id=158, 126.7945pt x 128.5118pt>
 File: pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png Graphic file (type png)
 <use pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png>
 Package pdftex.def Info: pages/chapter_25/Kapitel_1-Topologische_Grundlagen/01_img/1.1/Hausdorff_Ruam_Bsp01.png  used on input line 174.
@@ -1274,17 +1307,17 @@ Package rerunfilecheck Info: File `main_AlbertsSS25.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 41048 strings out of 474485
- 921105 string characters out of 5743733
+ 41819 strings out of 474485
+ 935623 string characters out of 5743733
  1958542 words of memory out of 5000000
- 62463 multiletter control sequences out of 15000+600000
+ 63217 multiletter control sequences out of 15000+600000
  633696 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,21n,121p,10978b,1550s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main_AlbertsSS25.pdf (28 pages, 1198877 bytes).
+ 124i,21n,121p,10978b,1551s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/finnz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main_AlbertsSS25.pdf (28 pages, 1223792 bytes).
 PDF statistics:
- 539 PDF objects out of 1000 (max. 8388607)
+ 547 PDF objects out of 1000 (max. 8388607)
  164 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

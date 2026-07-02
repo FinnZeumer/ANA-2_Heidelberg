@@ -18,6 +18,9 @@
 
 \usepackage{mathtools}
 
+% Paket für alphabetische Kapitelformatierung
+\usepackage{alphalph}
+
 \RequirePackage{amsmath, amssymb}
 
 \newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
@@ -172,7 +175,7 @@
 % Tabellen design
 % -------------------------------------------
 
-\renewcommand{\thetable}{\thechapter\Roman{table}}
+\renewcommand{\thetable}{\thechapter.\Roman{table}}
 \usepackage[justification=centering]{caption}
 
 % Manipulation der Table Caption
@@ -186,3 +189,30 @@
   separate-uncertainty = true
 }
 
+% Chapter Abstände
+\RedeclareSectionCommand[
+  beforeskip=-30pt,
+  afterskip=2ex plus .5ex minus .2ex
+]{chapter}
+
+\renewcommand*\chapterlinesformat[3]{
+  \parbox{\textwidth}{%
+    % Text über Linie (Chapter* funktioniert)
+        \ifx&#2&%
+        % No number: Skip 
+        \else
+        {Kapitel \raggedleft\usekomafont{chapter}\Huge\color{BluePrime}#2\par}%
+        \vspace{-1.5ex}
+        \fi
+
+    % Obere Linie
+    \rule{\textwidth}{1pt}\par
+    \vspace{1ex}
+
+    % Chapter Titel
+    {\raggedright\usekomafont{chapter}#3\par}
+
+    % Untere Linie
+    \rule{\textwidth}{1pt}\par
+  }
+}

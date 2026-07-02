@@ -1,11 +1,62 @@
-\contentsline {definition}{\numberline {1.1.1} -- Partielle Ableitungen}{2}{Item.4}%
-\contentsline {definition}{\numberline {1.1.3} -- Partielle Ableitungen höherer Ordnung}{2}{Item.6}%
-\contentsline {definition}{\numberline {1.1.5} -- Gradient}{3}{DefCounter.1.1.5}%
-\contentsline {definition}{\numberline {1.1.6} -- Hesse-Matrix}{3}{DefCounter.1.1.6}%
-\contentsline {definition}{\numberline {1.1.7} -- Jacobi-Matrix}{3}{DefCounter.1.1.7}%
-\contentsline {definition}{\numberline {1.2.1} -- Totale Ableitung}{4}{DefCounter.1.2.1}%
-\contentsline {definition}{\numberline {1.2.5} -- Richtungsableitung}{4}{DefCounter.1.2.5}%
-\contentsline {definition}{\numberline {1.3.3} -- Konvexe Mengen}{7}{DefCounter.1.3.3}%
-\contentsline {definition}{\numberline {1.4.4} -- Taylor--Reihe}{10}{DefCounter.1.4.4}%
-\contentsline {definition}{\numberline {1.5.1} -- lokale Extrema}{11}{DefCounter.1.5.1}%
-\contentsline {definition}{\numberline {1.6.2} -- Reguläre Abbildung}{12}{DefCounter.1.6.2}%
+\contentsline {definition}{\numberline {1.1.1} -- Riemann-Integrierbarkeit}{2}{DefCounter.1.1.1}%
+\contentsline {definition}{\numberline {1.1.2} -- Stückweise-Stetigkeit}{2}{Item.4}%
+\contentsline {definition}{\numberline {1.1.4} -- Sesquilinearform}{3}{section*.3}%
+\contentsline {definition}{\numberline {1.1.5} -- Skalarprodukt}{5}{Item.12}%
+\contentsline {definition}{\numberline {1.1.7} -- L\textsuperscript {2}-Norm}{7}{section*.4}%
+\contentsline {definition}{\numberline {1.1.8} -- L\textsuperscript {2}-Konvergenz}{8}{DefCounter.1.1.8}%
+\contentsline {definition}{\numberline {1.1.9} -- L\textsuperscript {p}-Norm}{10}{section*.5}%
+\contentsline {definition}{\numberline {1.1.10} -- Orthogonalität}{10}{DefCounter.1.1.10}%
+\contentsline {definition}{\numberline {1.1.12} -- Periodische Funktion}{11}{DefCounter.1.1.12}%
+\contentsline {definition}{\numberline {1.2.1} -- Fourier--Reihe}{12}{DefCounter.1.2.1}%
+\contentsline {definition}{\numberline {2.1.1} -- Metrik, metrischer Raum}{16}{DefCounter.2.1.1}%
+\contentsline {definition}{\numberline {2.1.2} -- Norm, normierter Raum}{16}{section*.6}%
+\contentsline {definition}{\numberline {2.1.5} -- Offene und abgeschlossene Kugeln}{18}{Item.23}%
+\contentsline {definition}{\numberline {2.1.6} -- Beschränkte Menge}{18}{DefCounter.2.1.6}%
+\contentsline {definition}{\numberline {2.1.7} -- Konvergenz von Folgen}{18}{DefCounter.2.1.7}%
+\contentsline {definition}{\numberline {2.1.8} -- Häufungspunkt}{19}{DefCounter.2.1.8}%
+\contentsline {definition}{\numberline {2.1.9} -- Konvergenz in $\mathbb {R}^n$}{19}{DefCounter.2.1.9}%
+\contentsline {definition}{\numberline {2.1.12} -- Cauchy-Folge}{20}{DefCounter.2.1.12}%
+\contentsline {definition}{\numberline {2.1.14} -- Vollständiger metrischer Raum}{20}{DefCounter.2.1.14}%
+\contentsline {definition}{\numberline {2.2.1} -- Offene und abgeschlossene Mengen}{21}{DefCounter.2.2.1}%
+\contentsline {definition}{\numberline {2.2.5} -- Rand einer Menge}{21}{DefCounter.2.2.5}%
+\contentsline {definition}{\numberline {2.2.6} -- Offene Kugel}{21}{DefCounter.2.2.6}%
+\contentsline {definition}{\numberline {2.2.7} -- Offene und abgeschlossene Mengen}{22}{DefCounter.2.2.7}%
+\contentsline {definition}{\numberline {2.2.11} -- Rand einer Menge}{22}{DefCounter.2.2.11}%
+\contentsline {definition}{\numberline {2.2.12} -- Inneres und Abschluss}{22}{DefCounter.2.2.12}%
+\contentsline {definition}{\numberline {2.2.16} -- Topologie}{23}{Item.31}%
+\contentsline {definition}{\numberline {2.2.17} -- Topologischer Raum}{23}{Item.34}%
+\contentsline {definition}{\numberline {2.3.1} -- Kompaktheit}{24}{section*.7}%
+\contentsline {definition}{\numberline {2.4.1} -- Skalarprodukt}{25}{DefCounter.2.4.1}%
+\contentsline {definition}{\numberline {2.4.7} -- Orthogonalität und Orthonormalsystem}{26}{Item.37}%
+\contentsline {definition}{\numberline {3.1.1} -- Stetige Funktionen}{29}{Item.39}%
+\contentsline {definition}{\numberline {3.3.3} -- Zusammenhängende Mengen}{35}{DefCounter.3.3.3}%
+\contentsline {definition}{\numberline {3.3.6} -- gleichmäßige Stetigkeit}{35}{DefCounter.3.3.6}%
+\contentsline {definition}{\numberline {3.3.7} -- Lipschitz-Stetigkeit}{35}{DefCounter.3.3.7}%
+\contentsline {definition}{\numberline {3.4.1} -- Konvergenz von Funktionenfolgen}{37}{Item.59}%
+\contentsline {definition}{\numberline {3.5.1} -- Fixpunkt}{38}{DefCounter.3.5.1}%
+\contentsline {definition}{\numberline {3.5.2} -- Kontraktion}{38}{DefCounter.3.5.2}%
+\contentsline {definition}{\numberline {3.5.4} -- Starke Monotonie}{39}{DefCounter.3.5.4}%
+\contentsline {definition}{\numberline {4.1.1} -- Partielle Ableitungen}{41}{Item.66}%
+\contentsline {definition}{\numberline {4.1.3} -- Partielle Ableitungen höherer Ordnung}{41}{Item.68}%
+\contentsline {definition}{\numberline {4.1.5} -- Gradient}{42}{DefCounter.4.1.5}%
+\contentsline {definition}{\numberline {4.1.6} -- Hesse-Matrix}{42}{DefCounter.4.1.6}%
+\contentsline {definition}{\numberline {4.1.7} -- Jacobi-Matrix}{42}{DefCounter.4.1.7}%
+\contentsline {definition}{\numberline {4.2.1} -- Totale Ableitung}{43}{DefCounter.4.2.1}%
+\contentsline {definition}{\numberline {4.2.5} -- Richtungsableitung}{43}{DefCounter.4.2.5}%
+\contentsline {definition}{\numberline {4.3.3} -- Konvexe Mengen}{46}{DefCounter.4.3.3}%
+\contentsline {definition}{\numberline {4.4.4} -- Taylor--Reihe}{49}{DefCounter.4.4.4}%
+\contentsline {definition}{\numberline {4.5.1} -- lokale Extrema}{50}{DefCounter.4.5.1}%
+\contentsline {definition}{\numberline {4.6.2} -- Reguläre Abbildung}{51}{DefCounter.4.6.2}%
+\contentsline {definition}{\numberline {4.8.1} -- Untermanigfaltigkeit}{53}{DefCounter.4.8.1}%
+\contentsline {definition}{\numberline {4.8.4} -- Reguläre Parametrisierung/ Immersion}{54}{DefCounter.4.8.4}%
+\contentsline {definition}{\numberline {4.8.6} -- Tangentialvektoren}{54}{DefCounter.4.8.6}%
+\contentsline {definition}{\numberline {4.8.8} -- Normalenvektoren}{55}{DefCounter.4.8.8}%
+\contentsline {definition}{\numberline {5.1.1} -- Differentialgleichungen}{57}{DefCounter.5.1.1}%
+\contentsline {definition}{\numberline {5.1.2} -- System von Differentialgleichungen 1. Ordnung}{57}{Item.94}%
+\contentsline {definition}{\numberline {5.1.3} -- Anfangswertaufgabe/Anfangswertproblem}{57}{Item.97}%
+\contentsline {definition}{\numberline {5.3.1} -- Lipschitz-Stetigkeit}{59}{DefCounter.5.3.1}%
+\contentsline {definition}{\numberline {5.4.1} -- Stabilität}{61}{Item.100}%
+\contentsline {definition}{\numberline {5.4.2} -- Monotone AWA}{62}{DefCounter.5.4.2}%
+\contentsline {definition}{\numberline {5.5.1} -- Lineare AWA}{63}{DefCounter.5.5.1}%
+\contentsline {definition}{\numberline {5.5.4} -- Fundamentalmatrix}{64}{DefCounter.5.5.4}%
+\contentsline {definition}{\numberline {5.6.1} -- Allgemeine inhomogene lineare RWA}{65}{DefCounter.5.6.1}%
