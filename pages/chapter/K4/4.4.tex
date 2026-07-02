@@ -5,103 +5,103 @@
 \subsection*{Erinnerung -- Höhere Ableitungen}
 
 \begin{enumerate} %[label=(\arabic*)]
-    \item Sei \(D\subset\mathbb{R}^n\) offen, \(f\colon D\to\mathbb{R}^m\) partiell differenzierbar. Für \(j\in\{1,\dots,n\}\) bezeichne
-    \[
+    \item Sei $D\subset\mathbb{R}^n$ offen, $f\colon D\to\mathbb{R}^m$ partiell differenzierbar. Für $j\in\{1,\dots,n\}$ bezeichne
+    $$
     \partial_j f=\frac{\partial f}{\partial x_j}\colon D\to\mathbb{R}^m,
-    \]
+    $$
     und die Ableitungsabbildung (Jacobi-Matrix)
-    \[
+    $$
     Df=\big(\partial_1 f,\dots,\partial_n f\big)\colon D\to\mathbb{R}^{m\times n}.
-    \]
-    Ist nun jede \(\partial_j f\) wieder partiell differenzierbar, so sind die zweiten partiellen Ableitungen definiert durch
-    \[
+    $$
+    Ist nun jede $\partial_j f$ wieder partiell differenzierbar, so sind die zweiten partiellen Ableitungen definiert durch
+    $$
     \partial_i\partial_j f=\frac{\partial^2 f}{\partial x_i\partial x_j},\qquad i,j\in\{1,\dots,n\}.
-    \]
+    $$
 
-    Allgemein (induktiv): \(f\colon D\to\mathbb{R}^m\) ist \((k+1)\)-mal partiell differenzierbar, genau dann, wenn
+    Allgemein (induktiv): $f\colon D\to\mathbb{R}^m$ ist $(k+1)$-mal partiell differenzierbar, genau dann, wenn
     \begin{enumerate}%[label=(\roman*)]
-        \item \(f\) ist \(k\)-mal partiell differenzierbar, und
-        \item alle partiellen Ableitungen der \(k\)-ten Ordnung sind wieder partiell differenzierbar, d.\,h. für jede Folge \(i_1,\dots,i_k\in\{1,\dots,n\}\) gilt, dass
-        \[
+        \item $f$ ist $k$-mal partiell differenzierbar, und
+        \item alle partiellen Ableitungen der $k$-ten Ordnung sind wieder partiell differenzierbar, d.\,h. für jede Folge $i_1,\dots,i_k\in\{1,\dots,n\}$ gilt, dass
+        $$
         \partial_{i_1}\partial_{i_2}\dots\partial_{i_k} f
-        \]
+        $$
         partiell differenzierbar ist.
     \end{enumerate}
 
-    \item \(f\colon D\to\mathbb{R}^m\) ist \(k\)-mal stetig partiell differenzierbar, wenn
+    \item $f\colon D\to\mathbb{R}^m$ ist $k$-mal stetig partiell differenzierbar, wenn
     \begin{enumerate}%[label=(\roman*)]
-        \item \(f\) ist \(k\)-mal partiell differenzierbar, und
-        \item alle partiellen Ableitungen der \(k\)-ten Ordnung sind stetige Abbildungen auf \(D\).
+        \item $f$ ist $k$-mal partiell differenzierbar, und
+        \item alle partiellen Ableitungen der $k$-ten Ordnung sind stetige Abbildungen auf $D$.
     \end{enumerate}
 
-    Bezeichnung: \(f\in C^k(D,\mathbb{R}^m)\).
+    Bezeichnung: $f\in C^k(D,\mathbb{R}^m)$.
 
     \item Es gilt:
-    \[
+    $$
     f\in C^1(D,\mathbb{R}^m)\quad\Longleftrightarrow\quad
     \frac{\partial f}{\partial x_i}:D\to\mathbb{R}^m\ \text{ist stetig}\ \forall i\in\{1,\dots,n\}.
-    \]
-    Für \(m=1\) schreibt man entsprechend
-    \[
+    $$
+    Für $m=1$ schreibt man entsprechend
+    $$
     \frac{\partial f}{\partial x_i}:D\to\mathbb{R}\ \text{ist stetig}\ \forall i\in\{1,\dots,n\}.
-    \]
-    Äquivalent: \(f\) ist total differenzierbar in \(D\) und stetig, und die Jacobi-Matrix
-    \[
+    $$
+    Äquivalent: $f$ ist total differenzierbar in $D$ und stetig, und die Jacobi-Matrix
+    $$
     x\mapsto J_f(x)=\
     \begin{pmatrix}
         \frac{\partial f_1}{\partial x_1}(x) & \cdots & \frac{\partial f_1}{\partial x_n}(x)\\[4pt]
         \vdots & & \vdots\\[4pt]
         \frac{\partial f_m}{\partial x_1}(x) & \cdots & \frac{\partial f_m}{\partial x_n}(x)
     \end{pmatrix}
-    \]
-    ist stetig als Abbildung \(D\to\mathbb{R}^{m\times n}\).
+    $$
+    ist stetig als Abbildung $D\to\mathbb{R}^{m\times n}$.
 
-    \item Ist \(f\in C^{k+1}(D,\mathbb{R}^m)\), dann ist jede partielle Ableitung der \((k+1)\)-ten Ordnung
-    \[
+    \item Ist $f\in C^{k+1}(D,\mathbb{R}^m)$, dann ist jede partielle Ableitung der $(k+1)$-ten Ordnung
+    $$
     \frac{\partial^{k+1} f}{\partial x_{i_1}\cdots\partial x_{i_{k+1}}}\colon D\to\mathbb{R}^m
-    \]
-    total differenzierbar (da stetig partiell differenzierbar) und somit stetig. Induktiv folgt: alle partiellen Ableitungen \(j\)-ter Ordnung mit \(j\le k+1\) sind total differenzierbar und stetig auf \(D\).
+    $$
+    total differenzierbar (da stetig partiell differenzierbar) und somit stetig. Induktiv folgt: alle partiellen Ableitungen $j$-ter Ordnung mit $j\le k+1$ sind total differenzierbar und stetig auf $D$.
 
-    \item \(C^\infty(D,\mathbb{R}^m)=\bigcap_{k=0}^\infty C^k(D,\mathbb{R}^m).\)
+    \item $C^\infty(D,\mathbb{R}^m)=\bigcap_{k=0}^\infty C^k(D,\mathbb{R}^m).$
 
     Es gilt die Kettenfolge von Inklusionen
-    \[
+    $$
     C^\infty(D,\mathbb{R}^m)\subset\cdots\subset C^{k+1}(D,\mathbb{R}^m)\subset C^k(D,\mathbb{R}^m)\subset\cdots\subset C^1(D,\mathbb{R}^m)\subset C^0(D,\mathbb{R}^m).
-    \]
+    $$
 
-    \item Sei \(D\subset\mathbb{R}^n\) offen, \(f\colon D\to\mathbb{R}\). Falls die partiellen Ableitungen
-    \[
+    \item Sei $D\subset\mathbb{R}^n$ offen, $f\colon D\to\mathbb{R}$. Falls die partiellen Ableitungen
+    $$
     \frac{\partial^2 f}{\partial x_i\partial x_j},\quad \frac{\partial^2 f}{\partial x_j\partial x_i}\quad (i,j\in\{1,\dots,n\})
-    \]
-    auf \(D\) existieren und \(\frac{\partial^2 f}{\partial x_i\partial x_j}\) stetig ist in \(x\in D\), dann existiert \(\frac{\partial^2 f}{\partial x_j\partial x_i}\) und es gilt
-    \[
+    $$
+    auf $D$ existieren und $\frac{\partial^2 f}{\partial x_i\partial x_j}$ stetig ist in $x\in D$, dann existiert $\frac{\partial^2 f}{\partial x_j\partial x_i}$ und es gilt
+    $$
     \frac{\partial^2 f}{\partial x_i\partial x_j}(x)=\frac{\partial^2 f}{\partial x_j\partial x_i}(x)\qquad\forall x\in D.
-    \]
+    $$
 
-    \item Seien \(D\subset\mathbb{R}^n\) offen und \(f\in C^k(D,\mathbb{R}^m)\). Sei \(\pi\) eine Permutation von \((i_1,\dots,i_k)\). Dann gilt
-    \[
+    \item Seien $D\subset\mathbb{R}^n$ offen und $f\in C^k(D,\mathbb{R}^m)$. Sei $\pi$ eine Permutation von $(i_1,\dots,i_k)$. Dann gilt
+    $$
     \partial_{i_1}\partial_{i_2}\dots\partial_{i_k} f=
     \partial_{i_{\pi(1)}}\partial_{i_{\pi(2)}}\dots\partial_{i_{\pi(k)}} f.
-    \]
+    $$
     (Vertauschung der Reihenfolge der partiellen Ableitungen ist möglich, wenn die benötigten Ableitungen existieren und stetig sind.)
 \end{enumerate}
 
-\subsection*{Erinnerung -- Taylor-Entwicklung in \(\mathbb{R}\)}
+\subsection*{Erinnerung -- Taylor-Entwicklung in $\mathbb{R}$}
 \begin{enumerate}
-    \item Sei \(f:(a,b)\to\mathbb{R}\) \((r+1)\)-mal stetig differenzierbar. Dann gilt für \(x,x+h\in(a,b)\):
-    \[
+    \item Sei $f:(a,b)\to\mathbb{R}$ $(r+1)$-mal stetig differenzierbar. Dann gilt für $x,x+h\in(a,b)$:
+    $$
     f(x+h)=\sum_{k=0}^{r}\frac{f^{(k)}(x)}{k!}\,h^k+R_{r+1}(x,h).
-    \]
+    $$
 
-    \item Für das Restglied in Lagrange-Form (für \(0\in(0,1)\) bezeichnet hier typischerweise \(\theta\in(0,1)\)) gilt:
-    \[
+    \item Für das Restglied in Lagrange-Form (für $0\in(0,1)$ bezeichnet hier typischerweise $\theta\in(0,1)$) gilt:
+    $$
     R_{r+1}(x,h)=\frac{f^{(r+1)}(x+\theta h)}{(r+1)!}\,h^{\,r+1}
-    \]
-    für ein geeignetes \(\theta\in(0,1)\).
+    $$
+    für ein geeignetes $\theta\in(0,1)$.
     \item Für das Restglied in Integral-Form gilt:
-    \[
+    $$
     R_{r+1}(x,h)=\frac{h^{r+1}}{r!}\int_0^1 (1-t)^r\,f^{(r+1)}(x+th)\,dt.
-    \]
+    $$
 \end{enumerate}
 
 \begin{satz}{Taylor-Formel}

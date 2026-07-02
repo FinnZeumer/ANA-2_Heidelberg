@@ -3,59 +3,59 @@
 \label{5.4}
 
 \begin{definition}{Stabilität}
-    Sei \(y(t),\ t_0 \le t < \infty,\) eine Lösung der AWA
-    \[
+    Sei $y(t),\ t_0 \le t < \infty,$ eine Lösung der AWA
+    $$
     y' = f(t,y),\qquad y(t_0)=y_0.
-    \]
+    $$
 
-    Dabei sei \(f: D \to \mathbb{R}^n\) auf
-    \[
+    Dabei sei $f: D \to \mathbb{R}^n$ auf
+    $$
     D := \{(t,x)\in\mathbb{R}\times\mathbb{R}^n \mid t_0 \le t < \infty,\ \|{y(t)-x}\|<\alpha\},\quad \alpha>0,
-    \]
-    stetig und lokal Lipschitz-stetig bzgl.\ \(y\).
+    $$
+    stetig und lokal Lipschitz-stetig bzgl.\ $y$.
     
     Dann heißt
     \begin{enumerate}
-        \item \(y(t)\) \textbf{(Lyapunov-)stabil} (bzgl.\ \(t_0\)), falls für jedes \(\varepsilon>0\) ein \(\delta=\delta(\varepsilon,t_0)>0\) existiert, sodass für alle Anfangswerte \((t_0,v_0)\in D\) mit
-            \[
+        \item $y(t)$ \textbf{(Lyapunov-)stabil} (bzgl.\ $t_0$), falls für jedes $\varepsilon>0$ ein $\delta=\delta(\varepsilon,t_0)>0$ existiert, sodass für alle Anfangswerte $(t_0,v_0)\in D$ mit
+            $$
             \|v_0-y_0\|<\delta
-            \]
+            $$
             die gestörte AWA
-            \[
+            $$
             v' = f(t,v),\qquad v(t_0)=v_0
-            \]
-            eine Lösung \(v(t),\ t\in[t_0,\infty)\), besitzt und
-            \[
+            $$
+            eine Lösung $v(t),\ t\in[t_0,\infty)$, besitzt und
+            $$
             \|v(t)-y(t)\|<\varepsilon\qquad\text{für alle }t\ge t_0.
-            \]  
+            $$  
 
-        \item \(y(t)\) \textbf{asymptotisch stabil}, falls \(y(t)\) Lyapunov-stabil ist und ein \(\delta>0\) existiert, sodass für alle Anfangswerte \((t_0,v_0)\in D\) mit
-            \[
+        \item $y(t)$ \textbf{asymptotisch stabil}, falls $y(t)$ Lyapunov-stabil ist und ein $\delta>0$ existiert, sodass für alle Anfangswerte $(t_0,v_0)\in D$ mit
+            $$
             \|v_0-y_0\|<\delta
-            \]
+            $$
             die gestörte AWA
-            \[
+            $$
             v' = f(t,v),\qquad v(t_0)=v_0
-            \]
-            eine Lösung \(v(t),\; t\in[t_0,\infty)\), besitzt und es gilt
-            \[
+            $$
+            eine Lösung $v(t),\; t\in[t_0,\infty)$, besitzt und es gilt
+            $$
             \|v(t)-y(t)\|\to 0\quad\text{für }t\to\infty.
-            \]
+            $$
 
             \textbf{Bemerkung:} Fehler konvergiert gegen 0.  
         
-        \item \(y(t)\) \emph{exponentiell stabil}, falls Konstanten \(\delta,\alpha,A>0\) existieren, sodass für alle Anfangswerte \((t_0,v_0)\in D\) mit
-            \[
+        \item $y(t)$ \emph{exponentiell stabil}, falls Konstanten $\delta,\alpha,A>0$ existieren, sodass für alle Anfangswerte $(t_0,v_0)\in D$ mit
+            $$
             \lVert v_0-y_0\rVert < \delta
-            \]
+            $$
             die gestörte AWA
-            \[
+            $$
             v' = f(t,v),\qquad v(t_0)=v_0
-            \]
-            eine Lösung \(v(t),\; t\in[t_0,\infty)\), besitzt und es gilt
-            \[
+            $$
+            eine Lösung $v(t),\; t\in[t_0,\infty)$, besitzt und es gilt
+            $$
             \lVert v(t)-y(t)\rVert \le A\,e^{-\alpha (t-t_0)}\lVert v_0-y_0\rVert,\qquad t\ge t_0.
-            \]
+            $$
 
             \textbf{Bemerkung:} Der Fehler klingt sehr schnell ab. 
     \end{enumerate}
@@ -64,9 +64,9 @@
 
 \begin{definition}{Monotone AWA}
      Die Funktion $f(t,x)$ genügt einer \emph{Monotoniebedingung}, falls ein $\lambda>0$ existiert, sodass für alle $(t,x),(t,y)\in D$ gilt:
-    \[
+    $$
     -(f(t,x)-f(t,y),\,x-y)_{2}\ge \lambda\|x-y\|_{2}^{2}.
-    \]
+    $$
 
     \vspace{1ex}
 
@@ -75,11 +75,11 @@
 \end{definition}
 
 \begin{satz}{Globaler Stabilitätssatz}
-    Sei \(f(t,x)\) einer AWA stetig, global Lipschitz-stetig bezüglich \(x\) und genüge der Monotoniebedingung.
+    Sei $f(t,x)$ einer AWA stetig, global Lipschitz-stetig bezüglich $x$ und genüge der Monotoniebedingung.
     \vspace{1em}
 
-    Dann sind alle Lösungen der AWA global und exponentiell stabil, mit \(\delta\) beliebig und \(\alpha=\lambda,\ A=1\).
+    Dann sind alle Lösungen der AWA global und exponentiell stabil, mit $\delta$ beliebig und $\alpha=\lambda,\ A=1$.
     \vspace{1em}
 
-    Gilt \(\sup_{t\ge 0}\lVert f(t,0)\rVert<\infty\), dann sind alle Lösungen gleichmäßig beschränkt.    
+    Gilt $\sup_{t\ge 0}\lVert f(t,0)\rVert<\infty$, dann sind alle Lösungen gleichmäßig beschränkt.    
 \end{satz}

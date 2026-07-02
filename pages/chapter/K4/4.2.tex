@@ -16,40 +16,40 @@
 \end{definition}
 
 \begin{satz}{Differenzierbarkeit}
-    Sei \(D\subset\mathbb{R}^n\) offen. Für Funktionen \(f\colon D\to\mathbb{R}^m\) gilt:
+    Sei $D\subset\mathbb{R}^n$ offen. Für Funktionen $f\colon D\to\mathbb{R}^m$ gilt:
 
     \begin{enumerate}
-    \item Sei \(f\) in \(x\in D\) differenzierbar, dann ist \(f\) partiell differenzierbar und
-    \[
+    \item Sei $f$ in $x\in D$ differenzierbar, dann ist $f$ partiell differenzierbar und
+    $$
     Df(x)=J_f(x),
-    \]
-    wobei \(J_f(x)\) die Jacobi-Matrix ist.
-    \item Sei \(f\) partiell differenzierbar in einer Umgebung von \(x\in D\) und die partiellen Ableitungen stetig in \(x\), dann ist \(f\) differenzierbar in \(x\).
+    $$
+    wobei $J_f(x)$ die Jacobi-Matrix ist.
+    \item Sei $f$ partiell differenzierbar in einer Umgebung von $x\in D$ und die partiellen Ableitungen stetig in $x$, dann ist $f$ differenzierbar in $x$.
     \end{enumerate}   
 \end{satz}
 
 \begin{korollar}{}
-    stetig partiell differenzierbar \(\Longrightarrow\) (total) differenzierbar (und somit stetig) \(\Longrightarrow\) partiell differenzierbar.
+    stetig partiell differenzierbar $\Longrightarrow$ (total) differenzierbar (und somit stetig) $\Longrightarrow$ partiell differenzierbar.
 
     Die umgekehrten Implikationen gelten im Allgemeinen nicht.   
 \end{korollar}
 
 \begin{satz}{Kettenregel}
-    Seien \(D_f\subset\mathbb{R}^n\) und \(D_g\subset\mathbb{R}^m\) offen, \(g: D_g\to\mathbb{R}^n\), \(f: D_f\to\mathbb{R}^r\) Abbildungen.
+    Seien $D_f\subset\mathbb{R}^n$ und $D_g\subset\mathbb{R}^m$ offen, $g: D_g\to\mathbb{R}^n$, $f: D_f\to\mathbb{R}^r$ Abbildungen.
     \vspace{1em}
 
-    Falls \(g\) im Punkt \(x\in D_g\) und \(f\) im Punkt \(y=g(x)\in D_f\) differenzierbar sind, gilt:
+    Falls $g$ im Punkt $x\in D_g$ und $f$ im Punkt $y=g(x)\in D_f$ differenzierbar sind, gilt:
     \vspace{1em}
 
-    Die Komposition \(h=f\circ g\) ist im Punkt \(x\) differenzierbar und
+    Die Komposition $h=f\circ g$ ist im Punkt $x$ differenzierbar und
 
-    \[
+    $$
     \underbrace{\overset{\text{Jacobi-Matrix von }f}{D_y f(g(x))}}_{\in\mathbb{R}^{\,r\times n}}
     \;\cdot\;
     \underbrace{\overset{\text{Jacobi-Matrix von }g}{D_x g(x)}}_{\in\mathbb{R}^{\,n\times m}}
     \;=\;
     D_x h(x)\in\mathbb{R}^{\,r\times m}.
-    \]
+    $$
 
     Hinweis: Matrix-Produkt — Reihenfolge wichtig!    
 \end{satz}

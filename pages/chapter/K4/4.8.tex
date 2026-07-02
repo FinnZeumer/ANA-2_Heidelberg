@@ -3,15 +3,15 @@
 \label{4.8}
 
 \begin{definition}{Untermanigfaltigkeit}
-    Eine Teilmenge \(M\subset\mathbb{R}^n\) heißt \(d\)-dimensionale \textbf{Untermannigfaltigkeit} der Klasse \(C^l\) (\(l\ge 1\), \(d\le n-1\)), wenn es zu jedem Punkt \(a\in M\) eine offene Umgebung \(U\subset\mathbb{R}^n\) und \(l\)-mal stetig differenzierbare Funktionen \(g_1,\dots,g_{\,n-d}:U\to\mathbb{R}\) gibt, so dass gilt:
+    Eine Teilmenge $M\subset\mathbb{R}^n$ heißt $d$-dimensionale \textbf{Untermannigfaltigkeit} der Klasse $C^l$ ($l\ge 1$, $d\le n-1$), wenn es zu jedem Punkt $a\in M$ eine offene Umgebung $U\subset\mathbb{R}^n$ und $l$-mal stetig differenzierbare Funktionen $g_1,\dots,g_{\,n-d}:U\to\mathbb{R}$ gibt, so dass gilt:
 
     \begin{enumerate}
-        \item[(a)] \(M\cap U=\{x\in U:\;g(x)=0\},\) wobei \(g=(g_1,\dots,g_{\,n-d})\).
-        \item[(b)] \(\operatorname{Rang}Dg(a)=n-d.\)
+        \item[(a)] $M\cap U=\{x\in U:\;g(x)=0\},$ wobei $g=(g_1,\dots,g_{\,n-d})$.
+        \item[(b)] $\operatorname{Rang}Dg(a)=n-d.$
     \end{enumerate}
 
-    Damit ist die Jacobimatrix \(Dg\) gegeben durch
-    \[
+    Damit ist die Jacobimatrix $Dg$ gegeben durch
+    $$
     Dg=
     \begin{pmatrix}
         \displaystyle\frac{\partial g_1}{\partial x_1} & \cdots & \displaystyle\frac{\partial g_1}{\partial x_n}\\[6pt]
@@ -26,34 +26,34 @@
         g_{\,n-d}
     \end{pmatrix},
     \qquad g:U\to\mathbb{R}^{\,n-d}.
-    \]
+    $$
 
-    D.\,h. \(M\) lässt sich lokal als \textbf{Nullstellenmenge} von \((n-d)\) \(C^l\)-Funktionen von \(n\) Variablen mit linear unabhängigen Gradienten schreiben.
+    D.\,h. $M$ lässt sich lokal als \textbf{Nullstellenmenge} von $(n-d)$ $C^l$-Funktionen von $n$ Variablen mit linear unabhängigen Gradienten schreiben.
 
-    Die Bedingung \(\operatorname{Rang}Dg(a)=n-d\) ist äquivalent dazu, dass die Gradienten \(\nabla g_1,\dots,\nabla g_{\,n-d}\) im Punkt \(a\) linear unabhängig sind.
+    Die Bedingung $\operatorname{Rang}Dg(a)=n-d$ ist äquivalent dazu, dass die Gradienten $\nabla g_1,\dots,\nabla g_{\,n-d}$ im Punkt $a$ linear unabhängig sind.
 \end{definition}
 
 \begin{satz}{Untermanigfaltigkeit als Graph}
     Eine Teilmenge $M\subset\mathbb{R}^n$ ist eine $d$-dimensionale Untermannigfaltigkeit der Klasse $C^l$ genau dann, wenn zu jedem Punkt $a\in M$ nach evtl.\ Umnummerierung der Koordinaten
 
     sei
-    \[
+    $$
     a=\bigl(a_1,\dots,a_d,a_{d+1},\dots,a_n\bigr)^T=(a',a'')^T
-    \]
+    $$
     mit
-    \[
+    $$
     a':=(a_1,\dots,a_d)^T\in\mathbb{R}^d,\qquad
     a'':=(a_{d+1},\dots,a_n)^T\in\mathbb{R}^{\,n-d}.
-    \]
+    $$
 
     Es gibt offene Umgebungen $U'\subset\mathbb{R}^d$ von $a'$ und $U''\subset\mathbb{R}^{\,n-d}$ von $a''$ und eine $l$-mal stetig differenzierbare Abbildung
-    \[
+    $$
     \varphi:U'\to U'',\qquad x'\mapsto \varphi(x')=x'',
-    \]
+    $$
     so dass
-    \[
+    $$
     M\cap (U'\times U'')=\{(x',x'')\in U'\times U'':\ x''=\varphi(x')\}.
-    \]
+    $$
 
     Hier: $x'=(x_1,\dots,x_d)^T$ und $x''=(x_{d+1},\dots,x_n)^T$.
     \vspace{1em}
@@ -63,9 +63,9 @@
 
 \begin{satz}{Untermanigfaltigkeit als $d$-dimensionale Ebene}
     Sei $E_d\subset\mathbb{R}^n$ die $d$-dimensionale Ebene
-    \[
+    $$
         E_d := \{(x_1,\dots,x_n)^\top\in\mathbb{R}^n : x_{d+1}=\dots = x_n = 0\}.
-    \]
+    $$
 
     Eine Teilmenge $M\subset\mathbb{R}^n$ ist genau dann $d$-dimensionale Untermannigfaltigkeit der Klasse $C^l$, falls es zu jedem $a\in M$ offene Umgebungen
     \begin{enumerate}
@@ -74,9 +74,9 @@
         
     \end{enumerate}
      so dass
-    \[
+    $$
         F(M\cap U) = E_d\cap V.
-    \]
+    $$
     D.\,h.\ durch eine lokale Koordinatentransformation der Klasse $C^l$ läßt sich $M$ zu einer \emph{$d$-dimensionalen Ebene} im $\mathbb{R}^n$ geradebiegen.
 
     \bigskip
@@ -85,13 +85,13 @@
 \end{satz}
 
 \begin{definition}{Reguläre Parametrisierung/ Immersion}
-    Sei \(W\subset\mathbb{R}^d\) offen.
-    Eine stetig differenzierbare Abbildung \(\Phi: W \to \mathbb{R}^n\) heißt \emph{Immersion} (oder \emph{reguläre Parametrisierung}), wenn
-    \[
+    Sei $W\subset\mathbb{R}^d$ offen.
+    Eine stetig differenzierbare Abbildung $\Phi: W \to \mathbb{R}^n$ heißt \emph{Immersion} (oder \emph{reguläre Parametrisierung}), wenn
+    $$
     \operatorname{Rang}D\Phi(w)=d,\qquad \forall w\in W,
-    \]
+    $$
     d.\,h. die Jacobi-Matrix
-    \[
+    $$
     D\Phi(w)=\Bigg(\frac{\partial\Phi_i}{\partial w_j}(w)\Bigg)_{i=1,\dots,n\;;\;j=1,\dots,d}
     =
     \begin{pmatrix}
@@ -100,8 +100,8 @@
     \frac{\partial\Phi_n}{\partial w_1} & \cdots & \frac{\partial\Phi_n}{\partial w_d}
     \end{pmatrix}
     \in\mathbb{R}^{\,n\times d},
-    \]
-    hat vollen (maximalen) Rang \(d\), welcher Notwendigerweise $d \leq n$ ist.   
+    $$
+    hat vollen (maximalen) Rang $d$, welcher Notwendigerweise $d \leq n$ ist.   
 \end{definition}
 
 \begin{satz}{Parametrisierungssatz}
@@ -117,60 +117,60 @@
 \end{satz}
 
 \begin{definition}{Tangentialvektoren}
-    Sei \(M\subset\mathbb{R}^n\) eine Untermannigfaltigkeit und \(a\in M\) ein Punkt.
+    Sei $M\subset\mathbb{R}^n$ eine Untermannigfaltigkeit und $a\in M$ ein Punkt.
     \vspace{1em}
 
-    Ein Vektor \(v\in\mathbb{R}^n\) heißt \emph{Tangentialvektor} an \(M\) im Punkt \(a\), wenn es eine stetig differenzierbare Kurve
-    \[
+    Ein Vektor $v\in\mathbb{R}^n$ heißt \emph{Tangentialvektor} an $M$ im Punkt $a$, wenn es eine stetig differenzierbare Kurve
+    $$
     \gamma\colon\; ]-\varepsilon,\varepsilon[ \to M\subset\mathbb{R}^n,\qquad (\varepsilon>0),
-    \]
+    $$
     gibt mit
-    \[
+    $$
     \gamma(0)=a \quad\text{und}\quad \gamma'(0)=v.
-    \]
+    $$
 
-    Der \emph{Tangentialraum} \(T_aM\) an \(M\) in \(a\) besteht aus allen Tangentialvektoren an \(M\) in \(a\).  
+    Der \emph{Tangentialraum} $T_aM$ an $M$ in $a$ besteht aus allen Tangentialvektoren an $M$ in $a$.  
 \end{definition}
 
 \begin{satz}{Tangentialraum}
-    Sei \(M\subset\mathbb{R}^n\) eine \(d\)-dimensionale Untermannigfaltigkeit und \(a\in M\). Dann gilt:
+    Sei $M\subset\mathbb{R}^n$ eine $d$-dimensionale Untermannigfaltigkeit und $a\in M$. Dann gilt:
     \begin{itemize}
-        \item[a)] \(T_aM\) ist ein \(d\)-dimensionaler Untervektorraum von \(\mathbb{R}^n\).
-        \item[b)] Sei \(\Phi:W\to V\subset M\), (\(W\) offen in \(\mathbb{R}^d\), \(V\) offen in \(M\)) eine Karte von \(M\) und \(c\in W\) ein Punkt mit \(\Phi(c)=a\). Dann bilden die Vektoren
-            \[
+        \item[a)] $T_aM$ ist ein $d$-dimensionaler Untervektorraum von $\mathbb{R}^n$.
+        \item[b)] Sei $\Phi:W\to V\subset M$, ($W$ offen in $\mathbb{R}^d$, $V$ offen in $M$) eine Karte von $M$ und $c\in W$ ein Punkt mit $\Phi(c)=a$. Dann bilden die Vektoren
+            $$
             \frac{\partial\Phi}{\partial w_1}(c),\dots,\frac{\partial\Phi}{\partial w_d}(c)
-            \]
-            eine \emph{Basis} von \(T_aM\).
-        \item[c)] Sei \(U\subset\mathbb{R}^n\) eine offene Umgebung von \(a\) und sei \(g:U\to\mathbb{R}^{\,n-d}\) eine stetig differenzierbare Funktion mit
-            \[
+            $$
+            eine \emph{Basis} von $T_aM$.
+        \item[c)] Sei $U\subset\mathbb{R}^n$ eine offene Umgebung von $a$ und sei $g:U\to\mathbb{R}^{\,n-d}$ eine stetig differenzierbare Funktion mit
+            $$
             M\cap U=\{x\in U:\; g(x)=0\}
-            \]
+            $$
             und
-            \[
+            $$
             \operatorname{Rang} Dg(a)=n-d.
-            \]
+            $$
             Dann gilt
-            \[
+            $$
             T_aM=\{v\in\mathbb{R}^n:\;\langle v,\nabla g_j(a)\rangle = 0\ \text{für } j=1,\dots,n-d\},
-            \]
-            wobei \(g=(g_1,\dots,g_{n-d})\) und \(\nabla g_j(a)\) den Gradienten von \(g_j\) in \(a\) bezeichnet.
+            $$
+            wobei $g=(g_1,\dots,g_{n-d})$ und $\nabla g_j(a)$ den Gradienten von $g_j$ in $a$ bezeichnet.
     \end{itemize}   
 \end{satz}
 
 \begin{definition}{Normalenvektoren}
-    Sei \(M\subset\mathbb{R}^n\) eine \(d\)-dimensionale Untermannigfaltigkeit und \(a\in M\).
+    Sei $M\subset\mathbb{R}^n$ eine $d$-dimensionale Untermannigfaltigkeit und $a\in M$.
     \vspace{1em}
 
-    Ein Vektor \(v\in\mathbb{R}^n\) heißt \emph{Normalenvektor} von \(M\) in \(a\), wenn er auf \(T_aM\) senkrecht steht, d.\,h.
-    \[
+    Ein Vektor $v\in\mathbb{R}^n$ heißt \emph{Normalenvektor} von $M$ in $a$, wenn er auf $T_aM$ senkrecht steht, d.\,h.
+    $$
     (v,w)=0\qquad\text{für alle }w\in T_aM.
-    \]
+    $$
 
-    Die Normalenvektoren von \(M\) in \(a\) bilden deshalb einen \((n-d)\)-dimensionalen Untervektorraum \(N_aM\subset\mathbb{R}^n\).
+    Die Normalenvektoren von $M$ in $a$ bilden deshalb einen $(n-d)$-dimensionalen Untervektorraum $N_aM\subset\mathbb{R}^n$.
 
     Nach Satz 4.33 c) ist
-    \[
+    $$
     \nabla g_1(a),\dots,\nabla g_{\,n-d}(a)
-    \]
-    eine Basis von \(N_aM\).    
+    $$
+    eine Basis von $N_aM$.    
 \end{definition}

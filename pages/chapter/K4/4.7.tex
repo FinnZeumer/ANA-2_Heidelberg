@@ -3,18 +3,18 @@
 \label{4.7}
 
 \begin{lemma}{}
-    Sei \(f: D\to\mathbb{R}\) und \(g: D\to\mathbb{R}^k,\; D\subset\mathbb{R}^n.\)
+    Sei $f: D\to\mathbb{R}$ und $g: D\to\mathbb{R}^k,\; D\subset\mathbb{R}^n.$
 
-    Wir suchen einen Punkt \(\hat{x}\in D\), s.d.
+    Wir suchen einen Punkt $\hat{x}\in D$, s.d.
     \begin{itemize}
-    \item \(\hat{x}\in S:=\{x\in D\mid g(x)=0\}\) und
-    \item \(\exists U(\hat{x})\) s.d. \(f(\hat{x})\le f(x),\ \forall x\in U(\hat{x})\cap S.\)
+    \item $\hat{x}\in S:=\{x\in D\mid g(x)=0\}$ und
+    \item $\exists U(\hat{x})$ s.d. $f(\hat{x})\le f(x),\ \forall x\in U(\hat{x})\cap S.$
     \end{itemize}
 
-    Dann heißt \(\hat{x}\) lokales Minimum unter Nebenbedingung \(g(x)=0.\)
+    Dann heißt $\hat{x}$ lokales Minimum unter Nebenbedingung $g(x)=0.$
 
-    Analog: lokales Maximum unter Nebenbedingung \(\hat{x}\in S\), s.d.
-    \(\exists U(\hat{x})\) mit \(f(\hat{x})\ge f(x)\ \forall x\in U(\hat{x})\cap S.\)
+    Analog: lokales Maximum unter Nebenbedingung $\hat{x}\in S$, s.d.
+    $\exists U(\hat{x})$ mit $f(\hat{x})\ge f(x)\ \forall x\in U(\hat{x})\cap S.$
 \end{lemma}
 
 \begin{satz}{Multiplikatorregel von Lagrange: Notwendige Bedingung 1. Ordnung für lokales Minimum unter Nebenbedingungen}
@@ -26,32 +26,32 @@
     \item $\hat x\in D$ ein Extremum unter der Nebenbedingung $g(x)=0$, und
     \item die Gradienten $\nabla g_1(\hat x),\dots,\nabla g_k(\hat x)$ seien linear unabhängig in $\mathbb{R}^n$, wobei
     \end{itemize}
-    \[
+    $$
     \nabla g_i(\hat x)\in\mathbb{R}^n,\qquad i=1,\dots,k \, .
-    \]
+    $$
 
     Dann gilt
 
     Es existieren Multiplikatoren
-    \[
+    $$
     \hat\lambda=
     \begin{pmatrix}
     \hat\lambda_1\\[4pt]
     \vdots\\[4pt]
     \hat\lambda_k
     \end{pmatrix}\in\mathbb{R}^k
-    \]
+    $$
     mit
-    \[
+    $$
     \sum_{i=1}^k \hat\lambda_i\,\nabla g_i(\hat x)=\nabla f(\hat x)
     \quad\Longleftrightarrow\quad
     \nabla g(\hat x)\,\hat\lambda=\nabla f(\hat x).
-    \]
+    $$
 
     Äquivalent dazu gilt
-    \[
+    $$
     \nabla f(\hat x)\in\operatorname{span}\{\nabla g_1(\hat x),\dots,\nabla g_k(\hat x)\}.
-    \]
+    $$
 
     Die Zahlen $\hat\lambda_1,\dots,\hat\lambda_k$ heißen \emph{Lagrange-Multiplikatoren}.
 \end{satz}

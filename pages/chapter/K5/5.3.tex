@@ -7,9 +7,9 @@
 
     \begin{itemize}
     \item $f$ ist in $D$ Lipschitz-stetig bzgl.\ $x$ mit Lipschitz-Konstante $L\ge 0$, falls für alle $(t,x),(t,\tilde{x})\in D$ gilt
-    \[
+    $$
     \lVert f(t,x)-f(t,\tilde{x})\rVert \le L\,\lVert x-\tilde{x}\rVert.
-    \]
+    $$
 
     \item $f$ ist lokal Lipschitz-stetig bzgl.\ $x$ in $D$, falls für alle Punkte $(t,x)\in D$ eine Umgebung $U$ existiert, s.\,d.\ $f$ in $D\cap U$ bezüglich $x$ Lipschitz-stetig ist.
     \end{itemize}   
@@ -17,52 +17,52 @@
 
 \begin{lemma}{Lemma von Gronwall (Hilfslemma)}
     Sei $w(t)\ge 0$ stückweise stetig und genüge für $a,b\in\mathbb{R}$ der Integralungleichung
-    \[
+    $$
     w(t)\le a\int_{t_0}^{t} w(s)\,ds + b,\qquad t\ge t_0.
-    \]
+    $$
 
     Dann gilt
-    \[
+    $$
     w(t)\le e^{a(t-t_0)}\,b,\qquad t\ge t_0.
-    \]   
+    $$   
 \end{lemma}
 
 \begin{satz}{Stabilitäts- und Eindeutigkeitssatz}
-    Sei \(f(t,x)\) stetig auf \(D\subset\mathbb{R}\times\mathbb{R}^n\) und lokal Lipschitz-stetig bezüglich \(x\).
+    Sei $f(t,x)$ stetig auf $D\subset\mathbb{R}\times\mathbb{R}^n$ und lokal Lipschitz-stetig bezüglich $x$.
     \vspace{1em}
 
-    Seien \(y,\nu\) zwei beliebige Lösungen der Differentialgleichung
-    \[
+    Seien $y,\nu$ zwei beliebige Lösungen der Differentialgleichung
+    $$
     y'(t)=f(t,y(t)),\qquad t\in I
-    \]
-    auf einem gemeinsamen Existenzintervall \(I\).
+    $$
+    auf einem gemeinsamen Existenzintervall $I$.
 
     Dann gilt
-    \[
+    $$
     \|y(t)-\nu(t)\|\le e^{L(t-t_0)}\|y(t_0)-\nu(t_0)\|,\qquad t\in I,\ t\ge t_0,
-    \]
-    wobei \(t_0\in I\) und \(L\) die Lipschitz-Konstante \(L=L_K\) von \(f(t,x)\) auf \(K\subseteq D\) mit \(K\) beschränkt und \(\operatorname{Graph}(y)\subset K,\ \operatorname{Graph}(\nu)\subset K\).
+    $$
+    wobei $t_0\in I$ und $L$ die Lipschitz-Konstante $L=L_K$ von $f(t,x)$ auf $K\subseteq D$ mit $K$ beschränkt und $\operatorname{Graph}(y)\subset K,\ \operatorname{Graph}(\nu)\subset K$.
     \vspace{1em}
 
-    Weiterhin: Falls \(y(t_0)=\nu(t_0)\) (d.h. \(y\) und \(\nu\) lösen AWA \(y'=f(t,y),\ y(t_0)=y_0\)), dann gilt
-    \[
+    Weiterhin: Falls $y(t_0)=\nu(t_0)$ (d.h. $y$ und $\nu$ lösen AWA $y'=f(t,y),\ y(t_0)=y_0$), dann gilt
+    $$
     y(t)=\nu(t),\ \forall t\in I,
-    \]
+    $$
     d.h. die lokale Lösung der AWA (nach Peano) ist eindeutig bestimmt.   
 \end{satz}
 
 \begin{satz}{Existenzsatz von Picard-Lindelöf}
-    Sei \(f\colon D\to\mathbb{R}^n\) stetig, lokal Lipschitz-stetig bezüglich \(x\).
+    Sei $f\colon D\to\mathbb{R}^n$ stetig, lokal Lipschitz-stetig bezüglich $x$.
 
     Dann gilt:
 
-    \[
+    $$
     \forall (t_0,y_0)\in D,\ \exists \varepsilon>0
-    \]
+    $$
     und eine Lösung
-    \[
+    $$
     y\colon I=[t_0-\varepsilon,t_0+\varepsilon]\to\mathbb{R}^n
-    \]
+    $$
 
     der AWA
 
@@ -77,20 +77,20 @@
     \vspace{1em}
     
     Sei $f\colon I\times\mathbb{R}^n\to\mathbb{R}^n$ stetig und (global) Lipschitz-stetig bzgl.\ $x$, d.\,h.\ es existiert ein $L>0$ mit
-    \[
+    $$
     |f(t,x_1)-f(t,x_2)|\le L|x_1-x_2|,\qquad \forall t\in I,\; x_1,x_2\in\mathbb{R}^n.
-    \]
+    $$
 
     Dann hat für jedes $y_0\in\mathbb{R}^n$ die AWA
-    \[
+    $$
     \begin{cases}
     \dot y(t)=f(t,y(t)),\\[4pt]
     y(t_0)=y_0
     \end{cases}
-    \]
+    $$
     eine eindeutige Lösung
-    \[
+    $$
     y\in C^1(I,\mathbb{R}^n)
-    \]
+    $$
     im gesamten Intervall $I$.   
 \end{satz}

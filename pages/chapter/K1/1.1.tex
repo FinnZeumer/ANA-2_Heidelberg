@@ -390,32 +390,32 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
 
     \textbf{Erinnerung}:
 
-    \(C[a,b]\) Raum stetiger Funktionen mit
-    \[
+    $C[a,b]$ Raum stetiger Funktionen mit
+    $$
     \|f\|_{\infty} := \max_{x\in[a,b]} |f(x)| \quad\text{(Maximumsnorm)}
-    \]
+    $$
 
-    \(C[a,b]\) ist vollständig \(\iff\) C.F. \((f_n)\) haben einen Limes \(f\) in \(C[a,b]\).
+    $C[a,b]$ ist vollständig $\iff$ C.F. $(f_n)$ haben einen Limes $f$ in $C[a,b]$.
 
     \bigskip
 
-    \(\|\cdot\|_{L^2}\) ist nicht streng definiert:
+    $\|\cdot\|_{L^2}$ ist nicht streng definiert:
 
-    \[
+    $$
     \|f\|_{L^2}=0 \quad\Longleftrightarrow\quad f\equiv 0 \text{ auf } [a,b]
-    \]
+    $$
 
-    \(\Longrightarrow\) \(f\equiv 0\) gilt nur, wenn \(f\in \mathcal{R}[a,b]\),
+    $\Longrightarrow$ $f\equiv 0$ gilt nur, wenn $f\in \mathcal{R}[a,b]$,
 
     aber nicht für z.\,B. allgemeine, unstetige Funktionen.
 
     \img[.8]{K1/ANA2__StrengDefinit__K1}{Allgemeine unstetige Funktion.}
 
 
-    Falls \(f\in \mathcal{R}[a,b]\), dann gilt (für einen Punkt \(\xi\) mit beidseitigen Grenzwerten)
-    \[
+    Falls $f\in \mathcal{R}[a,b]$, dann gilt (für einen Punkt $\xi$ mit beidseitigen Grenzwerten)
+    $$
     f(\xi)=\frac{f(\xi_-)+f(\xi_+)}{2}=\frac{0+0}{2}=0.
-    \]
+    $$
 \end{bemerkungbox}
 
 \subsection*{Geometrie im $\cR [a,b]$}
@@ -480,9 +480,9 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
     \end{align*}
 
     Partielle Integration:
-    \[
+    $$
         \int_a^b u'(x)v(x)\,dx = u(x)v(x)\Big|_a^b - \int_a^b u(x)v'(x)\,dx.
-    \]
+    $$
 
     Orthogonalität von Cosinus und Sinus:
     \begin{enumerate}
@@ -497,9 +497,9 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
             \end{align*}
             da das Integral von Sinus über ein ganzzahliges Vielfaches von $2\pi$ verschwindet.
             Also gilt für alle $k,\ell\in\mathbb{Z}_{\ge0}$:
-            \[
+            $$
             \int_{0}^{2\pi} C_k(x)S_\ell(x)\,dx = 0.
-            \]
+            $$
 
         \item Cosinus mit Cosinus:
             \begin{align*}
@@ -508,34 +508,34 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
                 &= \tfrac{1}{2}\int_{0}^{2\pi}\big(\cos((k-\ell)x)+\cos((k+\ell)x)\big)\,dx.
             \end{align*}
             - Falls $k\neq\ell$, beide Kosinus-Frequenzen sind nicht konstant und ihre Integrale über $[0,2\pi]$ verschwinden, also
-            \[
+            $$
             \int_{0}^{2\pi} C_k C_\ell = 0 \quad (k\neq\ell).
-            \]
-            - Falls $k=\ell\neq0$, dann \(\cos((k-\ell)x)=\cos 0=1\) und \(\cos((k+\ell)x)=\cos(2kx)\) liefert
-            \[
+            $$
+            - Falls $k=\ell\neq0$, dann $\cos((k-\ell)x)=\cos 0=1$ und $\cos((k+\ell)x)=\cos(2kx)$ liefert
+            $$
             \int_{0}^{2\pi} C_k^2(x)\,dx = \tfrac{1}{2}\int_{0}^{2\pi}1\,dx + \tfrac{1}{2}\int_{0}^{2\pi}\cos(2kx)\,dx
             = \tfrac{1}{2}\cdot 2\pi + 0 = \pi.
-            \]
-            - Für $k=\ell=0$ gilt offensichtlich \(\int_{0}^{2\pi}1\,dx=2\pi\).
+            $$
+            - Für $k=\ell=0$ gilt offensichtlich $\int_{0}^{2\pi}1\,dx=2\pi$.
 
         \item Sinus mit Sinus (analog):
-        \[
+        $$
         \int_{0}^{2\pi} S_k(x)S_\ell(x)\,dx =
         \begin{cases}
             0, & k\neq\ell,\\[4pt]
             \pi, & k=\ell\neq0,\\[4pt]
             0, & k=\ell=0\ (\text{trivial, }S_0\equiv 0).
         \end{cases}
-        \]
+        $$
     \end{enumerate}
 
     Zusammenfassung:
 
-    - Für \(k\neq\ell\): \(\displaystyle\int_{0}^{2\pi} C_k C_\ell\,dx = \int_{0}^{2\pi} S_k S_\ell\,dx = \int_{0}^{2\pi} C_k S_\ell\,dx = 0.\)
+    - Für $k\neq\ell$: $\displaystyle\int_{0}^{2\pi} C_k C_\ell\,dx = \int_{0}^{2\pi} S_k S_\ell\,dx = \int_{0}^{2\pi} C_k S_\ell\,dx = 0.$
 
-    - Für \(k=\ell\neq0\): \(\displaystyle\int_{0}^{2\pi} C_k^2\,dx = \int_{0}^{2\pi} S_k^2\,dx = \pi.\)
+    - Für $k=\ell\neq0$: $\displaystyle\int_{0}^{2\pi} C_k^2\,dx = \int_{0}^{2\pi} S_k^2\,dx = \pi.$
 
-    - Für \(k=\ell=0\): \(\displaystyle\int_{0}^{2\pi} C_0^2\,dx = 2\pi\) und \(S_0\equiv0\).
+    - Für $k=\ell=0$: $\displaystyle\int_{0}^{2\pi} C_0^2\,dx = 2\pi$ und $S_0\equiv0$.
 
     Analog für Sinus. q.e.d.
 
@@ -551,10 +551,10 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
 \end{definition}
 
 \begin{beispielbox}
-    Sei \(f\) \(L\)-periodisch und \(p>0\). Dann sei \(\tilde f(x)=f\!\bigl(\tfrac{L}{p}x\bigr)\).
+    Sei $f$ $L$-periodisch und $p>0$. Dann sei $\tilde f(x)=f\!\bigl(\tfrac{L}{p}x\bigr)$.
 
-    Für \(p=2\pi\) und \(\tilde f(x)=f\!\bigl(\tfrac{L}{2\pi}x\bigr)\) ist \(\tilde f\) \(2\pi\)-periodisch:
-    \[
+    Für $p=2\pi$ und $\tilde f(x)=f\!\bigl(\tfrac{L}{2\pi}x\bigr)$ ist $\tilde f$ $2\pi$-periodisch:
+    $$
     \begin{aligned}
     \tilde f(x+2\pi)
     &= f\!\bigl(\tfrac{L}{2\pi}(x+2\pi)\bigr) \\
@@ -562,18 +562,18 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
     &= f\!\bigl(\tfrac{L}{2\pi}x\bigr) \\
     &= \tilde f(x),
     \end{aligned}
-    \]
-    da \(f\) \(L\)-periodisch ist.
+    $$
+    da $f$ $L$-periodisch ist.
 
     \smallskip
 
-    \noindent\emph{Anmerkung:} Variablentransformation; \(\tilde f:\mathbb{R}\to\mathbb{K}\), \(p\)-periodisch.
+    \noindent\emph{Anmerkung:} Variablentransformation; $\tilde f:\mathbb{R}\to\mathbb{K}$, $p$-periodisch.
 
     \bigskip
 
     \begin{itemize}
-        \item Deshalb betrachten wir nur \(2\pi\)-periodische Funktionen \(f:\mathbb{R}\to\mathbb{K}\).
-        \item Wir sagen, dass eine \(2\pi\)-periodische Funktion \(f\) zu \(\mathcal{R}[0,2\pi]\) gehört, falls \(f\) auf \([0,2\pi]\) Riemann-integrierbar ist.
+        \item Deshalb betrachten wir nur $2\pi$-periodische Funktionen $f:\mathbb{R}\to\mathbb{K}$.
+        \item Wir sagen, dass eine $2\pi$-periodische Funktion $f$ zu $\mathcal{R}[0,2\pi]$ gehört, falls $f$ auf $[0,2\pi]$ Riemann-integrierbar ist.
     \end{itemize}
 
     
@@ -588,85 +588,85 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
 
     \textbf{Trigonometrische Polynome}
 
-    Für \(a_k,b_k\in\mathbb{C}\) betrachten wir
-    \[
+    Für $a_k,b_k\in\mathbb{C}$ betrachten wir
+    $$
     \boxed{\,f_n(x)=\frac{a_0}{2}+\sum_{k=1}^n\bigl(a_k\cos(kx)+b_k\sin(kx)\bigr)\,}
-    \]
+    $$
 
     Es gelten die Identitäten
-    \[
+    $$
     \cos x=\tfrac{1}{2}\bigl(e^{ix}+e^{-ix}\bigr),\qquad
     \sin x=\tfrac{1}{2i}\bigl(e^{ix}-e^{-ix}\bigr),\qquad
     \frac{1}{i}=-i.
-    \]
+    $$
 
     Mit diesen erhält man
-    \[
+    $$
     \begin{aligned}
     f_n(x)
     &=\frac{1}{2}\left(a_0+\sum_{k=1}^n (a_k-i b_k)e^{ikx}+\sum_{k=1}^n (a_k+i b_k)e^{-ikx}\right)\\
     &=\sum_{k=-n}^{n} c_k e^{ikx},
     \end{aligned}
-    \]
-    wobei die Koeffizienten \(c_k\) durch
-    \[
+    $$
+    wobei die Koeffizienten $c_k$ durch
+    $$
     c_k=
     \begin{cases}
     \displaystyle \tfrac{1}{2}\bigl(a_k-i b_k\bigr), & k>0,\\[6pt]
     \displaystyle \tfrac{a_0}{2}, & k=0,\\[6pt]
     \displaystyle \tfrac{1}{2}\bigl(a_{-k}+i b_{-k}\bigr), & k<0,
     \end{cases}
-    \]
+    $$
     gegeben sind.
 
-    Insbesondere (für \(k>0\)) gilt die Umkehrbeziehung
-    \[
+    Insbesondere (für $k>0$) gilt die Umkehrbeziehung
+    $$
     a_k = c_k + c_{-k},\qquad b_k = i\bigl(c_k - c_{-k}\bigr).
-    \]
+    $$
 
-    Beobachtung: Wenn \(f\) ein trigonometrisches Polynom ist, sind die Koeffizienten eindeutig und
-    \[
+    Beobachtung: Wenn $f$ ein trigonometrisches Polynom ist, sind die Koeffizienten eindeutig und
+    $$
     a_k=\frac{1}{\pi}\int_{0}^{2\pi} f(x)\cos(kx)\,dx,\qquad
     b_k=\frac{1}{\pi}\int_{0}^{2\pi} f(x)\sin(kx)\,dx.
-    \]
+    $$
 
     Für die komplexen Koeffizienten gilt
-    \[
+    $$
     c_k=\frac{1}{2\pi}\int_{0}^{2\pi} f(x)e^{-ikx}\,dx.
-    \]
-    Man kann dies auch als Skalarprodukt-Formel schreiben (mit dem üblichen Skalarprodukt auf \(L^2([0,2\pi])\)):
-    \[
+    $$
+    Man kann dies auch als Skalarprodukt-Formel schreiben (mit dem üblichen Skalarprodukt auf $L^2([0,2\pi])$):
+    $$
     c_k=\frac{1}{2\pi}\bigl(f,\;e^{ikx}\bigr)=\frac{1}{2\pi}\int_{0}^{2\pi} f(x)\,\overline{e^{ikx}}\,dx.
-    \]
+    $$
 
     \begin{beweisbox}
-        Zuerst für \(\lambda\in\mathbb{R},\ \lambda\neq0\):
-        \[
+        Zuerst für $\lambda\in\mathbb{R},\ \lambda\neq0$:
+        $$
         \int_a^b e^{i\lambda x}\,dx
         =\int_a^b \cos(\lambda x)\,dx + i\int_a^b \sin(\lambda x)\,dx
         =\frac{1}{i\lambda}e^{i\lambda x}\Big|_a^b.
-        \]
-        Daraus folgt insbesondere für \(k\in\mathbb{Z}\setminus\{0\}\):
-        \[
+        $$
+        Daraus folgt insbesondere für $k\in\mathbb{Z}\setminus\{0\}$:
+        $$
         \int_0^{2\pi} e^{ikx}\,dx = 0.
-        \]
+        $$
 
         Dann
-        \[
+        $$
         \int_0^{2\pi} e^{ik_1 x}\,e^{-ik_2 x}\,dx
         =\int_0^{2\pi} e^{i(k_1-k_2)x}\,dx
         =\begin{cases}
         0, & k_1\neq k_2,\\[4pt]
         2\pi, & k_1=k_2.
         \end{cases}
-        \]
+        $$
         (Orthogonalitätsrelation der Exponentialfunktionen.)
 
         Angenommen
-        \[
+        $$
         f(x)=\sum_{k=-n}^{n} c_k e^{ikx}.
-        \]
-        Betrachte das Skalarprodukt \(\langle f,e^{i\ell x}\rangle=\int_0^{2\pi} f(x)e^{-i\ell x}\,dx\). Dann
+        $$
+        Betrachte das Skalarprodukt $\langle f,e^{i\ell x}\rangle=\int_0^{2\pi} f(x)e^{-i\ell x}\,dx$. Dann
         \begin{align*}
         \int_0^{2\pi} f(x)e^{-i\ell x}\,dx
         &=\int_0^{2\pi}\Big(\sum_{k=-n}^{n} c_k e^{ikx}\Big)e^{-i\ell x}\,dx
@@ -674,16 +674,16 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
         &=2\pi c_\ell.
         \end{align*}
         Also
-        \[
+        $$
         c_k=\frac{1}{2\pi}\int_0^{2\pi} f(x)e^{-ikx}\,dx\qquad (k\in\mathbb{Z}).
-        \]
+        $$
 
-        Für die reellen Koeffizienten \(a_k,b_k\) gilt (für \(k\ge1\)):
-        \[
+        Für die reellen Koeffizienten $a_k,b_k$ gilt (für $k\ge1$):
+        $$
         a_k=\frac{1}{\pi}\int_0^{2\pi} f(x)\cos(kx)\,dx,\qquad
         b_k=\frac{1}{\pi}\int_0^{2\pi} f(x)\sin(kx)\,dx.
-        \]
-        Mit \(\cos(kx)=\tfrac{1}{2}(e^{ikx}+e^{-ikx})\) und \(\sin(kx)=\tfrac{1}{2i}(e^{ikx}-e^{-ikx})\) erhalten wir
+        $$
+        Mit $\cos(kx)=\tfrac{1}{2}(e^{ikx}+e^{-ikx})$ und $\sin(kx)=\tfrac{1}{2i}(e^{ikx}-e^{-ikx})$ erhalten wir
         \begin{align*}
         a_k
         &=\frac{1}{\pi}\int_0^{2\pi} f(x)\frac{e^{ikx}+e^{-ikx}}{2}\,dx
@@ -694,17 +694,17 @@ Jeder $L^p$-Raum ist auch ein normierter Raum (\cdef{NormRaum}).
         =\frac{1}{2\pi i}\Big(\int_0^{2\pi} f(x)e^{ikx}\,dx-\int_0^{2\pi} f(x)e^{-ikx}\,dx\Big)\\
         &=\frac{c_{-k}-c_k}{i}=i\big(c_k-c_{-k}\big).
         \end{align*}
-        Daraus folgt (für \(k\ge1\))
-        \[
+        Daraus folgt (für $k\ge1$)
+        $$
         c_k=\tfrac{1}{2}\big(a_k - i b_k\big),\qquad
         c_{-k}=\tfrac{1}{2}\big(a_k + i b_k\big),
-        \]
-        und für die Gleichung des Mittelwerts \(c_0=\tfrac{a_0}{2}\).
+        $$
+        und für die Gleichung des Mittelwerts $c_0=\tfrac{a_0}{2}$.
 
         Somit gilt die Entsprechung der Reihen:
-        \[
+        $$
         f(x)=\frac{a_0}{2}+\sum_{k=1}^\infty\big(a_k\cos(kx)+b_k\sin(kx)\big)
         =\sum_{k=-\infty}^{\infty} c_k e^{ikx}.
-        \]
+        $$
     \end{beweisbox}
 \end{beispielbox}

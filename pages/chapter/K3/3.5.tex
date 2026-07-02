@@ -6,48 +6,48 @@
     \textbf{Fixpunktsatz:} Ein einfaches, aber sehr wirksames Mittel zum Beweis vieler Existenzsätze.
 
     \textbf{Motivation:} Es sei ein quadratisches Gleichungssystem der Form
-    \[
+    $$
     \begin{aligned}
     f_1(x_1,\dots,x_n) &= b_1,\\
     &\vdots\\
     f_n(x_1,\dots,x_n) &= b_n,
     \end{aligned}
     \qquad\Longleftrightarrow\qquad f(x)=b.
-    \]
+    $$
 
-    gegeben, wobei \(x\in K^n\),
-    \[
+    gegeben, wobei $x\in K^n$,
+    $$
     f=\begin{pmatrix} f_1\\ \vdots\\ f_n\end{pmatrix}:\; E\subset K^n\to K^n,\qquad
     b=\begin{pmatrix} b_1\\ \vdots\\ b_n\end{pmatrix}\in K^n.
-    \]
+    $$
 
-    Ziel: \(x=f^{-1}(b)\) finden als Grenzwert einer Folge \((x^{(k)})_{k\in\mathbb{N}}\), d.\,h.\ \(x\) so dass \(f(x)=b\).
+    Ziel: $x=f^{-1}(b)$ finden als Grenzwert einer Folge $(x^{(k)})_{k\in\mathbb{N}}$, d.\,h.\ $x$ so dass $f(x)=b$.
 
     \medskip
 
     \textbf{Ansatz:} Definiere
-    \[
+    $$
     g(x):=x-\sigma\bigl(f(x)-b\bigr)
-    \]
-    für ein \(\sigma\in K\setminus\{0\}\) und suche einen Fixpunkt von \(g:D\to K^n\) (also \(x=g(x)\)).
+    $$
+    für ein $\sigma\in K\setminus\{0\}$ und suche einen Fixpunkt von $g:D\to K^n$ (also $x=g(x)$).
 
     \textbf{Fixpunktiteration:}
     \begin{itemize}
-    \item Startwert \(x^{(0)}\).
-    \item Iterationsschritt \(x^{(k)}=g\bigl(x^{(k-1)}\bigr),\qquad k\in\mathbb{N}.\)
+    \item Startwert $x^{(0)}$.
+    \item Iterationsschritt $x^{(k)}=g\bigl(x^{(k-1)}\bigr),\qquad k\in\mathbb{N}.$
     \end{itemize}
 
-    Falls \(f\) stetig ist, dann ist auch \(g\) stetig. Damit folgt:
+    Falls $f$ stetig ist, dann ist auch $g$ stetig. Damit folgt:
 
-    Ist \(x^{(k)}\to x\) für \(k\to\infty\), so gilt wegen der Stetigkeit von \(g\)
-    \[
+    Ist $x^{(k)}\to x$ für $k\to\infty$, so gilt wegen der Stetigkeit von $g$
+    $$
     g\bigl(x^{(k-1)}\bigr)\to g(x).
-    \]
-    Da \(x^{(k)}=g\bigl(x^{(k-1)}\bigr)\), folgt im Grenzwert \(x=g(x)\), also ist \(x\) ein Fixpunkt von \(g\). Aus
-    \[
+    $$
+    Da $x^{(k)}=g\bigl(x^{(k-1)}\bigr)$, folgt im Grenzwert $x=g(x)$, also ist $x$ ein Fixpunkt von $g$. Aus
+    $$
     x=g(x)=x-\sigma\bigl(f(x)-b\bigr)
-    \]
-    folgt \(\sigma\bigl(f(x)-b\bigr)=0\) und damit \(f(x)=b\).
+    $$
+    folgt $\sigma\bigl(f(x)-b\bigr)=0$ und damit $f(x)=b$.
 
     \medskip
 
@@ -77,15 +77,15 @@
     \begin{enumerate}%[label=(\roman*)]
     \item $g$ besitzt genau einen Fixpunkt $a\in D$.
     \item Ist $x^{(0)}\in D$ ein beliebiger Startwert, so konvergiert die Folge der Iterationen
-    \[
+    $$
     x^{(0)},\; x^{(1)}=g\bigl(x^{(0)}\bigr),\; \ldots,\; x^{(k+1)}=g\bigl(x^{(k)}\bigr),\; \ldots
-    \]
+    $$
     gegen den Fixpunkt $a$.
     \item Es gilt die Fehlerabschätzung:
-    \[
+    $$
     d\bigl(a,x^{(k)}\bigr)\le \frac{1}{1-q}\,d\bigl(x^{(k+1)},x^{(k)}\bigr)
     \le \frac{q^{k}}{1-q}\,d\bigl(x^{(1)},x^{(0)}\bigr).
-    \]
+    $$
     \end{enumerate}
 \end{satz}
 
@@ -100,14 +100,14 @@
     Sei $f:\mathbb{R}^n\to\mathbb{R}^n$ eine Lipschitz-stetige, stark monotone Abbildung mit Lipschitzkonstante $L>0$ und Monotoniekonstante $m>0$.
 
     Dann hat die Gleichung
-    \[
+    $$
     f(x)=b
-    \]
+    $$
     für jedes beliebige $b\in\mathbb{R}^n$ eine eindeutige Lösung $x^*\in\mathbb{R}^n$.
 
     Für jeden Startpunkt $x^{(0)}\in\mathbb{R}^n$ konvergiert die Iteration
-    \[
+    $$
     x^{(k+1)}=x^{(k)}-\sigma\bigl(f(x^{(k)})-b\bigr)
-    \]
+    $$
     für jedes $\sigma\in\left]0,\frac{2m}{L^2}\right[$ gegen $x^*$.   
 \end{satz}

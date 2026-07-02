@@ -5,19 +5,19 @@
 \begin{bemerkungbox}
     Vorab eine Erinnerung:
     \begin{enumerate}
-        \item[(1)] Ist \(f:[a,b]\to\mathbb{R}\) differenzierbar, dann gilt (Hauptsatz der Differential- und Integralrechnung):
+        \item[(1)] Ist $f:[a,b]\to\mathbb{R}$ differenzierbar, dann gilt (Hauptsatz der Differential- und Integralrechnung):
             $$
             f(x+h)-f(x)=\int_0^1 \frac{d}{ds}f(x+sh)\,ds
             = \int_0^1 f'(x+sh)\,h \,ds
             = \left(\int_0^1 f'(x+sh)\,ds\right)\! h.
             $$
          
-        \item[(2)] Mittelwertsatz der Differentialrechnung: \(\exists \tau\in(0,1)\) sodass:
+        \item[(2)] Mittelwertsatz der Differentialrechnung: $\exists \tau\in(0,1)$ sodass:
             $$
             f(x+h)-f(x)=f'(x+\tau h)\cdot h.
             $$
 
-        \item[(3)] Sei \(A=(a_{ij})_{i=1,\dots,m}^{j=1,\dots,n}:[a,b]\to\mathbb{R}^{m\times n}\). Dann sei:
+        \item[(3)] Sei $A=(a_{ij})_{i=1,\dots,m}^{j=1,\dots,n}:[a,b]\to\mathbb{R}^{m\times n}$. Dann sei:
             $$
             \int_a^b A(s)\,ds := \bigg(\int_a^b a_{ij}(s)\,ds\bigg)_{i=1,\dots,m}^{j=1,\dots,n}.
             $$
@@ -39,7 +39,7 @@
 \end{satz}
 
 \begin{korollar}{}
-    Seien \(D\subset\mathbb{R}^n\) offen, \(f: D \to \mathbb{R}^m\) stetig differenzierbar, \(x\in D\) und \(\varepsilon>0\) so, dass \(B_{\varepsilon}(x)\subset D\).
+    Seien $D\subset\mathbb{R}^n$ offen, $f: D \to \mathbb{R}^m$ stetig differenzierbar, $x\in D$ und $\varepsilon>0$ so, dass $B_{\varepsilon}(x)\subset D$.
 
     Es gilt:
     $$
@@ -49,9 +49,9 @@
     $$
     M := \sup_{z\in B_{\varepsilon}(x)} \|J_f(z)\|_2,
     $$
-    d.\,h. \(f\) ist lokal Lipschitz-stetig.
+    d.\,h. $f$ ist lokal Lipschitz-stetig.
 
-    Sei \(D\) konvex, und
+    Sei $D$ konvex, und
     $$
     M := \sup_{z\in D} \|J_f(z)\|_2 < \infty,
     $$
@@ -59,26 +59,26 @@
     $$
     \|f(y)-f(x)\|_2 \le M\cdot\|y-x\|_2 \qquad \forall\, x,y\in D,
     $$
-    d.\,h. \(f\) ist auf ganz \(D\) Lipschitz-stetig.
+    d.\,h. $f$ ist auf ganz $D$ Lipschitz-stetig.
 \end{korollar}
 
 \begin{definition}{Konvexe Mengen}
-    Sei \(D\subset\mathbb{R}^n\). \(D\) heißt \textbf{konvex}, genau dann wenn:
+    Sei $D\subset\mathbb{R}^n$. $D$ heißt \textbf{konvex}, genau dann wenn:
 
     \medskip
 
-    Für alle \(x,x'\in D\) und für alle \(\lambda\in[0,1]\) gilt
+    Für alle $x,x'\in D$ und für alle $\lambda\in[0,1]$ gilt
     $$
     \lambda\cdot x + (1-\lambda)\cdot x' \in D.
     $$
 
     \medskip
 
-    \noindent Geometrisch: Für zwei Punkte in \(D\) liegt die Verbindungsstrecke der beiden Punkte stets ganz in \(D\).
+    \noindent Geometrisch: Für zwei Punkte in $D$ liegt die Verbindungsstrecke der beiden Punkte stets ganz in $D$.
 \end{definition}
 
 \begin{lemma}{Hilfslemma}
-    Seien \(v:[a,b]\to\mathbb{R}^n\) und \(A:[a,b]\to\mathbb{R}^{m\times n}\) stetig. Dann gilt:
+    Seien $v:[a,b]\to\mathbb{R}^n$ und $A:[a,b]\to\mathbb{R}^{m\times n}$ stetig. Dann gilt:
     $$
     \Big\|\int_a^b v(s)\,\mathrm{d}s\Big\|_2 \le \int_a^b \|v(s)\|_2 \,\mathrm{d}s,
     \qquad

@@ -4,39 +4,39 @@
 
 \begin{definition}{Differentialgleichungen}
     Differentialgleichungen (DGLn) sind Gleichungen der Form
-    \[
+    $$
     F\bigl(t,y,y',\dots,y^{(n)}\bigr)=0 \qquad \text{implizite Form}
-    \]
+    $$
     oder
-    \[
+    $$
     y^{(n)} = f\bigl(t,y,y',\dots,y^{(n-1)}\bigr) \qquad \text{explizite Form}
-    \]
-    für eine gesuchte Funktion \(y=y(t),\ t\in I,\ I\subset\mathbb{R}\) -- ``Zeitintervall''.      
+    $$
+    für eine gesuchte Funktion $y=y(t),\ t\in I,\ I\subset\mathbb{R}$ -- ``Zeitintervall''.      
 \end{definition}
 
 \begin{definition}{System von Differentialgleichungen 1. Ordnung}
-    Sei \(D = I \times \Omega \subset \mathbb{R} \times \mathbb{R}^n\), \(f\colon D \to \mathbb{R}^n\) stetig. Dann heißt
-    \[
+    Sei $D = I \times \Omega \subset \mathbb{R} \times \mathbb{R}^n$, $f\colon D \to \mathbb{R}^n$ stetig. Dann heißt
+    $$
     (*)\qquad y' = f(t,y)
-    \]
-    ein System von \(n\) Differentialgleichungen 1.\ Ordnung.
+    $$
+    ein System von $n$ Differentialgleichungen 1.\ Ordnung.
     \vspace{1em}
 
-    Eine Lösung von \((*)\) ist eine differenzierbare Funktion \(y\colon I \to \mathbb{R}^n\) mit
+    Eine Lösung von $(*)$ ist eine differenzierbare Funktion $y\colon I \to \mathbb{R}^n$ mit
     \begin{enumerate}%[label=(\alph*)]
-    \item \(\operatorname{Graph}(y):=\{(t,y(t))\in\mathbb{R}\times\mathbb{R}^n \mid t\in I\}\subset D\) und
-    \item \(y'(t)=f(t,y(t))\quad\forall\,t\in I\).
+    \item $\operatorname{Graph}(y):=\{(t,y(t))\in\mathbb{R}\times\mathbb{R}^n \mid t\in I\}\subset D$ und
+    \item $y'(t)=f(t,y(t))\quad\forall\,t\in I$.
     \end{enumerate}   
 \end{definition}
 
 \begin{definition}{Anfangswertaufgabe/Anfangswertproblem}
     Eine Anfangswertaufgabe zu (*) mit den \emph{Anfangsbedingung} ist:
-    \[
+    $$
         \begin{aligned}
             y' &= f(t,y),\quad t\in I,\\
             y(t_0) &= y_0.
         \end{aligned}
-    \]
+    $$
 
     Gesucht wird eine differenzierbare Funktion $y\colon I\to\mathbb{R}^n$ mit
     \begin{enumerate}%[label=(\alph*)]
@@ -54,9 +54,9 @@
 
 \begin{satz}{DGL $\Leftrightarrow$ Integralgleichung}
     Sei $D\subset\mathbb{R}\times\mathbb{R}^n$, $f\colon D\to\mathbb{R}^n$ stetig, $(t_0,y_0)\in D$ und $y\colon I\to\mathbb{R}^n$ stetig mit $\operatorname{Graph}(y)\subset D$, $t_0\in I$. Dann gilt
-    \[
+    $$
     y\ \text{löst AWA}\quad y'=f(t,y),\quad y(t_0)=y_0
     \quad\Longleftrightarrow\quad
     y(t)=y_0+\int_{t_0}^{t} f(s,y(s))\,\mathrm{d}s\qquad\forall\,t\in I.
-    \]   
+    $$   
 \end{satz}
