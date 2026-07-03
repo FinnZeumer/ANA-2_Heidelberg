@@ -6,15 +6,15 @@
     Sei $f\in \cR[0,2\pi]$ eine $2\pi$-periodische Funktion. Die Fourier-Koeffizienten
     sind definiert durch:
     $$
-        c_{k} := c_{k}(f) := \frac{1}{2\pi} \int_{0}^{2\pi} f(x)e^{-ikx} \, \mathrm{d}x = \frac{1}{2\pi} \skalP{f}{e^{ikx}} \, .
+        c_{k} := c_{k}(f) := \frac{1}{2\pi} \int_{0}^{2\pi} f(x)e^{-\i kx} \, \mathrm{d}x = \frac{1}{2\pi} \skalP{f}{e^{\i kx}} \, .
     $$
     Die Fourier-Reihe von $f$ ist die formale Reihe
     $$
-        \sum_{k=-\infty}^{\infty} c_k e^{ikx}.
+        f(x) = \sum_{k=-\infty}^{\infty} c_k e^{\i kx}.
     $$
     Die $n$-te Partialsumme ist
     $$
-        s_n(f)(x) = \sum_{k=-n}^{n} c_k e^{ikx}.
+        s_n(f,x) = \sum_{k=-n}^{n} c_k e^{\i kx}.
     $$
 
     Alternative Darstellung:
@@ -27,6 +27,10 @@
         b_k = \frac{1}{\pi}\int_0^{2\pi} f(x)\sin(kx)\,dx.
     $$
 \end{definition}
+Die Fourierreihe ist ein mächtiges Tool zum exakten bestimmen priodischer Funktionen. Dabei können sowohl die Funktion $f(x)$ und die Koeffizienten kompelx sein. Hier sollen komplexe Zahlen als Vektoren in der komplexen Ebene verstanden werden.
+Dabei beschreibt $e^{\i kx}$ eine gegen den Uhrzeigersinn orientierte Drehung in der Komplexen Ebene. Es gilt $k \in \mathbb{Z}$ -- somit macht der $e^{\i kx}$ pro $x$ $k$-vollständige Umdrehung. Die Fourier-Koeffizienten stellen "Anfangsbedinungen" dar, also die "Startlänge", sowie den "Startwinkel" in der kompelxen Ebene.
+Dies wird für jeden der (unendlich vielen) komplexen Vektoren gemacht. Diese können aufsummiert werden -- dies ist so zu intepretieren, dass unendlich viele rotierende Vektoren aufsummiert werden und somit eine periodische Funktion darstellen. 
+
 
 \begin{bemerkungbox}
     $2\pi$-periodisch bedeztet, dass $f:\R\to\K$ auf $[0,2\pi]$ Rieman-integrierbar ist.
@@ -41,7 +45,7 @@
 \end{lemma}
 
 \begin{beweisbox}
-COMMING SOON
+COMING SOON
 \end{beweisbox}
 
 \begin{satz}{Besselsche Ungleichung}
@@ -53,11 +57,58 @@ COMMING SOON
 \end{satz}
 
 \begin{beweisbox}
-COMMING SOON
+COMING SOON
 \end{beweisbox}
 
 \begin{bemerkungbox}
-COMMING SOON
+    Es gilt ein allgemeiner Entwicklungssatz für ein Orthonormalsystem.
+
+    Sei \(V\) ein Vektorraum mit Skalarprodukt \(\langle\cdot,\cdot\rangle\) und zugehöriger Halb-Norm
+    \[
+    \|\cdot\| := \langle\cdot,\cdot\rangle^{1/2}.
+    \]
+    ( Halb-Norm, d.\,h. nicht streng definit.)
+
+    Sei \(\{e_k:\,k\in\mathbb{Z}\}\) ein Orthonormalsystem, \(f\in V\), und
+    \[
+    c_k := \langle f,e_k\rangle.
+    \]
+    Setze die Fourier-(Partialsummen)
+    \[
+    s_n := \sum_{k=-n}^{n} c_k\, e_k.
+    \]
+    Dann gilt:
+    \begin{align}
+    \|f - s_n\|^2 &= \|f\|^2 - \sum_{k=-n}^{n} |c_k|^2, \label{eq:proj}\\
+    \sum_{k=-n}^{n} |c_k|^2 &\le \|f\|^2 \qquad\text{(Besselsche Ungleichung)},\label{eq:bessel}\\
+    \|f - s_n\|\to 0\quad (n\to\infty)
+    &\iff \sum_{k=-\infty}^{\infty} |c_k|^2 = \|f\|^2 \qquad\text{(Parseval'sche Gleichung)}.\label{eq:parseval}
+    \end{align}
+
+    Hinweis: Für ein Orthonormalsystem gilt \(\langle e_k,e_\ell\rangle=\delta_{k\ell}\).
+
+    \textbf{Beobachtung:}\\
+    Sei \(f\in \cR[0,2\pi]\) \(2\pi\)-periodisch, und sei \(\|f-s_n\|_{L^2}^2\to 0\) für \(n\to\infty\).
+    Dann (unter der üblichen Normierung des Skalarprodukts)
+    \[
+    \langle f,g\rangle = \frac{1}{2\pi}\int_{0}^{2\pi} f(x)\overline{g(x)}\,dx,
+    \]
+    folgt
+    \[
+    \|f-s_n\|_{L^2}^2 \to 0 \quad (n\to\infty)
+    \iff \|f\|_{L^2}^2 = 2\pi\sum_{k=-\infty}^{\infty} |c_k|^2,
+    \]
+    bzw. äquivalent mit der oben definierten Norm \(\|\cdot\|\)
+    \[
+    \|f\|^2 = 2\pi\sum_{k=-\infty}^{\infty}|c_k|^2.
+    \]
+
+    \vspace{6pt}
+    \textbf{Frage:}\\
+    Unter welchen Bedingungen auf \(f\) gilt \(L^2\)-Konvergenz der Fourierreihe gegen \(f\) und folglich die Gleichung
+    \[
+    \|f\|^2 = 2\pi\sum_{k=-\infty}^{\infty} |c_k|^2\; ?
+    \]
 \end{bemerkungbox}
 
 \begin{satz}{Allgemeiner Entwicklungssatz}
@@ -78,13 +129,26 @@ COMMING SOON
     $$
 \end{satz}
 
-\begin{satz}{Hilfssatz:}
+\begin{satz}{Hilfssatz: Konvergenz von Treppenfunktionen}
     Sei $f \in R[0,2\pi]$ eine $2\pi$-periodische Treppenfunktion. Dann konvergiert
     die Fourier-Reihe von $f$ im quadratischen Mittel gegen $f$.
 \end{satz}
+Treppenfunktion: $f: [a,b] \to \R$.
+Es exisitiert eine Zerlegung $a = x_0 < x_1 < ... < x_m = b$, sodass $f(x)$ konstant auf $x \in (x_i-1, x_i)$
+Es gelten die Spezialfälle
+$$
+f_a(x) := 
+    \begin{cases}
+         1, & 0 < x < a \\ 
+         0.5, & x \in \{0, a\} \\ 
+         0, & a < x < 2
+    \end{cases}
+$$
+
+\img{K1/Treppenfunktion}{Visualisierung der Treppenfunktion.}
 
 \begin{beweisbox}
-COMMING SOON
+COMING SOON
 \end{beweisbox}
 
 \begin{satz}{L\textsuperscript{2}-Konvergenz}
@@ -96,23 +160,45 @@ COMMING SOON
 \end{satz}
 
 \begin{beweisbox}
-COMMING SOON
+COMING SOON
 \end{beweisbox}
 
 \begin{satz}{Gleichmäßige Konvergenz}
-    Sei $f : \mathbb{R} \to \mathbb{C}$ eine $2\pi$-periodische, stetige und
-    stückweise stetig differenzierbare Funktion. Dann konvergiert die Fourier-Reihe
-    gleichmäßig gegen $f$ auf jedem abgeschlossenen Intervall, auf dem $f$ stetig ist.
-\end{satz}
+    Sei \(f:\mathbb{R}\to\mathbb{C}\) eine \(2\pi\)-periodische, stetige Funktion, die stückweise stetig differenzierbar ist, d.\,h., es existiert eine Unterteilung
+    \[
+    0=t_0<t_1<\dots<t_m=2\pi
+    \]
+    von \([0,2\pi]\), sodass \(f|_{[t_{j-1},t_j]}\), \(j=1,\dots,m\), stetig differenzierbar ist.
+
+    Dann konvergiert die Fourier-Reihe von \(f\) gleichmäßig gegen \(f\).
+
+    Insbesondere gilt
+    \[
+    \|S_n(f)-f\|_{\infty}\;\xrightarrow[n\to\infty]{}\;0,
+    \]
+    falls \(f\) stetig und stückweise stetig differenzierbar ist.\end{satz}
 
 \begin{beweisbox}
-COMMING SOON
+COMING SOON
 \end{beweisbox}
 
 \begin{bemerkungbox}
-    Ist $f$ stückweise stetig differenzierbar und $x_0$ eine Unstetigkeitsstelle, so gilt:
-    $$
-        s_n(f)(x_0) \longrightarrow \frac{f(x_0^-) + f(x_0^+)}{2}.
-    $$
-    Dies beschreibt das Gibbs-Phänomen.
+    \textcircled{1}\; Satz 1.2.7 lässt sich auf Funktionen mit Unstetigkeitsstellen verallgemeinern:
+
+    Sei $f\in\mathcal{R}[0,2\pi]$ eine $2\pi$-periodische Funktion, die in $[0,2\pi]$ stückweise stetig-differenzierbar ist.
+    Dann konvergiert die Fourier-Reihe von $f$ auf ganz $[0,2\pi]$ punktweise gegen $f$ und gleichmäßig auf jedem abgeschlossenen Teilintervall, auf dem $f$ stetig ist.
+
+    Insbesondere gilt in jeder der Unstetigkeitsstellen $\xi:=x_j$:
+    \[
+    \lim_{n\to\infty} s_n(\xi) \;=\; \frac{f(\xi_-)+f(\xi_+)}{2}.
+    \]
+
+    \bigskip
+
+    \textcircled{2}\; Unterschied zu den Taylor-Reihen:
+
+    \begin{itemize}
+    \item für T.\,R.: $f$ unendlich oft differenzierbare Funktion.
+    \item für F.\,R.: $f$ stückweise stetig-differenzierbar (insbesondere stückweise stetig).
+    \end{itemize}
 \end{bemerkungbox}
