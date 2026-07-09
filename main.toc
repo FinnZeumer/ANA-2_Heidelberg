@@ -6,4 +6,7 @@
 \contentsline {chapter}{\numberline {1}Fourierreihen}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Der Funktionen-Raum $\mathcal {R}[a,b]$}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Fourierentwicklung}{18}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Altklausuren}{24}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hauptklausur 2020}{24}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Zweitklausur 2020}{30}{section.2.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

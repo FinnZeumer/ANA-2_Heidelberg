@@ -28,21 +28,33 @@
     $$
 \end{definition}
 Die Fourierreihe ist ein mächtiges Tool zum exakten bestimmen priodischer Funktionen. Dabei können sowohl die Funktion $f(x)$ und die Koeffizienten kompelx sein. Hier sollen komplexe Zahlen als Vektoren in der komplexen Ebene verstanden werden.
-Dabei beschreibt $e^{\i kx}$ eine gegen den Uhrzeigersinn orientierte Drehung in der Komplexen Ebene. Es gilt $k \in \mathbb{Z}$ -- somit macht der $e^{\i kx}$ pro $x$ $k$-vollständige Umdrehung. Die Fourier-Koeffizienten stellen "Anfangsbedinungen" dar, also die "Startlänge", sowie den "Startwinkel" in der kompelxen Ebene.
+Dabei beschreibt $e^{\i kx}$ eine gegen den Uhrzeigersinn orientierte Drehung in der Komplexen Ebene. Es gilt $k \in \mathbb{Z}$ -- somit macht der $e^{\i kx}$ pro $x$ $k$-vollständige Umdrehung. Die Fourier-Koeffizienten stellen \"Anfangsbedinungen\" dar, also die \"Startlänge\", sowie den "Startwinkel" in der kompelxen Ebene.
 Dies wird für jeden der (unendlich vielen) komplexen Vektoren gemacht. Diese können aufsummiert werden -- dies ist so zu intepretieren, dass unendlich viele rotierende Vektoren aufsummiert werden und somit eine periodische Funktion darstellen. 
+
+Als Randnotiz: Die Foruierreihe lässt sich auch auf andere $L^p$-Normen erweitern.
+
+\img[1]{K1/complex_subplots_improved_xSetTo0}{Visualisierung der der Glieder $c_0$ bis $c_3$ der Funktion $f(x)$ für $x=0$.}
+
+Vier beispielhafte komplexe Zahlen (als Vektor gezeichnet) lassen sich der \cabb{K1/complex_subplots_improved_xSetTo0} entnehmen. Diese Vektoren werden aufsummiert, um den Funktionswert $f(x=0)$ zu bestimmen. Nun muss diese Kalkulation für alle $x$ wiederholt werden und alle (wichtigen) $c_k$ werte müssen berücksichtigt werden.
+Die Vorstellung sollte nun also tatsächlich sein, dass dies die Startbedinungen sind (da $\cR[0,2\pi]$) und die Vektorren sich bei veränderung von $x$ so verändern, dass diese rotieren. Die Länge der Vektoren ändert sich dabei nicht.
+
+\img{K1/vector_addition_tip_on_tail_improved_xSetTo0}{Summe der einzelnen $c_k$ bei $x=0$.}
+
 
 
 \begin{bemerkungbox}
-    $2\pi$-periodisch bedeztet, dass $f:\R\to\K$ auf $[0,2\pi]$ Rieman-integrierbar ist.
+    $2\pi$-periodisch bedeutet, dass $f:\R\to\K$ auf $[0,2\pi]$ Rieman-integrierbar ist.
 \end{bemerkungbox}
 
-\begin{lemma}{}
+\begin{lemma}{Parseval-Identität}
     Sei $f\in \cR[0,2\pi]$ eine $2\pi$-periodische Funktion. Dann gilt:
     $$
         \|f - s_n(f)\|_{L^2}^2
          = \|f\|_{L^2}^2 - 2\pi \sum_{k=-n}^{n} |c_k|^2 \, , \quad n \in \mathbb{N}.
     $$
 \end{lemma}
+$f$ ist eine periodische Funktion und $s_n(f)$ ist eine approximation von $f$ $n$-ten Grades. Geht $n \to \infty$ ist dies die Konvergenz der Partialsumme gegen die Funktion $f$.
+
 
 \begin{beweisbox}
 COMING SOON

@@ -1,0 +1,297 @@
+\newpage
+\section{Zweitklausur 2020}
+% Prof.\ Dr.\ Ekaterina A.\ Kostina\\[1ex]
+% \vspace{2mm}
+% \Large\textbf{L\"osungen zur Nachklausur zur Vorlesung Analysis II}\\
+% \normalsize Sommersemester 2020\\
+% 05.\ Oktober 2020
+% \end{center}
+
+% \bigskip
+
+% \newpage
+\subsection*{Aufgabe 1 (12 Punkte): Kurzfragen}
+\begin{enumerate}
+\item Die Fourierreihe $F_{\infty}^f(x)$ einer $2\pi$-periodischen Funktion $f$ kann entweder in der Form
+\[
+F_{\infty}^f(x)=\sum_{k=-\infty}^{\infty} c_k e^{ikx}
+\]
+oder in der Form
+\[
+F_{\infty}^f(x)=\tfrac{1}{2}a_0+\sum_{k=1}^{\infty}\bigl(a_k\cos(kx)+b_k\sin(kx)\bigr)
+\]
+dargestellt werden. Geben Sie an, wie die Koeffizienten $c_k$, $k\in\mathbb{Z}$, durch die Koeffizienten $a_l,b_l$, $l\in\mathbb{N}\cup\{0\}$, ausgedrückt werden können.
+\\
+% Antwort:
+% \[
+% c_0=\tfrac{1}{2}a_0,\qquad
+% \text{für }k\ge 1:\; c_k=\tfrac{1}{2}\bigl(a_k-i b_k\bigr),\quad
+% c_{-k}=\tfrac{1}{2}\bigl(a_k+i b_k\bigr).
+% \]
+
+\item Definieren Sie den Begriff der gleichmäßigen Konvergenz einer Folgenfolge $(f_n)_{n\in\mathbb{N}}$ von Funktionen $f_n:D\subseteq\mathbb{R}^m\to\mathbb{R}$ gegen eine Grenzfunktion $f:D\to\mathbb{R}$.
+\\
+% Antwort:
+% Die Folge $(f_n)$ konvergiert gleichmäßig gegen $f$ auf $D$, falls zu jedem $\varepsilon>0$ ein $N\in\mathbb{N}$ existiert, so dass für alle $n\ge N$ und alle $x\in D$ gilt
+% \[
+% |f_n(x)-f(x)|<\varepsilon,
+% \]
+% bzw.\ äquivalent $\sup_{x\in D}|f_n(x)-f(x)|\to 0$ für $n\to\infty$.
+
+\item Sei $V$ ein reeller Vektorraum und $(\cdot,\cdot):V\times V\to\mathbb{R}$ eine Abbildung. Nennen Sie die Eigenschaften, die erfüllt sein müssen, damit $(\cdot,\cdot)$ ein Skalarprodukt auf $V$ ist.
+\\
+% Antwort:
+% Für alle $u,v,w\in V$ und $\alpha\in\mathbb{R}$ gelten
+% \begin{enumerate}%[label=(\alph*)]
+% \item Linearität im ersten Argument: $(\alpha u+v,w)=\alpha(u,w)+(v,w)$,
+% \item Symmetrie: $(u,v)=(v,u)$,
+% \item Positive Definitheit: $(v,v)\ge 0$ für alle $v$ und $(v,v)=0\iff v=0$.
+% \end{enumerate}
+
+\item Bezeichne $(\cdot,\cdot)_2$ das euklidische Skalarprodukt und $\|\cdot\|_p$, $\|\cdot\|_q$, $p,q\in\mathbb{R}$ die $\ell_p$- bzw.\ $\ell_q$-Normen in $\mathbb{R}^n$. Geben Sie die H\"oldersche Ungleichung für diese Abbildungen an und nennen Sie die Voraussetzungen an $p,q$.
+\\
+% Antwort:
+% Sind $1\le p,q\le\infty$ mit $\frac{1}{p}+\frac{1}{q}=1$, dann gilt f\"ur alle $x,y\in\mathbb{R}^n$ die H\"oldersche Ungleichung
+% \[
+% |x\cdot y|\le \|x\|_p\,\|y\|_q.
+% \]
+% Im speziellen Fall $p=q=2$ ergibt sich die Cauchy--Schwarz-Ungleichung $(x,y)_2\le\|x\|_2\|y\|_2$.
+
+\item Sei $A\in\mathbb{R}^{n\times n}$ mit Eintr\"agen $a_{ij}$, $i,j=1,\dots,n$. Geben Sie die Formel der Frobenius-Norm $\|A\|_F$ an.
+\\
+% Antwort:
+% \[
+% \|A\|_F=\sqrt{\sum_{i=1}^n\sum_{j=1}^n a_{ij}^2}.
+% \]
+
+\item Definieren Sie den Begriff einer bez\"uglich $G$ relativ-offenen Teilmenge $M\subset G\subset\mathbb{R}^n$.
+\\
+% Antwort:
+% $M$ ist relativ offen in $G$ (oder offen in der Teilraumtopologie von $G$), wenn es eine offene Menge $U\subset\mathbb{R}^n$ mit $M=U\cap G$ gibt. Äquivalent: zu jedem $x\in M$ existiert ein $r>0$ mit $B_r(x)\cap G\subset M$.
+
+\item Definieren Sie den Begriff einer zusammenhängenden Teilmenge $M\subset\mathbb{R}^n$ (nach der in der Vorlesung verwendeten Definition).
+\\
+% Antwort:
+% $M$ ist zusammenhängend, wenn es nicht als Vereinigung zweier disjunkter, nichtleerer Mengen dargestellt werden kann, die in der Teilraumtopologie von $M$ offen sind. Anders gesagt: die einzigen offenen und abgeschlossenen Teilmengen von $M$ sind $\varnothing$ und $M$ selbst.
+
+\item Sei $A\in\mathbb{C}^{n\times n}$. Definieren Sie das Spektrum $\sigma(A)$ der Matrix $A$.
+\\
+% Antwort:
+% Das Spektrum $\sigma(A)$ ist die Menge aller $\lambda\in\mathbb{C}$, f\"ur die $A-\lambda I$ nicht invertierbar ist. Äquivalent: $\sigma(A)=\{\lambda\in\mathbb{C}:\det(A-\lambda I)=0\}$ (Eigenwerte).
+
+\item Sei $g:D\subseteq\mathbb{R}^n\to\mathbb{R}^n$ eine Abbildung, f\"ur die im euklidischen Normraum $D$ die Voraussetzungen des Banachschen Fixpunktsatzes mit Kontraktionskonstante $L\in(0,1)$ erf\"ullt sind. Geben Sie die Fehlerabsch\"atzungen des Banachschen Fixpunktsatzes f\"ur die Fixpunktiteration
+\[
+x^{k}=g(x^{k-1}),\qquad k\in\mathbb{N},
+\]
+mit Startpunkt $x^0\in D$ und Fixpunkt $x^\ast\in D$ an.
+\\
+% Antwort:
+% Es gilt die Kontraktionseigenschaft
+% \[
+% \|x^{k+1}-x^\ast\|\le L\|x^k-x^\ast\|\quad\text{für alle }k\ge 0,
+% \]
+% daraus folgt die a-priori Abschätzung
+% \[
+% \|x^{k}-x^\ast\|\le \frac{L^k}{1-L}\|x^1-x^0\|,
+% \]
+% und die a-posteriori Abschätzung
+% \[
+% \|x^{k}-x^\ast\|\le \frac{L}{1-L}\|x^{k}-x^{k-1}\|.
+% \]
+
+\item Sei $f:\mathbb{R}^n\to\mathbb{R}$ zweimal stetig differenzierbar. Geben Sie eine Formel für das Taylor-Polynom $T_2(f,x;x_0)$ 2.\ Grades mit Entwicklungspunkt $x_0\in\mathbb{R}^n$ von $f$ an.
+\\
+% Antwort:
+% Das Taylor-Polynom 2.~Ordnung um $x_0$ lautet
+% \[
+% T_2(f,x;x_0)=f(x_0)+\nabla f(x_0)^{\top}(x-x_0)+\tfrac{1}{2}(x-x_0)^{\top}H_f(x_0)(x-x_0),
+% \]
+% wobei $H_f(x_0)$ die Hesse-Matrix von $f$ in $x_0$ ist. Für die Restsche Abschreibung kann man die Darstellung mit einer Hesse-Matrix in einem Zwischenpunkt angeben.
+
+\item Sei
+\[
+\frac{d}{dt}y(t)+a(t)y(t)=0,\qquad t\in I=[t_0,T]\subset\mathbb{R},
+\]
+eine lineare homogene Differentialgleichung erster Ordnung mit $t_0 < T$ und $a:I\to\mathbb{R}$. Die Lösung $y:I\to \mathbb{R}$ hat di eForm
+$$
+y(t) = c e^{\lambda(t)} \quad \text{mit} \quad c \in \mathbb{R}, \lambda: I \to \mathbb{R}
+$$
+Geben Sie die allgemeine Lösungsformel an und die Berechnungsvorschrift für die Funktion, so dass die definierte Funktion $y$ die gegebene Differentialgleichung löst.
+\\
+% Antwort:
+% Die allgemeine Lösung ist
+% \[
+% y(t)=C\exp\!\Big(-\int_{t_0}^{t} a(s)\,ds\Big),
+% \]
+% mit Konstante $C\in\mathbb{R}$. Die Funktion $h(t):=\exp\!\big(-\int_{t_0}^{t} a(s)\,ds\big)$ ist die Integralfaktor-gestaltige Lösungsvorschrift, so dass $y(t)=C\,h(t)$ die Differentialgleichung l\"ost.
+
+\item Sei $f:[a,b]\subset\mathbb{R}\to\mathbb{R}^n$ eine stetig differenzierbare Funktion und sei 
+$$
+G(f) := \{f(t) \mid t \in [a,b]\} \subseteq \mathbb{R}^n
+$$
+der Graph von $f$ durch die Kurve
+\[
+\gamma_f:[a,b]\to\mathbb{R}^{n+1},\qquad \gamma_f(:t)=(t,f(t)^T)^{T}
+\]
+parametrisiert. Geben Sie die spezielle Berechnungsvorschrift zur Berechnung der Länge $S(\gamma)$ dieser Kurve an.
+\\
+% Antwort:
+% Die L\"ange des Graphen ist
+% \[
+% S(\gamma)=\int_a^b \bigl\|\gamma'(t)\bigr\|\,dt
+% = \int_a^b \sqrt{1+\|f'(t)\|^2}\,dt,
+% \]
+% wobei $\|\cdot\|$ die euklidische Norm in $\mathbb{R}^{n+1}$ bzw.\ $\mathbb{R}^n$ ist.
+
+\end{enumerate}
+
+
+
+\newpage
+\subsection*{Aufgabe 2 (12 Punkte)}
+(a) Man bestimme mit Begründung das Komplement $\mathbb{Q}^c$, den Rand $\partial\mathbb{Q}$, das Innere $\mathring{\mathbb{Q}}$ und den Abschluss $\overline{\mathbb{Q}}$ der rationalen Zahlen $\mathbb{Q}\subset\mathbb{R}$. \hfill \fbox{5}
+
+\bigskip
+
+(b) Gegeben sei der normierte Vektorraum $(\mathbb{R}^n,\|\cdot\|_\infty)$, wobei $\|\cdot\|_\infty$ die Maximumsnorm bezeichne. Sei $(x_n)_{n\in\mathbb{N}}\subset\mathbb{R}^n$ eine konvergente Folge mit Grenzwert $x\in\mathbb{R}^n$.
+
+Man zeige mithilfe der Überdeckungseigenschaft von Heine und Borel, dass die Menge
+\[
+M := \{x_n \mid n\in\mathbb{N}\}\cup\{x\}
+\]
+kompakt ist. \hfill \fbox{3}
+
+\bigskip
+
+(c) Man untersuche jeweils, ob die folgenden Funktionen $f,g:\mathbb{R}^2\to\mathbb{R}$ im Ursprung $(x,y)^\top=(0,0)^\top$ stetig sind:
+
+(i)
+\[
+f(x,y):=\begin{cases}
+\dfrac{x y}{\sqrt{|x|} + y^2}, & (x,y)^\top\neq(0,0)^\top,\\[6pt]
+0, & (x,y)^\top=(0,0)^\top,
+\end{cases}
+\]
+
+(ii)
+\[
+g(x,y):=\begin{cases}
+\dfrac{x^2-y^2}{x^4+y^4}, & x\neq y,\\[6pt]
+1, & x=y.
+\end{cases}
+\]
+\hfill \fbox{4}
+
+\newpage
+\subsection*{Aufgabe 3 (12 Punkte)}
+\begin{enumerate}
+\item[(a)] Es sei \(M:=\{x=(x_1,x_2)^\top\in\mathbb{R}^2\mid x_1=x_2,\ x\neq 0\}\). Weiter sei die Funktion \(f:\mathbb{R}^2\to\mathbb{R}\) gegeben durch
+\[
+f(x)=f(x_1,x_2):=\begin{cases}
+e^x - 1,& x\in M,\\[4pt]
+0,& x\notin M.
+\end{cases}
+\]
+Man zeige, dass die Richtungsableitung \(\dfrac{\partial f(0,0)}{\partial v}\) von \(f\) an der Stelle \(x=0\) für jede (bez.\ der euklidischen Norm \(\|\cdot\|_2\) normierten) Richtung \(v\in\mathbb{R}^2\) existiert.
+\hfill \fbox{4}
+
+\item[(b)] Man bestimme alle möglichen Extrema der Funktion \(f:\mathbb{R}^2\to\mathbb{R}\) gegeben durch
+\[
+f(x,y):=x-2y
+\]
+unter der Nebenbedingung
+\[
+g(x,y):=2x^2+y^2-2=0,
+\]
+mithilfe von Lagrange-Multiplikatoren und gebe die entsprechenden Lagrange-Multiplikatoren an.
+
+Bemerkung: Die Extrema müssen nicht klassifiziert werden.
+\hfill \fbox{6}
+
+\item[(c)] Sei \(U\subset\mathbb{R}^n\) eine offene Kugel und \(f:U\to\mathbb{R}\) eine stetig differenzierbare Abbildung mit beschränktem Gradienten \(\nabla f\), d.\,h.\ es existiere eine Konstante \(M\in\mathbb{R},\ M>0\), sodass
+\[
+\|\nabla f(x)\|_2\le M\qquad\forall x\in U.
+\]
+Dabei bezeichnet \(\|\cdot\|_2\) die euklidische Norm.
+
+Man zeige mithilfe des Mittelwertsatzes, dass \(f\) in \(U\) gleichmäßig stetig bez.\ der euklidischen Norm \(\|\cdot\|_2\) ist.
+
+Bemerkung: Es darf dabei, ohne Beweis, verwendet werden, dass für \(x,x+h\in U\) auch \(x+th\in U\) für alle \(t\in[0,1]\) gilt.
+\hfill \fbox{3}
+\end{enumerate}
+
+
+\newpage
+\subsection*{Aufgabe 4 (12 Punkte)}
+
+(a) Man zeige, dass die Gleichung
+\[
+F(x,y,z):=\cos(xyz)+x-2y-z=0
+\]
+in einer Umgebung \(U\subseteq\mathbb{R}^2\) von \((x_0,y_0)^{T}=(1,0)^{T}\) durch eine eindeutig stetig und ind \((x_0,y_0)^{T}=(1,0)^{T}\) differenzierbare Funktion \(\varphi:U\to\mathbb{R}\) mit \(\varphi(1,0)=2\) nach \(x\) aufgelöst werden kann und berechne den Gradienten \(\nabla\varphi(1,0)\). 
+\hfill \fbox{4}
+
+\vspace{1ex}
+
+(b) Die Gleichung
+\[
+\cos z - 2z = t
+\]
+kann in einer Umgebung \(U\subseteq\mathbb{R}\) von \(t_0=1\) eindeutig nach \(z\) durch eine zweimal stetig differenzierbare Abbildung \(\varphi:U\to\mathbb{R}\) mit \(\varphi(1)=0\) aufgelöst werden. Dabei gilt für die erste Ableitung \(\varphi'(1)=-\tfrac{1}{2}\).
+Man berechne die zweite Ableitung \(\varphi''(1)\). 
+\hfill \fbox{4}
+
+
+\vspace{1ex}
+
+(c) Sei \(F:\mathbb{R}^2\to\mathbb{R}^2\) ein konservatives Vektorfeld definiert durch
+\[
+F(x)=F(x_1,x_2)=\begin{pmatrix} x_2^2 \\[4pt] 2x_1x_2-3 \end{pmatrix}.
+\]
+Man berechne alle Potentiale dieses Vektorfeldes \(F\). 
+\hfill \fbox{4}
+
+
+\newpage
+\subsection*{Aufgabe 5 (12 Punkte)}
+
+\begin{enumerate}%[label=(\alph*)]
+\item Man forme die Differentialgleichung 3.\ Ordnung für \(y:[a,b]\subset\mathbb{R}\to\mathbb{R}\), \(a<b\), gegeben durch
+\[
+\frac{\mathrm{d}^3}{\mathrm{d}t^3}y(t)=3\left(\frac{\mathrm{d}^2}{\mathrm{d}t^2}y(t)\right)^2-\left(\frac{\mathrm{d}}{\mathrm{d}t}y(t)\right)\cdot y(t)-42\,y(t),\qquad t\in[a,b],
+\]
+in ein äquivalentes Differentialgleichungssystem 1.\ Ordnung um.
+\hfill \fbox{2}
+\vspace{1em}
+
+\item Seien \(I=[t_0,t_1]\subset\mathbb{R}\), \(t_0<t_1\), und \(J\subset\mathbb{R}\) nichtleere Intervalle, \(y_0\in J\) und \(g:I\to\mathbb{R}\) eine stetige Funktion und \(h:J\to\mathbb{R}\) eine stetig differenzierbare Funktion mit \(h(y_0)=0\). Definiere
+\[
+f:I\times J\to\mathbb{R},\qquad f(t,y):=g(t)\,h(y)\quad\forall (t,y)\in I\times J.
+\]
+Die Funktion \(f\) ist somit lokal Lipschitz-stetig bezüglich \(y\). Gegeben sei das Anfangswertproblem
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}t}y(t)&=f(t,y(t)),\qquad t\in I,\\
+y(t_0)&=y_0.
+\end{align*}
+Man zeige, dass die konstante Funktion \(\varphi:I\to J\) mit
+\[
+\varphi(t)=y_0\qquad\forall t\in I
+\]
+die eindeutig bestimmte Lösung des Anfangswertproblems ist.
+\hfill \fbox{4}
+\vspace{1em}
+
+\item Sei \(f:\mathbb{R}\times\mathbb{R}\to\mathbb{R}\), \((t,y)\mapsto f(t,y)\) eine stetige und bezüglich der Variablen \(y\) lokal Lipschitz-stetige Funktion und \(r>0\). Es gelte
+\[
+f(-t,y)=-f(t,y)\qquad\forall (t,y)\in\mathbb{R}\times\mathbb{R}.
+\]
+Man zeige, dass für jede Lösung \(\varphi:[-r,r]\to\mathbb{R}\) der Differentialgleichung
+\[
+\frac{\mathrm{d}}{\mathrm{d}t}y(t)=f(t,y(t)),\qquad t\in[-r,r],
+\]
+gilt, dass
+\[
+\varphi(t)=\varphi(-t)\qquad\forall t\in[-r,r].
+\]
+\hfill \fbox{6}
+\end{enumerate}

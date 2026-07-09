@@ -1,0 +1,221 @@
+\section{Hauptklausur 2020}
+
+% \newpage
+\subsection*{Aufgabe 1 (12 Punkte): Kurzfragen}
+\begin{enumerate}
+\item Die Fourier-Reihe $F_\infty(x)$ einer $2\pi$-periodischen Funktion $f\in R([0,2\pi])$ ist gegeben durch
+\[
+f(x) = \sum_{k=-\infty}^{\infty} c_k e^{ikx}.
+\]
+Geben Sie die Integralformel der Koeffizienten $c_k$ an.\\
+% Antwort:
+% \[
+% c_k=\frac{1}{2\pi}\int_{0}^{2\pi} f(x)\,e^{-ikx}\,\mathrm{d}x,\qquad k\in\mathbb{Z}.
+% \]
+
+\item Die Fourier-Reihe $F_\infty(x)$ einer $2\pi$-periodischen Funktion $f\in R([0,2\pi])$ sei gegeben durch
+$$
+f_\infty(x) = \sum_{-\infty}^\infty c_k e^{ikx}
+$$
+$c_k$. Geben Sie die Parsevalsche Gleichung (Vollständigkeitsrelation) mithilfe der $c_k$ an.\\
+% Antwort:
+% \[
+% \frac{1}{2\pi}\int_{0}^{2\pi}|f(x)|^2\,\mathrm{d}x=\sum_{k=-\infty}^{\infty}|a_k|^2,
+% \]
+% (sofern $f\in L^2([0,2\pi])$).
+
+\item Seien $x$ und $y$ Elemente eines reellen oder komplexen Vektorraums, der mit einem Skalarprodukt $\langle\cdot,\cdot\rangle$ versehen sei. Geben Sie die Cauchy–Schwarz–Ungleichung an.\\
+% Antwort:
+% \[
+% |\langle x,y\rangle|\leq\|x\|\,\|y\|,
+% \]
+% wobei $\|x\|=\sqrt{\langle x,x\rangle}$; Gleichheit genau dann, wenn $x$ und $y$ linear abhängig sind.
+
+\item Sei $X$ eine beliebige nichtleere Menge. Definieren Sie den Begriff der Metrik auf $X$.\\
+% Antwort: Eine Abbildung $d:X\times X\to[0,\infty)$ heißt Metrik, wenn für alle $x,y,z\in X$ gilt:
+% \begin{enumerate}
+% \item $d(x,y)=0\iff x=y$ (Definitheit),
+% \item $d(x,y)=d(y,x)$ (Symmetrie),
+% \item $d(x,z)\le d(x,y)+d(y,z)$ (Dreiecksungleichung).
+% \end{enumerate}
+
+\item Sei $x=(x_1,\dots,x_n)^{\mathrm T}\in\mathbb{R}^n$. Geben Sie die Formel der \(\ell^1\)-Norm \(\|x\|_1\) an.\\
+% Antwort:
+% \[
+% \|x\|_p=\Big(\sum_{i=1}^n |x_i|^p\Big)^{1/p},\qquad 1\le p<\infty,
+% \]
+% insbesondere $\|x\|_1=\sum_{i=1}^n|x_i|$, $\|x\|_2=\sqrt{\sum_{i=1}^n x_i^2}$ und $\|x\|_\infty=\max_{1\le i\le n}|x_i|$.
+
+\item Definieren Sie den Begriff einer offenen Teilmenge $O\subseteq\mathbb{R}^n$.\\
+% Antwort: $O\subset\mathbb{R}^n$ heißt offen, wenn für jedes $x\in O$ ein $\varepsilon>0$ existiert mit $B_\varepsilon(x)\subset O$, wobei $B_\varepsilon(x)=\{y\in\mathbb{R}^n:\|y-x\|<\varepsilon\}$.
+
+\item Sei $M\subseteq\mathbb{R}^n$. Definieren Sie den Begriff der Folgenkompaktheit von $M$.\\
+% Antwort: $M$ ist folgenkompakt, falls jede Folge in $M$ eine konvergente Teilfolge besitzt, deren Grenzwert wieder in $M$ liegt.
+
+\item Sei $A\in\mathbb{R}^{n\times n}$. Definieren Sie positive Definitheit für eine solche Matrix $A$.\\
+% Antwort: $A$ heißt (symmetrisch) positiv definit, wenn $A=A^{\mathrm T}$ und für alle $x\in\mathbb{R}^n\setminus\{0\}$ gilt $x^{\mathrm T}Ax>0$.
+
+\item Sei $D\subseteq\mathbb{R}^n$ offen und $f:D\to\mathbb{R}$ stetig differenzierbar. Formulieren Sie den Mittelwertsatz für eine solche Funktion $f$.\\
+% Antwort: Für $x,y\in D$ mit der ganzen Strecke $[x,y]\subset D$ existiert ein $\xi$ auf dem Segment zwischen $x$ und $y$ so dass
+% \[
+% f(y)-f(x)=\nabla f(\xi)\cdot (y-x).
+% \]
+
+\item Sei $f:\mathbb{R}^2\to\mathbb{R}^2$ definiert durch $f(x,y)=(x^2y^2,\;xy^4)^{\mathrm T}$. Geben Sie die Jacobi-Matrix $J_f(x,y)$ von $f$ an.\\
+% Antwort:
+% \[
+% Jf(x,y)=\begin{pmatrix}
+% \partial_x(x^2-y^2) & \partial_y(x^2-y^2)\\[4pt]
+% \partial_x(2xy) & \partial_y(2xy)
+% \end{pmatrix}
+% =\begin{pmatrix}
+% 2x & -2y\\[4pt]
+% 2y & 2x
+% \end{pmatrix}.
+% \]
+
+\item Sei $y'(t)=A(t)y(t),\ t\ge t_0$ ein lineares Differentialgleichungssystem für $y:[t_0,\infty)\subset \mathbb{R} \to \mathbb{R}^n$ und $\Phi(t)$ die zugehörige (Haupt-)Fundamentalmatrix. Geben Sie das Anfangswertproblem an, das durch $\Phi(t)$ gemäß Definition gelöst wird.\\
+% Antwort: Die Fundamentalmatrix $\Phi(t)$ erfüllt
+% \[
+% \Phi'(t)=A(t)\,\Phi(t),\qquad \Phi(t_0)=I_n.
+% \]
+% Für ein Anfangswertproblem $y'(t)=A(t)y(t),\;y(t_0)=y_0$ ist die Lösung gegeben durch $y(t)=\Phi(t)\,y_0$.
+
+\item Sei $D\subseteq\mathbb{R}^n$ und $F\in C(D;\mathbb{R}^n)$. Definieren Sie den Begriff des Potentials von $F$.\\
+% Antwort: Eine Funktion $\varphi\in C^1(D)$ heißt Potential (oder Stammfunktion) von $F$, falls
+% \[
+% \nabla\varphi(x)=F(x)\quad\text{für alle }x\in D.
+% \]
+% \end{enumerate}
+
+\newpage
+\subsection*{Aufgabe 2 (12 Punkte)}
+(a) Man bestimme mit kurzer Begründung das Komplement \(M^{c}\), den Rand \(\partial M\), das Innere \(M^{\circ}\) und den Abschluss \(\overline{M}\) der Teilmenge \(M\subseteq\mathbb{R}^{n}\) definiert durch
+\[
+M:=\{x\in\mathbb{R}^{n}\mid \|x\|_{\infty}\le 1,\ x\neq 0\}.
+\]
+Dabei bezeichnet \(\|\cdot\|_{\infty}\) die Maximumsnorm.
+
+Bemerkung: Man achte beim Rand auf eine saubere Begründung!
+
+(b) Sei \(\varnothing\neq A\subseteq\mathbb{R}^{n}\). Man beweise, dass der Rand \(\partial A\) kompakt ist, falls \(A\) kompakt ist. %\([3]\)
+
+(c) Man untersuche jeweils, ob die folgenden Funktionen \(f,g:\mathbb{R}^{2}\to\mathbb{R}\) im Ursprung \((x,y)^{T}=(0,0)^{T}\) stetig sind:
+
+(i)
+\[
+f(x,y)=
+\begin{cases}
+\dfrac{x-y}{|x|+|y|^{2}}, & (x,y)^{T}\neq(0,0)^{T},\\[6pt]
+1, & (x,y)^{T}=(0,0)^{T}.
+\end{cases}
+\]
+
+(ii)
+\[
+g(x,y)=
+\begin{cases}
+\dfrac{x^{2}-y^{2}}{|x|+|y|}, & (x,y)^{T}\neq(0,0)^{T},\\[6pt]
+0, & (x,y)^{T}=(0,0)^{T}.
+\end{cases}
+\]
+
+\newpage
+\subsection*{Aufgabe 3 (12 Punkte)}
+(a) Sei $f:\mathbb{R}^2\to\mathbb{R}$ eine beliebig oft stetig partiell differenzierbare Funktion, definiert durch
+\[
+f(x,y)=84\,y\,e^{x^2+y}.
+\]
+(i) Man berechne die Richtungsableitung $\partial_v f(0,0)$ von $f$ an der Stelle $(x,y)^\top=(0,0)^\top$ in die Richtung $v=\bigl(\tfrac{\sqrt{3}}{2},\tfrac{1}{2}\bigr)^\top\in\mathbb{R}^2$.
+
+(ii) Man begründe, ob die Hesse-Matrix $H_f(x,y)$ für alle $(x,y)^\top\in\mathbb{R}^2$ symmetrisch ist, ohne diese zu berechnen.
+
+(b) Man bestimme alle existierenden Extrema der Funktion $f:\mathbb{R}^2\to\mathbb{R}$ gegeben durch
+\[
+f(x,y)=(x-4)^2+(y+2)^2
+\]
+unter der Nebenbedingung
+\[
+g(x,y)=x^2+y^2-5=0
+\]
+mittels Lagrange-Multiplikatoren und gebe die entsprechenden Lagrange-Multiplikatoren an.
+
+Bemerkung: Die Extrema müssen nicht klassifiziert werden.
+
+(c) Sei $U\subseteq\mathbb{R}^n$ offen und $f:U\to\mathbb{R}$ eine stetig differenzierbare Funktion. Sei $x_0\in U$ und $f(x_0)=:c$. Betrachte $M\subseteq U$ zudem die Niveaumenge definiert durch
+\[
+M:=\{x\in U\mid f(x)=c\}.
+\]
+Sei ferner $\varepsilon>0$ und $\varphi:(-\varepsilon,\varepsilon) \subset \mathbb{R} \to\mathbb{R}^n$ eine beliebige stetig differenzierbare Abbildung mit
+\[
+\varphi(0)=x_0\quad\text{und}\quad \varphi(t)\in M\ \forall t\in(-\varepsilon,\varepsilon).
+\]
+Man zeige, dass dann
+\[
+\langle\varphi'(0),\nabla f(x_0)\rangle=0,
+\]
+wobei $\langle\cdot,\cdot\rangle$ das euklidische Skalarprodukt, $\varphi'$ die erste Ableitung von $\varphi$ und $\nabla f$ den Gradienten von $f$ bezeichnet.
+
+\newpage
+\subsection*{Aufgabe 4 (12 Punkte)}
+(a) Man zeige, dass die Gleichung
+\[
+ x^{3}+2xy-4xz+2y-1=0
+\]
+in einer Umgebung \(U\subseteq\mathbb{R}^{2}\) von \((x_{0},y_{0})^{T}=(1,1)^{T}\) durch eine eindeutig stetige und in \((x_{0},y_{0})^{T}=(1,1)^{T}\) differenzierbare Funktion \(\varphi:U\to\mathbb{R}\) mit \(\varphi(1,1)=1\) nach \(z\) aufgelöst werden kann und berechne den Gradienten \(\nabla\varphi(1,1)\).
+
+(b) Die Gleichung
+\[
+ e^{2x}-x=t
+\]
+kann in einer Umgebung \(U\subseteq\mathbb{R}\) von \(t_{0}=1\) eindeutig nach \(x\) durch eine zweimal stetig differenzierbare Abbildung \(\varphi:U\to\mathbb{R}\) mit \(\varphi(1)=0\) aufgelöst werden. Dabei gilt für die erste Ableitung, \(\varphi'(1)=1\). Man berechne die zweite Ableitung \(\varphi''(1)\).
+
+(c) Sei \(\Omega:=\{(x,y,z)^{T}\in\mathbb{R}^{3}\mid (x,y)^{T}\neq(0,0)^{T}\}\) und \(F\) ein Vektorfeld auf \(\Omega\) definiert durch
+\[
+ F(x,y,z):=\left(-\frac{y}{x^{2}+y^{2}},\ \frac{x}{x^{2}+y^{2}},\ 1\right)^{T}.
+\]
+Weiter sei \(\gamma:[0,2\pi]\to\Omega\) eine Kurve definiert durch
+\[
+ \gamma(t):=(\cos t,\ \sin t,\ \sin t)^{T}.
+\]
+Man berechne das vektorielle Kurvenintegral \(\displaystyle\int_{\gamma}F\).
+
+\newpage
+\subsection*{Aufgabe 5 (12 Punkte)}
+\begin{enumerate}
+\item[(a)] Man forme die Differentialgleichung 3. Ordnung für \(y:[a,b]\subset\mathbb{R}\to\mathbb{R}\), \(a<b\), gegeben durch
+\[
+\frac{d^{3}}{dt^{3}}y(t)=3\frac{d^{2}}{dt^{2}}y(t)-\Bigl(\frac{d}{dt}y(t)\Bigr)^{2}+42\,y(t)+1,\qquad t\in[a,b],
+\]
+in ein äquivalentes Differentialgleichungssystem 1.\ Ordnung um.
+
+\item[(b)] Es sei das Anfangswertproblem für \(y:[0,\infty)\subset\mathbb{R}\to[0,\infty)\subset\mathbb{R}\) definiert durch
+\[
+\frac{d}{dt}y(t)=|\sqrt{y(t)}|,\qquad t\in[0,\infty),
+\]
+\[
+y(0)=y_{0},
+\]
+mit \(y_{0}\ge 0\) gegeben.
+\begin{enumerate}
+\item[(i)] Man bestimme unter welcher Bedingung an \(c\in\mathbb{R}\) der Ansatz
+\[
+y(t)=\tfrac{1}{4}(t+c)^{2}
+\]
+die Differentialgleichung des gegebenen Anfangswertproblems löst.
+
+\item[(ii)] Man bestimme \(c\) in Abhängigkeit von \(y_{0}\), sodass \(y(t)=\tfrac{1}{4}(t+c)^{2}\) das gegebene Anfangswertproblem löst.
+
+\item[(iii)] Eine weitere Lösung des Anfangswertproblems mit \(y_{0}=0\) ist \(\tilde{y}(t)=0\) für alle \(t\in[0,\infty)\). Warum widerspricht die Existenz zweier unterschiedlicher Lösungen des Anfangswertproblems mit \(y_{0}=0\) nicht dem Eindeutigkeitssatz aus der Vorlesung? Man begründe die Antwort.
+\end{enumerate}
+
+\item[(c)] Man berechne das Taylor-Polynom \(T_{3}(y,t,t_{0}=0)\) mit Entwicklungspunkt \(t_{0}=0\) der 3.\ Ordnung der beliebig oft stetig differenzierbaren Lösung \(y:[0,\infty)\to\mathbb{R}\) des Anfangswertproblems
+\[
+\frac{d}{dt}y(t)=\cos\bigl(y(t)\bigr),\qquad t\in[0,\infty),
+\]
+\[
+y(0)=0.
+\]
+Bemerkung: Man muss dazu die Lösung \(y\) nicht tatsächlich berechnen!
+\end{enumerate}
+
