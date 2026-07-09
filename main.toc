@@ -3,9 +3,12 @@
 \contentsline {section}{A.1 Generelles}{i}{chapter.1}%
 \contentsline {section}{A.2 Notation}{i}{chapter.1}%
 \contentsline {chapter}{\numberline {B}Vorlesungsverzeichnis}{iii}{chapter.2}%
-\contentsline {chapter}{\numberline {1}Topologische und metrische Grundbegriffe, der Raum $\mathbf {\mathbb {R}^n}$}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Normierte und metrische Räume, der Raum $\mathbb {R}^n$}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Topologie metrischer Räume}{12}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Kompaktheit}{15}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Geometrie in $\mathbf {\mathbb {K}^n}$}{16}{section.1.4}%
+\contentsline {chapter}{\numberline {1}Fourierreihen}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Der Funktionen-Raum $\mathcal {R}[a,b]$}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Fourierentwicklung}{18}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Topologische und metrische Grundbegriffe, der Raum $\mathbf {\mathbb {R}^n}$}{29}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Normierte und metrische Räume, der Raum $\mathbb {R}^n$}{30}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Topologie metrischer Räume}{40}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Kompaktheit}{43}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Geometrie in $\mathbf {\mathbb {K}^n}$}{44}{section.2.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -33,44 +33,44 @@ $$
 
 \begin{beispielbox}
     \begin{enumerate}
-        \item Sei \(X=\mathbb{R}\) oder \(\mathbb{C}\) mit
-        \[
+        \item Sei $X=\mathbb{R}$ oder $\mathbb{C}$ mit
+        $$
         d(x,y):=|x-y|.
-        \]
-        Dann ist \((X,d)\) ein metrischer Raum.
+        $$
+        Dann ist $(X,d)$ ein metrischer Raum.
 
         \medskip
 
         Begründung der Axiome:
         \begin{itemize}
-        \item[M1] Folgt aus \(|x|=0 \Leftrightarrow x=0\).
-        \item[M2] Folgt aus \(|x-y|=|y-x|\) (Symmetrie).
+        \item[M1] Folgt aus $|x|=0 \Leftrightarrow x=0$.
+        \item[M2] Folgt aus $|x-y|=|y-x|$ (Symmetrie).
         \item[M3] Folgt aus der Dreiecksungleichung für den Betrag:
-        \[
+        $$
         d(x,z)=|x-z|=|x-y+y-z|\le |x-y|+|y-z|=d(x,y)+d(y,z).
-        \]
+        $$
         \end{itemize}
 
         Beobachtung:
-        Aus M1--M3 folgt \(d(x,y)\ge 0\) für alle \(x,y\in X\). Tatsächlich ist
-        \[
+        Aus M1--M3 folgt $d(x,y)\ge 0$ für alle $x,y\in X$. Tatsächlich ist
+        $$
         0=d(x,x)\stackrel{\text{M3}}{\le} d(x,y)+d(y,x)\stackrel{\text{M2}}{=}2\,d(x,y),
-        \]
-        also \(d(x,y)\ge0\).
+        $$
+        also $d(x,y)\ge0$.
 
-        \item (induzierte Metrik) Sei \((X,d)\) ein metrischer Raum und \(A\subset X\). Dann definiert
-        \[
+        \item (induzierte Metrik) Sei $(X,d)$ ein metrischer Raum und $A\subset X$. Dann definiert
+        $$
         d_A : A\times A\to\mathbb{R},\qquad d_A(x,y):=d(x,y)
-        \]
-        eine Metrik auf \(A\).
+        $$
+        eine Metrik auf $A$.
 
-        \item (triviale Metrik) Auf jeder Menge \(X\) kann man die triviale Metrik definieren durch
-        \[
+        \item (triviale Metrik) Auf jeder Menge $X$ kann man die triviale Metrik definieren durch
+        $$
         d(x,y):=\begin{cases}
         0, &\text{falls }x=y,\\[4pt]
         1, &\text{falls }x\ne y.
         \end{cases}
-        \]
+        $$
     \end{enumerate}
 
     \medskip
@@ -162,36 +162,36 @@ $$
 \end{lemma}
 
 \begin{beweisbox}
-    Z.\,z. \(d\) ist eine Metrik, d.\,h. \(d\) erfüllt M1--M3.
+    Z.\,z. $d$ ist eine Metrik, d.\,h. $d$ erfüllt M1--M3.
 
-    Sei \(d(x,y)=\lVert x-y\rVert\) für einen normierten Raum.
+    Sei $d(x,y)=\lVert x-y\rVert$ für einen normierten Raum.
 
     \begin{itemize}
-    \item M1: \(\) Aus N1 folgt
-        \[
+    \item M1: Aus N1 folgt
+        $$
         \lVert x-y\rVert = 0 \iff x=y,
-        \]
-        also ist M1 erfüllt. \(\checkmark\)
+        $$
+        also ist M1 erfüllt. $\checkmark$
 
     \item M2: 
-        \[
+        $$
         d(x,y)=\lVert x-y\rVert \overset{\text{N2}}{=} \lVert y-x\rVert = d(y,x),
-        \]
-        da \(\lVert(-1)(x-y)\rVert=\lVert x-y\rVert\). Somit ist M2 erfüllt. \(\checkmark\)
+        $$
+        da $\lVert(-1)(x-y)\rVert=\lVert x-y\rVert$. Somit ist M2 erfüllt. $\checkmark$
 
     \item M3 (Dreiecksungleichung):
-        Für beliebige \(x,y,z\) gilt
-        \[
+        Für beliebige $x,y,z$ gilt
+        $$
         d(x,y)=\lVert x-y\rVert = \lVert x-z + z-y\rVert \le \lVert x-z\rVert + \lVert z-y\rVert
         = d(x,z)+d(z,y),
-        \]
+        $$
         also ist M3 erfüllt.
     \end{itemize}
 
-    Beispiel in \(\mathbb{R}^n\): Sei \(\lVert\cdot\rVert_2\) die \(\ell_2\)-Norm. Dann
-    \[
+    Beispiel in $\mathbb{R}^n$: Sei $\lVert\cdot\rVert_2$ die $\ell_2$-Norm. Dann
+    $$
     d_2(x,y)=\sqrt{\sum_{i=1}^n (x_i-y_i)^2},
-    \]
+    $$
     die euklidische Metrik.
 \end{beweisbox}
 
@@ -215,14 +215,14 @@ $$
     \Rightarrow\quad d(x,z)-d(y,z)&\le d(x,y).
     \end{align*}
     Kombiniert erhält man
-    \[
+    $$
     -\,d(x,y)\le d(x,z)-d(y,z)\le d(x,y),
-    \]
+    $$
     also
-    \[
+    $$
     \lvert d(x,z) - d(y,z)\rvert \le d(x,y).
     \text{In der Vorlesung: }\lvert d(x,z) \textcolor{red}{+} d(y,z)\rvert \le d(x,y).
-    \]
+    $$
     q.e.d.
 \end{beweisbox}
 
@@ -269,61 +269,61 @@ Nun wo die wichtigsten Definitonen geklärt sind, soll nun die \emph{ Konvergenz
     \begin{enumerate}
         \item Der Grenzwert der Folge ist eindeutig.
 
-            Seien \(a,\widetilde{a}\in X\) mit
-            \[
+            Seien $a,\widetilde{a}\in X$ mit
+            $$
             \lim_{k\to\infty} x_k = a,\qquad \lim_{k\to\infty} x_k = \widetilde{a}.
-            \]
-            Sei \(\varepsilon>0\). Dann gibt es \(k_0,k_1\in\mathbb{N}\) mit
-            \[
+            $$
+            Sei $\varepsilon>0$. Dann gibt es $k_0,k_1\in\mathbb{N}$ mit
+            $$
             d(x_k,a)<\varepsilon\quad\text{für alle }k\ge k_0,
             \qquad
             d(x_k,\widetilde{a})<\varepsilon\quad\text{für alle }k\ge k_1.
-            \]
-            Setze \(k_2=\max\{k_0,k_1\}\). Für alle \(k\ge k_2\) gilt dann
-            \[
+            $$
+            Setze $k_2=\max\{k_0,k_1\}$. Für alle $k\ge k_2$ gilt dann
+            $$
             d(a,\widetilde{a}) \le d(a,x_k)+d(x_k,\widetilde{a}) < \varepsilon+\varepsilon = 2\varepsilon.
-            \]
-            Da \(\varepsilon>0\) beliebig war, folgt \(d(a,\widetilde{a})=0\) und somit \(a=\widetilde{a}\).
+            $$
+            Da $\varepsilon>0$ beliebig war, folgt $d(a,\widetilde{a})=0$ und somit $a=\widetilde{a}$.
 
         \item 
-            \(
+            $
             \lim_{k\to\infty} x_k = a \quad\Longleftrightarrow\quad \text{In jeder }\varepsilon\text{-Kugelumgebung }B_\varepsilon(a)\text{ liegen fast alle }x_k.
-            \)
+            $
             \noindent
             d.\,h.\ alle bis auf endlich viele.
 
             \begin{beweisbox}
             "$\Rightarrow$": Sei $\varepsilon>0$. Da $x_k\to a$ gilt, existiert ein Index $k_\varepsilon\in\mathbb{N}$ mit
-            \[
+            $$
             \forall k\ge k_\varepsilon:\; x_k\in B_\varepsilon(a).
-            \]
+            $$
             Somit ist die Menge
-            \[
+            $$
             \{\,k\in\mathbb{N}:\; x_k\notin B_\varepsilon(a)\,\}
-            \]
+            $$
             eine Teilmenge von $\{1,2,\dots,k_\varepsilon-1\}$ und daher endlich. Insbesondere gilt
-            \[
+            $$
             \#\{k:\; x_k\notin B_\varepsilon(a)\} < k_\varepsilon <\infty.
-            \]
+            $$
 
             "$\Leftarrow$": Sei nun vorausgesetzt, dass für jedes $\varepsilon>0$ die Menge
-            \[
+            $$
             S_\varepsilon:=\{\,k\in\mathbb{N}:\; x_k\notin B_\varepsilon(a)\,\}
-            \]
+            $$
             endlich ist. Dann besitzt $S_\varepsilon$ ein Maximum $k_\varepsilon$ (wobei man im Fall $S_\varepsilon=\varnothing$ z.\,B. $k_\varepsilon:=0$ setzen kann). Für alle $k>k_\varepsilon$ gilt daher $x_k\in B_\varepsilon(a)$, also $d(x_k,a)<\varepsilon$. Da dies für beliebiges $\varepsilon>0$ gilt, folgt $x_k\to a$.
             q.e.d.
             \end{beweisbox}
 
         \item
-            \(
+            $
             \lim_{k\to\infty} x_k = a \iff \lim_{k\to\infty} d(x_k,a) = 0.
-            \)
+            $
 
-            In anderen Worten: \((d_k)_{k\in\mathbb{N}}\) ist eine Nullfolge in \(\mathbb{R}\),
+            In anderen Worten: $(d_k)_{k\in\mathbb{N}}$ ist eine Nullfolge in $\mathbb{R}$,
 
-            \[
+            $$
             d_k = d(x_k,a) \in \mathbb{R}.
-            \]  
+            $$  
     \end{enumerate}
 \end{bemerkungbox}
 
@@ -373,24 +373,24 @@ Nun wo die wichtigsten Definitonen geklärt sind, soll nun die \emph{ Konvergenz
 \end{definition}
 
 \begin{bemerkungbox}
-    Sei \((x_k)_{k\in\mathbb{N}}\) eine Folge in \(\mathbb{R}^n\) und \(a\in\mathbb{R}^n\). Dann gilt
-    \[
+    Sei $(x_k)_{k\in\mathbb{N}}$ eine Folge in $\mathbb{R}^n$ und $a\in\mathbb{R}^n$. Dann gilt
+    $$
     \|x_k-a\|_{\infty}\to 0,\qquad k\to\infty
     \quad\Longleftrightarrow\quad
     \forall i=1,\dots,n:\ \lim_{k\to\infty} x_{k,i}=a_i.
-    \]
+    $$
 
-    Komponentenweise Konvergenz in \(\mathbb{R}^n\).
+    Komponentenweise Konvergenz in $\mathbb{R}^n$.
 
     Insbesondere
-    \[
+    $$
     \|x_k-a\|_{\infty}=\max_{i=1,\dots,n}\big|x_{k,i}-a_i\big|
     \xrightarrow[k\to\infty]{}0,
-    \]
-    also für jedes \(i\)
-    \[
+    $$
+    also für jedes $i$
+    $$
     \big|x_{k,i}-a_i\big|\xrightarrow[k\to\infty]{}0.
-    \]
+    $$
 \end{bemerkungbox}
 
 \begin{satz}{Bolzano-Weierstraß}
@@ -398,41 +398,41 @@ Nun wo die wichtigsten Definitonen geklärt sind, soll nun die \emph{ Konvergenz
 \end{satz}
 
 \begin{beweisbox}
-    Sei \((x_k)_{k\in\mathbb{N}}\) beschränkt in \(\mathbb{R}^n\).
-    Dann sind für alle \(i=1,\dots,n\) die Komponentenfolgen \((x_{k,i})_{k\in\mathbb{N}}\) beschränkt in \(\mathbb{R}\).
+    Sei $(x_k)_{k\in\mathbb{N}}$ beschränkt in $\mathbb{R}^n$.
+    Dann sind für alle $i=1,\dots,n$ die Komponentenfolgen $(x_{k,i})_{k\in\mathbb{N}}$ beschränkt in $\mathbb{R}$.
 
-    Nach dem Bolzano--Weierstraßsatz in \(\mathbb{R}\) existiert eine konvergente Teilfolge
-    \((x_{k_j^{(1)},1})_{j\in\mathbb{N}}\) der ersten Komponentenfolge \((x_{k,1})_{k\in\mathbb{N}}\)
+    Nach dem Bolzano--Weierstraßsatz in $\mathbb{R}$ existiert eine konvergente Teilfolge
+    $(x_{k_j^{(1)},1})_{j\in\mathbb{N}}$ der ersten Komponentenfolge $(x_{k,1})_{k\in\mathbb{N}}$
     mit
-    \[
+    $$
     x_{k_j^{(1)}}\longrightarrow a_1\in\mathbb{R}\qquad (j\to\infty).
-    \]
+    $$
 
     Aus der so erhaltenen Teilfolge betrachten wir die zweite Komponente.
     Da auch diese beschränkt ist, existiert eine Teilfolge
-    \((x_{k_j^{(2)},2})_{j\in\mathbb{N}}\) von \((x_{k_j^{(1)},2})_{j\in\mathbb{N}}\)
+    $(x_{k_j^{(2)},2})_{j\in\mathbb{N}}$ von $(x_{k_j^{(1)},2})_{j\in\mathbb{N}}$
     mit
-    \[
+    $$
     x_{k_j^{(2)},2}\longrightarrow a_2\in\mathbb{R}\qquad (j\to\infty).
-    \]
+    $$
 
-    Induktiv verfahren wir für \(i=3,\dots,n\): Aus der bereits gewählten Teilfolge
-    wählen wir jeweils eine weitere Teilfolge, so dass die \(i\)-te Komponente konvergiert.
+    Induktiv verfahren wir für $i=3,\dots,n$: Aus der bereits gewählten Teilfolge
+    wählen wir jeweils eine weitere Teilfolge, so dass die $i$-te Komponente konvergiert.
     Dadurch erhalten wir verschachtelte Indizes
-    \[
+    $$
     k_1^{(1)}<k_2^{(1)}<\dots,\qquad
     k_1^{(2)}<k_2^{(2)}<\dots,\qquad\ldots,\qquad
     k_1^{(n)}<k_2^{(n)}<\dots
-    \]
-    mit \(k_j^{(i+1)}\in\{k_\ell^{(i)}:\ell\in\mathbb{N}\}\) für alle \(i\).
+    $$
+    mit $k_j^{(i+1)}\in\{k_\ell^{(i)}:\ell\in\mathbb{N}\}$ für alle $i$.
 
-    Betrachte die Diagonalfolge \(k_j:=k_j^{(n)}\). Dann konvergiert für jede Komponente
-    \[
+    Betrachte die Diagonalfolge $k_j:=k_j^{(n)}$. Dann konvergiert für jede Komponente
+    $$
     x_{k_j,i}\longrightarrow a_i\in\mathbb{R}\qquad (j\to\infty),\quad i=1,\dots,n \, .
-    \]
+    $$
 
-    Ergebnis: Es existiert eine konvergente Teilfolge \((x_{k_j})_{j\in\mathbb{N}}\) von
-    \((x_k)_{k\in\mathbb{N}}\) mit \(x_{k_j}\to a\). \(\square\)
+    Ergebnis: Es existiert eine konvergente Teilfolge $(x_{k_j})_{j\in\mathbb{N}}$ von
+    $(x_k)_{k\in\mathbb{N}}$ mit $x_{k_j}\to a$. $\square$
 \end{beweisbox}
 
 \begin{satz}{Äquivalenz der Normen}
@@ -490,41 +490,41 @@ COMING SOON
 
 \begin{beweisbox}
     \begin{enumerate}
-    \item[(i)] Sei \((x_k)_{k\in\mathbb{N}}\) und \(x_k\to x\).
+    \item[(i)] Sei $(x_k)_{k\in\mathbb{N}}$ und $x_k\to x$.
 
-    Sei \(\varepsilon>0\) gegeben. Dann existiert \(k^*\in\mathbb{N}\) so, dass
-    \[
+    Sei $\varepsilon>0$ gegeben. Dann existiert $k^*\in\mathbb{N}$ so, dass
+    $$
     d(x_k,x)<\frac{\varepsilon}{2}\qquad\text{für alle }k\ge k^*
-    \]
-    (Definition des Grenzwerts). Für alle \(k,n\ge k^*\) gilt dann wegen der Dreiecksungleichung
-    \[
+    $$
+    (Definition des Grenzwerts). Für alle $k,n\ge k^*$ gilt dann wegen der Dreiecksungleichung
+    $$
     d(x_k,x_n)\le d(x_k,x)+d(x,x_n)<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon.
-    \]
-    Damit ist \((x_k)\) eine Cauchy-Folge.
+    $$
+    Damit ist $(x_k)$ eine Cauchy-Folge.
 
-    \item[(ii)] Sei \((x_k)_{k\in\mathbb{N}}\) eine Cauchy-Folge. Setze \(\varepsilon=1\). Dann existiert \(k^*\) so, dass
-    \[
+    \item[(ii)] Sei $(x_k)_{k\in\mathbb{N}}$ eine Cauchy-Folge. Setze $\varepsilon=1$. Dann existiert $k^*$ so, dass
+    $$
     d(x_{k^*},x_n)<1\qquad\text{für alle }n\ge k^*.
-    \]
+    $$
     Definiere
-    \[
+    $$
     R:=1+\max\{\,d(x_\ell,x_{k^*}):\ell=1,\dots,k^*-1\,\}<\infty.
-    \]
-    Dann liegt die ganze Folge in der Kugel \(B_R(x_{k^*})\), also ist \(\{x_k:k\in\mathbb{N}\}\) beschränkt.
+    $$
+    Dann liegt die ganze Folge in der Kugel $B_R(x_{k^*})$, also ist $\{x_k:k\in\mathbb{N}\}$ beschränkt.
 
-    \item[(iii)] Sei \(x\) ein Häufungs- bzw. Anhäufungspunkt (H.P.) der Cauchy-Folge \((x_k)_{k\in\mathbb{N}}\) und sei \(\varepsilon>0\) beliebig. Da \((x_k)\) Cauchy ist, existiert \(k^*\in\mathbb{N}\) mit
-    \[
+    \item[(iii)] Sei $x$ ein Häufungs- bzw. Anhäufungspunkt (H.P.) der Cauchy-Folge $(x_k)_{k\in\mathbb{N}}$ und sei $\varepsilon>0$ beliebig. Da $(x_k)$ Cauchy ist, existiert $k^*\in\mathbb{N}$ mit
+    $$
     d(x_k,x_n)<\frac{\varepsilon}{2}\qquad\text{für alle }k,n\ge k^*.
-    \]
-    Weil \(x\) Häufungswert der Folge ist, gibt es ein \(m^*\ge k^*\) mit
-    \[
+    $$
+    Weil $x$ Häufungswert der Folge ist, gibt es ein $m^*\ge k^*$ mit
+    $$
     d(x,x_{m^*})<\frac{\varepsilon}{2}.
-    \]
-    Für alle \(k\ge k^*\) folgt dann
-    \[
+    $$
+    Für alle $k\ge k^*$ folgt dann
+    $$
     d(x_k,x)\le d(x_k,x_{m^*})+d(x_{m^*},x)<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon.
-    \]
-    Damit gilt \(x_k\to x\). \(\square\)
+    $$
+    Damit gilt $x_k\to x$. $\square$
     \end{enumerate}
 \end{beweisbox}
 
@@ -541,9 +541,9 @@ COMING SOON
 \end{beweisbox}
 
 \begin{bemerkungbox}
-    \[
+    $$
     (X,d)\ \text{vollständig} \Longleftrightarrow (\text{C.F.}\Rightarrow \text{Konvergenz})
-    \]
+    $$
 \end{bemerkungbox}
 
 \begin{satz}{Vollständigkeit von $\mathbb{R}^n$}
@@ -556,17 +556,17 @@ COMING SOON
     Zu zeigen: Es existiert $a\in\mathbb{R}^n$ mit $x_k\to a$ für $k\to\infty$.\\
 
     Betrachte die $i$-te Komponente $x_{k,i}$ von $x_k$. Für alle $i=1,\dots,n$ gilt
-    \[
+    $$
     |x_{k,i}-x_{m,i}|\leq\|x_k-x_m\|_\infty\xrightarrow[k,m\to\infty]{}0,
-    \]
+    $$
     da $(x_k)_{k\in\mathbb{N}}$ eine Cauchy-Folge in $\mathbb{R}^n$ ist. Daher ist für jedes feste $i$ die Folge $(x_{k,i})_{k\in\mathbb{N}}$ eine Cauchy-Folge in $\mathbb{R}$. Da $\mathbb{R}$ vollständig ist, existiert für jedes $i$ ein Grenzwert $a_i\in\mathbb{R}$ mit
-    \[
+    $$
     x_{k,i}\xrightarrow[k\to\infty]{}a_i.
-    \]
+    $$
 
     Damit konvergieren alle Komponenten von $x_k$ und es folgt die komponentenweise Konvergenz
-    \[
+    $$
     x_k\xrightarrow[k\to\infty]{}a:= (a_1,\dots,a_n)\in\mathbb{R}^n.
-    \]
+    $$
     \hfill $\square$   
 \end{beweisbox}
