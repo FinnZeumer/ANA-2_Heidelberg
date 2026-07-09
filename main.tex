@@ -30,38 +30,38 @@
     \setcounter{chapter}{0} % Reset Zähler
     \renewcommand{\thechapter}{\arabic{chapter}}
 
-    % ---------------------------------------------------------
-    % Kapitel 1: Fourierreihen
-    % ---------------------------------------------------------
-    \chapter{Fourierreihen}
-    \label{ch:1}
-
-    \foreach \file in {
-        Einleitung,
-        1.1,
-        1.2
-    }{
-        \input{pages/chapter/K1/\file}
-    }
-
-    \newpage
-
     % % ---------------------------------------------------------
-    % % Kapitel 2: Topologische und metrische Grundbegriffe
+    % % Kapitel 1: Fourierreihen
     % % ---------------------------------------------------------
-    % \chapter{Topologische und metrische Grundbegriffe, der Raum $\mathbf{\mathbb{R}^n}$}
-    % \label{ch:2}
+    % \chapter{Fourierreihen}
+    % \label{ch:1}
 
     % \foreach \file in {
     %     Einleitung,
-    %     2.1,
-    %     2.2,
-    %     2.3,
-    %     2.4
+    %     1.1,
+    %     1.2
     % }{
-    %     \input{pages/chapter/K2/\file}
+    %     \input{pages/chapter/K1/\file}
     % }
+
     % \newpage
+
+    % ---------------------------------------------------------
+    % Kapitel 2: Topologische und metrische Grundbegriffe
+    % ---------------------------------------------------------
+    \chapter{Topologische und metrische Grundbegriffe, der Raum $\mathbf{\mathbb{R}^n}$}
+    \label{ch:2}
+
+    \foreach \file in {
+        Einleitung,
+        2.1,
+        2.2,
+        2.3,
+        2.4
+    }{
+        \input{pages/chapter/K2/\file}
+    }
+    \newpage
 
     % % ---------------------------------------------------------
     % % Kapitel 3: Stetigkeit in metrischen Räumen
@@ -135,19 +135,19 @@
     % }
     % \newpage
 
-    % ---------------------------------------------------------
-    % Kapitel 7: Altklausuren 
-    % ---------------------------------------------------------
-    \chapter{Altklausuren}
-    \label{ch:7}
+    % % ---------------------------------------------------------
+    % % Kapitel 7: Altklausuren 
+    % % ---------------------------------------------------------
+    % \chapter{Altklausuren}
+    % \label{ch:7}
 
-    \foreach \file in {
-        Klausur_2020,
-        Zweitklausur_2020
-    }{
-        \input{pages/chapter/K7/\file}
-    }
-    \newpage
+    % \foreach \file in {
+    %     Klausur_2020,
+    %     Zweitklausur_2020
+    % }{
+    %     \input{pages/chapter/K7/\file}
+    % }
+    % \newpage
 
     
     % % ---------------------------------------------------------

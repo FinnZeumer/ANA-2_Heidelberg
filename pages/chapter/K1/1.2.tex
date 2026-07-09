@@ -28,102 +28,115 @@
     $$
 \end{definition}
 Die Fourierreihe ist ein mächtiges Tool zum exakten bestimmen priodischer Funktionen. Dabei können sowohl die Funktion $f(x)$ und die Koeffizienten kompelx sein. Hier sollen komplexe Zahlen als Vektoren in der komplexen Ebene verstanden werden.
-Dabei beschreibt $e^{\i kx}$ eine gegen den Uhrzeigersinn orientierte Drehung in der Komplexen Ebene. Es gilt $k \in \mathbb{Z}$ -- somit macht der $e^{\i kx}$ pro $x$ $k$-vollständige Umdrehung. Die Fourier-Koeffizienten stellen \"Anfangsbedinungen\" dar, also die \"Startlänge\", sowie den "Startwinkel" in der kompelxen Ebene.
+Dabei beschreibt $e^{\i kx}$ eine gegen den Uhrzeigersinn orientierte Drehung in der Komplexen Ebene. Es gilt $k \in \mathbb{Z}$ -- somit macht der $e^{\i kx}$ pro $x$ $k$-vollständige Umdrehung. Die Fourier-Koeffizienten stellen ''Anfangsbedinungen'' dar, also die ''Startlänge'', sowie den "Startwinkel" in der kompelxen Ebene.
 Dies wird für jeden der (unendlich vielen) komplexen Vektoren gemacht. Diese können aufsummiert werden -- dies ist so zu intepretieren, dass unendlich viele rotierende Vektoren aufsummiert werden und somit eine periodische Funktion darstellen. 
-
-Als Randnotiz: Die Foruierreihe lässt sich auch auf andere $L^p$-Normen erweitern.
-
-\img[1]{K1/complex_subplots_improved_xSetTo0}{Visualisierung der der Glieder $c_0$ bis $c_3$ der Funktion $f(x)$ für $x=0$.}
+\img[0.8]{K1/complex_subplots_improved_xSetTo0}{Visualisierung der der Glieder $c_0$ bis $c_3$ der Funktion $f(x)$ für $x=0$.}
 
 Vier beispielhafte komplexe Zahlen (als Vektor gezeichnet) lassen sich der \cabb{K1/complex_subplots_improved_xSetTo0} entnehmen. Diese Vektoren werden aufsummiert, um den Funktionswert $f(x=0)$ zu bestimmen. Nun muss diese Kalkulation für alle $x$ wiederholt werden und alle (wichtigen) $c_k$ werte müssen berücksichtigt werden.
 Die Vorstellung sollte nun also tatsächlich sein, dass dies die Startbedinungen sind (da $\cR[0,2\pi]$) und die Vektorren sich bei veränderung von $x$ so verändern, dass diese rotieren. Die Länge der Vektoren ändert sich dabei nicht.
-
-\img{K1/vector_addition_tip_on_tail_improved_xSetTo0}{Summe der einzelnen $c_k$ bei $x=0$.}
-
-
+\img[0.8]{K1/vector_addition_tip_on_tail_improved_xSetTo0}{Summe der einzelnen $c_k$ bei $x=0$.}
 
 \begin{bemerkungbox}
     $2\pi$-periodisch bedeutet, dass $f:\R\to\K$ auf $[0,2\pi]$ Rieman-integrierbar ist.
 \end{bemerkungbox}
 
-\begin{lemma}{Parseval-Identität}
+\begin{beispielbox}
+    Fourierreihen werden besonders häufig in der Signal-Technik und der optischen Physik genutzt. So kann jedes periodische Signal als Überlagerung von Sinus und Cosuinus Funktionen gedeutet werden. Jeder weitere Partialsummant nährt das Signal weiter and das Viereckssignal an. 
+    Dabei ist bemerkenswert, dass die ersten paar Summanten besonders grob sind und eher die grobe Strucktur vorgeben, während die Summanten zum Ende hin immmer weniger beitragen und eher feinjustieren.
+    In der Unendlichen Summe entspricht die Fourierpartialsummen exakt der Fourierreihe, also in diesme Beispiel exakt dem Viereckssignal. 
+    Die Fourierentwicklung kann also genutzt werden, um eine Funktion durch ganz viele "Frequenzen" darzustellen. 
+    \img[1]{K1/Fourier_Viereck_Einzeln}{Visualisierung der ersten Ordnungen der Annährung an das Viereckssignal.}
+    % \img{K1/Fourier_Viereck_Überlagerung}{Visualisierung der ersten Ordnungen der Annährung an das Viereckssignal.}
+
+    Die Fourierentwicklung kann jedoch auch genutzt werden, um die Frequenzen eines überlagerten Signals heruaszufiltern.
+    So kann bspw. die Überlagerung von Lichtwellen oder Audiowellen in die einzelnen bestandteile zurückgeführt werden.
+    Die Signale haben dabei eine Frequenz und eine Amplitude, also im Fall von Lciht eine "Farbe" und eine Inensität.
+    \img[1]{K1/fourier_spectrum_analysis}{Visualisierung der Fourieranalyse}
+\end{beispielbox}
+
+\begin{lemma}{Parseval--Identität}
     Sei $f\in \cR[0,2\pi]$ eine $2\pi$-periodische Funktion. Dann gilt:
     $$
         \|f - s_n(f)\|_{L^2}^2
          = \|f\|_{L^2}^2 - 2\pi \sum_{k=-n}^{n} |c_k|^2 \, , \quad n \in \mathbb{N}.
     $$
 \end{lemma}
-$f$ ist eine periodische Funktion und $s_n(f)$ ist eine approximation von $f$ $n$-ten Grades. Geht $n \to \infty$ ist dies die Konvergenz der Partialsumme gegen die Funktion $f$.
-
+Diese Identität erinnert stark an die definition der $L^2$-Stetigkeit, und dies aus gutem Grund, für das Limit $n \to \infty$ ist dies genau die Definition der Stetigkeit; die Partialsumme nährt sich der Fourierreihe immer weiter an.
+Jedoch steckt hier kein Limes drinnen, das heißt, es wird die quadrierte Fläche zwischen dem "Signal" $f$ und dem "Teilsignal" $s_n(f)$ gebildet. Diese Fläche wird für zunehmendes $n$ immer kleiner. Somit lässt sich dieser Ausdruck als Fehler bzw. Präzision der Partialsumme gegenüber der Funktion $f$ auffassen.
+Die Parseval--\textbf{Identität} ist ungleich der Parseval--\textbf{Gleichung}
 
 \begin{beweisbox}
-COMING SOON
+    Notation: $e_k(x)=e^{ikx},\; k\in\mathbb{Z}$. Für das Skalarprodukt auf $L^2([0,2\pi])$ gilt
+    $$
+    (e_k,e_\ell)=\int_0^{2\pi} e^{ikx}\overline{e_\ell(x)}\,dx
+    =\int_0^{2\pi} e^{i(k-\ell)x}\,dx
+    =\begin{cases}2\pi,& k=\ell,\\[4pt]0,& k\neq\ell.\end{cases}
+    $$
+    Daher bilden die $\{e_k\}_{k\in\mathbb{Z}}$ ein orthogonales System.
+
+    Die Fourierkoeffizienten seien
+    $$
+    c_k=\frac{1}{2\pi}\int_0^{2\pi} f(x)e^{-ikx}\,dx=\frac{1}{2\pi}(f,e_k),
+    \qquad k\in\mathbb{Z}.
+    $$
+    Für die partielle Fourierreihe
+    $$
+    S_n(x)=\sum_{k=-n}^{n} c_k e_k(x)
+    $$
+    ergibt sich
+    \begin{align*}
+    (f,S_n)
+    &=\int_0^{2\pi} f(x)\overline{S_n(x)}\,dx
+    =\int_0^{2\pi} f(x)\sum_{k=-n}^{n}\overline{c_k}e^{-ikx}\,dx\\
+    &=\sum_{k=-n}^{n}\overline{c_k}\,(f,e_k)
+    =\sum_{k=-n}^{n}\overline{c_k}\,2\pi c_k
+    =2\pi\sum_{k=-n}^{n}|c_k|^2.
+    \end{align*}
+    Ebenso
+    $$
+    (S_n,S_n)=\int_0^{2\pi}|S_n(x)|^2\,dx
+    =\sum_{k=-n}^{n}\sum_{\ell=-n}^{n} c_k\overline{c_\ell}\,(e_k,e_\ell)
+    =2\pi\sum_{k=-n}^{n}|c_k|^2.
+    $$
+
+    Daraus folgt für die Quadratznorm des Fehlers
+    \begin{align*}
+    \|f-S_n\|^2
+    &=(f-S_n,f-S_n)=(f,f)-(f,S_n)-(S_n,f)+(S_n,S_n)\\
+    &=\|f\|^2-2\cdot 2\pi\sum_{k=-n}^{n}|c_k|^2+2\pi\sum_{k=-n}^{n}|c_k|^2\\
+    &=\|f\|^2-2\pi\sum_{k=-n}^{n}|c_k|^2.
+    \end{align*}
+    Damit ist die Behauptung gezeigt. $\square$
 \end{beweisbox}
 
 \begin{satz}{Besselsche Ungleichung}
-    Für $f \in \cR[0,2\pi]$ mit Fourier-Koeffizienten $c_k$ gilt:
+    Für $f \in \cR[0,2\pi]$ mit Fourier-Koeffizienten $c_k, k \in \mathbb{Z}$ gilt:
     $$
-        \sum_{k=-\infty}^{\infty} |c_k|^2 \le \frac{1}{2\pi}\|f\|_2^2.
+        \sum_{k=-\infty}^{\infty} |\overbrace{c_k}^{\skalP{f}{s_n(f)}}|^2 \le \frac{1}{2\pi}\|f\|_2^2.
     $$
-    Insbesondere ist die Reihe $\sum |c_k|^2$ konvergent.
+    Insbesondere ist die Reihe $\sum |c_k|^2$ konvergent $c_k \to 0$.
 \end{satz}
+Dieser Satz gilt in $s_n(f)$ ein Orthogonalsystem bildet. Ist das Orthogonalsystem sogar eine Basis (ONS), so ist dies die Parseval--Gleichung, hier besteht dann Gleichheit.
 
 \begin{beweisbox}
-COMING SOON
+    Nach Lemma der Parseval--Identität folgt
+
+    $$
+    \sum_{k=-n}^{n} |c_k|^2 \;=\; \|f\|^2 - \|f-s_n\|^2 \;\le\; \|f\|^2,
+    $$
+    wobei $\|f\|^2-\|f-s_n\|^2 \ge 0$.
+
+    Partialsummen beschränkt und monoton wachsend.
+
+    Daraus folgt
+    $$
+    \lim_{n\to\infty} s_n \;=\; \sum_{k=-\infty}^{\infty} |c_k|^2.
+    $$
+
+    q.e.d.
 \end{beweisbox}
 
-\begin{bemerkungbox}
-    Es gilt ein allgemeiner Entwicklungssatz für ein Orthonormalsystem.
-
-    Sei \(V\) ein Vektorraum mit Skalarprodukt \(\langle\cdot,\cdot\rangle\) und zugehöriger Halb-Norm
-    \[
-    \|\cdot\| := \langle\cdot,\cdot\rangle^{1/2}.
-    \]
-    ( Halb-Norm, d.\,h. nicht streng definit.)
-
-    Sei \(\{e_k:\,k\in\mathbb{Z}\}\) ein Orthonormalsystem, \(f\in V\), und
-    \[
-    c_k := \langle f,e_k\rangle.
-    \]
-    Setze die Fourier-(Partialsummen)
-    \[
-    s_n := \sum_{k=-n}^{n} c_k\, e_k.
-    \]
-    Dann gilt:
-    \begin{align}
-    \|f - s_n\|^2 &= \|f\|^2 - \sum_{k=-n}^{n} |c_k|^2, \label{eq:proj}\\
-    \sum_{k=-n}^{n} |c_k|^2 &\le \|f\|^2 \qquad\text{(Besselsche Ungleichung)},\label{eq:bessel}\\
-    \|f - s_n\|\to 0\quad (n\to\infty)
-    &\iff \sum_{k=-\infty}^{\infty} |c_k|^2 = \|f\|^2 \qquad\text{(Parseval'sche Gleichung)}.\label{eq:parseval}
-    \end{align}
-
-    Hinweis: Für ein Orthonormalsystem gilt \(\langle e_k,e_\ell\rangle=\delta_{k\ell}\).
-
-    \textbf{Beobachtung:}\\
-    Sei \(f\in \cR[0,2\pi]\) \(2\pi\)-periodisch, und sei \(\|f-s_n\|_{L^2}^2\to 0\) für \(n\to\infty\).
-    Dann (unter der üblichen Normierung des Skalarprodukts)
-    \[
-    \langle f,g\rangle = \frac{1}{2\pi}\int_{0}^{2\pi} f(x)\overline{g(x)}\,dx,
-    \]
-    folgt
-    \[
-    \|f-s_n\|_{L^2}^2 \to 0 \quad (n\to\infty)
-    \iff \|f\|_{L^2}^2 = 2\pi\sum_{k=-\infty}^{\infty} |c_k|^2,
-    \]
-    bzw. äquivalent mit der oben definierten Norm \(\|\cdot\|\)
-    \[
-    \|f\|^2 = 2\pi\sum_{k=-\infty}^{\infty}|c_k|^2.
-    \]
-
-    \vspace{6pt}
-    \textbf{Frage:}\\
-    Unter welchen Bedingungen auf \(f\) gilt \(L^2\)-Konvergenz der Fourierreihe gegen \(f\) und folglich die Gleichung
-    \[
-    \|f\|^2 = 2\pi\sum_{k=-\infty}^{\infty} |c_k|^2\; ?
-    \]
-\end{bemerkungbox}
-
-\begin{satz}{Allgemeiner Entwicklungssatz}
+\begin{satz}{Allgemeiner Entwicklungssatz für Orthonormalsysteme}
     Sei $V$ ein Skalarproduktraum und $\{e_k\}_{k\in\mathbb{Z}}$ ein Orthonormalsystem.
     Für $f \in V$ seien $c_k = (f,e_k)$ und
     $$
@@ -137,9 +150,43 @@ COMING SOON
 
     Daraus folgt die Besselsche Ungleichung:
     $$
-        \sum_{k=-\infty}^{\infty} |c_k|^2 \le \|f\|^2.
+        \sum_{k=-n}^{n} |c_k|^2 \le \|f\|^2.
+    $$
+
+    Im Limes für $n \to \infty$ gilt entsprechend:
+    $$
+        \|f - s_n\| \to 0 \Leftrightarrow \sum_{k=-\infty}^{\infty} |c_k|^2 = \|f\|^2.
     $$
 \end{satz}
+
+\begin{bemerkungbox}
+    Es gilt ein allgemeiner Entwicklungssatz für ein Orthonormalsystem.
+
+    Hinweis: Für ein Orthonormalsystem gilt $\langle e_k,e_\ell\rangle=\delta_{k\ell}$.
+
+    \textbf{Beobachtung:}\\
+    Sei $f\in \cR[0,2\pi]$ $2\pi$-periodisch, und sei $\|f-s_n\|_{L^2}^2\to 0$ für $n\to\infty$.
+    Dann (unter der üblichen Normierung des Skalarprodukts)
+    $$
+    \langle f,g\rangle = \frac{1}{2\pi}\int_{0}^{2\pi} f(x)\overline{g(x)}\,dx,
+    $$
+    folgt
+    $$
+    \|f-s_n\|_{L^2}^2 \to 0 \quad (n\to\infty)
+    \iff \|f\|_{L^2}^2 = 2\pi\sum_{k=-\infty}^{\infty} |c_k|^2,
+    $$
+    bzw. äquivalent mit der oben definierten Norm $\|\cdot\|$
+    $$
+    \|f\|^2 = 2\pi\sum_{k=-\infty}^{\infty}|c_k|^2.
+    $$
+
+    \vspace{6pt}
+    \textbf{Frage:}\\
+    Unter welchen Bedingungen auf $f$ gilt $L^2$-Konvergenz der Fourierreihe gegen $f$ und folglich die Gleichung
+    $$
+    \|f\|^2 = 2\pi\sum_{k=-\infty}^{\infty} |c_k|^2\; ?
+    $$
+\end{bemerkungbox}
 
 \begin{satz}{Hilfssatz: Konvergenz von Treppenfunktionen}
     Sei $f \in R[0,2\pi]$ eine $2\pi$-periodische Treppenfunktion. Dann konvergiert
@@ -160,7 +207,75 @@ $$
 \img{K1/Treppenfunktion}{Visualisierung der Treppenfunktion.}
 
 \begin{beweisbox}
-COMING SOON
+    Es gilt
+    $$
+    \|f_a\|_2^2=\int_{0}^{2\pi}|f_a(x)|^2\,dx=\int_{0}^{a}1^2\,dx=a.
+    $$
+
+    Fourier-Koeffizienten (Periode $2\pi$):
+    $$
+    c_0=\frac{1}{2\pi}\int_{0}^{2\pi}f_a(x)\,dx=\frac{a}{2\pi},
+    $$
+    und für $k\neq 0$
+    $$
+    c_k=\frac{1}{2\pi}\int_{0}^{2\pi}f_a(x)e^{-ikx}\,dx
+    =\frac{1}{2\pi}\int_{0}^{a}e^{-ikx}\,dx
+    =\frac{1}{2\pi}\cdot\frac{e^{-ika}-1}{-ik}
+    =\frac{1}{2\pi ik}\bigl(1-e^{-ika}\bigr).
+    $$
+
+    Betragquadrat für $k\neq0$:
+    $$
+    |c_k|^2=\frac{1}{4\pi^2k^2}\bigl|1-e^{-ika}\bigr|^2
+    =\frac{1}{4\pi^2k^2}\cdot \bigl(1-\cos(ka)\bigr)
+    =\frac{1}{2\pi^2k^2}\bigl(1-\cos(ka)\bigr).
+    $$
+
+    Summe über $k\neq0$:
+    $$
+    \sum_{k\neq0}|c_k|^2
+    =2\sum_{k=1}^{\infty}|c_k|^2
+    =\frac{1}{\pi^2}\sum_{k=1}^{\infty}\frac{1-\cos(ka)}{k^2}.
+    $$
+
+    Parseval (für Periode $2\pi$):
+    $$
+    \sum_{k\in\mathbb{Z}}|c_k|^2=\frac{1}{2\pi}\int_{0}^{2\pi}|f_a(x)|^2\,dx=\frac{a}{2\pi}.
+    $$
+    Also
+    $$
+    \frac{a}{2\pi}=|c_0|^2+\sum_{k\neq0}|c_k|^2
+    =\Bigl(\frac{a}{2\pi}\Bigr)^2+\frac{1}{\pi^2}\sum_{k=1}^{\infty}\frac{1-\cos(ka)}{k^2}.
+    $$
+    Daraus folgt die bekannte Identität (für $0\le a\le 2\pi$):
+    $$
+    \sum_{k=1}^{\infty}\frac{1-\cos(ka)}{k^2}
+    =\pi^2\Bigl(\frac{a}{2\pi}-\frac{a^2}{4\pi^2}\Bigr)
+    =\frac{\pi a}{2}-\frac{a^2}{4}.
+    $$
+    Damit erhält man auch
+    $$
+    \sum_{k=1}^{\infty}\frac{\cos(ka)}{k^2}
+    =\sum_{k=1}^{\infty}\frac{1}{k^2}-\sum_{k=1}^{\infty}\frac{1-\cos(ka)}{k^2}
+    =\frac{\pi^2}{6}-\frac{\pi a}{2}+\frac{a^2}{4}.
+    $$
+
+    Weiter: Konvergenz der Fourier-Reihen in $L^2$.
+
+    Sei $f\in L^2([0,2\pi])$ mit Fourier-Koeffizienten $c_k$. Sei die partielle Summe
+    $$
+    S_n(f)(x)=\sum_{|k|\le n}c_k e^{ikx}.
+    $$
+    Dann gilt (Parseval)
+    $$
+    \|f-S_n(f)\|_2^2=\sum_{|k|>n}|c_k|^2\xrightarrow{\,n\to\infty\,}0,
+    $$
+    da die Reihe $\sum_{k\in\mathbb{Z}}|c_k|^2$ konvergiert. Somit konvergieren die trigonometrischen Polynome $S_n(f)$ gegen $f$ in $L^2$. Insbesondere sind die trigonometrischen Polynome dicht in $L^2([0,2\pi])$.
+
+    Kurznotizen zur Dichte und Projektionen:
+    - Für jedes $f\in L^2$ gilt $S_n(f)\to f$ in $L^2$.
+    - Die orthogonalen Projektionen auf die Räume der trigonometrischen Polynome liefern die bestmöglichen $L^2$-Approximationen.
+    - Daraus folgt, dass für jede $\varepsilon>0$ ein trigonometrisches Polynom $T$ existiert mit $\|f-T\|_2<\varepsilon$.
 \end{beweisbox}
 
 \begin{satz}{L\textsuperscript{2}-Konvergenz}
@@ -172,45 +287,149 @@ COMING SOON
 \end{satz}
 
 \begin{beweisbox}
-COMING SOON
-\end{beweisbox}
+    Ohne Beschränkung der Allgemeinheit  $f$ reellwertig (sonst werden Real- und Imaginärteile getrennt).
 
-\begin{satz}{Gleichmäßige Konvergenz}
-    Sei \(f:\mathbb{R}\to\mathbb{C}\) eine \(2\pi\)-periodische, stetige Funktion, die stückweise stetig differenzierbar ist, d.\,h., es existiert eine Unterteilung
-    \[
-    0=t_0<t_1<\dots<t_m=2\pi
-    \]
-    von \([0,2\pi]\), sodass \(f|_{[t_{j-1},t_j]}\), \(j=1,\dots,m\), stetig differenzierbar ist.
+    Ohne Beschränkung der Allgemeinheit  $\|f\|_{\infty}\le 1$ (sonst $\tilde f(x):=\dfrac{f(x)}{M},\;M=\sup_{x\in[0,2\pi]}|f(x)|$).
 
-    Dann konvergiert die Fourier-Reihe von \(f\) gleichmäßig gegen \(f\).
+    Sei $\varepsilon>0$. Dann existieren $2\pi$-periodische Treppenfunktionen $\varphi_{\varepsilon},\psi_{\varepsilon}:\mathbb{R}\to\mathbb{R}$ mit
+    $$
+    -1\le \varphi_{\varepsilon}\le f\le \psi_{\varepsilon}\le 1
+    $$
+    und
+    $$
+    \max_{x\in[0,2\pi]}|\psi_{\varepsilon}(x)-\varphi_{\varepsilon}(x)| \le \frac{\varepsilon^{2}}{16\pi}.
+    $$
 
-    Insbesondere gilt
-    \[
-    \|S_n(f)-f\|_{\infty}\;\xrightarrow[n\to\infty]{}\;0,
-    \]
-    falls \(f\) stetig und stückweise stetig differenzierbar ist.\end{satz}
+    Dann gilt punktweise
+    $$
+    |f-\varphi_{\varepsilon}|^{2} \le |\psi_{\varepsilon}-\varphi_{\varepsilon}|^{2}
+    = |\psi_{\varepsilon}-\varphi_{\varepsilon}|\cdot|\psi_{\varepsilon}-\varphi_{\varepsilon}|
+    \le |\psi_{\varepsilon}-\varphi_{\varepsilon}|\cdot\big(|\psi_{\varepsilon}|+|\varphi_{\varepsilon}|\big)
+    \le 2\,|\psi_{\varepsilon}-\varphi_{\varepsilon}|,
+    $$
+    da $|\psi_{\varepsilon}|\le1$ und $|\varphi_{\varepsilon}|\le1$. Integration über $[0,2\pi]$ liefert
+    $$
+    \int_{0}^{2\pi}|f-\varphi_{\varepsilon}|^{2}\,dx
+    \le 2\int_{0}^{2\pi}|\psi_{\varepsilon}-\varphi_{\varepsilon}|\,dx
+    \le 2\cdot 2\pi\cdot \max_{[0,2\pi]}|\psi_{\varepsilon}-\varphi_{\varepsilon}|
+    \le 4\pi\cdot\frac{\varepsilon^{2}}{16\pi}=\frac{\varepsilon^{2}}{4}.
+    $$
+    Also
+    $$
+    \|f-\varphi_{\varepsilon}\|_{2}^{2}\le \frac{\varepsilon^{2}}{4}\quad\Rightarrow\quad
+    \|f-\varphi_{\varepsilon}\|_{2}\le \frac{\varepsilon}{2}.
+    $$
 
-\begin{beweisbox}
-COMING SOON
+    Da $\varphi_{\varepsilon}$ eine Treppenfunktion ist, konvergiert ihre Fourier-Reihe in $L^{2}$ gegen $\varphi_{\varepsilon}$. Es gibt also $N_{\varepsilon}$ mit
+    $$
+    \|S_{n}(\varphi_{\varepsilon})-\varphi_{\varepsilon}\|_{2}\le \frac{\varepsilon}{2}
+    \quad\text{für alle }n\ge N_{\varepsilon},
+    $$
+    wobei $S_{n}$ die $n$-te Fourier-Partialsumme bezeichne.
+
+    Für $n\ge N_{\varepsilon}$ folgt dann mittels Linearität und der Dreiecksungleichung
+    $$
+    \|f-S_{n}(f)\|_{2}
+    = \|(f-\varphi_{\varepsilon}) - S_{n}(f-\varphi_{\varepsilon}) + (\varphi_{\varepsilon}-S_{n}(\varphi_{\varepsilon}))\|_{2}
+    \le \|(f-\varphi_{\varepsilon})-S_{n}(f-\varphi_{\varepsilon})\|_{2} + \|\varphi_{\varepsilon}-S_{n}(\varphi_{\varepsilon})\|_{2}.
+    $$
+    Der erste Term ist höchstens $\|f-\varphi_{\varepsilon}\|_{2}$ (stets beschränkt durch diese Näherung), also insgesamt
+    $$
+    \|f-S_{n}(f)\|_{2} \le \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
+    $$
+
+    Damit gilt $S_{n}(f)\to f$ in $L^{2}$ (und man erhält die entsprechende Parseval-Identität im Grenzfall). 
+    q.e.d.
 \end{beweisbox}
 
 \begin{bemerkungbox}
-    \textcircled{1}\; Satz 1.2.7 lässt sich auf Funktionen mit Unstetigkeitsstellen verallgemeinern:
+    $L^2$-Konvergenz ist schwach; für glattere Funktionen $f$ konvergiert die Fourier-Reihe gleichmäßig gegen $f$ .
+\end{bemerkungbox}
 
-    Sei $f\in\mathcal{R}[0,2\pi]$ eine $2\pi$-periodische Funktion, die in $[0,2\pi]$ stückweise stetig-differenzierbar ist.
-    Dann konvergiert die Fourier-Reihe von $f$ auf ganz $[0,2\pi]$ punktweise gegen $f$ und gleichmäßig auf jedem abgeschlossenen Teilintervall, auf dem $f$ stetig ist.
+\begin{satz}{Gleichmäßige Konvergenz}
+    Sei $f:\mathbb{R}\to\mathbb{C}$ eine $2\pi$-periodische, stetige Funktion, die stückweise stetig differenzierbar ist, d.\,h., es existiert eine Unterteilung
+    $$
+    0=t_0<t_1<\dots<t_m=2\pi
+    $$
+    von $[0,2\pi]$, sodass $f|_{[t_{j-1},t_j]}$, $j=1,\dots,m$, stetig differenzierbar ist.
 
-    Insbesondere gilt in jeder der Unstetigkeitsstellen $\xi:=x_j$:
-    \[
-    \lim_{n\to\infty} s_n(\xi) \;=\; \frac{f(\xi_-)+f(\xi_+)}{2}.
-    \]
+    Dann konvergiert die Fourier-Reihe von $f$ gleichmäßig gegen $f$.
 
-    \bigskip
+    Insbesondere gilt
+    $$
+    \|S_n(f)-f\|_{\infty}\;\xrightarrow[n\to\infty]{}\;0,
+    $$
+    falls $f$ stetig und stückweise stetig differenzierbar ist.
+\end{satz}
 
-    \textcircled{2}\; Unterschied zu den Taylor-Reihen:
+\begin{beweisbox}
+    Sei $f$ stückweise $C^1$ auf $[0,2\pi]$ und sei für die Zerlegung 
+    $0=t_0<t_1<\dots<t_m=2\pi$ auf jedem Intervall $[t_{i-1},t_i]$ die Ableitung 
+    stetig. Bezeichne $ \varphi_i:[t_{i-1},t_i]\to\mathbb C$ die stetige Ableitung von $f|_{[t_{i-1},t_i]}$ und definiere
+    $$
+    \varphi(x)=\varphi_i(x)\quad\text{für }x\in[t_{i-1},t_i].
+    $$
+    Dann ist $\varphi$ stückweise stetig auf $[0,2\pi]$ und damit quadratintegrierbar, $\varphi\in L^2([0,2\pi])$.
 
-    \begin{itemize}
-    \item für T.\,R.: $f$ unendlich oft differenzierbare Funktion.
-    \item für F.\,R.: $f$ stückweise stetig-differenzierbar (insbesondere stückweise stetig).
-    \end{itemize}
+    Für $k\in\mathbb Z$ sei $e_k(x)=\mathrm e^{\mathrm i k x}$ und
+    $$
+    y_k:=\frac{1}{2\pi}\langle \varphi,e_k\rangle=\frac{1}{2\pi}\int_0^{2\pi}\varphi(x)\mathrm e^{-\mathrm i k x}\,\mathrm dx.
+    $$
+    Nach Parseval gilt
+    $$
+    \sum_{k\in\mathbb Z}|y_k|^2=\frac{1}{2\pi}\|\varphi\|_{L^2}^2<\infty.
+    $$
+
+    Sei $c_k$ der Fourier-Koeffizient von $f$,
+    $$
+    c_k=\frac{1}{2\pi}\int_0^{2\pi} f(x)\mathrm e^{-\mathrm i k x}\,\mathrm dx.
+    $$
+    Auf jedem Intervall $[t_{i-1},t_i]$ integrieren wir partiell:
+    $$
+    \int_{t_{i-1}}^{t_i} f(x)\mathrm e^{-\mathrm i k x}\,\mathrm dx
+    = \Big[ f(x)\frac{1}{-\mathrm i k}\mathrm e^{-\mathrm i k x}\Big]_{t_{i-1}}^{t_i}
+    + \frac{1}{\mathrm i k}\int_{t_{i-1}}^{t_i}\varphi(x)\mathrm e^{-\mathrm i k x}\,\mathrm dx.
+    $$
+    Summiert man über alle Intervalle, heben sich die Randterme wegen der Periodizität und Stetigkeit von $f$ gegenseitig auf (insbesondere $f(0)=f(2\pi)$). Somit folgt für $k\neq0$
+    $$
+    c_k=\frac{1}{2\pi}\cdot\frac{1}{\mathrm i k}\int_0^{2\pi}\varphi(x)\mathrm e^{-\mathrm i k x}\,\mathrm dx
+    =\frac{1}{\mathrm i k}\,y_k.
+    $$
+    Daraus erhält man
+    $$
+    |c_k|=\frac{1}{|k|}\,|y_k|.
+    $$
+
+    Nun wendet man die Cauchy–Schwarz-Ungleichung an:
+    $$
+    \sum_{k\neq0}|c_k|=\sum_{k\neq0}\frac{1}{|k|}\,|y_k|
+    \le\Big(\sum_{k\neq0}\frac{1}{k^2}\Big)^{1/2}\Big(\sum_{k\in\mathbb Z}|y_k|^2\Big)^{1/2}<\infty.
+    $$
+    Damit ist die Fourierreihe $\sum_{k\in\mathbb Z} c_k\mathrm e^{\mathrm i k x}$ absolut und damit gleichmäßig konvergent gegen eine stetige Funktion $g$. Weiter gilt wegen der Quadrat-summierbarkeit der Koeffizienten auch Konvergenz in $L^2$ gegen dieselbe $g$, also
+    $$
+    \|S_n(f)-g\|_{L^2}\to0\quad(n\to\infty),
+    $$
+    wobei $S_n(f)$ die $n$-te Partialsumme der Fourierreihe von $f$ ist. Da $S_n(f)$ punktweise (und gleichmäßig) gegen $g$ konvergiert und die $S_n(f)$ die Fourierpartialsummen von $f$ sind, folgt aus der Eindeutigkeit der $L^2$-Grenzwerte, dass $f=g$ fast überall. Weil $f$ und $g$ stetig sind, folgt $f\equiv g$ auf $[0,2\pi]$.
+
+    Damit ist gezeigt: Für stückweise $C^1$ und stetiges $f$ haben die Fourier-Koeffizienten $(c_k)$ Summen der Beträge endlich, die Fourierreihe konvergiert gleichmäßig gegen $f$. $\square$
+\end{beweisbox}
+
+\begin{bemerkungbox}
+    \begin{enumerate}
+        \item Satz 1.2.7 lässt sich auf Funktionen mit Unstetigkeitsstellen verallgemeinern:
+
+            Sei $f\in\mathcal{R}[0,2\pi]$ eine $2\pi$-periodische Funktion, die in $[0,2\pi]$ stückweise stetig-differenzierbar ist.
+            Dann konvergiert die Fourier-Reihe von $f$ auf ganz $[0,2\pi]$ punktweise gegen $f$ und gleichmäßig auf jedem abgeschlossenen Teilintervall, auf dem $f$ stetig ist.
+
+            Insbesondere gilt in jeder der Unstetigkeitsstellen $\xi:=x_j$:
+            $$
+            \lim_{n\to\infty} s_n(\xi) \;=\; \frac{f(\xi_-)+f(\xi_+)}{2}.
+            $$
+
+        \item Unterschied zu den Taylor-Reihen:
+            \begin{itemize}
+            \item für T.\,R.: $f$ unendlich oft differenzierbare Funktion.
+            \item für F.\,R.: $f$ stückweise stetig-differenzierbar (insbesondere stückweise stetig).
+            \end{itemize}
+    \end{enumerate}
 \end{bemerkungbox}

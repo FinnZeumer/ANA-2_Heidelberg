@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.24)  9 JUL 2026 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.24)  9 JUL 2026 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -700,6 +700,14 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \xmathstrut@dim=\dimen311
 ) (/usr/share/texlive/texmf-dist/tex/generic/alphalph/alphalph.sty
 Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip78
+\enit@outerparindent=\dimen312
+\enit@toks=\toks43
+\enit@inbox=\box81
+\enit@count@id=\count327
+\enitdp@description=\count328
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -711,18 +719,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks43
-\inpenc@posthook=\toks44
+\inpenc@prehook=\toks44
+\inpenc@posthook=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
-\babel@savecnt=\count327
-\U@D=\dimen312
+\babel@savecnt=\count329
+\U@D=\dimen313
 \l@unhyphenated=\language89
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
-\bbl@dirlevel=\count328
+\bbl@dirlevel=\count330
  (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2024/01/19 v2.14 German support for babel (post-1996 orthography)
  (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
@@ -770,50 +778,50 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count329
-\Gm@cntv=\count330
-\c@Gm@tempcnt=\count331
-\Gm@bindingoffset=\dimen313
-\Gm@wd@mp=\dimen314
-\Gm@odd@mp=\dimen315
-\Gm@even@mp=\dimen316
-\Gm@layoutwidth=\dimen317
-\Gm@layoutheight=\dimen318
-\Gm@layouthoffset=\dimen319
-\Gm@layoutvoffset=\dimen320
-\Gm@dimlist=\toks45
+\Gm@cnth=\count331
+\Gm@cntv=\count332
+\c@Gm@tempcnt=\count333
+\Gm@bindingoffset=\dimen314
+\Gm@wd@mp=\dimen315
+\Gm@odd@mp=\dimen316
+\Gm@even@mp=\dimen317
+\Gm@layoutwidth=\dimen318
+\Gm@layoutheight=\dimen319
+\Gm@layouthoffset=\dimen320
+\Gm@layoutvoffset=\dimen321
+\Gm@dimlist=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2024-01-25 v3.3.10 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count332
-\l__siunitx_number_exponent_fixed_int=\count333
-\l__siunitx_number_min_decimal_int=\count334
-\l__siunitx_number_min_integer_int=\count335
-\l__siunitx_number_round_precision_int=\count336
-\l__siunitx_number_lower_threshold_int=\count337
-\l__siunitx_number_upper_threshold_int=\count338
-\l__siunitx_number_group_first_int=\count339
-\l__siunitx_number_group_size_int=\count340
-\l__siunitx_number_group_minimum_int=\count341
-\l__siunitx_angle_tmp_dim=\dimen321
-\l__siunitx_angle_marker_box=\box81
-\l__siunitx_angle_unit_box=\box82
-\l__siunitx_compound_count_int=\count342
+\l__siunitx_number_uncert_offset_int=\count334
+\l__siunitx_number_exponent_fixed_int=\count335
+\l__siunitx_number_min_decimal_int=\count336
+\l__siunitx_number_min_integer_int=\count337
+\l__siunitx_number_round_precision_int=\count338
+\l__siunitx_number_lower_threshold_int=\count339
+\l__siunitx_number_upper_threshold_int=\count340
+\l__siunitx_number_group_first_int=\count341
+\l__siunitx_number_group_size_int=\count342
+\l__siunitx_number_group_minimum_int=\count343
+\l__siunitx_angle_tmp_dim=\dimen322
+\l__siunitx_angle_marker_box=\box82
+\l__siunitx_angle_unit_box=\box83
+\l__siunitx_compound_count_int=\count344
  (/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 )
-\l__siunitx_table_tmp_box=\box83
-\l__siunitx_table_tmp_dim=\dimen322
-\l__siunitx_table_column_width_dim=\dimen323
-\l__siunitx_table_integer_box=\box84
-\l__siunitx_table_decimal_box=\box85
-\l__siunitx_table_uncert_box=\box86
-\l__siunitx_table_before_box=\box87
-\l__siunitx_table_after_box=\box88
-\l__siunitx_table_before_dim=\dimen324
-\l__siunitx_table_carry_dim=\dimen325
-\l__siunitx_unit_tmp_int=\count343
-\l__siunitx_unit_position_int=\count344
-\l__siunitx_unit_total_int=\count345
+\l__siunitx_table_tmp_box=\box84
+\l__siunitx_table_tmp_dim=\dimen323
+\l__siunitx_table_column_width_dim=\dimen324
+\l__siunitx_table_integer_box=\box85
+\l__siunitx_table_decimal_box=\box86
+\l__siunitx_table_uncert_box=\box87
+\l__siunitx_table_before_box=\box88
+\l__siunitx_table_after_box=\box89
+\l__siunitx_table_before_dim=\dimen325
+\l__siunitx_table_carry_dim=\dimen326
+\l__siunitx_unit_tmp_int=\count345
+\l__siunitx_unit_position_int=\count346
+\l__siunitx_unit_total_int=\count347
 ) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2023/07/07 v3.41 KOMA-Script package (end user interface for scrlayer)
  (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty
@@ -858,41 +866,41 @@ Package: lastpage 2023/10/14 v2.0e lastpage: 2.09 or 2e? (HMM)
 Package: lastpage2e 2023/10/14 v2.0e Decide which 2e lastpage version to use (HMM)
  (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
 Package: lastpagemodern 2023-10-14 v2.0e Refers to last page's name (HMM; JPG)
-\c@lastpagecount=\count346
+\c@lastpagecount=\count348
 ) 
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 140.
+Package hyperref Info: Option `colorlinks' set `true' on input line 142.
  (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
-\LTleft=\skip78
-\LTright=\skip79
-\LTpre=\skip80
-\LTpost=\skip81
-\LTchunksize=\count347
-\LTcapwidth=\dimen326
-\LT@head=\box89
-\LT@firsthead=\box90
-\LT@foot=\box91
-\LT@lastfoot=\box92
-\LT@gbox=\box93
-\LT@cols=\count348
-\LT@rows=\count349
-\c@LT@tables=\count350
-\c@LT@chunks=\count351
-\LT@p@ftn=\toks46
+\LTleft=\skip79
+\LTright=\skip80
+\LTpre=\skip81
+\LTpost=\skip82
+\LTchunksize=\count349
+\LTcapwidth=\dimen327
+\LT@head=\box90
+\LT@firsthead=\box91
+\LT@foot=\box92
+\LT@lastfoot=\box93
+\LT@gbox=\box94
+\LT@cols=\count350
+\LT@rows=\count351
+\c@LT@tables=\count352
+\c@LT@chunks=\count353
+\LT@p@ftn=\toks47
 )
-Class scrreprt Info: longtable captions redefined on input line 150.
+Class scrreprt Info: longtable captions redefined on input line 152.
  (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
-\everycr=\toks47
-\minrowclearance=\skip82
-\rownum=\count352
+\everycr=\toks48
+\minrowclearance=\skip83
+\rownum=\count354
 ) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen327
-\WF@size=\dimen328
-\c@WF@wrappedlines=\count353
-\WF@box=\box94
-\WF@everypar=\toks48
+\wrapoverhang=\dimen328
+\WF@size=\dimen329
+\c@WF@wrappedlines=\count355
+\WF@box=\box95
+\WF@everypar=\toks49
 Package: wrapfig 2003/01/31  v 3.6
 )
 
@@ -919,23 +927,23 @@ Package: info-boxen
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count354
-\lst@gtempboxa=\box95
-\lst@token=\toks49
-\lst@length=\count355
-\lst@currlwidth=\dimen329
-\lst@column=\count356
-\lst@pos=\count357
-\lst@lostspace=\dimen330
-\lst@width=\dimen331
-\lst@newlines=\count358
-\lst@lineno=\count359
-\lst@maxwidth=\dimen332
+\lst@mode=\count356
+\lst@gtempboxa=\box96
+\lst@token=\toks50
+\lst@length=\count357
+\lst@currlwidth=\dimen330
+\lst@column=\count358
+\lst@pos=\count359
+\lst@lostspace=\dimen331
+\lst@width=\dimen332
+\lst@newlines=\count360
+\lst@lineno=\count361
+\lst@maxwidth=\dimen333
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count360
-\lst@skipnumbers=\count361
-\lst@framebox=\box96
+\c@lstnumber=\count362
+\lst@skipnumbers=\count363
+\lst@framebox=\box97
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
@@ -945,16 +953,16 @@ Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
 )
-\c@tcblisting=\count362
+\c@tcblisting=\count364
 )) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
 (/usr/share/texlive/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box97
-\tcb@totalupperbox=\box98
-\tcb@totallowerbox=\box99
+\tcb@testbox=\box98
+\tcb@totalupperbox=\box99
+\tcb@totallowerbox=\box100
 ) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
 (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
@@ -963,7 +971,7 @@ Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 ) (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box100
+\l__tikzfill_img_box=\box101
 )) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
 )) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
@@ -972,25 +980,25 @@ Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
 Package: expl3 2024-01-22 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count363
-\l__pdf_internal_box=\box101
+\l__color_backend_stack_int=\count365
+\l__pdf_internal_box=\box102
 ))
 Package: xparse 2023-10-10 L3 Experimental document command parser
 )
-\c@DefCounter=\count364
+\c@DefCounter=\count366
 ) (./styling/commands/general_short_commands.sty (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count365
+\c@subfigure=\count367
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count366
+\c@subtable=\count368
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count367
-\float@exts=\toks50
-\float@box=\box102
-\@float@everytoks=\toks51
-\@floatcapt=\box103
+\c@float@type=\count369
+\float@exts=\toks51
+\float@box=\box103
+\@float@everytoks=\toks52
+\@floatcapt=\box104
 ))
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
@@ -1018,17 +1026,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count368
-\scratchdimen=\dimen333
-\scratchbox=\box104
-\nofMPsegments=\count369
-\nofMParguments=\count370
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count371
-\MPscratchDim=\dimen334
-\MPnumerator=\count372
-\makeMPintoPDFobject=\count373
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count370
+\scratchdimen=\dimen334
+\scratchbox=\box105
+\nofMPsegments=\count371
+\nofMParguments=\count372
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count373
+\MPscratchDim=\dimen335
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
+\everyMPtoPDFconversion=\toks54
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1062,7 +1070,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count374
+\BKM@id=\count376
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1102,7 +1110,7 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 11.
-\c@lstlisting=\count375
+\c@lstlisting=\count377
 \openout2 = `pages/title.aux'.
 
  (./pages/title.tex
@@ -1203,379 +1211,121 @@ chapter B.
 pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36     \chapter{Fourierreihen}
-                                
+l.52 ...egriffe, der Raum $\mathbf{\mathbb{R}^n}$}
+                                                  
 chapter 1.
-(./pages/chapter/K1/Einleitung.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 52.
+
+(./pages/chapter/K2/Einleitung.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 \newpage
+l.6 \newpage
              [1
 
-]) (./pages/chapter/K1/1.1.tex
+]) (./pages/chapter/K2/2.1.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 13.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 16.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 32.
 [2{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
-<img/K1/ANA2__StuckweiseStetig__K1.pdf, id=132, 519.9425pt x 442.65375pt>
-File: img/K1/ANA2__StuckweiseStetig__K1.pdf Graphic file (type pdf)
-<use img/K1/ANA2__StuckweiseStetig__K1.pdf>
-Package pdftex.def Info: img/K1/ANA2__StuckweiseStetig__K1.pdf  used on input line 68.
-(pdftex.def)             Requested size: 261.94617pt x 223.00815pt.
+<img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf, id=120, 983.675pt x 222.8325pt>
+File: img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf Graphic file (type pdf)
+<use img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf>
+Package pdftex.def Info: img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf  used on input line 110.
+(pdftex.def)             Requested size: 436.57251pt x 98.89664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 68.
+(caption)                particular \caption on input line 110.
 See the caption package documentation for explanation.
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 73.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package hyperref Info: bookmark level for unknown satz defaults to 0 on input line 92.
- [3{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./img/K1/ANA2__StuckweiseStetig__K1.pdf>]
-<img/K1/Sesqi_Bem.pdf, id=145, 447.6725pt x 241.90375pt>
-File: img/K1/Sesqi_Bem.pdf Graphic file (type pdf)
-<use img/K1/Sesqi_Bem.pdf>
-Package pdftex.def Info: img/K1/Sesqi_Bem.pdf  used on input line 150.
-(pdftex.def)             Requested size: 371.0893pt x 200.52536pt.
-
+<img/K2/VerschiedeneNormen.pdf, id=121, 146.5475pt x 146.5475pt>
+File: img/K2/VerschiedeneNormen.pdf Graphic file (type pdf)
+<use img/K2/VerschiedeneNormen.pdf>
+Package pdftex.def Info: img/K2/VerschiedeneNormen.pdf  used on input line 150.
+(pdftex.def)             Requested size: 174.62633pt x 174.62622pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 150.
 See the caption package documentation for explanation.
 
-[4]
-Overfull \hbox (8.40099pt too wide) detected at line 167
-\OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i\OML/lmm/m/it/10 ;  \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u \OT1/lmr/m/n/10 + \OML/lmm/m/it/10 w\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 = \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 + \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; w\OMS/lmsy/m/n/10 i \OML/lmm/m/it/10 ; [] [] \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 = []\OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; u\OMS/lmsy/m/n/10 i\OML/lmm/m/it/10 ;  \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v \OT1/lmr/m/n/10 + \OML/lmm/m/it/10 u; w\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 = \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 v; w\OMS/lmsy/m/n/10 i \OT1/lmr/m/n/10 + \OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 u; w\OMS/lmsy/m/n/10 i\OML/lmm/m/it/10 :
- []
-
-[5 <./img/K1/Sesqi_Bem.pdf>]
-<img/K1/ANA2__Cauchy_schwarz_ungleichung__K1.pdf, id=179, 647.41875pt x 395.4775pt>
-File: img/K1/ANA2__Cauchy_schwarz_ungleichung__K1.pdf Graphic file (type pdf)
-<use img/K1/ANA2__Cauchy_schwarz_ungleichung__K1.pdf>
-Package pdftex.def Info: img/K1/ANA2__Cauchy_schwarz_ungleichung__K1.pdf  used on input line 220.
-(pdftex.def)             Requested size: 371.0893pt x 226.67969pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 220.
-See the caption package documentation for explanation.
-
-[6 <./img/K1/ANA2__Cauchy_schwarz_ungleichung__K1.pdf>] [7]
-<img/K1/ANA2__l2Stetigkeit__K1.pdf, id=200, 374.39874pt x 283.0575pt>
-File: img/K1/ANA2__l2Stetigkeit__K1.pdf Graphic file (type pdf)
-<use img/K1/ANA2__l2Stetigkeit__K1.pdf>
-Package pdftex.def Info: img/K1/ANA2__l2Stetigkeit__K1.pdf  used on input line 310.
-(pdftex.def)             Requested size: 227.62206pt x 172.09036pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 310.
-See the caption package documentation for explanation.
-
-[8]
-<img/K1/L2_Konvergenz_Flache.pdf, id=210, 371.3875pt x 283.0575pt>
-File: img/K1/L2_Konvergenz_Flache.pdf Graphic file (type pdf)
-<use img/K1/L2_Konvergenz_Flache.pdf>
-Package pdftex.def Info: img/K1/L2_Konvergenz_Flache.pdf  used on input line 313.
-(pdftex.def)             Requested size: 364.19667pt x 277.58449pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 313.
-See the caption package documentation for explanation.
-
-[9 <./img/K1/ANA2__l2Stetigkeit__K1.pdf> <./img/K1/L2_Konvergenz_Flache.pdf
-
-pdfTeX warning: pdflatex (file ./img/K1/L2_Konvergenz_Flache.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<img/K1/Beispiel_L2_Konvergenz.pdf, id=220, 433.62pt x 289.08pt>
-File: img/K1/Beispiel_L2_Konvergenz.pdf Graphic file (type pdf)
-<use img/K1/Beispiel_L2_Konvergenz.pdf>
-Package pdftex.def Info: img/K1/Beispiel_L2_Konvergenz.pdf  used on input line 347.
-(pdftex.def)             Requested size: 305.59941pt x 203.74408pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 347.
-See the caption package documentation for explanation.
-
-[10 <./img/K1/Beispiel_L2_Konvergenz.pdf>]
-
-LaTeX Warning: Hyper reference `def:NormRaum' on page 11 undefined on input line 380.
-
-
-LaTeX Warning: Reference `def:NormRaum' on page 11 undefined on input line 380.
-
-<img/K1/ANA2__StrengDefinit__K1.pdf, id=250, 447.6725pt x 204.765pt>
-File: img/K1/ANA2__StrengDefinit__K1.pdf Graphic file (type pdf)
-<use img/K1/ANA2__StrengDefinit__K1.pdf>
-Package pdftex.def Info: img/K1/ANA2__StrengDefinit__K1.pdf  used on input line 412.
-(pdftex.def)             Requested size: 349.25934pt x 159.75352pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 412.
-See the caption package documentation for explanation.
-
-[11 <./img/K1/ANA2__StrengDefinit__K1.pdf>]
-<img/K1/Orthogonale_Funktionen.pdf, id=269, 867.24pt x 361.35pt>
-File: img/K1/Orthogonale_Funktionen.pdf Graphic file (type pdf)
-<use img/K1/Orthogonale_Funktionen.pdf>
-Package pdftex.def Info: img/K1/Orthogonale_Funktionen.pdf  used on input line 448.
-(pdftex.def)             Requested size: 436.57251pt x 181.90411pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 448.
-See the caption package documentation for explanation.
-
-[12 <./img/K1/Orthogonale_Funktionen.pdf>]
-<img/K1/Orthos_alle.pdf, id=322, 1445.4pt x 1084.05pt>
-File: img/K1/Orthos_alle.pdf Graphic file (type pdf)
-<use img/K1/Orthos_alle.pdf>
-Package pdftex.def Info: img/K1/Orthos_alle.pdf  used on input line 542.
-(pdftex.def)             Requested size: 436.57251pt x 327.43404pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 542.
-See the caption package documentation for explanation.
-
-[13] [14 <./img/K1/Orthos_alle.pdf>]
-<img/K1/ANA2__Linear_Func_periodisch__K1.pdf, id=429, 605.26125pt x 256.96pt>
-File: img/K1/ANA2__Linear_Func_periodisch__K1.pdf Graphic file (type pdf)
-<use img/K1/ANA2__Linear_Func_periodisch__K1.pdf>
-Package pdftex.def Info: img/K1/ANA2__Linear_Func_periodisch__K1.pdf  used on input line 582.
-(pdftex.def)             Requested size: 371.0893pt x 157.54523pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 582.
-See the caption package documentation for explanation.
-
-[15
-
- <./img/K1/ANA2__Linear_Func_periodisch__K1.pdf>] [16]
-
-Package tcolorbox Warning: The upper box part has become overfull on input line 710.
-
-[17]) (./pages/chapter/K1/1.2.tex
-<img/K1/complex_subplots_improved_xSetTo0.pdf, id=446, 790.89018pt x 846.01624pt>
-File: img/K1/complex_subplots_improved_xSetTo0.pdf Graphic file (type pdf)
-<use img/K1/complex_subplots_improved_xSetTo0.pdf>
-Package pdftex.def Info: img/K1/complex_subplots_improved_xSetTo0.pdf  used on input line 36.
-(pdftex.def)             Requested size: 455.24411pt x 486.97192pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 36.
-See the caption package documentation for explanation.
-
-[18
-
-]
-<img/K1/vector_addition_tip_on_tail_improved_xSetTo0.pdf, id=454, 568.74788pt x 586.5174pt>
-File: img/K1/vector_addition_tip_on_tail_improved_xSetTo0.pdf Graphic file (type pdf)
-<use img/K1/vector_addition_tip_on_tail_improved_xSetTo0.pdf>
-Package pdftex.def Info: img/K1/vector_addition_tip_on_tail_improved_xSetTo0.pdf  used on input line 41.
-(pdftex.def)             Requested size: 386.96027pt x 399.06819pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 41.
-See the caption package documentation for explanation.
-
-[19 <./img/K1/complex_subplots_improved_xSetTo0.pdf>] [20 <./img/K1/vector_addition_tip_on_tail_improved_xSetTo0.pdf>] [21]
-<img/K1/Treppenfunktion.pdf, id=606, 501.875pt x 259.97125pt>
-File: img/K1/Treppenfunktion.pdf Graphic file (type pdf)
-<use img/K1/Treppenfunktion.pdf>
-Package pdftex.def Info: img/K1/Treppenfunktion.pdf  used on input line 160.
-(pdftex.def)             Requested size: 386.96027pt x 200.45615pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 160.
-See the caption package documentation for explanation.
-
-[22 <./img/K1/Treppenfunktion.pdf>]
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 198.
- (/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 198.
-) [23]
-pdfTeX warning (ext4): destination with the same identifier (name{chapter.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.141     \chapter{Altklausuren}
-                                
-chapter 2.
-(./pages/chapter/K7/Klausur_2020.tex
-Underfull \hbox (badness 10000) in paragraph at lines 9--15
+[3 <./img/K2/Bekannte_Metrische_Raeume_Sammlung.pdf>] [4 <./img/K2/VerschiedeneNormen.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 170.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [5{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}] [6] [7]
+Package hyperref Info: bookmark level for unknown satz defaults to 0 on input line 398.
+ [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--26
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--41
+[10]) (./pages/chapter/K2/2.2.tex [11] [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
+) (./pages/chapter/K2/2.3.tex [14]) (./pages/chapter/K2/2.4.tex [15]
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--63
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--83
-
- []
-
-[24
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 84--90
-
- []
-
-[25] [26] [27] [28]) (./pages/chapter/K7/Zweitklausur_2020.tex [29]
-Underfull \hbox (badness 10000) in paragraph at lines 22--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--110
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--127
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 135--145
-
- []
-
-[31] [32] [33] [34]) [35] 
+[16] [17]) [18] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux (./pages/title.aux) (./pages/Vorwort.aux) (./pages/Vorlesungsverzeichnis.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 144 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 41574 strings out of 474222
- 910736 string characters out of 5748733
- 1958975 words of memory out of 5000000
- 62989 multiletter control sequences out of 15000+600000
- 670952 words of font info for 126 fonts, out of 8000000 for 9000
+ 41717 strings out of 474222
+ 910864 string characters out of 5748733
+ 1955975 words of memory out of 5000000
+ 63171 multiletter control sequences out of 15000+600000
+ 664227 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,21n,121p,10949b,1419s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx7.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri7.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (40 pages, 783344 bytes).
+ 124i,23n,121p,10949b,1413s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx7.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (23 pages, 517983 bytes).
 PDF statistics:
- 889 PDF objects out of 1000 (max. 8388607)
- 524 compressed objects within 6 object streams
- 140 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
