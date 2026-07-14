@@ -1,68 +1,65 @@
-\contentsline {satz}{\numberline {1.1.3} -- Lebesgue (Ana 1)}{3}{DefCounter.1.1.3}%
-\contentsline {satz}{\numberline {1.1.11} -- Orthogonalität trigonometrischer Funktionen}{11}{DefCounter.1.1.11}%
-\contentsline {satz}{\numberline {1.2.3} -- Besselsche Ungleichung}{12}{DefCounter.1.2.3}%
-\contentsline {satz}{\numberline {1.2.4} -- Allgemeiner Entwicklungssatz}{13}{DefCounter.1.2.4}%
-\contentsline {satz}{\numberline {1.2.5} -- Hilfssatz:}{13}{DefCounter.1.2.5}%
-\contentsline {satz}{\numberline {1.2.6} -- L\textsuperscript {2}-Konvergenz}{13}{DefCounter.1.2.6}%
-\contentsline {satz}{\numberline {1.2.7} -- Gleichmäßige Konvergenz}{13}{DefCounter.1.2.7}%
-\contentsline {satz}{\numberline {2.1.10} -- Bolzano-Weierstraß}{19}{DefCounter.2.1.10}%
-\contentsline {satz}{\numberline {2.1.11} -- Äquivalenz der Normen}{19}{DefCounter.2.1.11}%
-\contentsline {satz}{\numberline {2.1.13} -- Eigenschaften von Cauchy-Folgen}{20}{DefCounter.2.1.13}%
-\contentsline {satz}{\numberline {2.1.16} -- Vollständigkeit von $\mathbb {R}^n$}{20}{DefCounter.2.1.16}%
-\contentsline {satz}{\numberline {2.2.2} -- Hausdorff'sches Trennungsaxiom}{21}{DefCounter.2.2.2}%
-\contentsline {satz}{\numberline {2.2.3} -- Eigenschaften offener Mengen}{21}{DefCounter.2.2.3}%
-\contentsline {satz}{\numberline {2.2.4} -- Eigenschaften abgeschlossener Mengen}{21}{DefCounter.2.2.4}%
-\contentsline {satz}{\numberline {2.2.8} -- Hausdorff'sches Trennungsaxiom}{22}{DefCounter.2.2.8}%
-\contentsline {satz}{\numberline {2.2.9} -- Eigenschaften offener Mengen}{22}{DefCounter.2.2.9}%
-\contentsline {satz}{\numberline {2.2.10} -- Eigenschaften abgeschlossener Mengen}{22}{DefCounter.2.2.10}%
-\contentsline {satz}{\numberline {2.2.13} -- Charaktersierung von Abschluss, Inneres und Rand}{22}{Item.26}%
-\contentsline {satz}{\numberline {2.2.14} -- Charaktersierung des Abschlusses anhand von Folgen}{23}{DefCounter.2.2.14}%
-\contentsline {satz}{\numberline {2.2.15} -- Charaktersierung des Randes anhand von Folgen}{23}{Item.28}%
-\contentsline {satz}{\numberline {2.3.2} -- metrische Räume: Überdeckungskompaktheit $\Leftrightarrow $ Folgenkompaktheit}{24}{DefCounter.2.3.2}%
-\contentsline {satz}{\numberline {2.3.4} -- metrische Räume: Kompakt $\Rightarrow $ abgeschlossen und beschränkt}{24}{DefCounter.2.3.4}%
-\contentsline {satz}{\numberline {2.3.5} -- }{24}{DefCounter.2.3.5}%
-\contentsline {satz}{\numberline {2.3.6} -- Heine--Borel}{24}{DefCounter.2.3.6}%
-\contentsline {satz}{\numberline {2.3.7} -- Hilfssatz}{24}{DefCounter.2.3.7}%
-\contentsline {satz}{\numberline {2.4.9} -- Gram--Schmidt--Verfahren}{27}{DefCounter.2.4.9}%
-\contentsline {satz}{\numberline {3.1.7} -- $\epsilon $-$\delta $-Kriterim der Stetigkeit}{30}{DefCounter.3.1.7}%
-\contentsline {satz}{\numberline {3.1.8} -- Topologisches Kriterium der Stetigkeit}{31}{Item.47}%
-\contentsline {satz}{\numberline {3.2.1} -- Stetigkeit linearer Abbildungen}{32}{DefCounter.3.2.1}%
-\contentsline {satz}{\numberline {3.2.2} -- Vektorraum $\mathcal {L}(V,W)$}{32}{DefCounter.3.2.2}%
-\contentsline {satz}{\numberline {3.3.1} -- Stetiges Bild kompakter Mengen}{35}{DefCounter.3.3.1}%
-\contentsline {satz}{\numberline {3.3.2} -- Satz vom Extremum}{35}{DefCounter.3.3.2}%
-\contentsline {satz}{\numberline {3.3.4} -- Stetiges Bild zusammenhängender Mengen}{35}{DefCounter.3.3.4}%
-\contentsline {satz}{\numberline {3.3.5} -- Stetigkeit der Umkehrfunktion}{35}{DefCounter.3.3.5}%
-\contentsline {satz}{\numberline {3.3.8} -- Lipschitz-stetig $\Rightarrow $ gleichmäßig stetig $\Rightarrow $ stetig }{36}{Item.57}%
-\contentsline {satz}{\numberline {3.3.9} -- Heine: stetige Funktionen auf kompakten Mengen gleichmäßig stetig}{36}{DefCounter.3.3.9}%
-\contentsline {satz}{\numberline {3.4.2} -- Gleichmäßige Konvergenz von Funktionenfolgen}{37}{DefCounter.3.4.2}%
-\contentsline {satz}{\numberline {3.5.3} -- Banachscher Fixpunktsatz}{39}{Item.62}%
-\contentsline {satz}{\numberline {3.5.5} -- Nichtlineare Gleichungssysteme}{39}{DefCounter.3.5.5}%
-\contentsline {satz}{\numberline {4.1.2} -- }{41}{DefCounter.4.1.2}%
-\contentsline {satz}{\numberline {4.1.4} -- Vertauschbarkeit der Differentiationsreihenfolge}{42}{DefCounter.4.1.4}%
-\contentsline {satz}{\numberline {4.2.2} -- Differenzierbarkeit}{43}{Item.70}%
-\contentsline {satz}{\numberline {4.2.4} -- Kettenregel}{43}{DefCounter.4.2.4}%
-\contentsline {satz}{\numberline {4.3.1} -- Mittelwertsatz}{45}{DefCounter.4.3.1}%
-\contentsline {satz}{\numberline {4.4.1} -- Taylor-Formel}{48}{DefCounter.4.4.1}%
-\contentsline {satz}{\numberline {4.5.2} -- Notwendige Bedingung für lokales Extremum}{50}{DefCounter.4.5.2}%
-\contentsline {satz}{\numberline {4.5.3} -- Hinreichende Bedingung für lokales Extremum}{50}{Item.87}%
-\contentsline {satz}{\numberline {4.6.1} -- Sazu über implizite Funktionen}{51}{Item.90}%
-\contentsline {satz}{\numberline {4.6.3} -- Umkehrabbildung}{51}{DefCounter.4.6.3}%
-\contentsline {satz}{\numberline {4.7.2} -- Multiplikatorregel von Lagrange: Notwendige Bedingung 1. Ordnung für lokales Minimum unter Nebenbedingungen}{52}{DefCounter.4.7.2}%
-\contentsline {satz}{\numberline {4.8.2} -- Untermanigfaltigkeit als Graph}{53}{DefCounter.4.8.2}%
-\contentsline {satz}{\numberline {4.8.3} -- Untermanigfaltigkeit als $d$-dimensionale Ebene}{54}{Item.92}%
-\contentsline {satz}{\numberline {4.8.5} -- Parametrisierungssatz}{54}{DefCounter.4.8.5}%
-\contentsline {satz}{\numberline {4.8.7} -- Tangentialraum}{55}{DefCounter.4.8.7}%
-\contentsline {satz}{\numberline {5.1.4} -- DGL $\Leftrightarrow $ Integralgleichung}{57}{DefCounter.5.1.4}%
-\contentsline {satz}{\numberline {5.2.1} -- Existenzsatz von Peano}{58}{DefCounter.5.2.1}%
-\contentsline {satz}{\numberline {5.2.2} -- Fortsetzungssatz}{58}{DefCounter.5.2.2}%
-\contentsline {satz}{\numberline {5.2.4} -- Regularitätssatz}{58}{DefCounter.5.2.4}%
-\contentsline {satz}{\numberline {5.3.3} -- Stabilitäts- und Eindeutigkeitssatz}{59}{DefCounter.5.3.3}%
-\contentsline {satz}{\numberline {5.3.4} -- Existenzsatz von Picard-Lindelöf}{60}{DefCounter.5.3.4}%
-\contentsline {satz}{\numberline {5.3.5} -- Existenzsatz von Picard-Lindelöf II}{60}{DefCounter.5.3.5}%
-\contentsline {satz}{\numberline {5.4.3} -- Globaler Stabilitätssatz}{62}{DefCounter.5.4.3}%
-\contentsline {satz}{\numberline {5.5.2} -- Lösung einer linearen AWA}{63}{Item.102}%
-\contentsline {satz}{\numberline {5.5.3} -- Homogene lineare Systeme}{63}{Item.105}%
-\contentsline {satz}{\numberline {5.5.5} -- Inhomogene lineare Systeme}{64}{Item.108}%
-\contentsline {satz}{\numberline {5.6.2} -- Existenzsatz für lineare RWA}{65}{DefCounter.5.6.2}%
-\contentsline {satz}{\numberline {5.6.3} -- RWA: Lokale Eindeutigkeit}{65}{DefCounter.5.6.3}%
-\contentsline {satz}{\numberline {5.6.4} -- Sturm--Liouville-Probleme}{66}{DefCounter.5.6.4}%
+\contentsline {satz}{\numberline {1.1.3} -- Lebesgue (Ana 1)}{4}{DefCounter.1.1.3}%
+\contentsline {satz}{\numberline {1.1.11} -- Orthogonalität trigonometrischer Funktionen}{13}{DefCounter.1.1.11}%
+\contentsline {satz}{\numberline {1.2.3} -- Besselsche Ungleichung}{23}{DefCounter.1.2.3}%
+\contentsline {satz}{\numberline {1.2.4} -- Allgemeiner Entwicklungssatz für Orthonormalsysteme}{23}{DefCounter.1.2.4}%
+\contentsline {satz}{\numberline {1.2.5} -- Hilfssatz: Konvergenz von Treppenfunktionen}{24}{DefCounter.1.2.5}%
+\contentsline {satz}{\numberline {1.2.6} -- L\textsuperscript {2}-Konvergenz}{26}{DefCounter.1.2.6}%
+\contentsline {satz}{\numberline {1.2.7} -- Gleichmäßige Konvergenz}{27}{DefCounter.1.2.7}%
+\contentsline {satz}{\numberline {2.1.10} -- Bolzano--Weierstraß}{36}{DefCounter.2.1.10}%
+\contentsline {satz}{\numberline {2.1.11} -- Äquivalenz der Normen}{37}{DefCounter.2.1.11}%
+\contentsline {satz}{\numberline {2.1.13} -- Eigenschaften von Cauchy--Folgen}{37}{DefCounter.2.1.13}%
+\contentsline {satz}{\numberline {2.1.16} -- Vollständigkeit von $\mathbb {R}^n$}{38}{DefCounter.2.1.16}%
+\contentsline {satz}{\numberline {2.2.2} -- Hausdorff'sches Trennungsaxiom}{40}{DefCounter.2.2.2}%
+\contentsline {satz}{\numberline {2.2.3} -- Eigenschaften offener Mengen}{40}{DefCounter.2.2.3}%
+\contentsline {satz}{\numberline {2.2.4} -- Eigenschaften abgeschlossener Mengen}{40}{DefCounter.2.2.4}%
+\contentsline {satz}{\numberline {2.2.9} -- Charaktersierung von Abschluss, Inneres und Rand}{41}{Item.41}%
+\contentsline {satz}{\numberline {2.2.10} -- Charaktersierung des Abschlusses anhand von Folgen}{41}{DefCounter.2.2.10}%
+\contentsline {satz}{\numberline {2.2.11} -- Charaktersierung des Randes anhand von Folgen}{41}{Item.43}%
+\contentsline {satz}{\numberline {2.3.2} -- metrische Räume: Überdeckungskompaktheit $\Leftrightarrow $ Folgenkompaktheit}{43}{DefCounter.2.3.2}%
+\contentsline {satz}{\numberline {2.3.4} -- metrische Räume: Kompakt $\Rightarrow $ abgeschlossen und beschränkt}{43}{DefCounter.2.3.4}%
+\contentsline {satz}{\numberline {2.3.5} -- }{43}{DefCounter.2.3.5}%
+\contentsline {satz}{\numberline {2.3.6} -- Heine--Borel}{43}{DefCounter.2.3.6}%
+\contentsline {satz}{\numberline {2.3.7} -- Hilfssatz}{43}{DefCounter.2.3.7}%
+\contentsline {satz}{\numberline {2.4.9} -- Gram--Schmidt--Verfahren}{46}{DefCounter.2.4.9}%
+\contentsline {satz}{\numberline {3.1.7} -- $\epsilon $-$\delta $-Kriterim der Stetigkeit}{49}{DefCounter.3.1.7}%
+\contentsline {satz}{\numberline {3.1.8} -- Topologisches Kriterium der Stetigkeit}{50}{Item.62}%
+\contentsline {satz}{\numberline {3.2.1} -- Stetigkeit linearer Abbildungen}{51}{DefCounter.3.2.1}%
+\contentsline {satz}{\numberline {3.2.2} -- Vektorraum $\mathcal {L}(V,W)$}{51}{DefCounter.3.2.2}%
+\contentsline {satz}{\numberline {3.3.1} -- Stetiges Bild kompakter Mengen}{54}{DefCounter.3.3.1}%
+\contentsline {satz}{\numberline {3.3.2} -- Satz vom Extremum}{54}{DefCounter.3.3.2}%
+\contentsline {satz}{\numberline {3.3.4} -- Stetiges Bild zusammenhängender Mengen}{54}{DefCounter.3.3.4}%
+\contentsline {satz}{\numberline {3.3.5} -- Stetigkeit der Umkehrfunktion}{54}{DefCounter.3.3.5}%
+\contentsline {satz}{\numberline {3.3.8} -- Lipschitz--stetig $\Rightarrow $ gleichmäßig stetig $\Rightarrow $ stetig }{55}{Item.72}%
+\contentsline {satz}{\numberline {3.3.9} -- Heine: stetige Funktionen auf kompakten Mengen gleichmäßig stetig}{55}{DefCounter.3.3.9}%
+\contentsline {satz}{\numberline {3.4.2} -- Gleichmäßige Konvergenz von Funktionenfolgen}{56}{DefCounter.3.4.2}%
+\contentsline {satz}{\numberline {3.5.3} -- Banachscher Fixpunktsatz}{58}{Item.77}%
+\contentsline {satz}{\numberline {3.5.5} -- Nichtlineare Gleichungssysteme}{58}{DefCounter.3.5.5}%
+\contentsline {satz}{\numberline {4.1.2} -- }{60}{DefCounter.4.1.2}%
+\contentsline {satz}{\numberline {4.1.4} -- Vertauschbarkeit der Differentiationsreihenfolge}{61}{DefCounter.4.1.4}%
+\contentsline {satz}{\numberline {4.2.2} -- Differenzierbarkeit}{62}{Item.85}%
+\contentsline {satz}{\numberline {4.2.4} -- Kettenregel}{62}{DefCounter.4.2.4}%
+\contentsline {satz}{\numberline {4.3.1} -- Mittelwertsatz}{64}{DefCounter.4.3.1}%
+\contentsline {satz}{\numberline {4.4.1} -- Taylor-Formel}{67}{DefCounter.4.4.1}%
+\contentsline {satz}{\numberline {4.5.2} -- Notwendige Bedingung für lokales Extremum}{69}{DefCounter.4.5.2}%
+\contentsline {satz}{\numberline {4.5.3} -- Hinreichende Bedingung für lokales Extremum}{69}{Item.102}%
+\contentsline {satz}{\numberline {4.6.1} -- Sazu über implizite Funktionen}{70}{Item.105}%
+\contentsline {satz}{\numberline {4.6.3} -- Umkehrabbildung}{70}{DefCounter.4.6.3}%
+\contentsline {satz}{\numberline {4.7.2} -- Multiplikatorregel von Lagrange: Notwendige Bedingung 1. Ordnung für lokales Minimum unter Nebenbedingungen}{71}{DefCounter.4.7.2}%
+\contentsline {satz}{\numberline {4.8.2} -- Untermanigfaltigkeit als Graph}{72}{DefCounter.4.8.2}%
+\contentsline {satz}{\numberline {4.8.3} -- Untermanigfaltigkeit als $d$-dimensionale Ebene}{73}{Item.107}%
+\contentsline {satz}{\numberline {4.8.5} -- Parametrisierungssatz}{73}{DefCounter.4.8.5}%
+\contentsline {satz}{\numberline {4.8.7} -- Tangentialraum}{74}{DefCounter.4.8.7}%
+\contentsline {satz}{\numberline {5.1.4} -- DGL $\Leftrightarrow $ Integralgleichung}{76}{DefCounter.5.1.4}%
+\contentsline {satz}{\numberline {5.2.1} -- Existenzsatz von Peano}{77}{DefCounter.5.2.1}%
+\contentsline {satz}{\numberline {5.2.2} -- Fortsetzungssatz}{77}{DefCounter.5.2.2}%
+\contentsline {satz}{\numberline {5.2.4} -- Regularitätssatz}{77}{DefCounter.5.2.4}%
+\contentsline {satz}{\numberline {5.3.3} -- Stabilitäts- und Eindeutigkeitssatz}{78}{DefCounter.5.3.3}%
+\contentsline {satz}{\numberline {5.3.4} -- Existenzsatz von Picard-Lindelöf}{79}{DefCounter.5.3.4}%
+\contentsline {satz}{\numberline {5.3.5} -- Existenzsatz von Picard-Lindelöf II}{79}{DefCounter.5.3.5}%
+\contentsline {satz}{\numberline {5.4.3} -- Globaler Stabilitätssatz}{81}{DefCounter.5.4.3}%
+\contentsline {satz}{\numberline {5.5.2} -- Lösung einer linearen AWA}{82}{Item.117}%
+\contentsline {satz}{\numberline {5.5.3} -- Homogene lineare Systeme}{82}{Item.120}%
+\contentsline {satz}{\numberline {5.5.5} -- Inhomogene lineare Systeme}{83}{Item.123}%
+\contentsline {satz}{\numberline {5.6.2} -- Existenzsatz für lineare RWA}{84}{DefCounter.5.6.2}%
+\contentsline {satz}{\numberline {5.6.3} -- RWA: Lokale Eindeutigkeit}{84}{DefCounter.5.6.3}%
+\contentsline {satz}{\numberline {5.6.4} -- Sturm--Liouville-Probleme}{85}{DefCounter.5.6.4}%
