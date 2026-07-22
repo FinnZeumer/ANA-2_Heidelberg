@@ -1,0 +1,161 @@
+\newpage
+\section{Aufgaben mit Schwerpunkt Funktionenraum (Kapitel 1)}
+
+\section*{Aufgabe 1: Kurzfragen (12 Punkte)}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Die Fourier-Reihe einer $2\pi$-periodischen Funktion $f \in R([-\pi, \pi])$ ist gegeben durch
+    \[
+        F_\infty(x) = \sum_{k=-\infty}^{\infty} c_k e^{ikx}.
+    \]
+    Geben Sie die Integralformel für die Koeffizienten $c_k$ an.
+    \vspace{0.2cm}
+    
+    \item Formulieren Sie die Parsevalsche Gleichung (Vollständigkeitsrelation) für die komplexe Fourier-Reihe unter Verwendung der Koeffizienten $c_k$.
+    \vspace{0.2cm}
+    
+    \item Zeigen Sie die Orthogonalitätsrelation für die Exponentialfunktionen:
+    \[
+        \frac{1}{2\pi} \int_{-\pi}^{\pi} e^{imx} \overline{e^{inx}} \, dx = \delta_{mn}
+    \]
+    wobei $\delta_{mn}$ das Kronecker-Delta bezeichnet.
+    \vspace{0.2cm}
+    
+    \item Gegeben sei die trigonometrische Fourier-Reihe:
+    \[
+        F_\infty(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty} \left( a_k \cos(kx) + b_k \sin(kx) \right).
+    \]
+    Wie hängen die Koeffizienten $c_k$ der komplexen Darstellung mit $a_k$ und $b_k$ zusammen für $k > 0$?
+    \vspace{0.2cm}
+    
+    \item Eine Funktion $f: [-\pi, \pi] \to \mathbb{R}$ sei gerade ($f(-x) = f(x)$). Welche Fourier-Koeffizienten $b_k$ verschwinden? Begründen Sie kurz.
+    \vspace{0.2cm}
+    
+    \item Sei $f(x) = x$ für $x \in (-\pi, \pi)$ und $2\pi$-periodisch fortgesetzt. Ist die Fourier-Reihe von $f$ punktweise konvergent im Punkt $x = \pi$? Wenn ja, welchen Wert nimmt sie dort an?
+    \vspace{0.2cm}
+    
+    \item Definieren Sie den Begriff des \textbf{orthogonalen Funktionensystems} $(\phi_n)_{n \in \mathbb{N}}$ auf einem Intervall $[a, b]$ bezüglich eines Skalarprodukts $\langle \cdot, \cdot \rangle$.
+    \vspace{0.2cm}
+    
+    \item Was besagt der Satz über die \textbf{gleichmäßige Konvergenz} einer Fourier-Reihe? Nennen Sie hinreichende Bedingungen an $f$.
+    \vspace{0.2cm}
+    
+    \item Berechnen Sie den Fourier-Koeffizienten $c_0$ für die Funktion $f(x) = x^2$ auf $[-\pi, \pi]$.
+    \vspace{0.2cm}
+    
+    \item Für welche Werte von $k \in \mathbb{Z}$ gilt $c_k = 0$ für eine reelle, gerade Funktion $f$?
+    \vspace{0.2cm}
+    
+    \item Welche Beziehung besteht zwischen den $L^2$-Norm einer Funktion und ihren Fourier-Koeffizienten laut Parseval-Gleichung?
+    \vspace{0.2cm}
+    
+    \item Sei $f$ eine $2\pi$-periodische Funktion mit Fourier-Koeffizienten $c_k$. Wie verhalten sich die Koeffizienten von $f'(x)$ zu denen von $f(x)$?
+    \vspace{0.2cm}
+\end{enumerate}
+
+\newpage
+
+\section*{Aufgabe 2: Fourier-Berechnungen (12 Punkte)}
+\textbf{(a)} Bestimmen Sie die komplexen Fourier-Koeffizienten $c_k$ der $2\pi$-periodischen Funktion
+\[
+    f(x) = \begin{cases}
+        1 & \text{für } x \in (0, \pi) \\
+        -1 & \text{für } x \in (-\pi, 0) \\
+        0 & \text{für } x = 0, \pm\pi
+    \end{cases}
+\]
+(Signalfunktion / Signum-Funktion auf $[-\pi, \pi]$)
+
+\vspace{0.2cm}
+
+\textbf{(b)} Nutzen Sie Ihre Ergebnisse aus (a) und die Parsevalsche Gleichung, um die Summe
+\[
+    \sum_{k=0}^{\infty} \frac{1}{(2k+1)^2}
+\]
+zu berechnen.
+
+\vspace{0.2cm}
+
+\textbf{(c)} Stellen Sie die Fourier-Reihe Ihrer Funktion aus (a) in der \textbf{trigonometrischen Form} dar und vereinfachen Sie soweit möglich.
+
+\vspace{0.2cm}
+
+\newpage
+
+\section*{Aufgabe 3: Eigenschaften und Konvergenz (12 Punkte)}
+\textbf{(a)} Sei $f \in C^1([-\pi, \pi])$ und $2\pi$-periodisch. Zeigen Sie, dass die Fourier-Koeffizienten $c_k$ die Abschätzung
+\[
+    |c_k| \leq \frac{C}{|k|} \quad \text{für } k \neq 0
+\]
+erfüllen, wobei $C$ eine Konstante, die von $\|f'\|_\infty$ abhängt.
+
+\vspace{0.2cm}
+
+\textbf{(b)} Betrachten Sie die Funktion $f(x) = |x|$ für $x \in [-\pi, \pi]$ und $2\pi$-periodisch fortgesetzt.
+
+\begin{enumerate}[label=(\roman*)]
+    \item Argumentieren Sie, warum alle $b_k = 0$ sind.
+    \vspace{0.2cm}
+    
+    \item Berechnen Sie $a_0$ und $a_k$ für $k \geq 1$.
+    \vspace{0.2cm}
+    
+    \item Geben Sie die Fourier-Reihe explizit an.
+    \vspace{0.2cm}
+\end{enumerate}
+
+\textbf{(c)} Untersuchen Sie die Konvergenz der Fourier-Reihe von $f(x) = |x|$:
+\begin{itemize}
+    \item Konvergiert sie punktweise auf $[-\pi, \pi]$?
+    \item Konvergiert sie gleichmäßig auf $[-\pi, \pi]$?
+\end{itemize}
+Begründen Sie Ihre Antworten.
+
+\vspace{0.2cm}
+
+\newpage
+
+\section*{Aufgabe 4: Orthogonalität und Projektionen (12 Punkte)}
+\textbf{(a)} Zeigen Sie, dass das Funktionensystem $\{1, \cos(x), \sin(x), \cos(2x), \sin(2x), \ldots\}$ orthogonal bezüglich des Skalarprodukts
+\[
+    \langle f, g \rangle = \int_{-\pi}^{\pi} f(x)g(x) \, dx
+\]
+auf dem Raum der stückweise stetigen Funktionen ist. Berechnen Sie jeweils $\|1\|^2$, $\|\cos(kx)\|^2$, und $\|\sin(kx)\|^2$.
+
+\vspace{0.2cm}
+
+\textbf{(b)} Sei $V_n = \operatorname{span}\{1, \cos(x), \sin(x), \ldots, \cos(nx), \sin(nx)\}$. Sei $f \in L^2([-\pi, \pi])$. Zeigen Sie, dass die Partialsumme $S_n f$ der Fourier-Reihe die \textbf{bestmögliche Approximation} von $f$ in $V_n$ bezüglich der $L^2$-Norm ist, d.h.:
+\[
+    \|f - S_n f\|_2 \leq \|f - p\|_2 \quad \forall p \in V_n
+\]
+
+\vspace{0.2cm}
+
+\textbf{(c)} Gegeben sei $f(x) = x^2$ auf $[-\pi, \pi]$. Berechnen Sie die quadratische Approximationsgüte
+\[
+    \|f - S_1 f\|_2^2 = \int_{-\pi}^{\pi} |f(x) - S_1 f(x)|^2 \, dx
+\]
+wobei $S_1 f$ die erste Partialsumme ist.
+
+\vspace{0.2cm}
+
+\newpage
+
+\section*{Aufgabe 5: Anwendungen und Vertiefung (12 Punkte)}
+\textbf{(a)} Die Funktion $f(x) = e^x$ sei auf $[-\pi, \pi]$ betrachtet und $2\pi$-periodisch fortgesetzt. Berechnen Sie die komplexen Fourier-Koeffizienten $c_k$.
+
+\vspace{0.2cm}
+
+\textbf{(b)} Verwenden Sie die Parsevalsche Gleichung auf die Funktion aus (a), um die Identität
+\[
+    \sum_{k=-\infty}^{\infty} \frac{1}{1+k^2} = \text{???}
+\]
+zu überprüfen bzw. den korrekten Wert zu bestimmen.
+
+\vspace{0.2cm}
+
+\textbf{(c)} Sei $(f_n)_{n \in \mathbb{N}}$ eine Folge von Funktionen in $L^2([-\pi, \pi])$, die \textbf{orthonormal} ist. Zeigen Sie die \textbf{Besselsche Ungleichung}:
+\[
+    \sum_{n=1}^{\infty} |\langle f, f_n \rangle|^2 \leq \|f\|_2^2
+\]
+Für welche $f$ wird hier Gleichheit erreicht?
