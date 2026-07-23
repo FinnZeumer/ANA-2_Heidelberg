@@ -1,0 +1,62 @@
+\newpage
+\section{Aufgaben mit Schwerpunkt Topologie und Stetigkeit in metrischen Räumen (Kapitel 2+3)}
+
+\section*{Aufgabe 1 (12 Punkte): Kurzfragen}
+Beantworten Sie die folgenden Fragen kurz und präzise.
+
+\begin{enumerate}
+    \item Sei $X$ eine Menge. Welche drei Axiome (Eigenschaften) muss eine Abbildung $d: X \times X \to \mathbb{R}$ erfüllen, um eine Metrik auf $X$ zu sein?
+    \item Definieren Sie den Begriff der \textit{offenen Kugel} $B_r(x)$ in einem metrischen Raum $(X, d)$.
+    \item Wann heißt eine Teilmenge $M \subseteq X$ eines metrischen Raumes \textit{abgeschlossen}?
+    \item Geben Sie die Definition für den \textit{Rand} $\partial M$ einer Menge $M \subseteq X$ an.
+    \item Definieren Sie die $l^{\infty}$-Norm (Maximumsnorm) auf dem $\mathbb{R}^n$ für ein Element $x = (x_1, \dots, x_n)^T$.
+    \item Was versteht man unter der \textit{Äquivalenz von Normen} auf einem Vektorraum?
+    \item Definieren Sie den Begriff der \textit{Cauchy-Folge} in einem metrischen Raum $(X, d)$.
+    \item Ein metrischer Raum heißt \textit{vollständig}, wenn... (vervollständigen Sie den Satz).
+    \item Geben Sie die Definition der Stetigkeit einer Funktion $f: X \to Y$ im Punkt $a \in X$ mithilfe von Folgen an (Folgenkriterium).
+    \item Sei $f: X \to Y$ eine Abbildung zwischen metrischen Räumen. Welcher Zusammenhang besteht zwischen der Stetigkeit von $f$ und den Urbildern offener Mengen?
+    \item Definieren Sie, wann eine Teilmenge $K \subseteq X$ eines metrischen Raumes \textit{kompakt} (folgenkompakt) ist.
+    \item Nennen Sie den Satz von Heine-Borel für Teilmengen des $\mathbb{R}^n$.
+\end{enumerate}
+
+\newpage
+
+\section*{Aufgabe 2: Metriken und Normen (8 Punkte)}
+Betrachten Sie die Menge $X = \mathbb{R}^2$. 
+\begin{enumerate}
+    \item Zeigen Sie, dass durch $d(x, y) = \sqrt{|x_1 - y_1| + |x_2 - y_2|}$ \textbf{keine} Metrik auf $\mathbb{R}^2$ definiert wird. Welches Axiom ist verletzt? (Hinweis: Betrachten Sie Punkte auf einer Geraden).
+    \item Skizzieren Sie die Einheitskugel $B_1(0)$ im $\mathbb{R}^2$ bezüglich der $l^1$-Norm.
+\end{enumerate}
+
+\newpage
+
+\section*{Aufgabe 3: Topologische Grundbegriffe (10 Punkte)}
+Gegeben sei die Menge $M = \{(x, y) \in \mathbb{R}^2 : 0 < x^2 + y^2 \le 1\} \cup \{(2, 0)\}$.
+\begin{enumerate}
+    \item Bestimmen Sie das Innere $\mathring{M}$.
+    \item Bestimmen Sie den Abschluss $\overline{M}$.
+    \item Bestimmen Sie den Rand $\partial M$.
+    \item Ist $M$ kompakt? Begründen Sie Ihre Antwort kurz.
+\end{enumerate}
+
+\newpage
+
+\section*{Aufgabe 4: Stetigkeit (10 Punkte)}
+Untersuchen Sie die Funktion $f: \mathbb{R}^2 \to \mathbb{R}$ auf Stetigkeit im Punkt $(0,0)$:
+\[
+f(x, y) = 
+\begin{cases} 
+\frac{x^2 y}{x^4 + y^2} & \text{für } (x, y) \neq (0,0) \\
+0 & \text{für } (x, y) = (0,0)
+\end{cases}
+\]
+Hinweis: Betrachten Sie die Annäherung entlang der Parabel $y = x^2$.
+
+\newpage
+
+\section*{Aufgabe 5: Banachscher Fixpunktsatz (10 Punkte)}
+Sei $(X, d)$ ein vollständiger metrischer Raum und $f: X \to X$ eine Kontraktion mit Kontraktionszahl $L \in [0, 1)$.
+\begin{enumerate}
+    \item Formulieren Sie die Aussage des Banachschen Fixpunktsatzes.
+    \item Warum ist die Vollständigkeit des Raumes $(X, d)$ für die Existenz des Fixpunktes notwendig? Geben Sie ein kurzes Gegenbeispiel oder eine intuitive Erklärung.
+\end{enumerate}

@@ -1,0 +1,61 @@
+\newpage
+\section{Aufgaben mit Schwerpunkt Differentialrechnung im $\R^n$ (Kapitel 4)}
+
+\section*{Aufgabe 1 (12 Punkte): Kurzfragen}
+Beantworten Sie die folgenden Fragen kurz und präzise.
+
+\begin{enumerate}
+    \item Definieren Sie die \textit{partielle Ableitung} einer Funktion $f: D \to \mathbb{R}$ ($D \subseteq \mathbb{R}^n$ offen) nach der $i$-ten Koordinatenrichtung im Punkt $x \in D$.
+    \item Wann genau heißt eine Funktion $f: D \to \mathbb{R}$ \textit{partiell differenzierbar} in $x$?
+    \item Was ist der Unterschied zwischen „partiell differenzierbar“ und „stetig partiell differenzierbar“?
+    \item Formulieren Sie den Satz über die \textit{Beschränktheit der partiellen Ableitungen} und deren Folgerung für die Stetigkeit (Satz 4.1.2).
+    \item Wie ist die partielle Ableitung zweiter Ordnung $\partial_i \partial_j f(x)$ definiert?
+    \item Formulieren Sie den \textit{Satz von Schwarz} (Vertauschbarkeit der Differentiationsreihenfolge). Welche Voraussetzung muss erfüllt sein?
+    \item Sei $f: \mathbb{R}^n \to \mathbb{R}^m$ eine Abbildung. Wie ist die \textit{Jacobi-Matrix} $J_f(x)$ aufgebaut?
+    \item Was versteht man unter dem \textit{Gradienten} $\nabla f(x)$ einer skalarwertigen Funktion $f$?
+    \item Definieren Sie die \textit{Hesse-Matrix} $H_f(x)$ für eine zweimal partiell differenzierbare Funktion $f: \mathbb{R}^n \to \mathbb{R}$.
+    \item Sei $f$ im Punkt $x$ total differenzierbar. Folgt daraus die partielle Differenzierbarkeit? (Kurze Begründung).
+    \item Was bedeutet es, wenn eine Matrix $A \in \mathbb{R}^{n \times n}$ \textit{negativ definit} ist?
+    \item Geben Sie die Taylor-Formel erster Ordnung (Linearisierung) für eine differenzierbare Funktion $f$ in der Nähe eines Punktes $a$ an.
+\end{enumerate}
+
+\newpage
+
+\section*{Aufgabe 2: Partielle Ableitungen und Stetigkeit (10 Punkte)}
+Gegeben sei die Funktion $f: \mathbb{R}^2 \to \mathbb{R}$ durch:
+\[
+f(x, y) = 
+\begin{cases} 
+\frac{x^3}{x^2 + y^2} & \text{für } (x, y) \neq (0,0) \\
+0 & \text{für } (x, y) = (0,0)
+\end{cases}
+\]
+\begin{enumerate}
+    \item Berechnen Sie die partiellen Ableitungen $\partial_x f(0,0)$ und $\partial_y f(0,0)$ direkt mit der Definition des Grenzwerts.
+    \item Untersuchen Sie, ob die partiellen Ableitungen $\partial_x f$ und $\partial_y f$ im Punkt $(0,0)$ stetig sind.
+\end{enumerate}
+
+\newpage
+
+\section*{Aufgabe 3: Jacobi-Matrix und Kettenregel (8 Punkte)}
+Betrachten Sie die Funktionen $g: \mathbb{R}^2 \to \mathbb{R}^2$ und $f: \mathbb{R}^2 \to \mathbb{R}$ mit:
+\[ g(u, v) = (u \cdot \cos(v), u \cdot \sin(v))^T, \quad f(x, y) = x^2 + y^2 \]
+\begin{enumerate}
+    \item Bestimmen Sie die Jacobi-Matrizen $J_g(u, v)$ und $J_f(x, y)$.
+    \item Berechnen Sie die Jacobi-Matrix der Komposition $h = f \circ g$ unter Verwendung der Kettenregel.
+\end{enumerate}
+
+\newpage
+
+\section*{Aufgabe 4: Satz von Schwarz (10 Punkte)}
+Gegeben sei die Funktion $f(x, y) = x \cdot e^{xy^2}$.
+\begin{enumerate}
+    \item Berechnen Sie alle partiellen Ableitungen erster und zweiter Ordnung.
+    \item Verifizieren Sie den Satz von Schwarz, indem Sie zeigen, dass $\partial_x \partial_y f(x, y) = \partial_y \partial_x f(x, y)$ gilt.
+\end{enumerate}
+
+\newpage
+
+\section*{Aufgabe 5: Höhere Ableitungen und Approximation (10 Punkte)}
+Bestimmen Sie das Taylor-Polynom zweiter Ordnung der Funktion $f(x, y) = \ln(1 + x + 2y)$ im Entwicklungspunkt $(0,0)$. 
+\textit{Hinweis: Berechnen Sie dazu den Gradienten und die Hesse-Matrix im Punkt $(0,0)$.}

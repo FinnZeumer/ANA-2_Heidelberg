@@ -38,6 +38,9 @@
 \contentsline {section}{\numberline {7.1}Hauptklausur 2020}{87}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Zweitklausur 2020}{93}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Aufgaben mit Schwerpunkt Funktionenraum (Kapitel 1)}{99}{section.7.3}%
-\contentsline {chapter}{Definitionsverzeichnis}{104}{chapter*.9}%
-\contentsline {chapter}{Satzverzeichnis}{106}{chapter*.10}%
+\contentsline {section}{\numberline {7.4}Aufgaben mit Schwerpunkt Topologie und Stetigkeit in metrischen Räumen (Kapitel 2+3)}{104}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Aufgaben mit Schwerpunkt Differentialrechnung im $\mathbb {R}^n$ (Kapitel 4)}{109}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Aufgaben mit Schwerpunkt Systeme gewöhnlicher Differentialgleichungen. (Kapitel 5)}{114}{section.7.6}%
+\contentsline {chapter}{Definitionsverzeichnis}{119}{chapter*.9}%
+\contentsline {chapter}{Satzverzeichnis}{121}{chapter*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
