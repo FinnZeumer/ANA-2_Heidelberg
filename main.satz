@@ -17,7 +17,7 @@
 \contentsline {satz}{\numberline {2.2.11} -- Charaktersierung des Randes anhand von Folgen}{41}{Item.43}%
 \contentsline {satz}{\numberline {2.3.2} -- metrische Räume: Überdeckungskompaktheit $\Leftrightarrow $ Folgenkompaktheit}{43}{DefCounter.2.3.2}%
 \contentsline {satz}{\numberline {2.3.4} -- metrische Räume: Kompakt $\Rightarrow $ abgeschlossen und beschränkt}{43}{DefCounter.2.3.4}%
-\contentsline {satz}{\numberline {2.3.5} -- }{43}{DefCounter.2.3.5}%
+\contentsline {satz}{\numberline {2.3.5} -- ''Vererben von Kompaktheit''}{43}{DefCounter.2.3.5}%
 \contentsline {satz}{\numberline {2.3.6} -- Heine--Borel}{43}{DefCounter.2.3.6}%
 \contentsline {satz}{\numberline {2.3.7} -- Hilfssatz}{43}{DefCounter.2.3.7}%
 \contentsline {satz}{\numberline {2.4.9} -- Gram--Schmidt--Verfahren}{46}{DefCounter.2.4.9}%
@@ -29,7 +29,7 @@
 \contentsline {satz}{\numberline {3.3.2} -- Satz vom Extremum}{54}{DefCounter.3.3.2}%
 \contentsline {satz}{\numberline {3.3.4} -- Stetiges Bild zusammenhängender Mengen}{54}{DefCounter.3.3.4}%
 \contentsline {satz}{\numberline {3.3.5} -- Stetigkeit der Umkehrfunktion}{54}{DefCounter.3.3.5}%
-\contentsline {satz}{\numberline {3.3.8} -- Lipschitz--stetig $\Rightarrow $ gleichmäßig stetig $\Rightarrow $ stetig }{55}{Item.72}%
+\contentsline {satz}{\numberline {3.3.8} -- Lipschitz--stetig $\Rightarrow $ gleichmäßig stetig $\Rightarrow $ stetig}{55}{Item.72}%
 \contentsline {satz}{\numberline {3.3.9} -- Heine: stetige Funktionen auf kompakten Mengen gleichmäßig stetig}{55}{DefCounter.3.3.9}%
 \contentsline {satz}{\numberline {3.4.2} -- Gleichmäßige Konvergenz von Funktionenfolgen}{56}{DefCounter.3.4.2}%
 \contentsline {satz}{\numberline {3.5.3} -- Banachscher Fixpunktsatz}{58}{Item.77}%
